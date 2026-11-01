@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="bgAi" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#040D1D" />
+      <stop offset="50%" stop-color="#071936" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bgAi)" />
+
+  <!-- Neural Network Connections -->
+  <g stroke="#38BDF8" stroke-opacity="0.25" stroke-width="1.5">
+    <line x1="120" y1="90" x2="260" y2="150" />
+    <line x1="100" y1="240" x2="260" y2="190" />
+    <line x1="520" y1="85" x2="380" y2="150" />
+    <line x1="530" y1="255" x2="380" y2="195" />
+  </g>
+  <circle cx="120" cy="90" r="7" fill="#FBBF24" />
+  <circle cx="100" cy="240" r="6" fill="#38BDF8" />
+  <circle cx="520" cy="85" r="6" fill="#38BDF8" />
+  <circle cx="530" cy="255" r="7" fill="#FBBF24" />
+
+  <!-- Chat Interface Panel -->
+  <g transform="translate(135, 48)">
+    <rect width="370" height="264" rx="20" fill="#071936" fill-opacity="0.92" stroke="#38BDF8" stroke-width="2" />
+    <!-- Top Window Bar -->
+    <rect x="0" y="0" width="370" height="44" rx="20" fill="#0C264E" />
+    <circle cx="24" cy="22" r="5" fill="#F59E0B" />
+    <circle cx="40" cy="22" r="5" fill="#38BDF8" />
+    <circle cx="56" cy="22" r="5" fill="#22C55E" />
+    <text x="185" y="26" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="11.5" font-weight="800">TRỢ LÝ AI GIÁO DỤC BIỂN ĐẢO</text>
+
+    <!-- User Question Bubble -->
+    <rect x="110" y="62" width="236" height="46" rx="12" fill="#0284C7" />
+    <text x="126" y="82" fill="#FFFFFF" font-family="sans-serif" font-size="10.5" font-weight="600">Hỏi: Ý nghĩa của đường cơ sở và</text>
+    <text x="126" y="98" fill="#E0F2FE" font-family="sans-serif" font-size="10.5">vùng biển Việt Nam theo UNCLOS?</text>
+
+    <!-- AI Response Bubble -->
+    <g transform="translate(24, 124)">
+      <circle cx="22" cy="22" r="18" fill="url(#cyanGlow)" />
+      <text x="22" y="26" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11" font-weight="900">AI</text>
+      <rect x="50" y="0" width="272" height="78" rx="12" fill="#0F2952" stroke="#FBBF24" stroke-opacity="0.6" stroke-width="1.2" />
+      <text x="64" y="22" fill="#FCD34D" font-family="sans-serif" font-size="10.5" font-weight="700">✦ Trợ lý AI giải đáp (Chuẩn THPT):</text>
+      <rect x="64" y="34" width="230" height="7" rx="3.5" fill="#E0F2FE" opacity="0.8" />
+      <rect x="64" y="48" width="205" height="7" rx="3.5" fill="#E0F2FE" opacity="0.65" />
+      <rect x="64" y="62" width="160" height="7" rx="3.5" fill="#38BDF8" opacity="0.85" />
+    </g>
+
+    <!-- Input Bar Prompt -->
+    <rect x="24" y="218" width="322" height="30" rx="15" fill="#040D1D" stroke="#38BDF8" stroke-opacity="0.45" />
+    <text x="42" y="237" fill="#94A3B8" font-family="sans-serif" font-size="10">Nhập câu hỏi Lịch sử - Địa lý biển đảo...</text>
+    <circle cx="330" cy="233" r="10" fill="#F59E0B" />
+  </g>
+</svg>

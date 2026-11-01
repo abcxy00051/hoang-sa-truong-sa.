@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="storyBg" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071936" />
+      <stop offset="55%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#storyBg)" />
+  <!-- Sun / Dawn Glow over the Sea -->
+  <circle cx="320" cy="210" r="95" fill="#F59E0B" fill-opacity="0.28" />
+  <circle cx="320" cy="210" r="62" fill="#FBBF24" fill-opacity="0.45" />
+  <!-- Sea Waves -->
+  <path d="M0 245 Q160 225 320 245 T640 245 L640 360 L0 360 Z" fill="#04152D" fill-opacity="0.85" />
+  <path d="M0 275 Q160 255 320 275 T640 275 L640 360 L0 360 Z" fill="#040D1D" />
+  <!-- Stylized Ship & Flag on Horizon -->
+  <g transform="translate(250, 175)">
+    <polygon points="10,55 130,55 145,30 25,30" fill="#E0F2FE" stroke="#071936" stroke-width="2" />
+    <line x1="75" y1="30" x2="75" y2="-18" stroke="#FBBF24" stroke-width="3" />
+    <rect x="75" y="-18" width="38" height="24" rx="2" fill="#EF4444" />
+    <text x="94" y="-2" text-anchor="middle" fill="#FDE047" font-family="sans-serif" font-size="12" font-weight="900">★</text>
+  </g>
+  <!-- Title Banner -->
+  <rect x="145" y="292" width="350" height="36" rx="18" fill="#F59E0B" />
+  <text x="320" y="314" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11.5" font-weight="900">NGƯỜI LÍNH HẢI QUÂN • NGƯ DÂN • NHỊP SỐNG ĐẢO XA</text>
+</svg>

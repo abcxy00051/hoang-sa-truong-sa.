@@ -1,0 +1,34 @@
+# Thư mục thư viện và bản đóng gói (Build)
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Các tệp biến môi trường và khóa bảo mật (API Keys, Secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+
+# Nhật ký lỗi (Logs) và tệp tạm hệ điều hành / trình soạn thảo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.DS_Store
+Thumbs.db
+*.local
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.exe
+*.bat

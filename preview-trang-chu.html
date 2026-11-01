@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIỂN ĐẢO VIỆT NAM | Chạm tri thức - Vững chủ quyền (Bản Xem Nhanh Trực Tiếp)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+    <!-- React 18 & Babel Standalone để xem nhanh trực tiếp trên trình duyệt nếu chưa cài Node.js -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const { useState, useEffect } = React;
+
+      const NAV_LINKS = [
+        { id: 'home', label: 'Trang chủ', href: '#trang-chu' },
+        { id: 'about', label: 'Giới thiệu dự án', href: '#gioi-thieu' },
+        { id: 'features', label: 'Hệ sinh thái số', href: '#chuc-nang' },
+        { id: 'audiences', label: 'Góc Học sinh & Giáo viên', href: '#doi-tuong' },
+        { id: 'sovereignty', label: 'Cột mốc Chủ quyền', href: '#cot-moc' }
+      ];
+
+      const HERO_STATS = [
+        {
+          value: '3.260+ km',
+          label: 'Đường bờ biển trải dài từ Bắc vào Nam',
+          badge: 'Địa lý Biển Việt Nam'
+        },
+        {
+          value: '3.000+ Đảo',
+          label: 'Quần đảo Hoàng Sa, Trường Sa & đảo ven bờ',
+          badge: 'Chủ quyền Thiêng liêng'
+        },
+        {
+          value: '1.000.000 km²',
+          label: 'Diện tích vùng biển thuộc chủ quyền & quyền tài phán',
+          badge: 'UNCLOS 1982'
+        },
+        {
+          value: '6 Phân hệ',
+          label: 'Tích hợp Bản đồ số, AI & Học liệu chuẩn THPT',
+          badge: 'Giáo dục Số 4.0'
+        }
+      ];
+
+      const PROJECT_PILLARS = [
+        {
+          id: 'knowledge',
+          icon: '📚',
+          title: 'Chuẩn hóa Tri thức Lịch sử - Địa lý',
+          description:
+            'Hệ thống hóa kiến thức biển đảo bám sát chương trình Giáo dục phổ thông 2018 (Lịch sử, Địa lý, Giáo dục Kinh tế & Pháp luật, Giáo dục Quốc phòng & An ninh cấp THPT).',
+          highlight: 'Chính xác - Khoa học - Trực quan'
+        },
+        {
+          id: 'technology',
+          icon: '🤖',
+          title: 'Ứng dụng Công nghệ AI & Bản đồ số',
+          description:
+            'Kết hợp bản đồ tương tác tọa độ hải lý, sa bàn trực quan và Trợ lý AI thông minh giúp học sinh tra cứu tư liệu lịch sử, pháp lý quốc tế nhanh chóng và sinh động.',
+          highlight: 'Trải nghiệm Học tập Tương tác'
+        },
+        {
+          id: 'patriotism',
+          icon: '🇻🇳',
+          title: 'Bồi đắp Tình yêu & Ý thức Chủ quyền',
+          description:
+            'Mỗi bài học, mỗi châu bản, mỗi cột mốc trên Hoàng Sa - Trường Sa là một nhịp cầu kết nối thế hệ trẻ hôm nay với lịch sử giữ biển hào hùng của cha ông.',
+          highlight: 'Chạm tri thức - Vững chủ quyền'
+        }
+      ];
+
+      const FEATURES_DATA = [
+        {
+          id: 'ban-do-so',
+          code: '01',
+          title: 'Bản đồ số',
+          subtitle: 'Hệ thống Tọa độ & Sa bàn Biển đảo',
+          badge: 'Tương tác GIS',
+          accentColor: 'ocean',
+          emoji: '🗺️',
+          shortDesc:
+            'Trực quan hóa vùng biển Việt Nam, hai quần đảo Hoàng Sa, Trường Sa, đường cơ sở và các vùng biển theo Công ước UNCLOS 1982.',
+          highlights: [
+            'Định vị tọa độ địa lý 21 đảo, điểm đảo Trường Sa & quần đảo Hoàng Sa',
+            'Lớp bản đồ phân vùng: Nội thủy, Lãnh hải, Vùng đặc quyền kinh tế (EEZ)',
+            'Chế độ trình chiếu trên bảng tương tác dành cho tiết dạy Địa lý THPT'
+          ],
+          samplePreview: {
+            coordinate: '16°32′00″B - 111°38′00″Đ (Hoàng Sa) | 08°38′30″B - 111°55′55″Đ (Trường Sa)',
+            actionText: 'Mở Bản đồ số 2D/3D'
+          }
+        },
+        {
+          id: 'thu-vien-tri-thuc',
+          code: '02',
+          title: 'Thư viện tri thức',
+          subtitle: 'Kho Tư liệu Lịch sử, Pháp lý & Địa lý',
+          badge: 'Học liệu số',
+          accentColor: 'gold',
+          emoji: '📖',
+          shortDesc:
+            'Kho lưu trữ số hóa Châu bản triều Nguyễn, bản đồ cổ phương Tây, văn bản pháp lý quốc tế cùng hệ thống bài giảng, infographic chuẩn THPT.',
+          highlights: [
+            'Bộ sưu tập Châu bản triều Nguyễn (Di sản tư liệu thế giới UNESCO)',
+            'Tài liệu chuyên đề Địa lý kinh tế biển, sinh thái biển và pháp luật biển',
+            'Kho slide bài giảng, phiếu học tập PDF tải về miễn phí cho Giáo viên'
+          ],
+          samplePreview: {
+            coordinate: 'Hơn 250+ tư liệu lịch sử, bản đồ cổ & chuyên đề học tập THPT',
+            actionText: 'Tra cứu Thư viện'
+          }
+        },
+        {
+          id: 'tro-ly-ai',
+          code: '03',
+          title: 'Trợ lý AI',
+          subtitle: 'Bạn đồng hành Giải đáp Kiến thức 24/7',
+          badge: 'AI Giáo dục',
+          accentColor: 'cyan',
+          emoji: '✨',
+          shortDesc:
+            'Trợ lý trí tuệ nhân tạo chuyên biệt về biển đảo Việt Nam, hỗ trợ giải đáp câu hỏi lịch sử - pháp lý, tóm tắt tư liệu và gợi ý đề cương bài học.',
+          highlights: [
+            'Trả lời có trích dẫn nguồn sử liệu chính thống và luật biển Việt Nam',
+            'Gợi ý câu hỏi trắc nghiệm ôn tập theo từng khối lớp 10, 11, 12',
+            'Hỗ trợ giáo viên thiết kế hoạt động khởi động và tình huống dạy học'
+          ],
+          samplePreview: {
+            coordinate: 'AI được huấn luyện trên cơ sở dữ liệu Lịch sử & Địa lý chuẩn hóa',
+            actionText: 'Trò chuyện cùng AI'
+          }
+        },
+        {
+          id: 'phong-hoc-tuong-tac',
+          code: '04',
+          title: 'Phòng học tương tác',
+          subtitle: 'Không gian Dạy - Học & Kiểm tra Đánh giá',
+          badge: 'Lớp học số',
+          accentColor: 'navy',
+          emoji: '🎓',
+          shortDesc:
+            'Tổ chức tiết học chuyên đề ngoại khóa, làm bài tập tình huống, thi đua trắc nghiệm trực tuyến "Em yêu Biển đảo quê hương" ngay tại lớp.',
+          highlights: [
+            'Ngân hàng câu hỏi trắc nghiệm phân hóa theo mức độ Nhận biết - Vận dụng',
+            'Chế độ tổ chức thi đấu nhóm trực tiếp trong giờ sinh hoạt chuyên đề',
+            'Bảng theo dõi tiến độ học tập và cấp Chứng nhận số cho học sinh'
+          ],
+          samplePreview: {
+            coordinate: '12 Chuyên đề thực hành & Ngân hàng 500+ câu hỏi tương tác',
+            actionText: 'Vào Phòng học số'
+          }
+        },
+        {
+          id: 'dong-thoi-gian-lich-su',
+          code: '05',
+          title: 'Dòng thời gian lịch sử',
+          subtitle: 'Biên niên sử Xác lập & Thực thi Chủ quyền',
+          badge: 'Sử liệu Trực quan',
+          accentColor: 'gold',
+          emoji: '⏳',
+          shortDesc:
+            'Hành trình xuyên suốt nhiều thế kỷ từ đội Hoàng Sa kiêm quản Bắc Hải thời chúa Nguyễn, triều Tây Sơn, triều Nguyễn đến nước Việt Nam hiện đại.',
+          highlights: [
+            'Trục thời gian tương tác từ thế kỷ XVII đến Luật Biển Việt Nam 2012',
+            'Tích hợp hình ảnh tư liệu, sắc chỉ, mộc bản và câu chuyện lịch sử',
+            'So sánh đối chiếu các cột mốc pháp lý Việt Nam và quốc tế'
+          ],
+          samplePreview: {
+            coordinate: 'Thế kỷ XVII → 1816 (Vua Gia Long) → 1836 (Vua Minh Mạng) → 1982 → Nay',
+            actionText: 'Khám phá Dòng thời gian'
+          }
+        },
+        {
+          id: 'khong-gian-kham-pha',
+          code: '06',
+          title: 'Không gian khám phá',
+          subtitle: 'Bảo tàng Ảo, Văn hóa Biển & Sinh thái Đại dương',
+          badge: 'Trải nghiệm 360°',
+          accentColor: 'ocean',
+          emoji: '🧭',
+          shortDesc:
+            'Đắm mình vào không gian văn hóa lễ Khao lề thế lính Hoàng Sa, khám phá hệ sinh thái rạn san hô, các ngọn hải đăng lịch sử và đời sống chiến sĩ nơi đảo xa.',
+          highlights: [
+            'Tham quan ảo các cột mốc chủ quyền, nhà giàn DK1 và ngọn hải đăng',
+            'Khám phá đa dạng sinh học biển và tiềm năng kinh tế biển xanh',
+            'Góc sáng tác: Gửi thư và thông điệp từ mái trường THPT ra đảo xa'
+          ],
+          samplePreview: {
+            coordinate: '9 Ngọn hải đăng tiêu biểu, Nhà giàn DK1 & Di sản văn hóa biển',
+            actionText: 'Bước vào Không gian 360°'
+          }
+        }
+      ];
+
+      const AUDIENCE_MODES = {
+        student: {
+          title: 'Dành cho Học sinh THPT (Khối 10 - 11 - 12)',
+          badge: 'Chủ động Khám phá',
+          subtitle: 'Học Lịch sử - Địa lý biển đảo qua trải nghiệm trực quan, không còn khô khan',
+          benefits: [
+            {
+              title: 'Ôn luyện kiến thức bám sát SGK mới',
+              desc: 'Tích hợp nội dung Địa lý tự nhiên - kinh tế biển và Lịch sử bảo vệ chủ quyền biển đảo Việt Nam.'
+            },
+            {
+              title: 'Hỏi đáp tức thì cùng Trợ lý AI',
+              desc: 'Giải thích dễ hiểu các khái niệm: Đường cơ sở, Lãnh hải 12 hải lý, Vùng đặc quyền kinh tế 200 hải lý.'
+            },
+            {
+              title: 'Thử thách & Nhận huy hiệu Chủ quyền',
+              desc: 'Tham gia hành trình chinh phục các cột mốc đảo qua trò chơi giải đố và dự án học tập.'
+            }
+          ],
+          ctaLabel: 'Bắt đầu lộ trình Học sinh'
+        },
+        teacher: {
+          title: 'Dành cho Giáo viên THPT',
+          badge: 'Hỗ trợ Giảng dạy',
+          subtitle: 'Công cụ trực quan hóa bài giảng và tổ chức hoạt động ngoại khóa biển đảo',
+          benefits: [
+            {
+              title: 'Bản đồ số & Timeline dùng ngay trên lớp',
+              desc: 'Chế độ toàn màn hình sắc nét, giúp giáo viên minh họa trực tiếp tọa độ Hoàng Sa - Trường Sa trên máy chiếu.'
+            },
+            {
+              title: 'Kho học liệu & Kế hoạch bài dạy chuẩn',
+              desc: 'Cung cấp tư liệu gốc (Châu bản, bản đồ cổ, trích đoạn UNCLOS 1982) phục vụ dạy học phát triển phẩm chất, năng lực.'
+            },
+            {
+              title: 'Tổ chức tiết học tương tác nhanh chóng',
+              desc: 'Khởi tạo câu hỏi thảo luận nhóm, bài kiểm tra nhanh 15 phút hoặc ngoại khóa chuyên đề biển đảo.'
+            }
+          ],
+          ctaLabel: 'Mở Bộ công cụ Giáo viên'
+        }
+      };
+
+      function PreviewApp() {
+        const [activeRole, setActiveRole] = useState('student');
+        const [selectedFeatureId, setSelectedFeatureId] = useState(null);
+        const [isScrolled, setIsScrolled] = useState(false);
+        const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+        useEffect(() => {
+          const onScroll = () => setIsScrolled(window.scrollY > 24);
+          window.addEventListener('scroll', onScroll);
+          return () => window.removeEventListener('scroll', onScroll);
+        }, []);
+
+        const handleStartExplore = () => {
+          const el = document.getElementById('chuc-nang');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        };
+
+        const currentAudience = AUDIENCE_MODES[activeRole];
+        const activeFeature = FEATURES_DATA.find((f) => f.id === selectedFeatureId);
+
+        return (
+          <div className="app-wrapper">
+            {/* Navbar */}
+            <header className={`site-navbar ${isScrolled ? 'scrolled' : ''}`}>
+              <div className="container navbar-inner">
+                <a href="#trang-chu" className="brand-logo">
+                  <div className="brand-emblem">
+                    <span>🧭</span>
+                    <span className="brand-star">★</span>
+                  </div>
+                  <div className="brand-text">
+                    <span className="brand-title">BIỂN ĐẢO VIỆT NAM</span>
+                    <span className="brand-slogan">Chạm tri thức - Vững chủ quyền</span>
+                  </div>
+                </a>
+
+                <nav className="desktop-nav">
+                  <ul className="nav-list">
+                    {NAV_LINKS.map((item) => (
+                      <li key={item.id}>
+                        <a href={item.href} className="nav-link">{item.label}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+
+                <div className="navbar-actions">
+                  <div className="role-pill-switch">
+                    <button
+                      type="button"
+                      className={`role-pill-btn ${activeRole === 'student' ? 'active' : ''}`}
+                      onClick={() => setActiveRole('student')}
+                    >
+                      <span>✨ Học sinh THPT</span>
+                    </button>
+                    <button
+                      type="button"
+                      className={`role-pill-btn ${activeRole === 'teacher' ? 'active' : ''}`}
+                      onClick={() => setActiveRole('teacher')}
+                    >
+                      <span>🎓 Giáo viên</span>
+                    </button>
+                  </div>
+                  <button type="button" className="btn-gold-nav" onClick={handleStartExplore}>
+                    <span>🛡️ Bắt đầu khám phá</span>
+                  </button>
+                  <button
+                    type="button"
+                    className="mobile-menu-toggle"
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  >
+                    {mobileMenuOpen ? '✕' : '☰'}
+                  </button>
+                </div>
+              </div>
+            </header>
+
+            {/* Hero Section */}
+            <section id="trang-chu" className="hero-section">
+              <div className="hero-bg-wrapper">
+                <img
+                  src="./public/assets/hero-bien-dao.jpg"
+                  alt="Biển đảo Việt Nam"
+                  className="hero-bg-image"
+                />
+                <div className="hero-bg-overlay" />
+                <div className="hero-grid-overlay" />
+              </div>
+
+              <div className="container hero-container">
+                <div className="hero-main-grid">
+                  <div className="hero-content">
+                    <div className="hero-badge-row">
+                      <span className="hero-badge-gold">🛡️ HỆ SINH THÁI GIÁO DỤC SỐ CẤP THPT</span>
+                      <span className="hero-badge-coordinates">📡 Hoàng Sa & Trường Sa là của Việt Nam</span>
+                    </div>
+
+                    <h1 className="hero-title">
+                      <span className="hero-title-main">BIỂN ĐẢO VIỆT NAM</span>
+                      <span className="hero-title-sub">
+                        Chạm tri thức <span className="gold-divider">—</span> Vững chủ quyền.
+                      </span>
+                    </h1>
+
+                    <p className="hero-description">
+                      Không gian học tập, tra cứu và trải nghiệm tương tác hiện đại dành riêng cho{' '}
+                      <strong>Học sinh THPT</strong> và <strong>Giáo viên</strong>. Kết nối lịch sử ngàn năm
+                      giữ biển của cha ông với công nghệ Bản đồ số, Thư viện tư liệu chuẩn hóa và Trợ lý AI
+                      thông minh.
+                    </p>
+
+                    <div className="hero-cta-group">
+                      <button type="button" className="btn-primary-gold" onClick={handleStartExplore}>
+                        <span>🧭 Bắt đầu khám phá →</span>
+                      </button>
+                      <a href="#gioi-thieu" className="btn-secondary-glass">
+                        <span>📖 Tìm hiểu dự án</span>
+                      </a>
+                    </div>
+
+                    <div className="hero-quick-chips">
+                      <span className="quick-chips-label">Truy cập nhanh:</span>
+                      <button type="button" className="quick-chip" onClick={() => setSelectedFeatureId('ban-do-so')}>
+                        📍 Bản đồ số Hoàng Sa - Trường Sa
+                      </button>
+                      <button type="button" className="quick-chip" onClick={() => setSelectedFeatureId('tro-ly-ai')}>
+                        ✨ Hỏi đáp Trợ lý AI
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="hero-visual-panel">
+                    <div className="sovereignty-glass-card">
+                      <div className="card-top-bar">
+                        <div className="radar-indicator">
+                          <span className="radar-dot" />
+                          <span>TRẠM DỮ LIỆU CHỦ QUYỀN SỐ</span>
+                        </div>
+                        <span className="card-coord-tag">UNCLOS 1982</span>
+                      </div>
+
+                      <div className="compass-showcase">
+                        <div className="compass-ring-outer">
+                          <div className="compass-ring-inner">⚓</div>
+                        </div>
+                        <div className="compass-info">
+                          <h3>Tọa độ Thiêng liêng Tổ quốc</h3>
+                          <p>Trực quan hóa 2 quần đảo tiền tiêu & thềm lục địa Việt Nam</p>
+                        </div>
+                      </div>
+
+                      <div className="coordinate-list">
+                        <div className="coordinate-item" onClick={() => setSelectedFeatureId('ban-do-so')}>
+                          <div className="coord-marker gold">HS</div>
+                          <div className="coord-details">
+                            <div className="coord-name-row">
+                              <strong>Quần đảo Hoàng Sa</strong>
+                              <span className="coord-city">TP. Đà Nẵng</span>
+                            </div>
+                            <span className="coord-numbers">16°32′00″ Vĩ Bắc — 111°38′00″ Kinh Đông</span>
+                          </div>
+                        </div>
+
+                        <div className="coordinate-item" onClick={() => setSelectedFeatureId('ban-do-so')}>
+                          <div className="coord-marker cyan">TS</div>
+                          <div className="coord-details">
+                            <div className="coord-name-row">
+                              <strong>Quần đảo Trường Sa</strong>
+                              <span className="coord-city">Tỉnh Khánh Hòa</span>
+                            </div>
+                            <span className="coord-numbers">08°38′30″ Vĩ Bắc — 111°55′55″ Kinh Đông</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="card-footer-note">
+                        <span>✦ Tích hợp Châu bản triều Nguyễn & Học liệu GDPT 2018</span>
+                        <button
+                          type="button"
+                          className="card-mini-link"
+                          onClick={() => setSelectedFeatureId('dong-thoi-gian-lich-su')}
+                        >
+                          Xem lịch sử →
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="hero-stats-bar">
+                  {HERO_STATS.map((stat, idx) => (
+                    <div key={idx} className="hero-stat-item">
+                      <span className="stat-badge">{stat.badge}</span>
+                      <strong className="stat-value">{stat.value}</strong>
+                      <span className="stat-label">{stat.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* About Section */}
+            <section id="gioi-thieu" className="about-section">
+              <div className="container">
+                <div className="section-header">
+                  <span className="section-eyebrow">GIỚI THIỆU DỰ ÁN GIÁO DỤC SỐ</span>
+                  <h2 className="section-title">
+                    Khơi dậy tình yêu Biển đảo từ <span className="text-ocean">Tri thức Chuẩn</span> &{' '}
+                    <span className="text-navy">Công nghệ Mới</span>
+                  </h2>
+                  <p className="section-subtitle">
+                    Dự án <strong>BIỂN ĐẢO VIỆT NAM — Chạm tri thức, Vững chủ quyền</strong> được xây dựng
+                    nhằm mang đến một nền tảng học liệu trực quan, kết nối chặt chẽ kiến thức liên môn Lịch
+                    sử - Địa lý - Giáo dục Quốc phòng & An ninh cho học sinh và giáo viên THPT.
+                  </p>
+                </div>
+
+                <div className="pillars-grid">
+                  {PROJECT_PILLARS.map((pillar, index) => (
+                    <article key={pillar.id} className="pillar-card">
+                      <div className="pillar-card-top">
+                        <div className="pillar-icon-box" style={{ fontSize: '24px' }}>{pillar.icon}</div>
+                        <span className="pillar-number">0{index + 1}</span>
+                      </div>
+                      <h3 className="pillar-title">{pillar.title}</h3>
+                      <p className="pillar-desc">{pillar.description}</p>
+                      <div className="pillar-tag">✦ {pillar.highlight}</div>
+                    </article>
+                  ))}
+                </div>
+
+                <div id="doi-tuong" className="audience-showcase-box">
+                  <div className="audience-header-bar">
+                    <div className="audience-header-text">
+                      <span className="audience-label-tag">ĐỐI TƯỢNG SỬ DỤNG TRỌNG TÂM</span>
+                      <h3>Thiết kế chuyên biệt cho nhà trường THPT</h3>
+                    </div>
+                    <div className="audience-tab-buttons">
+                      <button
+                        type="button"
+                        className={`audience-tab-btn ${activeRole === 'student' ? 'active' : ''}`}
+                        onClick={() => setActiveRole('student')}
+                      >
+                        ✨ Dành cho Học sinh THPT
+                      </button>
+                      <button
+                        type="button"
+                        className={`audience-tab-btn ${activeRole === 'teacher' ? 'active' : ''}`}
+                        onClick={() => setActiveRole('teacher')}
+                      >
+                        🎓 Dành cho Giáo viên
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="audience-content-grid">
+                    <div className="audience-info-col">
+                      <span className="audience-mode-badge">{currentAudience.badge}</span>
+                      <h4 className="audience-mode-title">{currentAudience.title}</h4>
+                      <p className="audience-mode-subtitle">{currentAudience.subtitle}</p>
+                      <button type="button" className="btn-primary-gold" onClick={handleStartExplore}>
+                        <span>{currentAudience.ctaLabel} ↗</span>
+                      </button>
+                    </div>
+                    <div className="audience-benefits-col">
+                      {currentAudience.benefits.map((item, idx) => (
+                        <div key={idx} className="audience-benefit-card">
+                          <div className="benefit-check-icon">✔</div>
+                          <div className="benefit-text">
+                            <h5>{item.title}</h5>
+                            <p>{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 6 Features Section */}
+            <section id="chuc-nang" className="features-section">
+              <div className="container">
+                <div className="section-header">
+                  <span className="section-eyebrow">6 PHÂN HỆ TRỌNG TÂM</span>
+                  <h2 className="section-title">
+                    Hệ sinh thái Học tập & Khám phá <span className="text-ocean">Biển Đảo Số</span>
+                  </h2>
+                  <p className="section-subtitle">
+                    Mỗi thẻ chức năng mở ra một phương thức tiếp cận tri thức độc đáo dành cho Học sinh THPT và Giáo viên.
+                  </p>
+                </div>
+
+                <div className="features-grid">
+                  {FEATURES_DATA.map((feature) => (
+                    <article key={feature.id} className={`feature-card accent-${feature.accentColor}`}>
+                      <div className="feature-card-header">
+                        <div className="feature-icon-wrapper" style={{ fontSize: '26px' }}>
+                          {feature.emoji}
+                        </div>
+                        <div className="feature-meta-tags">
+                          <span className="feature-badge">{feature.badge}</span>
+                          <span className="feature-code">#{feature.code}</span>
+                        </div>
+                      </div>
+
+                      <div className="feature-card-body">
+                        <h3 className="feature-title">{feature.title}</h3>
+                        <p className="feature-subtitle">{feature.subtitle}</p>
+                        <p className="feature-description">{feature.shortDesc}</p>
+                        <ul className="feature-highlights">
+                          {feature.highlights.map((point, i) => (
+                            <li key={i}>
+                              <span className="highlight-icon">✓</span>
+                              <span>{point}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="feature-card-footer">
+                        <div className="feature-preview-strip">
+                          <span className="preview-strip-text">{feature.samplePreview.coordinate}</span>
+                        </div>
+                        <button
+                          type="button"
+                          className="feature-action-btn"
+                          onClick={() => setSelectedFeatureId(feature.id)}
+                        >
+                          <span>{feature.samplePreview.actionText}</span>
+                          <span>→</span>
+                        </button>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* Footer */}
+            <footer className="site-footer">
+              <div className="container">
+                <div className="footer-bottom">
+                  <p>
+                    © {new Date().getFullYear()} <strong>BIỂN ĐẢO VIỆT NAM</strong> — Chạm tri thức, Vững chủ quyền.
+                  </p>
+                </div>
+              </div>
+            </footer>
+
+            {/* Modal */}
+            {activeFeature && (
+              <div className="modal-backdrop" onClick={() => setSelectedFeatureId(null)}>
+                <div className="modal-panel" onClick={(e) => e.stopPropagation()}>
+                  <div className="modal-header">
+                    <div>
+                      <span className="modal-eyebrow">TRẢI NGHIỆM TRƯỚC PHÂN HỆ</span>
+                      <h3 className="modal-title">{activeFeature.title}</h3>
+                    </div>
+                    <button type="button" className="modal-close-btn" onClick={() => setSelectedFeatureId(null)}>
+                      ✕
+                    </button>
+                  </div>
+                  <div className="modal-body">
+                    <p className="modal-feature-desc">{activeFeature.shortDesc}</p>
+                    <div className="modal-coord-strip">
+                      <strong>Tâm điểm:</strong> {activeFeature.samplePreview.coordinate}
+                    </div>
+                  </div>
+                  <div className="modal-footer">
+                    <button type="button" className="btn-primary-gold" onClick={() => setSelectedFeatureId(null)}>
+                      Đóng cửa sổ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById('root')).render(<PreviewApp />);
+    </script>
+  </body>
+</html>

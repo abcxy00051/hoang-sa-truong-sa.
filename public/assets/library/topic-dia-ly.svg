@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="geoBg" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#04152D" />
+      <stop offset="50%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#0F766E" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#geoBg)" />
+  <!-- Globe & Latitude/Longitude Rings -->
+  <circle cx="215" cy="180" r="105" fill="#071936" fill-opacity="0.7" stroke="#38BDF8" stroke-width="2" />
+  <ellipse cx="215" cy="180" rx="52" ry="105" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.5" />
+  <ellipse cx="215" cy="180" rx="105" ry="42" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.5" />
+  <line x1="110" y1="180" x2="320" y2="180" stroke="#FBBF24" stroke-width="1.8" stroke-dasharray="4 4" />
+  <!-- Info Cards on Right -->
+  <g transform="translate(355, 68)">
+    <rect width="215" height="64" rx="12" fill="#071936" fill-opacity="0.9" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="20" y="28" fill="#38BDF8" font-family="sans-serif" font-size="11" font-weight="800">ĐỊA LÝ TỰ NHIÊN BIỂN</text>
+    <text x="20" y="46" fill="#E0F2FE" font-family="sans-serif" font-size="10">3.260 km bờ biển &amp; 3.000+ đảo</text>
+  </g>
+  <g transform="translate(355, 148)">
+    <rect width="215" height="64" rx="12" fill="#071936" fill-opacity="0.9" stroke="#FBBF24" stroke-width="1.5" />
+    <text x="20" y="28" fill="#FCD34D" font-family="sans-serif" font-size="11" font-weight="800">TÀI NGUYÊN &amp; SINH THÁI</text>
+    <text x="20" y="46" fill="#E0F2FE" font-family="sans-serif" font-size="10">Sinh vật, khoáng sản &amp; du lịch</text>
+  </g>
+  <g transform="translate(355, 228)">
+    <rect width="215" height="64" rx="12" fill="#071936" fill-opacity="0.9" stroke="#34D399" stroke-width="1.5" />
+    <text x="20" y="28" fill="#6EE7B7" font-family="sans-serif" font-size="11" font-weight="800">KINH TẾ BIỂN XANH</text>
+    <text x="20" y="46" fill="#E0F2FE" font-family="sans-serif" font-size="10">Bám sát Địa lý THPT (GDPT 2018)</text>
+  </g>
+</svg>

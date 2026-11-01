@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="bgExpo" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#040D1D" />
+      <stop offset="50%" stop-color="#071936" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <linearGradient id="beamGrad" x1="320" y1="95" x2="520" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#FDE68A" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bgExpo)" />
+
+  <!-- 360 Virtual Dome Rings -->
+  <ellipse cx="320" cy="275" rx="235" ry="48" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="6 6" />
+  <ellipse cx="320" cy="275" rx="165" ry="32" stroke="#FBBF24" stroke-opacity="0.4" stroke-width="1.5" />
+  <ellipse cx="320" cy="85" rx="190" ry="34" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.2" stroke-dasharray="5 5" />
+
+  <!-- Lighthouse Beam -->
+  <polygon points="320,95 540,35 540,135" fill="url(#beamGrad)" />
+  <polygon points="320,95 100,35 100,135" fill="url(#beamGrad)" />
+
+  <!-- Left Exhibition Frame -->
+  <g transform="translate(88, 118)">
+    <rect width="126" height="115" rx="12" fill="#071936" fill-opacity="0.9" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="14" y="14" width="98" height="62" rx="6" fill="#0284C7" fill-opacity="0.35" />
+    <circle cx="63" cy="45" r="16" fill="#38BDF8" fill-opacity="0.3" stroke="#38BDF8" />
+    <text x="63" y="96" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="10" font-weight="700">KHÔNG GIAN 3D</text>
+  </g>
+
+  <!-- Right Exhibition Frame -->
+  <g transform="translate(426, 118)">
+    <rect width="126" height="115" rx="12" fill="#071936" fill-opacity="0.9" stroke="#FBBF24" stroke-width="1.5" />
+    <rect x="14" y="14" width="98" height="62" rx="6" fill="#F59E0B" fill-opacity="0.2" />
+    <polygon points="63,28 78,62 48,62" fill="#FBBF24" opacity="0.85" />
+    <text x="63" y="96" text-anchor="middle" fill="#FEF3C7" font-family="sans-serif" font-size="10" font-weight="700">HIỆN VẬT SỐ</text>
+  </g>
+
+  <!-- Center Lighthouse & Sovereignty Monument Showcase -->
+  <g transform="translate(275, 68)">
+    <rect x="26" y="45" width="38" height="135" rx="6" fill="#0F2952" stroke="#FBBF24" stroke-width="2" />
+    <rect x="20" y="34" width="50" height="14" rx="4" fill="#F59E0B" />
+    <circle cx="45" cy="24" r="12" fill="#FDE68A" />
+    <line x1="28" y1="80" x2="62" y2="80" stroke="#38BDF8" stroke-width="2" />
+    <line x1="28" y1="115" x2="62" y2="115" stroke="#38BDF8" stroke-width="2" />
+    <line x1="28" y1="150" x2="62" y2="150" stroke="#38BDF8" stroke-width="2" />
+    <rect x="8" y="178" width="74" height="18" rx="6" fill="#0284C7" />
+  </g>
+
+  <!-- 360 Badge -->
+  <rect x="225" y="290" width="190" height="34" rx="17" fill="#F59E0B" />
+  <text x="320" y="311" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11.5" font-weight="900">TRIỂN LÃM SỐ 360°</text>
+</svg>

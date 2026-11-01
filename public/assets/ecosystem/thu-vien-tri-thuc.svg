@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="bgLib" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071936" />
+      <stop offset="55%" stop-color="#0C264E" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <linearGradient id="goldBook" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bgLib)" />
+
+  <!-- Decorative Grid & Glow -->
+  <circle cx="320" cy="180" r="150" fill="#F59E0B" fill-opacity="0.12" />
+  <circle cx="320" cy="180" r="115" stroke="#FBBF24" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 6" />
+
+  <!-- Left Floating Document Card (Infographic THPT) -->
+  <g transform="translate(85, 82) rotate(-6)">
+    <rect width="150" height="190" rx="14" fill="#0F2952" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="18" y="22" width="60" height="8" rx="4" fill="#38BDF8" />
+    <rect x="18" y="40" width="114" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
+    <rect x="18" y="54" width="96" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
+    <rect x="18" y="76" width="114" height="64" rx="8" fill="#0284C7" fill-opacity="0.3" stroke="#38BDF8" stroke-opacity="0.4" />
+    <text x="75" y="113" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">HỌC LIỆU SỐ</text>
+    <rect x="18" y="154" width="80" height="16" rx="8" fill="#F59E0B" fill-opacity="0.25" />
+  </g>
+
+  <!-- Right Floating Document Card (Tư liệu Pháp lý & Địa lý) -->
+  <g transform="translate(405, 68) rotate(6)">
+    <rect width="150" height="190" rx="14" fill="#0F2952" stroke="#FBBF24" stroke-width="1.5" />
+    <rect x="18" y="22" width="70" height="8" rx="4" fill="#FBBF24" />
+    <rect x="18" y="40" width="114" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
+    <rect x="18" y="54" width="102" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
+    <rect x="18" y="76" width="114" height="64" rx="8" fill="#F59E0B" fill-opacity="0.18" stroke="#FBBF24" stroke-opacity="0.4" />
+    <text x="75" y="113" text-anchor="middle" fill="#FEF3C7" font-family="sans-serif" font-size="11" font-weight="700">TƯ LIỆU CHUẨN</text>
+    <rect x="18" y="154" width="90" height="16" rx="8" fill="#38BDF8" fill-opacity="0.25" />
+  </g>
+
+  <!-- Center Open Book / Royal Archive Showcase -->
+  <g transform="translate(205, 85)">
+    <rect x="0" y="0" width="230" height="190" rx="18" fill="#040D1D" fill-opacity="0.9" stroke="url(#goldBook)" stroke-width="2.5" />
+    <!-- Open Book Icon Graphic -->
+    <path d="M115 55 C95 45, 65 45, 45 55 L45 135 C65 125, 95 125, 115 135 C135 125, 165 125, 185 135 L185 55 C165 45, 135 45, 115 55 Z" fill="#071936" stroke="#FBBF24" stroke-width="3" stroke-linejoin="round" />
+    <line x1="115" y1="55" x2="115" y2="135" stroke="#FBBF24" stroke-width="3" />
+    <!-- Book Lines -->
+    <line x1="60" y1="75" x2="100" y2="75" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="60" y1="92" x2="96" y2="92" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <line x1="60" y1="108" x2="92" y2="108" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <line x1="130" y1="75" x2="170" y2="75" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="130" y1="92" x2="166" y2="92" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <line x1="130" y1="108" x2="162" y2="108" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+
+    <rect x="28" y="150" width="174" height="24" rx="12" fill="url(#goldBook)" />
+    <text x="115" y="166" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11" font-weight="800">THƯ VIỆN TRI THỨC BIỂN ĐẢO</text>
+  </g>
+</svg>
