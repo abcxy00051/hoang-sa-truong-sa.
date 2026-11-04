@@ -7,10 +7,10 @@ export const NAV_LINKS = [
 ]
 
 export const ECOSYSTEM_CATEGORIES = [
-  { id: 'all', label: 'Tất cả 6 khu vực chức năng' },
-  { id: 'map-library', label: 'Bản đồ & Thư viện tri thức' },
-  { id: 'ai-classroom', label: 'Trợ lý AI & Phòng học tương tác' },
-  { id: 'history-exhibition', label: 'Lịch sử & Triển lãm số' }
+  { id: 'all', label: 'Tất cả 8 phân hệ' },
+  { id: 'map-library', label: 'Bản đồ số & Hồ sơ bản đồ' },
+  { id: 'ai-classroom', label: 'Thư viện, Trợ lý AI & Phòng học' },
+  { id: 'history-exhibition', label: 'Dòng thời gian, 360° & Triển lãm' }
 ]
 
 export const HERO_STATS = [
@@ -30,9 +30,9 @@ export const HERO_STATS = [
     badge: 'UNCLOS 1982'
   },
   {
-    value: '6 Phân hệ',
-    label: 'Tích hợp Bản đồ số, AI & Học liệu chuẩn THPT',
-    badge: 'Giáo dục Số 4.0'
+    value: '8 Phân hệ Số',
+    label: 'Tích hợp Bản đồ GIS, AI, 360° & Học liệu chuẩn THPT',
+    badge: 'Hệ sinh thái Số 4.0'
   }
 ]
 
@@ -48,7 +48,7 @@ export const PROJECT_PILLARS = [
     id: 'technology',
     title: 'Ứng dụng Công nghệ AI & Bản đồ số',
     description:
-      'Kết hợp bản đồ tương tác toạ độ hải lý, sa bàn trực quan và Trợ lý AI thông minh giúp học sinh tra cứu tư liệu lịch sử, pháp lý quốc tế nhanh chóng và sinh động.',
+      'Kết hợp bản đồ tương tác tọa độ hải lý, không gian 360 độ, hồ sơ bản đồ cổ và Trợ lý AI thông minh giúp học sinh tra cứu tư liệu lịch sử, pháp lý quốc tế sinh động.',
     highlight: 'Trải nghiệm Học tập Tương tác'
   },
   {
@@ -64,90 +64,96 @@ export const FEATURES_DATA = [
   {
     id: 'ban-do-so',
     code: '01',
-    title: 'Bản đồ số Hoàng Sa – Trường Sa',
-    subtitle: 'Hệ thống Tọa độ & Sa bàn Biển đảo',
-    badge: 'Tương tác GIS',
+    title: 'Bản đồ số',
+    subtitle: 'Hệ thống Tọa độ GIS Hoàng Sa – Trường Sa',
+    badge: 'Công nghệ GIS',
     category: 'map-library',
     accentColor: 'ocean',
     iconName: 'Map',
     image: '/assets/ecosystem/ban-do-so.svg',
+    imageCaption: 'Sa bàn Bản đồ số GIS tọa độ Hoàng Sa – Trường Sa & vùng biển Việt Nam',
     routeHash: '#he-sinh-thai/ban-do-so',
     audience: 'Học sinh & Giáo viên',
     shortDesc:
-      'Không gian quan sát trực quan vùng biển đảo Việt Nam, hai quần đảo Hoàng Sa và Trường Sa cùng các lớp thông tin địa lý phục vụ học tập cấp THPT.',
+      'Không gian bản đồ số tương tác hiển thị trực quan vùng biển đảo Việt Nam, hai quần đảo Hoàng Sa – Trường Sa, hệ thống đường cơ sở và các điểm đảo tiền tiêu.',
     highlights: [
-      'Khung quan sát trực quan vị trí địa lý hai quần đảo Hoàng Sa và Trường Sa',
-      'Bố cục các lớp hiển thị phục vụ bài học Địa lý và Giáo dục Quốc phòng - An ninh THPT',
-      'Chế độ trình chiếu rõ nét trên máy tính, điện thoại và bảng tương tác tại lớp học'
+      'Tra cứu tọa độ địa lý 20 điểm đảo, đá, cụm đảo thuộc Hoàng Sa, Trường Sa và đảo tiền tiêu',
+      'Tích hợp lưới kinh vĩ độ, khoảng cách hải lý từ đất liền và các lớp dữ liệu hành chính',
+      'Chế độ trình chiếu toàn màn hình sắc nét phục vụ tiết học Địa lý và Quốc phòng - An ninh'
     ],
-    studentTip: 'Quan sát vị trí tương đối giữa đất liền và hai quần đảo tiền tiêu để ghi nhớ bài học Địa lý nhanh hơn.',
-    teacherTip: 'Sử dụng chế độ toàn màn hình để minh họa trực quan trong tiết dạy Địa lý và ngoại khóa biển đảo.',
+    studentTip:
+      'Quan sát vị trí tương đối giữa đất liền và hai quần đảo tiền tiêu để ghi nhớ tọa độ và khoảng cách hải lý nhanh hơn.',
+    teacherTip:
+      'Sử dụng chế độ toàn màn hình và các góc máy thiết lập sẵn để minh họa trực quan trên bảng tương tác lớp học.',
     samplePreview: {
-      coordinate: 'Khung hiển thị Bản đồ số 2D/3D (Sẵn sàng tích hợp lớp bản đồ chuẩn thẩm định)',
+      coordinate: 'Hệ tọa độ Địa lý Biển Đông (06°00′B – 23°30′B | 102°00′Đ – 118°00′Đ)',
       actionText: 'Khám phá Bản đồ số'
     },
     verificationNote:
-      'Lưu ý chuẩn mực: Khung Bản đồ số chỉ tích hợp dữ liệu bản đồ hành chính và pháp lý từ nguồn cơ quan nhà nước có thẩm quyền sau khi được kiểm chứng.',
+      'Lưu ý chuẩn mực: Bản đồ số sử dụng hệ tọa độ địa lý và thông tin hành chính từ nguồn cơ quan nhà nước có thẩm quyền đã qua kiểm chứng.',
     workspaceModules: [
       {
-        title: 'Lớp hiển thị Quần đảo Hoàng Sa',
-        desc: 'Khu vực hiển thị không gian địa lý quần đảo Hoàng Sa (trực thuộc TP. Đà Nẵng) phục vụ tra cứu học tập.',
-        status: 'Khung hiển thị chuẩn'
+        title: 'Lớp dữ liệu Quần đảo Hoàng Sa (TP. Đà Nẵng)',
+        desc: 'Hiển thị cụm An Vĩnh, cụm Lưỡi Liềm, đảo Hoàng Sa (Pattle), đảo Phú Lâm, đảo Linh Côn và đảo Tri Tôn.',
+        status: 'Đã tích hợp tọa độ'
       },
       {
-        title: 'Lớp hiển thị Quần đảo Trường Sa',
-        desc: 'Khu vực hiển thị không gian địa lý quần đảo Trường Sa (trực thuộc tỉnh Khánh Hòa) dành cho học sinh THPT.',
-        status: 'Khung hiển thị chuẩn'
+        title: 'Lớp dữ liệu Quần đảo Trường Sa (Tỉnh Khánh Hòa)',
+        desc: 'Hiển thị thị trấn Trường Sa, xã Song Tử Tây, xã Sinh Tồn, đảo Nam Yết, Sơn Ca, An Bang, Tiên Nữ và cụm Nhà giàn DK1.',
+        status: 'Đã tích hợp tọa độ'
       },
       {
-        title: 'Bộ công cụ Quan sát & Chú giải Học tập',
-        desc: 'Gồm thước đo tỷ lệ minh họa, bật/tắt lớp nhãn địa danh và chế độ trình chiếu trên lớp.',
-        status: 'Sẵn sàng tương tác'
+        title: 'Bộ công cụ Đo đạc & Điều khiển Góc nhìn GIS',
+        desc: 'Hỗ trợ phóng to 100%–350%, bật/tắt lưới kinh vĩ độ, đường khoảng cách hải lý và lọc theo nhóm đảo.',
+        status: 'Tương tác thời gian thực'
       }
     ]
   },
   {
     id: 'thu-vien-tri-thuc',
     code: '02',
-    title: 'Thư viện tri thức biển đảo',
-    subtitle: 'Kho Tư liệu Lịch sử, Pháp lý & Địa lý',
-    badge: 'Học liệu số',
-    category: 'map-library',
+    title: 'Thư viện tri thức',
+    subtitle: 'Kho Học liệu Lịch sử, Pháp lý & Địa lý Biển',
+    badge: 'Học liệu Chuẩn',
+    category: 'ai-classroom',
     accentColor: 'gold',
     iconName: 'BookOpen',
     image: '/assets/ecosystem/thu-vien-tri-thuc.svg',
+    imageCaption: 'Hệ thống lưu trữ học liệu số phân loại theo chương trình GDPT 2018',
     routeHash: '#he-sinh-thai/thu-vien-tri-thuc',
     audience: 'Học sinh & Giáo viên',
     shortDesc:
-      'Kho học liệu số được phân loại khoa học theo chương trình THPT, hỗ trợ học sinh và giáo viên tra cứu chuyên đề Lịch sử, Địa lý, Pháp luật và Văn hóa biển đảo.',
+      'Kho học liệu số gồm 7 chuyên đề học thuật về tự nhiên, lịch sử chủ quyền, UNCLOS 1982, Luật Biển Việt Nam 2012, kinh tế biển và bảo vệ môi trường đại dương.',
     highlights: [
-      'Danh mục tư liệu phân chia rõ ràng theo các môn học Khối 10, 11, 12',
-      'Không gian lưu trữ infographic, đề cương ôn tập và chuyên đề biển đảo',
-      'Hỗ trợ tìm kiếm nhanh từ khóa và lọc học liệu dành cho Học sinh hoặc Giáo viên'
+      'Hệ thống 7 chuyên đề chuyên sâu bám sát chương trình Giáo dục phổ thông 2018 (Khối 10, 11, 12)',
+      'Mỗi bài viết đều có tóm tắt trọng tâm, nội dung phân tích chi tiết, câu hỏi suy ngẫm và nguồn trích dẫn',
+      'Hỗ trợ tìm kiếm tức thì theo từ khóa, lọc theo chuyên đề và lưu bài viết quan trọng để ôn tập'
     ],
-    studentTip: 'Lọc học liệu theo khối lớp (10, 11, 12) để ôn tập đúng trọng tâm bài học trên lớp.',
-    teacherTip: 'Khai thác cấu trúc thư mục học liệu để chuẩn bị tư liệu minh họa và phiếu học tập.',
+    studentTip:
+      'Lọc học liệu theo từng chuyên đề và đọc phần "Ghi nhớ trọng tâm" cuối mỗi bài để hệ thống hóa kiến thức nhanh chóng.',
+    teacherTip:
+      'Khai thác các câu hỏi thảo luận và nguồn văn bản pháp lý trong thư viện để xây dựng kế hoạch bài dạy.',
     samplePreview: {
-      coordinate: 'Hệ thống danh mục học liệu số phân loại theo chương trình GDPT 2018',
+      coordinate: '7 Chuyên đề Học thuật • Văn bản UNCLOS 1982 & Luật Biển Việt Nam 2012',
       actionText: 'Khám phá Thư viện'
     },
     verificationNote:
-      'Lưu ý chuẩn mực: Mọi văn bản pháp lý, tư liệu lịch sử và trích dẫn trong thư viện được quản lý theo quy trình đối chiếu nguồn chính thống trước khi xuất bản.',
+      'Lưu ý chuẩn mực: Toàn bộ văn bản pháp lý, số liệu địa lý và trích dẫn lịch sử trong thư viện đều ghi rõ nguồn tài liệu chính thống.',
     workspaceModules: [
       {
-        title: 'Chuyên mục Địa lý & Kinh tế Biển',
-        desc: 'Tập hợp kiến thức nền tảng về tự nhiên, môi trường sinh thái và phát triển kinh tế biển bền vững.',
-        status: 'Khối 10 • 11 • 12'
+        title: 'Chuyên đề Địa lý, Kinh tế & Môi trường Biển',
+        desc: 'Tổng quan vùng biển 1 triệu km², tài nguyên sinh vật – khoáng sản và chiến lược kinh tế biển bền vững.',
+        status: 'Chuẩn GDPT 2018'
       },
       {
-        title: 'Chuyên mục Tư liệu Lịch sử & Pháp lý',
-        desc: 'Không gian lưu trữ các tài liệu, văn bản phục vụ giảng dạy chủ quyền biển đảo đã qua thẩm định.',
-        status: 'Đang chờ nạp dữ liệu chuẩn'
+        title: 'Chuyên đề Lịch sử & Pháp lý Chủ quyền',
+        desc: 'Hệ thống hóa chứng cứ lịch sử đội Hoàng Sa – Bắc Hải, Châu bản triều Nguyễn và 5 vùng biển theo UNCLOS 1982.',
+        status: 'Nguồn kiểm chứng'
       },
       {
-        title: 'Kho Infographic & Học liệu Trực quan',
-        desc: 'Sơ đồ tư duy, tóm tắt bài học và tài liệu hướng dẫn hoạt động ngoại khóa cấp THPT.',
-        status: 'Học liệu THPT'
+        title: 'Chuyên đề Đời sống Đảo xa & Trách nhiệm Tuổi trẻ',
+        desc: 'Khắc họa cuộc sống quân dân nơi đầu sóng và vai trò của học sinh THPT với biển đảo Tổ quốc.',
+        status: 'Giáo dục công dân'
       }
     ]
   },
@@ -155,89 +161,95 @@ export const FEATURES_DATA = [
     id: 'tro-ly-ai',
     code: '03',
     title: 'Trợ lý AI',
-    subtitle: 'Bạn đồng hành Giải đáp Kiến thức 24/7',
-    badge: 'AI Giáo dục',
+    subtitle: 'Trí tuệ Nhân tạo Giải đáp Kiến thức Biển Đảo 24/7',
+    badge: 'Coze AI SDK',
     category: 'ai-classroom',
     accentColor: 'cyan',
     iconName: 'Sparkles',
     image: '/assets/ecosystem/tro-ly-ai.svg',
+    imageCaption: 'Trung tâm đối thoại thông minh tích hợp nền tảng Coze AI Giáo dục',
     routeHash: '#he-sinh-thai/tro-ly-ai',
     audience: 'Học sinh & Giáo viên',
     shortDesc:
-      'Trợ lý trí tuệ nhân tạo hỗ trợ học sinh giải đáp thắc mắc bài học, tóm tắt kiến thức trọng tâm và gợi ý câu hỏi ôn tập về biển đảo Việt Nam.',
+      'Trợ lý AI tích hợp trực tiếp Coze WebChat SDK với cơ chế bảo mật Backend Token, hỗ trợ giải đáp kiến thức lịch sử, địa lý, pháp lý biển đảo nhanh chóng và chuẩn xác.',
     highlights: [
-      'Giao diện hỏi đáp thân thiện với các gợi ý câu hỏi theo chủ đề học tập THPT',
-      'Hỗ trợ tóm tắt nội dung bài học và giải thích thuật ngữ dễ hiểu cho học sinh',
-      'Giữ nguyên cổng kết nối (Adapter) để tích hợp mô-đun Chatbot AI độc lập'
+      'Kết nối trực tiếp với Chatbot AI chuyên biệt về Biển Đảo Việt Nam trên nền tảng Coze',
+      'Cung cấp bộ câu hỏi gợi ý theo từng môn học THPT (Lịch sử, Địa lý, Giáo dục Kinh tế & Pháp luật)',
+      'Cơ chế xác thực bảo mật qua Backend API, bảo vệ tuyệt đối khóa kết nối và hoạt động ổn định trên mọi thiết bị'
     ],
-    studentTip: 'Chọn các câu hỏi gợi ý sẵn hoặc đặt câu hỏi ngắn gọn để ôn tập kiến thức hiệu quả.',
-    teacherTip: 'Sử dụng Trợ lý AI để gợi ý tình huống khởi động tiết học hoặc xây dựng câu hỏi thảo luận nhóm.',
+    studentTip:
+      'Nhấn vào các thẻ câu hỏi gợi ý hoặc khởi chạy cửa sổ hội thoại Coze AI để hỏi đáp sâu từng khái niệm pháp lý biển.',
+    teacherTip:
+      'Sử dụng Trợ lý AI để thiết kế nhanh câu hỏi khởi động đầu giờ hoặc giải đáp mở rộng cho học sinh ngay tại lớp.',
     samplePreview: {
-      coordinate: 'Cổng giao tiếp Trợ lý AI Giáo dục (Bảo toàn logic Chatbot AI độc lập)',
+      coordinate: 'Tích hợp Coze WebChat SDK 1.2.0 • Bảo mật Token qua Backend API',
       actionText: 'Khám phá Trợ lý AI'
     },
     verificationNote:
-      'Lưu ý kỹ thuật: Khu vực này giữ nguyên kiến trúc kết nối Chatbot AI hiện có của dự án, không xóa hoặc ghi đè logic xử lý AI.',
+      'Lưu ý kỹ thuật: Phân hệ Trợ lý AI kết nối trực tiếp với Bot Coze đã cấu hình tri thức biển đảo, không dùng dữ liệu giả lập.',
     workspaceModules: [
       {
-        title: 'Hỏi đáp Kiến thức Học tập THPT',
-        desc: 'Hỗ trợ giải thích các khái niệm trong chương trình Lịch sử, Địa lý, Giáo dục Kinh tế & Pháp luật.',
-        status: 'Cổng Chatbot AI'
+        title: 'Trạm Đối thoại Trực tiếp Coze AI',
+        desc: 'Khởi chạy giao diện trò chuyện thông minh giúp giải đáp tức thì các câu hỏi về Hoàng Sa – Trường Sa.',
+        status: 'Coze SDK Active'
       },
       {
-        title: 'Gợi ý Đề cương & Câu hỏi Ôn tập',
-        desc: 'Hỗ trợ học sinh hệ thống hóa bài học dưới dạng sơ đồ ý chính và câu hỏi tự kiểm tra.',
-        status: 'Tích hợp sẵn sàng'
+        title: 'Ngân hàng Gợi ý Câu hỏi theo Môn học',
+        desc: 'Sao chép hoặc gửi nhanh các câu hỏi trọng tâm về UNCLOS 1982, Châu bản triều Nguyễn và địa lý biển.',
+        status: 'Hỗ trợ Học sinh'
       },
       {
-        title: 'Hỗ trợ Hoạt động Dạy học của Giáo viên',
-        desc: 'Gợi ý ý tưởng tổ chức sinh hoạt chuyên đề, ngoại khóa "Em yêu Biển đảo quê hương".',
-        status: 'Dành cho Giáo viên'
+        title: 'Cổng Bảo mật Token Server-Side',
+        desc: 'Quản lý phiên kết nối an toàn qua biến môi trường máy chủ, không lộ khóa bí mật trên trình duyệt.',
+        status: 'Bảo mật Chuẩn'
       }
     ]
   },
   {
     id: 'phong-hoc-tuong-tac',
     code: '04',
-    title: 'Phòng học tương tác và trò chơi học tập',
-    subtitle: 'Không gian Dạy - Học & Trò chơi Giáo dục',
-    badge: 'Lớp học số',
+    title: 'Phòng học tương tác',
+    subtitle: 'Không gian Luyện tập 8 Chuyên đề & Trò chơi Học tập',
+    badge: '80+ Câu hỏi',
     category: 'ai-classroom',
     accentColor: 'navy',
     iconName: 'GraduationCap',
     image: '/assets/ecosystem/phong-hoc-tuong-tac.svg',
+    imageCaption: 'Không gian lớp học số với 5 phương thức tương tác và thử thách 3 cấp độ',
     routeHash: '#he-sinh-thai/phong-hoc-tuong-tac',
     audience: 'Học sinh & Giáo viên',
     shortDesc:
-      'Không gian học tập kết hợp trò chơi giáo dục, thử thách trắc nghiệm tương tác và hoạt động nhóm sôi nổi dành cho học sinh THPT trên máy tính và điện thoại.',
+      'Không gian học tập số gồm 8 chuyên đề (80 câu hỏi trắc nghiệm có giải thích), câu hỏi Đúng/Sai, trò chơi ghép mốc sự kiện, nhận diện địa danh bản đồ và thử thách 3 cấp độ.',
     highlights: [
-      'Các hình thức trò chơi học tập: Giải đố kiến thức, Ghép thẻ chủ đề, Vượt sóng ra khơi',
-      'Chế độ luyện tập cá nhân hoặc thi đua nhóm trong giờ sinh hoạt ngoại khóa tại lớp',
-      'Hệ thống điểm thưởng, bảng vinh danh và Huy hiệu học tập khích lệ tinh thần học sinh'
+      '8 chuyên đề học tập toàn diện với 80 câu hỏi trắc nghiệm khách quan kèm giải thích nguồn học liệu rõ ràng',
+      'Đa dạng hoạt động: Đúng/Sai có giải thích, Ghép sự kiện với mốc thời gian, Nhận diện địa danh trên bản đồ',
+      'Theo dõi tiến độ học tập cá nhân, chấm điểm tự động và lưu lịch sử kết quả cho từng học sinh'
     ],
-    studentTip: 'Tham gia các thử thách ngắn sau mỗi bài học để vừa giải trí vừa ghi nhớ kiến thức lâu hơn.',
-    teacherTip: 'Tổ chức trò chơi tương tác trực tiếp trên màn hình chiếu để khuấy động không khí lớp học.',
+    studentTip:
+      'Hoàn thành lần lượt 8 chuyên đề để mở khóa Thử thách 3 cấp độ (Dễ – Trung bình – Nâng cao) và đạt danh hiệu Vững Chủ quyền.',
+    teacherTip:
+      'Sử dụng chế độ Trò chơi ghép mốc thời gian và Nhận diện bản đồ để tổ chức hoạt động thi đua nhóm trên lớp.',
     samplePreview: {
-      coordinate: 'Không gian Lớp học số & Trò chơi giáo dục tương tác dành cho THPT',
+      coordinate: '8 Chuyên đề • 80 Câu trắc nghiệm • 4 Trò chơi tương tác & Lưu tiến độ',
       actionText: 'Khám phá Phòng học'
     },
     verificationNote:
-      'Lưu ý chuẩn mực: Ngân hàng câu hỏi trò chơi và bài tập tương tác bám sát chương trình sách giáo khoa THPT hiện hành.',
+      'Lưu ý chuẩn mực: Mỗi câu hỏi trong Phòng học tương tác đều có đáp án duy nhất chính xác và phần giải thích đối chiếu sử liệu, pháp luật.',
     workspaceModules: [
       {
-        title: 'Trò chơi Học tập: "Hành trình Ra khơi"',
-        desc: 'Trả lời câu hỏi trắc nghiệm theo từng chặng để mở khóa các trạm tri thức biển đảo.',
-        status: 'Game Giáo dục'
+        title: 'Hệ thống 8 Chuyên đề Trắc nghiệm (80 Câu hỏi)',
+        desc: 'Bao quát từ địa lý tự nhiên, lịch sử chủ quyền, UNCLOS 1982 đến kinh tế biển và trách nhiệm thanh niên.',
+        status: 'Có giải thích chi tiết'
       },
       {
-        title: 'Thử thách Ghép thẻ & Giải ô chữ',
-        desc: 'Rèn luyện phản xạ ghi nhớ thuật ngữ Địa lý biển và các khái niệm cơ bản.',
-        status: 'Tương tác Nhanh'
+        title: 'Trò chơi Ghép Niên biểu & Nhận diện Bản đồ',
+        desc: 'Rèn luyện tư duy liên kết mốc thời gian lịch sử và định vị chính xác các đảo tiền tiêu trên Biển Đông.',
+        status: 'Tương tác Trực quan'
       },
       {
-        title: 'Bảng Thành tích & Huy hiệu Học sinh',
-        desc: 'Theo dõi tiến độ hoàn thành chuyên đề và nhận chứng nhận hoàn thành thử thách số.',
-        status: 'Gamification THPT'
+        title: 'Thử thách 3 Cấp độ & Hồ sơ Tiến độ Học tập',
+        desc: 'Thống kê số câu đúng/sai, điểm số trung bình và lưu trữ tiến độ sẵn sàng đồng bộ tài khoản học sinh.',
+        status: 'Lưu kết quả tự động'
       }
     ]
   },
@@ -245,89 +257,191 @@ export const FEATURES_DATA = [
     id: 'dong-thoi-gian-lich-su',
     code: '05',
     title: 'Dòng thời gian lịch sử',
-    subtitle: 'Biên niên sử Xác lập & Thực thi Chủ quyền',
-    badge: 'Sử liệu Trực quan',
+    subtitle: 'Biên niên sử 6 Giai đoạn & 25 Cột mốc Chủ quyền',
+    badge: 'Sử liệu Gốc',
     category: 'history-exhibition',
     accentColor: 'gold',
     iconName: 'Clock',
     image: '/assets/ecosystem/dong-thoi-gian-lich-su.svg',
+    imageCaption: 'Trục biên niên sử 6 thời kỳ xác lập và thực thi chủ quyền biển đảo Việt Nam',
     routeHash: '#he-sinh-thai/dong-thoi-gian-lich-su',
     audience: 'Học sinh & Giáo viên',
     shortDesc:
-      'Trục thời gian trực quan giúp học sinh theo dõi mạch lạc tiến trình lịch sử xác lập và bảo vệ chủ quyền biển đảo Việt Nam qua các thời kỳ.',
+      'Dòng thời gian tương tác chuyên sâu tái hiện liên tục 6 giai đoạn lịch sử từ trước thế kỷ XVII, đội Hoàng Sa – Bắc Hải, Châu bản triều Nguyễn đến UNCLOS 1982 và Luật Biển 2012.',
     highlights: [
-      'Thiết kế trục thời gian trực quan theo từng giai đoạn lịch sử dễ theo dõi',
-      'Trình bày kết hợp mốc thời gian, tóm tắt sự kiện và liên kết tư liệu học tập',
-      'Giao diện tối ưu cho cả thao tác cuộn ngang trên máy tính và vuốt dọc trên điện thoại'
+      'Hệ thống 6 thời kỳ lịch sử với 25 cột mốc tiêu biểu có ngày tháng, nhân vật và văn bản pháp lý xác thực',
+      'Phân biệt khoa học giữa "Sự kiện lịch sử" và "Ý nghĩa – Nhận định nghiên cứu" kèm trích dẫn nguyên văn',
+      'Hỗ trợ lọc theo từng thời kỳ, lọc theo vùng biển (Hoàng Sa / Trường Sa) và mở hồ sơ tư liệu chi tiết'
     ],
-    studentTip: 'Theo dõi theo trình tự các giai đoạn trên trục thời gian để nắm vững mạch kiến thức môn Lịch sử.',
-    teacherTip: 'Sử dụng trục thời gian để dẫn dắt học sinh kết nối các sự kiện lịch sử qua từng thời kỳ.',
+    studentTip:
+      'Chọn từng giai đoạn từ thời chúa Nguyễn đến hiện đại để hiểu vì sao chủ quyền của Việt Nam là liên tục, hòa bình và hợp pháp.',
+    teacherTip:
+      'Mở hộp thoại Hồ sơ tư liệu của từng cột mốc để trình chiếu nguyên văn trích đoạn Phủ biên tạp lục và Châu bản triều Nguyễn.',
     samplePreview: {
-      coordinate: 'Trục thời gian tương tác theo giai đoạn lịch sử (Chuẩn hóa theo SGK)',
+      coordinate: '6 Thời kỳ Lịch sử • 25 Cột mốc Chủ quyền • Đối chiếu Châu bản & Công ước quốc tế',
       actionText: 'Khám phá Dòng thời gian'
     },
     verificationNote:
-      'Lưu ý chuẩn mực: Chưa tự tạo dữ liệu lịch sử chưa được kiểm chứng; mọi mốc sự kiện chi tiết sẽ được nạp từ nguồn sử liệu và sách giáo khoa chính thống.',
+      'Lưu ý chuẩn mực: Mọi cột mốc trên dòng thời gian đều có nguồn kiểm chứng rõ ràng từ chính sử, Châu bản lưu trữ và văn bản pháp luật.',
     workspaceModules: [
       {
-        title: 'Giai đoạn Lịch sử Phong kiến Việt Nam',
-        desc: 'Khung hiển thị các mốc hoạt động xác lập và thực thi chủ quyền của cha ông qua các triều đại.',
-        status: 'Khung niên biểu chuẩn'
+        title: 'Thời kỳ Trước Thế kỷ XVII đến Thế kỷ XVIII',
+        desc: 'Từ Dư địa chí (1435), Hồng Đức bản đồ (1490) đến hoạt động của đội Hoàng Sa kiêm quản Bắc Hải.',
+        status: 'Sử liệu Cổ – Trung đại'
       },
       {
-        title: 'Giai đoạn Lịch sử Cận - Hiện đại',
-        desc: 'Khung hiển thị tiến trình đấu tranh, quản lý và bảo vệ chủ quyền biển đảo trong thời đại mới.',
-        status: 'Khung niên biểu chuẩn'
+        title: 'Thời Nguyễn, Thời Pháp thuộc & Giai đoạn 1945–1975',
+        desc: 'Hoạt động đo đạc, dựng bia thời Gia Long – Minh Mạng, Nghị định 156-SC (1938), Hội nghị San Francisco (1951) và giải phóng Trường Sa (1975).',
+        status: 'Hồ sơ Lưu trữ Quốc gia'
       },
       {
-        title: 'Giai đoạn Pháp luật Biển Hiện đại',
-        desc: 'Khung hiển thị các mốc văn bản pháp lý về biển đảo theo chương trình GDPT 2018.',
-        status: 'Khung niên biểu chuẩn'
+        title: 'Giai đoạn từ năm 1975 đến nay',
+        desc: 'Tuyên bố đường cơ sở (1982), UNCLOS 1982, thành lập huyện đảo Hoàng Sa – Trường Sa, Nhà giàn DK1 và Luật Biển Việt Nam (2012).',
+        status: 'Pháp lý Hiện đại'
+      }
+    ]
+  },
+  {
+    id: 'trai-nghiem-360',
+    code: '06',
+    title: 'Trải nghiệm 360 độ',
+    subtitle: 'Không gian Quan sát Toàn cảnh Đảo Tiền tiêu & Hải đăng',
+    badge: 'Toàn cảnh 360°',
+    category: 'history-exhibition',
+    accentColor: 'cyan',
+    iconName: 'Compass',
+    image: '/assets/ecosystem/trai-nghiem-360.svg',
+    imageCaption: 'Mô phỏng góc nhìn toàn cảnh 360° theo phương vị la bàn tại các đảo tiền tiêu và Nhà giàn DK1',
+    routeHash: '#he-sinh-thai/trai-nghiem-360',
+    audience: 'Học sinh & Giáo viên',
+    shortDesc:
+      'Trạm quan sát toàn cảnh 360° giúp học sinh xoay góc nhìn theo phương vị la bàn (0°–360°) khám phá Đảo Trường Sa Lớn, Đảo Hoàng Sa (Pattle), Nhà giàn DK1, Hải đăng Tiên Nữ và Đảo Lý Sơn.',
+    highlights: [
+      '5 trạm quan sát 360° gắn với tọa độ địa lý thực tế tại Hoàng Sa, Trường Sa, Nhà giàn DK1 và đảo Lý Sơn',
+      'Điều khiển góc quay la bàn 360° (Bắc – Đông – Nam – Tây), phóng to/thu nhỏ và tự động xoay toàn cảnh',
+      'Tích hợp các điểm chạm (Hotspots) thuyết minh chi tiết về Cột mốc chủ quyền, Hải đăng, Âu tàu và Trạm khí tượng'
+    ],
+    studentTip:
+      'Nhấn vào các điểm chạm phát sáng trên khung cảnh 360° hoặc xoay thước la bàn để khám phá từng công trình trên đảo.',
+    teacherTip:
+      'Bật chế độ toàn màn hình và chức năng Tự động xoay 360° để dẫn dắt học sinh tham quan đảo tiền tiêu trong giờ học trải nghiệm.',
+    samplePreview: {
+      coordinate: '5 Trạm Quan sát 360° • Phương vị La bàn 0°–360° • Điểm chạm Thuyết minh Tương tác',
+      actionText: 'Khám phá Không gian 360°'
+    },
+    verificationNote:
+      'Lưu ý chuẩn mực: Không gian 360° sử dụng mô hình đồ họa trực quan dựa trên tọa độ địa lý kiểm chứng, không dùng ảnh AI giả làm ảnh tư liệu lịch sử.',
+    workspaceModules: [
+      {
+        title: 'Trạm 360° Đảo Trường Sa Lớn & Hải đăng Tiên Nữ',
+        desc: 'Quan sát Cột mốc chủ quyền, trạm hải đăng, âu tàu và nơi đón ánh bình minh đầu tiên trên Biển Đông.',
+        status: 'Quần đảo Trường Sa'
+      },
+      {
+        title: 'Trạm 360° Đảo Hoàng Sa (Pattle) & Đảo Lý Sơn',
+        desc: 'Tìm hiểu vị trí Bia chủ quyền 1938, Trạm khí tượng WMO 48860 và quê hương Đội Hoàng Sa tại Đình làng An Vĩnh.',
+        status: 'Quần đảo Hoàng Sa & Lý Sơn'
+      },
+      {
+        title: 'Trạm 360° Cụm Nhà giàn DK1 Thềm lục địa phía Nam',
+        desc: 'Khám phá kiến trúc nhà giàn trên nền san hô ngập nước và đời sống kiên cường của cán bộ chiến sĩ Hải quân.',
+        status: 'Thềm lục địa phía Nam'
       }
     ]
   },
   {
     id: 'trien-lam-so',
-    code: '06',
-    title: 'Triển lãm số',
-    subtitle: 'Không gian Trưng bày Ảo & Văn hóa Biển Đảo',
-    badge: 'Trải nghiệm 360°',
+    code: '07',
+    title: 'Không gian triển lãm',
+    subtitle: 'Bảo tàng Số 5 Chuyên đề Tư liệu & Văn hóa Biển Đảo',
+    badge: 'Bảo tàng Số',
     category: 'history-exhibition',
     accentColor: 'ocean',
     iconName: 'Compass',
     image: '/assets/ecosystem/trien-lam-so.svg',
+    imageCaption: 'Bảo tàng số 5 không gian trưng bày Châu bản, hình ảnh đảo xa, người giữ biển và sinh thái đại dương',
     routeHash: '#he-sinh-thai/trien-lam-so',
     audience: 'Học sinh & Giáo viên',
     shortDesc:
-      'Không gian triển lãm trực tuyến trưng bày hình ảnh, mô phỏng trực quan về văn hóa biển, đời sống nơi đảo xa và góc sáng tác thông điệp của học sinh THPT.',
+      'Bảo tàng trực tuyến gồm 5 không gian trưng bày chuyên đề: Dấu ấn lịch sử biển đảo, Hoàng Sa – Trường Sa qua hình ảnh, Người giữ biển, Biển đảo và thiên nhiên, Tuổi trẻ hướng về biển đảo.',
     highlights: [
-      'Các phòng trưng bày số theo chủ đề: Di sản văn hóa biển, Thiên nhiên đại dương, Nhịp sống đảo xa',
-      'Trải nghiệm tham quan trực quan kèm thuyết minh tóm tắt phù hợp lứa tuổi THPT',
-      'Góc tương tác "Gửi thông điệp ra đảo xa" dành cho học sinh và các trường THPT'
+      '5 không gian trưng bày chuyên đề với 20+ hồ sơ tư liệu, bản đồ cổ, Châu bản triều Nguyễn và hình ảnh sinh thái biển',
+      'Hộp đèn (Lightbox) phóng to hình ảnh 100%–250% kèm thông tin tác giả, thời gian, nguồn lưu trữ và phân loại tư liệu rõ ràng',
+      'Tích hợp Bộ sưu tập nổi bật, chức năng lưu hiện vật yêu thích và Sổ vàng cảm tưởng dành cho học sinh THPT'
     ],
-    studentTip: 'Tham quan các phòng trưng bày theo chủ đề để tìm chất liệu cho bài thuyết trình hoặc dự án học tập.',
-    teacherTip: 'Tổ chức buổi tham quan Triển lãm số ngay tại lớp trong tiết hoạt động trải nghiệm, hướng nghiệp.',
+    studentTip:
+      'Sử dụng bộ lọc "Tư liệu lịch sử gốc" và "Đồ họa minh họa giáo dục" để nắm rõ nguồn gốc và giá trị của từng hiện vật.',
+    teacherTip:
+      'Tổ chức hoạt động tham quan Bảo tàng số theo 4 Bộ sưu tập chuyên đề và khuyến khích học sinh viết cảm nghĩ vào Sổ vàng.',
     samplePreview: {
-      coordinate: 'Không gian Triển lãm số đa phương tiện dành cho Học sinh & Giáo viên THPT',
-      actionText: 'Khám phá Triển lãm số'
+      coordinate: '5 Không gian Trưng bày • 20 Hồ sơ Tư liệu • Phóng to Chi tiết & Sổ vàng THPT',
+      actionText: 'Khám phá Triển lãm'
     },
     verificationNote:
-      'Lưu ý chuẩn mực: Các hình ảnh tư liệu, bản đồ trưng bày và thông tin thuyết minh tại Triển lãm số chỉ hiển thị nội dung đã qua kiểm duyệt chính thống.',
+      'Lưu ý chuẩn mực: Mỗi hiện vật trưng bày đều ghi rõ nguồn lưu trữ và phân biệt minh bạch giữa tư liệu lịch sử gốc với đồ họa minh họa giáo dục.',
     workspaceModules: [
       {
-        title: 'Phòng trưng bày: Di sản & Văn hóa Biển',
-        desc: 'Giới thiệu nét đẹp văn hóa truyền thống của cư dân vùng biển đảo Việt Nam.',
-        status: 'Không gian Trưng bày'
+        title: 'Không gian I & II: Dấu ấn Lịch sử & Hình ảnh Hoàng Sa – Trường Sa',
+        desc: 'Trưng bày Châu bản triều Nguyễn (Di sản tư liệu thế giới UNESCO), tư liệu đội Hoàng Sa và địa lý hai quần đảo.',
+        status: 'Hồ sơ Tư liệu Chuẩn'
       },
       {
-        title: 'Phòng trưng bày: Sinh thái & Biển xanh',
-        desc: 'Khám phá vẻ đẹp đa dạng sinh học đại dương và ý thức bảo vệ môi trường biển.',
-        status: 'Không gian Trưng bày'
+        title: 'Không gian III & IV: Người giữ biển & Thiên nhiên Đại dương',
+        desc: 'Tôn vinh cán bộ chiến sĩ Hải quân, ngư dân bám biển và hệ sinh thái rạn san hô, rừng ngập mặn Việt Nam.',
+        status: 'Giáo dục Trực quan'
       },
       {
-        title: 'Góc Sáng tác: Tuổi trẻ THPT với Biển đảo',
-        desc: 'Nơi trưng bày tranh vẽ, bài viết, tập san và thông điệp của học sinh gửi tới biển đảo quê hương.',
+        title: 'Không gian V: Tuổi trẻ THPT Hướng về Biển đảo',
+        desc: 'Giới thiệu các sáng kiến học sinh, hoạt động bảo vệ môi trường biển và Sổ vàng lưu bút gửi ra đảo xa.',
         status: 'Tương tác Học sinh'
+      }
+    ]
+  },
+  {
+    id: 'ho-so-ban-do',
+    code: '08',
+    title: 'Hồ sơ bản đồ',
+    subtitle: 'Kho Lưu trữ Bản đồ Cổ Việt Nam, Phương Tây & Pháp lý Biển',
+    badge: 'Atlas Chủ quyền',
+    category: 'map-library',
+    accentColor: 'gold',
+    iconName: 'Map',
+    image: '/assets/ecosystem/ho-so-ban-do.svg',
+    imageCaption: 'Hồ sơ đối chứng bản đồ cổ Việt Nam, hải đồ phương Tây thế kỷ XVI–XIX và bản đồ pháp lý hiện đại',
+    routeHash: '#he-sinh-thai/ho-so-ban-do',
+    audience: 'Học sinh & Giáo viên',
+    shortDesc:
+      'Hệ thống hóa các bộ hồ sơ bản đồ lịch sử và pháp lý: Bản đồ cổ nhà nước phong kiến Việt Nam, Hải đồ phương Tây thế kỷ XVI–XIX, Bản đồ cổ Trung Quốc đối chứng và Bản đồ hành chính – pháp lý hiện đại.',
+    highlights: [
+      '8 hồ sơ bản đồ trọng tâm: Hồng Đức bản đồ (1490), Toản tập Thiên Nam tứ chí lộ đồ thư (1686), Đại Nam nhất thống toàn đồ (1838), An Nam đại quốc họa đồ (1838)...',
+      'Phân tích chi tiết các địa danh cổ trên bản đồ: Bãi Cát Vàng, Hoàng Sa, Vạn Lý Trường Sa, Costa de Pracel, Paracel seu Cát Vàng',
+      'Công cụ kính lúp phóng to bản đồ (100%–200%), lọc theo nhóm nguồn bản đồ và đối chiếu trực tiếp với Bản đồ số GIS'
+    ],
+    studentTip:
+      'Tra cứu các nhãn địa danh "Bãi Cát Vàng", "Vạn Lý Trường Sa" và "Paracel seu Cát Vàng" để hiểu giá trị chứng cứ của bản đồ cổ.',
+    teacherTip:
+      'Sử dụng 4 nhóm bản đồ (Việt Nam, Phương Tây, Trung Quốc cuối thời Thanh, Pháp lý hiện đại) làm tư liệu giảng dạy chuyên đề Chủ quyền.',
+    samplePreview: {
+      coordinate: '8 Hồ sơ Atlas Trọng tâm • Thế kỷ XV đến Luật Biển 2012 • Kính lúp Đối chứng Địa danh',
+      actionText: 'Khám phá Hồ sơ Bản đồ'
+    },
+    verificationNote:
+      'Lưu ý chuẩn mực: Tất cả hồ sơ bản đồ đều trích dẫn từ nguồn lưu trữ quốc gia, Viện Nghiên cứu Hán Nôm và Bộ Thông tin & Truyền thông.',
+    workspaceModules: [
+      {
+        title: 'Hồ sơ Bản đồ cổ Nhà nước Việt Nam (Thế kỷ XV – XIX)',
+        desc: 'Gồm Hồng Đức bản đồ (1490), Toản tập Thiên Nam tứ chí lộ đồ thư (1686) và Đại Nam nhất thống toàn đồ (1838).',
+        status: 'Bản đồ Quốc gia Cổ'
+      },
+      {
+        title: 'Hồ sơ Hải đồ Phương Tây & Bản đồ Đối chứng Quốc tế',
+        desc: 'Gồm Hải đồ Bồ Đào Nha – Hà Lan thế kỷ XVI–XVII, An Nam đại quốc họa đồ (1838) và Hoàng triều trực tỉnh địa dư toàn đồ (1904).',
+        status: 'Chứng cứ Quốc tế'
+      },
+      {
+        title: 'Hồ sơ Bản đồ Đường cơ sở & Hành chính Biển Hiện đại',
+        desc: 'Sơ đồ 11 điểm đường cơ sở thẳng (A1–A11), 5 vùng biển UNCLOS 1982 và bản đồ hành chính huyện Hoàng Sa, Trường Sa.',
+        status: 'Pháp lý Hiện hành'
       }
     ]
   }
@@ -366,7 +480,7 @@ export const AUDIENCE_MODES = {
         desc: 'Chế độ toàn màn hình sắc nét, giúp giáo viên minh họa trực tiếp tọa độ Hoàng Sa - Trường Sa trên máy chiếu.'
       },
       {
-        title: 'Kho học liệu & Kế hoạch bài dạy chuẩn',
+        title: 'Kho học liệu & Hồ sơ bản đồ chuẩn',
         desc: 'Cung cấp tư liệu gốc (Châu bản, bản đồ cổ, trích đoạn UNCLOS 1982) phục vụ dạy học phát triển phẩm chất, năng lực.'
       },
       {
@@ -399,30 +513,30 @@ export const HISTORICAL_MILESTONES_PREVIEW = [
 export const ECOSYSTEM_LEARNING_FLOW = [
   {
     step: 'Bước 01',
-    title: 'Quan sát Không gian',
-    moduleTitle: 'Bản đồ số Hoàng Sa – Trường Sa',
+    title: 'Định vị Không gian & Bản đồ',
+    moduleTitle: 'Bản đồ số & Hồ sơ bản đồ',
     moduleId: 'ban-do-so',
-    desc: 'Định hình vị trí địa lý và không gian biển đảo Việt Nam thông qua giao diện bản đồ số trực quan.'
+    desc: 'Quan sát tọa độ địa lý Hoàng Sa – Trường Sa trên Bản đồ số GIS và đối chiếu với kho Hồ sơ bản đồ cổ.'
   },
   {
     step: 'Bước 02',
-    title: 'Tra cứu & Kết nối Lịch sử',
+    title: 'Tra cứu Sử liệu & Pháp lý',
     moduleTitle: 'Thư viện tri thức & Dòng thời gian',
     moduleId: 'thu-vien-tri-thuc',
-    desc: 'Tìm hiểu hệ thống học liệu phân theo khối lớp 10, 11, 12 và theo dõi tiến trình lịch sử trên trục thời gian.'
+    desc: 'Nghiên cứu 7 chuyên đề học liệu chuẩn GDPT 2018 và theo dõi 25 cột mốc chủ quyền qua 6 thời kỳ lịch sử.'
   },
   {
     step: 'Bước 03',
-    title: 'Hỏi đáp & Đào sâu',
-    moduleTitle: 'Trợ lý AI Giáo dục',
+    title: 'Đối thoại AI & Tham quan 360°',
+    moduleTitle: 'Trợ lý AI & Trải nghiệm 360 độ',
     moduleId: 'tro-ly-ai',
-    desc: 'Đặt câu hỏi với Trợ lý AI để làm rõ các thuật ngữ và tóm tắt nội dung trọng tâm của bài học.'
+    desc: 'Hỏi đáp chuyên sâu cùng Trợ lý AI Coze và xoay góc nhìn toàn cảnh 360° tại các trạm đảo tiền tiêu, Nhà giàn DK1.'
   },
   {
     step: 'Bước 04',
-    title: 'Thực hành & Trải nghiệm',
-    moduleTitle: 'Phòng học tương tác & Triển lãm số',
+    title: 'Thực hành & Triển lãm Số',
+    moduleTitle: 'Phòng học tương tác & Không gian triển lãm',
     moduleId: 'phong-hoc-tuong-tac',
-    desc: 'Tham gia trò chơi học tập củng cố kiến thức và khám phá không gian trưng bày văn hóa biển đảo 360°.'
+    desc: 'Chinh phục 80 câu hỏi trắc nghiệm, trò chơi học tập và khám phá 5 không gian trưng bày tại Bảo tàng số.'
   }
 ]

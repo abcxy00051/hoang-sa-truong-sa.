@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" fill="none">
+  <rect width="420" height="220" rx="16" fill="#072138" />
+  <g transform="translate(26, 26)">
+    <rect width="172" height="168" rx="14" fill="#064E3B" fill-opacity="0.65" stroke="#34D399" stroke-width="2" />
+    <circle cx="86" cy="65" r="28" fill="#10B981" fill-opacity="0.3" stroke="#6EE7B7" stroke-width="2.5" />
+    <path d="M74,65 L83,74 L100,56" stroke="#6EE7B7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="86" y="122" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="15" font-weight="800">NHẬN ĐỊNH ĐÚNG</text>
+    <text x="86" y="144" text-anchor="middle" fill="#D1FAE5" font-family="sans-serif" font-size="10">Căn cứ sử liệu &amp; UNCLOS</text>
+  </g>
+  <g transform="translate(222, 26)">
+    <rect width="172" height="168" rx="14" fill="#450A0A" fill-opacity="0.6" stroke="#F87171" stroke-width="2" />
+    <circle cx="86" cy="65" r="28" fill="#EF4444" fill-opacity="0.25" stroke="#FCA5A5" stroke-width="2.5" />
+    <path d="M75,54 L97,76 M97,54 L75,76" stroke="#FCA5A5" stroke-width="4" stroke-linecap="round" />
+    <text x="86" y="122" text-anchor="middle" fill="#FECACA" font-family="sans-serif" font-size="15" font-weight="800">NHẬN ĐỊNH SAI</text>
+    <text x="86" y="144" text-anchor="middle" fill="#FEE2E2" font-family="sans-serif" font-size="10">Giải thích rõ điểm sai</text>
+  </g>
+</svg>

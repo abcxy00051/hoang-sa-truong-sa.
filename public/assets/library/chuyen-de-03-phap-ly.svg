@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <defs>
+    <linearGradient id="bg03" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#081A33" />
+      <stop offset="55%" stop-color="#0F2D59" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <linearGradient id="gold03" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" rx="20" fill="url(#bg03)" />
+  <!-- Scales of International Justice & UNCLOS 1982 -->
+  <g transform="translate(400, 195)">
+    <circle r="138" fill="#091930" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="2" />
+    <circle r="112" fill="none" stroke="#F59E0B" stroke-opacity="0.4" stroke-dasharray="6 4" stroke-width="1.5" />
+    <!-- Balance Pillar -->
+    <rect x="-6" y="-85" width="12" height="155" rx="4" fill="url(#gold03)" />
+    <rect x="-55" y="65" width="110" height="14" rx="6" fill="url(#gold03)" />
+    <!-- Crossbar -->
+    <line x1="-95" y1="-55" x2="95" y2="-55" stroke="url(#gold03)" stroke-width="6" stroke-linecap="round" />
+    <circle cx="0" cy="-85" r="12" fill="#FEF08A" />
+    <!-- Left Scale Pan -->
+    <line x1="-88" y1="-55" x2="-112" y2="5" stroke="#FDE68A" stroke-width="2" />
+    <line x1="-88" y1="-55" x2="-64" y2="5" stroke="#FDE68A" stroke-width="2" />
+    <path d="M-120,5 Q-88,28 -56,5 Z" fill="url(#gold03)" />
+    <!-- Right Scale Pan -->
+    <line x1="88" y1="-55" x2="64" y2="5" stroke="#FDE68A" stroke-width="2" />
+    <line x1="88" y1="-55" x2="112" y2="5" stroke="#FDE68A" stroke-width="2" />
+    <path d="M56,5 Q88,28 120,5 Z" fill="url(#gold03)" />
+  </g>
+  <!-- Left Card: International Law -->
+  <g transform="translate(38, 60)">
+    <rect width="205" height="270" rx="14" fill="#061529" fill-opacity="0.9" stroke="#38BDF8" stroke-opacity="0.45" />
+    <text x="18" y="34" fill="#38BDF8" font-family="sans-serif" font-size="13" font-weight="800">CÔNG PHÁP QUỐC TẾ</text>
+    <line x1="18" y1="45" x2="185" y2="45" stroke="#38BDF8" stroke-opacity="0.4" />
+    <text x="18" y="75" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">• Chiếm hữu thật sự</text>
+    <text x="18" y="95" fill="#BAE6FD" font-family="sans-serif" font-size="11">Nhà nước thực thi hòa bình,</text>
+    <text x="18" y="112" fill="#BAE6FD" font-family="sans-serif" font-size="11">liên tục, danh nghĩa rõ ràng</text>
+    <text x="18" y="145" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">• UNCLOS năm 1982</text>
+    <text x="18" y="165" fill="#BAE6FD" font-family="sans-serif" font-size="11">"Hiến pháp về biển và</text>
+    <text x="18" y="182" fill="#BAE6FD" font-family="sans-serif" font-size="11">đại dương" của Liên Hợp Quốc</text>
+    <text x="18" y="215" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">• Giải quyết hòa bình</text>
+    <text x="18" y="235" fill="#BAE6FD" font-family="sans-serif" font-size="11">Điều 279 UNCLOS &amp; Hiến chương</text>
+  </g>
+  <!-- Right Card: Vietnam Legal Framework -->
+  <g transform="translate(557, 60)">
+    <rect width="205" height="270" rx="14" fill="#061529" fill-opacity="0.9" stroke="#F59E0B" stroke-opacity="0.45" />
+    <text x="18" y="34" fill="#FDE68A" font-family="sans-serif" font-size="13" font-weight="800">PHÁP LUẬT VIỆT NAM</text>
+    <line x1="18" y1="45" x2="185" y2="45" stroke="#F59E0B" stroke-opacity="0.4" />
+    <text x="18" y="75" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">• Nghị quyết Quốc hội 1994</text>
+    <text x="18" y="95" fill="#BAE6FD" font-family="sans-serif" font-size="11">Phê chuẩn UNCLOS 1982</text>
+    <text x="18" y="130" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">• Luật Biển Việt Nam 2012</text>
+    <text x="18" y="150" fill="#BAE6FD" font-family="sans-serif" font-size="11">7 Chương, 55 Điều quy định</text>
+    <text x="18" y="167" fill="#BAE6FD" font-family="sans-serif" font-size="11">đầy đủ 5 vùng biển &amp; 2 quần đảo</text>
+    <text x="18" y="202" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">• Phân biệt 3 khái niệm</text>
+    <text x="18" y="222" fill="#BAE6FD" font-family="sans-serif" font-size="11">Chủ quyền • Quyền chủ quyền</text>
+    <text x="18" y="239" fill="#BAE6FD" font-family="sans-serif" font-size="11">• Quyền tài phán quốc gia</text>
+  </g>
+  <rect x="38" y="405" width="724" height="44" rx="10" fill="#051124" fill-opacity="0.92" stroke="#38BDF8" stroke-opacity="0.4" />
+  <text x="400" y="432" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 03: CƠ SỞ LỊCH SỬ VÀ PHÁP LÝ BẢO VỆ CHỦ QUYỀN BIỂN ĐẢO</text>
+</svg>

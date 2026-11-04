@@ -5,6 +5,7 @@ import AboutSection from './components/AboutSection'
 import FeatureGrid from './components/FeatureGrid'
 import InteractivePreviewModal from './components/InteractivePreviewModal'
 import Footer from './components/Footer'
+import CozeFloatingChatbot from './components/CozeFloatingChatbot'
 import EcosystemPage from './pages/EcosystemPage'
 import FeatureDetailPage from './pages/FeatureDetailPage'
 import { FEATURES_DATA } from './data/homeData'
@@ -147,6 +148,9 @@ export default function App() {
         onSelectFeature={(id) => setSelectedFeatureId(id)}
         onNavigateFeature={(id) => navigateToFeaturePage(id)}
       />
+
+      {/* Nút Chatbot nổi "Trợ lý AI Biển Đảo Việt Nam" ở góc dưới bên phải toàn trang */}
+      <CozeFloatingChatbot activeRole={activeRole} />
     </div>
   )
 }

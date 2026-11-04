@@ -1,55 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none">
   <defs>
-    <linearGradient id="bgExpo" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+    <linearGradient id="museumBg" x1="0" y1="0" x2="800" y2="460" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#040D1D" />
-      <stop offset="50%" stop-color="#071936" />
-      <stop offset="100%" stop-color="#0369A1" />
+      <stop offset="52%" stop-color="#081C3C" />
+      <stop offset="100%" stop-color="#0E3468" />
     </linearGradient>
-    <linearGradient id="beamGrad" x1="320" y1="95" x2="520" y2="40" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.65" />
+    <linearGradient id="spotLight" x1="400" y1="30" x2="400" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.32" />
       <stop offset="100%" stop-color="#FDE68A" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="goldFrame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
     </linearGradient>
   </defs>
 
-  <rect width="640" height="360" fill="url(#bgExpo)" />
+  <rect width="800" height="460" fill="url(#museumBg)" />
 
-  <!-- 360 Virtual Dome Rings -->
-  <ellipse cx="320" cy="275" rx="235" ry="48" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="6 6" />
-  <ellipse cx="320" cy="275" rx="165" ry="32" stroke="#FBBF24" stroke-opacity="0.4" stroke-width="1.5" />
-  <ellipse cx="320" cy="85" rx="190" ry="34" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.2" stroke-dasharray="5 5" />
+  <!-- Museum Architectural Archways & Perspective Floor -->
+  <path d="M55 370 L745 370 L800 445 L0 445 Z" fill="#051329" stroke="#38BDF8" stroke-opacity="0.3" />
+  <path d="M90 370 L90 95 C90 50, 220 32, 400 32 C580 32, 710 50, 710 95 L710 370" stroke="#FBBF24" stroke-opacity="0.28" stroke-width="2" fill="none" />
 
-  <!-- Lighthouse Beam -->
-  <polygon points="320,95 540,35 540,135" fill="url(#beamGrad)" />
-  <polygon points="320,95 100,35 100,135" fill="url(#beamGrad)" />
+  <!-- Overhead Museum Spotlights -->
+  <polygon points="165,45 85,335 245,335" fill="url(#spotLight)" />
+  <polygon points="400,32 295,335 505,335" fill="url(#spotLight)" />
+  <polygon points="635,45 555,335 715,335" fill="url(#spotLight)" />
 
-  <!-- Left Exhibition Frame -->
-  <g transform="translate(88, 118)">
-    <rect width="126" height="115" rx="12" fill="#071936" fill-opacity="0.9" stroke="#38BDF8" stroke-width="1.5" />
-    <rect x="14" y="14" width="98" height="62" rx="6" fill="#0284C7" fill-opacity="0.35" />
-    <circle cx="63" cy="45" r="16" fill="#38BDF8" fill-opacity="0.3" stroke="#38BDF8" />
-    <text x="63" y="96" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="10" font-weight="700">KHÔNG GIAN 3D</text>
+  <!-- Left Exhibit Frame: ĐỘI HOÀNG SA & BIỂN XANH -->
+  <g transform="translate(76, 112)">
+    <rect width="184" height="224" rx="14" fill="#061631" stroke="#38BDF8" stroke-width="1.8" />
+    <rect x="16" y="16" width="152" height="118" rx="8" fill="#0B2752" stroke="#38BDF8" stroke-opacity="0.4" />
+    <!-- Traditional Wooden Boat Motif -->
+    <path d="M52 104 L132 104 L118 120 L66 120 Z" fill="#F59E0B" />
+    <path d="M92 48 L92 102 M92 52 L124 92 L92 92 Z" stroke="#FDE68A" stroke-width="2" fill="#F59E0B" fill-opacity="0.35" />
+    <text x="92" y="158" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="10.5" font-weight="800">KHÔNG GIAN 01 &amp; 02</text>
+    <text x="92" y="176" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="700">Dấu ấn Đội Hoàng Sa</text>
+    <text x="92" y="194" text-anchor="middle" fill="#93C5FD" font-family="sans-serif" font-size="9.5">&amp; Cảnh quan Đảo tiền tiêu</text>
   </g>
 
-  <!-- Right Exhibition Frame -->
-  <g transform="translate(426, 118)">
-    <rect width="126" height="115" rx="12" fill="#071936" fill-opacity="0.9" stroke="#FBBF24" stroke-width="1.5" />
-    <rect x="14" y="14" width="98" height="62" rx="6" fill="#F59E0B" fill-opacity="0.2" />
-    <polygon points="63,28 78,62 48,62" fill="#FBBF24" opacity="0.85" />
-    <text x="63" y="96" text-anchor="middle" fill="#FEF3C7" font-family="sans-serif" font-size="10" font-weight="700">HIỆN VẬT SỐ</text>
+  <!-- Center Showcase Pedestal: DI SẢN CHÂU BẢN TRIỀU NGUYỄN -->
+  <g transform="translate(285, 84)">
+    <rect width="230" height="252" rx="18" fill="#040D1D" stroke="url(#goldFrame)" stroke-width="2.5" />
+    <rect x="20" y="20" width="190" height="132" rx="10" fill="#091E40" stroke="#FBBF24" stroke-opacity="0.5" />
+
+    <!-- Imperial Scroll & Vermilion Seal -->
+    <rect x="48" y="42" width="134" height="88" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2" />
+    <line x1="68" y1="58" x2="68" y2="114" stroke="#78350F" stroke-width="2" />
+    <line x1="90" y1="58" x2="90" y2="114" stroke="#78350F" stroke-width="2" />
+    <line x1="112" y1="58" x2="112" y2="114" stroke="#78350F" stroke-width="2" />
+    <rect x="132" y="68" width="32" height="32" rx="4" fill="#DC2626" fill-opacity="0.85" />
+    <text x="148" y="88" text-anchor="middle" fill="#FEF08A" font-family="serif" font-size="10" font-weight="900">御批</text>
+
+    <text x="115" y="178" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="11.5" font-weight="900">BẢO TÀNG TRIỂN LÃM SỐ</text>
+    <text x="115" y="198" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="700">Châu bản &amp; Hiện vật Lịch sử</text>
+    <rect x="35" y="212" width="160" height="22" rx="11" fill="url(#goldFrame)" />
+    <text x="115" y="227" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="9.5" font-weight="900">5 KHÔNG GIAN TRƯNG BÀY</text>
   </g>
 
-  <!-- Center Lighthouse & Sovereignty Monument Showcase -->
-  <g transform="translate(275, 68)">
-    <rect x="26" y="45" width="38" height="135" rx="6" fill="#0F2952" stroke="#FBBF24" stroke-width="2" />
-    <rect x="20" y="34" width="50" height="14" rx="4" fill="#F59E0B" />
-    <circle cx="45" cy="24" r="12" fill="#FDE68A" />
-    <line x1="28" y1="80" x2="62" y2="80" stroke="#38BDF8" stroke-width="2" />
-    <line x1="28" y1="115" x2="62" y2="115" stroke="#38BDF8" stroke-width="2" />
-    <line x1="28" y1="150" x2="62" y2="150" stroke="#38BDF8" stroke-width="2" />
-    <rect x="8" y="178" width="74" height="18" rx="6" fill="#0284C7" />
+  <!-- Right Exhibit Frame: NGƯỜI GIỮ BIỂN & TUỔI TRẺ THPT -->
+  <g transform="translate(540, 112)">
+    <rect width="184" height="224" rx="14" fill="#061631" stroke="#38BDF8" stroke-width="1.8" />
+    <rect x="16" y="16" width="152" height="118" rx="8" fill="#0B2752" stroke="#22D3EE" stroke-opacity="0.4" />
+    <!-- Coral & Marine Life + Youth Star Motif -->
+    <circle cx="92" cy="74" r="32" fill="#0284C7" fill-opacity="0.35" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="92" y="81" text-anchor="middle" fill="#FDE047" font-family="sans-serif" font-size="22" font-weight="900">★</text>
+    <text x="92" y="158" text-anchor="middle" fill="#67E8F9" font-family="sans-serif" font-size="10.5" font-weight="800">KHÔNG GIAN 03, 04 &amp; 05</text>
+    <text x="92" y="176" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="700">Người giữ biển, Thiên nhiên</text>
+    <text x="92" y="194" text-anchor="middle" fill="#93C5FD" font-family="sans-serif" font-size="9.5">&amp; Tuổi trẻ hướng về Đảo xa</text>
   </g>
 
-  <!-- 360 Badge -->
-  <rect x="225" y="290" width="190" height="34" rx="17" fill="#F59E0B" />
-  <text x="320" y="311" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11.5" font-weight="900">TRIỂN LÃM SỐ 360°</text>
+  <!-- Museum Floor Caption Plaque -->
+  <rect x="200" y="392" width="400" height="36" rx="18" fill="#040D1D" stroke="#FBBF24" stroke-opacity="0.55" />
+  <text x="400" y="414" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="800">KHÔNG GIAN TRIỂN LÃM TRỰC TUYẾN • 20+ HỒ SƠ HIỆN VẬT SỐ</text>
 </svg>

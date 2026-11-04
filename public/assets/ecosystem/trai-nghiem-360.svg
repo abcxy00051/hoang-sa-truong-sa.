@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none">
+  <defs>
+    <linearGradient id="panoBg" x1="0" y1="0" x2="800" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030B18" />
+      <stop offset="48%" stop-color="#072247" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="lighthouseBeam" x1="400" y1="128" x2="720" y2="55" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="lighthouseBeamLeft" x1="400" y1="128" x2="80" y2="55" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="460" fill="url(#panoBg)" />
+
+  <!-- 360 Panoramic Sphere Latitude / Longitude Rings -->
+  <ellipse cx="400" cy="235" rx="340" ry="155" stroke="#38BDF8" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="8 6" />
+  <ellipse cx="400" cy="235" rx="260" ry="110" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.5" />
+  <ellipse cx="400" cy="325" rx="310" ry="52" stroke="#FBBF24" stroke-opacity="0.45" stroke-width="1.8" />
+  <ellipse cx="400" cy="120" rx="270" ry="42" stroke="#38BDF8" stroke-opacity="0.25" stroke-width="1.4" stroke-dasharray="5 5" />
+
+  <!-- Lighthouse Beams Sweeping 360 Horizon -->
+  <polygon points="400,128 740,50 740,165" fill="url(#lighthouseBeam)" />
+  <polygon points="400,128 60,50 60,165" fill="url(#lighthouseBeamLeft)" />
+
+  <!-- Compass Degree Markers Around 360 Ring -->
+  <g fill="#FDE68A" font-family="monospace" font-size="11" font-weight="800">
+    <rect x="364" y="34" width="72" height="22" rx="11" fill="#040D1D" stroke="#FBBF24" />
+    <text x="400" y="49" text-anchor="middle">0° BẮC</text>
+
+    <rect x="688" y="224" width="76" height="22" rx="11" fill="#040D1D" stroke="#38BDF8" />
+    <text x="726" y="239" text-anchor="middle" fill="#7DD3FC">90° ĐÔNG</text>
+
+    <rect x="36" y="224" width="76" height="22" rx="11" fill="#040D1D" stroke="#38BDF8" />
+    <text x="74" y="239" text-anchor="middle" fill="#7DD3FC">270° TÂY</text>
+  </g>
+
+  <!-- Center Outpost Island, Lighthouse & Sovereignty Stele -->
+  <g transform="translate(310, 96)">
+    <!-- Island Base & Reef -->
+    <ellipse cx="90" cy="222" rx="125" ry="26" fill="#0EA5E9" fill-opacity="0.28" stroke="#38BDF8" stroke-width="1.5" />
+    <path d="M5 220 Q90 185 175 220 Z" fill="#0C264E" stroke="#FBBF24" stroke-width="2" />
+
+    <!-- Lighthouse Tower -->
+    <path d="M72 52 L108 52 L116 198 L64 198 Z" fill="#071936" stroke="#FBBF24" stroke-width="2.2" />
+    <rect x="65" y="38" width="50" height="16" rx="5" fill="#F59E0B" />
+    <circle cx="90" cy="28" r="14" fill="#FEF08A" />
+    <line x1="70" y1="96" x2="110" y2="96" stroke="#38BDF8" stroke-width="2.5" />
+    <line x1="68" y1="142" x2="112" y2="142" stroke="#38BDF8" stroke-width="2.5" />
+
+    <!-- Sovereignty Milestone Stele Beside Lighthouse -->
+    <path d="M138 128 L152 110 L166 128 L166 198 L138 198 Z" fill="#081E42" stroke="#FDE047" stroke-width="1.8" />
+    <text x="152" y="148" text-anchor="middle" fill="#FDE047" font-family="sans-serif" font-size="10" font-weight="900">★</text>
+  </g>
+
+  <!-- Left 360 Hotspot Card: Nhà giàn DK1 -->
+  <g transform="translate(88, 132)">
+    <rect width="168" height="72" rx="12" fill="#051329" fill-opacity="0.9" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="24" cy="24" r="7" fill="#22D3EE" />
+    <text x="40" y="28" fill="#7DD3FC" font-family="sans-serif" font-size="10.5" font-weight="800">TRẠM QUAN SÁT 01</text>
+    <text x="20" y="48" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="700">Nhà giàn DK1 &amp; Hải đăng</text>
+    <text x="20" y="62" fill="#93C5FD" font-family="monospace" font-size="9">Góc nhìn toàn cảnh 360°</text>
+  </g>
+
+  <!-- Right 360 Hotspot Card: Đảo Trường Sa Lớn -->
+  <g transform="translate(544, 132)">
+    <rect width="168" height="72" rx="12" fill="#051329" fill-opacity="0.9" stroke="#FBBF24" stroke-width="1.5" />
+    <circle cx="24" cy="24" r="7" fill="#F59E0B" />
+    <text x="40" y="28" fill="#FCD34D" font-family="sans-serif" font-size="10.5" font-weight="800">TRẠM QUAN SÁT 02</text>
+    <text x="20" y="48" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="700">Cột mốc Đảo Trường Sa</text>
+    <text x="20" y="62" fill="#93C5FD" font-family="monospace" font-size="9">08°38′30″B — 111°55′55″Đ</text>
+  </g>
+
+  <!-- Bottom 360 Interactive Gyro Controls Badge -->
+  <g transform="translate(230, 390)">
+    <rect width="340" height="40" rx="20" fill="#F59E0B" />
+    <text x="170" y="25" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="12" font-weight="900">↻ TRẢI NGHIỆM TOÀN CẢNH 360° BIỂN ĐẢO</text>
+  </g>
+</svg>

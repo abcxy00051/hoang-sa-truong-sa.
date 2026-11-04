@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" fill="none">
+  <defs>
+    <linearGradient id="museumHeroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020816" />
+      <stop offset="45%" stop-color="#081E3E" />
+      <stop offset="100%" stop-color="#051329" />
+    </linearGradient>
+    <radialGradient id="museumSpotCenter" cx="50%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.35" />
+      <stop offset="48%" stop-color="#0284C7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#020816" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldFrameGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Museum Spatial Background -->
+  <rect width="1400" height="620" fill="url(#museumHeroBg)" />
+  <circle cx="700" cy="180" r="560" fill="url(#museumSpotCenter)" />
+
+  <!-- 3D Architectural Gallery Perspective Lines -->
+  <g stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.4">
+    <line x1="0" y1="80" x2="420" y2="210" />
+    <line x1="1400" y1="80" x2="980" y2="210" />
+    <line x1="0" y1="540" x2="420" y2="410" stroke="#FBBF24" stroke-opacity="0.35" />
+    <line x1="1400" y1="540" x2="980" y2="410" stroke="#FBBF24" stroke-opacity="0.35" />
+    <rect x="420" y="210" width="560" height="200" stroke="#38BDF8" stroke-opacity="0.3" />
+  </g>
+
+  <!-- Museum Floor Reflection Grid -->
+  <path d="M0 540 L420 410 L980 410 L1400 540 L1400 620 L0 620 Z" fill="#041024" fill-opacity="0.88" />
+  <line x1="210" y1="475" x2="1190" y2="475" stroke="#38BDF8" stroke-opacity="0.18" stroke-dasharray="8 6" />
+  <line x1="110" y1="510" x2="1290" y2="510" stroke="#FBBF24" stroke-opacity="0.24" />
+
+  <!-- Left Wing Frame: Dấu ấn Lịch sử & Châu bản UNESCO -->
+  <g transform="translate(85, 145)">
+    <polygon points="0,0 265,42 265,285 0,335" fill="#081C3A" stroke="url(#goldFrameGrad)" stroke-width="2.5" />
+    <polygon points="22,28 242,60 242,262 22,302" fill="#0D2854" stroke="#38BDF8" stroke-opacity="0.45" />
+    <circle cx="132" cy="148" r="36" fill="#DC2626" fill-opacity="0.82" stroke="#FEF08A" stroke-width="2" />
+    <text x="132" y="154" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="14" font-weight="900">CHÂU BẢN</text>
+    <text x="132" y="235" text-anchor="middle" fill="#BAE6FD" font-family="Inter, sans-serif" font-size="12" font-weight="700">PHÒNG 01: DẤU ẤN LỊCH SỬ</text>
+  </g>
+
+  <!-- Center Focal Exhibit: Bản đồ Chủ quyền & Cột mốc Trường Sa – Hoàng Sa -->
+  <g transform="translate(455, 130)">
+    <rect x="0" y="0" width="490" height="310" rx="16" fill="#071936" stroke="url(#goldFrameGrad)" stroke-width="3" />
+    <rect x="20" y="20" width="450" height="225" rx="10" fill="#0B2752" stroke="#38BDF8" stroke-width="1.5" />
+    <!-- Compass & Archival Map Motif -->
+    <circle cx="245" cy="132" r="76" stroke="#FDE047" stroke-width="2" stroke-dasharray="6 5" fill="#04132C" fill-opacity="0.65" />
+    <path d="M245 64 L260 118 L314 132 L260 146 L245 200 L230 146 L176 132 L230 118 Z" fill="url(#goldFrameGrad)" fill-opacity="0.85" />
+    <text x="245" y="274" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="15" font-weight="800" letter-spacing="1">BẢO TÀNG SỐ LỊCH SỬ – BẢN ĐỒ – CHỦ QUYỀN BIỂN ĐẢO</text>
+    <text x="245" y="294" text-anchor="middle" fill="#7DD3FC" font-family="Inter, sans-serif" font-size="11.5" font-weight="600">5 PHÒNG TRƯNG BÀY • 6 HÌNH THỨC TƯ LIỆU • TƯƠNG TÁC PHÓNG TO CHI TIẾT</text>
+  </g>
+
+  <!-- Right Wing Frame: Con người, Thiên nhiên & Tuổi trẻ -->
+  <g transform="translate(1050, 145)">
+    <polygon points="0,42 265,0 265,335 0,285" fill="#081C3A" stroke="#38BDF8" stroke-width="2.5" />
+    <polygon points="22,60 242,28 242,302 22,262" fill="#0D2854" stroke="#FDE047" stroke-opacity="0.45" />
+    <path d="M115 110 L145 110 L154 205 L106 205 Z" fill="#F59E0B" stroke="#FEF08A" stroke-width="1.8" />
+    <circle cx="130" cy="94" r="12" fill="#FEF08A" />
+    <text x="132" y="238" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="12" font-weight="700">ĐỜI SỐNG • THIÊN NHIÊN • TUỔI TRẺ</text>
+  </g>
+
+  <!-- Top Museum Crest Banner -->
+  <g transform="translate(700, 62)">
+    <rect x="-235" y="-26" width="470" height="44" rx="22" fill="#041026" fill-opacity="0.9" stroke="url(#goldFrameGrad)" stroke-width="1.8" />
+    <text x="0" y="1" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="13.5" font-weight="800" letter-spacing="1.4">TRIỂN LÃM SỐ BIỂN ĐẢO VIỆT NAM • DIGITAL MUSEUM</text>
+  </g>
+</svg>

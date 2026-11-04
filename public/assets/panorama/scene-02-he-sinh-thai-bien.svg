@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" fill="none">
+  <defs>
+    <linearGradient id="oceanEco360" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#083344" />
+      <stop offset="28%" stop-color="#0E7490" />
+      <stop offset="55%" stop-color="#0369A1" />
+      <stop offset="82%" stop-color="#072A58" />
+      <stop offset="100%" stop-color="#031026" />
+    </linearGradient>
+    <radialGradient id="causticGlow" cx="50%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#67E8F9" stop-opacity="0.52" />
+      <stop offset="55%" stop-color="#22D3EE" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#031026" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="2400" height="1200" fill="url(#oceanEco360)" />
+  <circle cx="1200" cy="260" r="680" fill="url(#causticGlow)" />
+
+  <!-- Equirectangular Spherical Grid -->
+  <g stroke="#67E8F9" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="10 8">
+    <line x1="0" y1="300" x2="2400" y2="300" />
+    <line x1="0" y1="600" x2="2400" y2="600" stroke="#34D399" stroke-opacity="0.35" stroke-dasharray="none" />
+    <line x1="0" y1="900" x2="2400" y2="900" />
+    <line x1="600" y1="0" x2="600" y2="1200" />
+    <line x1="1200" y1="0" x2="1200" y2="1200" />
+    <line x1="1800" y1="0" x2="1800" y2="1200" />
+  </g>
+
+  <!-- Sunlight Rays Penetrating Water Surface -->
+  <g fill="#A5F3FC" fill-opacity="0.12">
+    <polygon points="850,0 1020,0 760,920 520,920" />
+    <polygon points="1140,0 1320,0 1420,960 1120,960" />
+    <polygon points="1480,0 1640,0 1920,920 1660,920" />
+  </g>
+
+  <!-- Seabed & Coral Reef Atoll Foundation -->
+  <path d="M0 780 Q400 720 800 770 T1600 750 T2400 780 L2400 1200 L0 1200 Z" fill="#041E3A" />
+
+  <!-- Left Zone: Rừng Ngập Mặn & Thảm Cỏ Biển (Blue Carbon) -->
+  <g transform="translate(220, 480)">
+    <rect x="40" y="180" width="420" height="120" rx="22" fill="#064E3B" fill-opacity="0.72" stroke="#34D399" stroke-width="2" />
+    <path d="M90 290 Q110 210 135 290 M170 290 Q195 200 220 290 M260 290 Q285 205 310 290 M350 290 Q375 215 400 290" stroke="#10B981" stroke-width="6" fill="none" />
+    <text x="250" y="345" text-anchor="middle" fill="#6EE7B7" font-family="Inter, sans-serif" font-size="22" font-weight="800">THẢM CỎ BIỂN &amp; RỪNG NGẬP MẶN CARBON XANH</text>
+  </g>
+
+  <!-- Center Zone: Rạn San Hô Nhiệt Đới Hoàng Sa - Trường Sa (400+ loài) -->
+  <g transform="translate(920, 450)">
+    <ellipse cx="280" cy="275" rx="310" ry="75" fill="#0F172A" fill-opacity="0.65" stroke="#F472B6" stroke-width="2.5" />
+    <!-- Coral branches -->
+    <circle cx="150" cy="235" r="52" fill="#EC4899" fill-opacity="0.68" stroke="#FBCFE8" stroke-width="2" />
+    <circle cx="280" cy="215" r="64" fill="#F59E0B" fill-opacity="0.72" stroke="#FEF08A" stroke-width="2.5" />
+    <circle cx="405" cy="238" r="50" fill="#8B5CF6" fill-opacity="0.68" stroke="#DDD6FE" stroke-width="2" />
+    <text x="280" y="390" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="24" font-weight="800">RẠN SAN HÔ NHIỆT ĐỚI BIỂN ĐÔNG (HƠN 400 LOÀI TẠO RẠN)</text>
+  </g>
+
+  <!-- Right Zone: Khu Bảo tồn Rùa biển Côn Đảo & Bò biển Dugong Phú Quốc -->
+  <g transform="translate(1680, 460)">
+    <ellipse cx="230" cy="175" rx="95" ry="52" fill="#059669" stroke="#6EE7B7" stroke-width="3" />
+    <circle cx="342" cy="168" r="24" fill="#10B981" stroke="#A7F3D0" stroke-width="2" />
+    <path d="M180 128 L135 88 L210 125 Z" fill="#34D399" />
+    <path d="M180 222 L135 262 L210 225 Z" fill="#34D399" />
+    <text x="240" y="335" text-anchor="middle" fill="#A5F3FC" font-family="Inter, sans-serif" font-size="22" font-weight="800">KHU BẢO TỒN RÙA BIỂN &amp; ĐA DẠNG SINH HỌC ĐẠI DƯƠNG</text>
+  </g>
+</svg>

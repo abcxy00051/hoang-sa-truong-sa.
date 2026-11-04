@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" fill="none">
+  <defs>
+    <linearGradient id="museumHall360" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#030916" />
+      <stop offset="25%" stop-color="#0A1E3F" />
+      <stop offset="75%" stop-color="#0F2952" />
+      <stop offset="100%" stop-color="#040D1E" />
+    </linearGradient>
+  </defs>
+
+  <rect width="2400" height="1200" fill="url(#museumHall360)" />
+
+  <!-- Architectural 360 Museum Dome Perspective Lines -->
+  <g stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.5">
+    <path d="M0 220 Q1200 320 2400 220" fill="none" />
+    <path d="M0 860 Q1200 760 2400 860" fill="none" stroke="#FBBF24" stroke-opacity="0.4" />
+    <line x1="480" y1="245" x2="480" y2="835" stroke-dasharray="8 6" />
+    <line x1="960" y1="265" x2="960" y2="815" stroke-dasharray="8 6" />
+    <line x1="1440" y1="265" x2="1440" y2="815" stroke-dasharray="8 6" />
+    <line x1="1920" y1="245" x2="1920" y2="835" stroke-dasharray="8 6" />
+  </g>
+
+  <!-- Left Gallery Wall: Châu bản & Mộc bản triều Nguyễn (Di sản UNESCO) -->
+  <g transform="translate(180, 330)">
+    <rect x="0" y="0" width="520" height="390" rx="18" fill="#07162E" stroke="#F59E0B" stroke-width="3" />
+    <rect x="35" y="45" width="210" height="260" rx="8" fill="#1E293B" stroke="#FDE047" stroke-width="2" />
+    <rect x="275" y="45" width="210" height="260" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="2" />
+    <circle cx="140" cy="175" r="36" fill="#DC2626" fill-opacity="0.78" />
+    <text x="260" y="352" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="21" font-weight="800">KHU TRƯNG BÀY CHÂU BẢN &amp; MỘC BẢN TRIỀU NGUYỄN</text>
+  </g>
+
+  <!-- Center Gallery Pedestal: Bản đồ Cổ & Đại Nam Nhất Thống Toàn Đồ (1838) -->
+  <g transform="translate(880, 300)">
+    <rect x="0" y="0" width="640" height="430" rx="22" fill="#081C3A" stroke="#FEF08A" stroke-width="3.5" />
+    <rect x="45" y="45" width="550" height="295" rx="12" fill="#0F2952" stroke="#38BDF8" stroke-width="2" />
+    <circle cx="320" cy="192" r="95" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="8 6" fill="none" />
+    <text x="320" y="198" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="22" font-weight="900">BẢN ĐỒ CHỦ QUYỀN 1686 – 1838 – 1982</text>
+    <text x="320" y="388" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="23" font-weight="800">TRUNG TÂM BẢN ĐỒ CỔ &amp; HỒ SƠ PHÁP LÝ BIỂN ĐẢO</text>
+  </g>
+
+  <!-- Right Gallery Wall: Sa bàn Đội Hoàng Sa kiêm quản Bắc Hải & Văn bản Hiện đại -->
+  <g transform="translate(1700, 330)">
+    <rect x="0" y="0" width="520" height="390" rx="18" fill="#07162E" stroke="#38BDF8" stroke-width="3" />
+    <path d="M90 245 Q260 165 430 245 Z" fill="#0284C7" fill-opacity="0.5" stroke="#7DD3FC" stroke-width="2" />
+    <polygon points="220,195 260,105 305,195" fill="#F59E0B" />
+    <text x="260" y="352" text-anchor="middle" fill="#BAE6FD" font-family="Inter, sans-serif" font-size="21" font-weight="800">SA BÀN ĐỘI HOÀNG SA &amp; TƯ LIỆU HIỆN ĐẠI</text>
+  </g>
+</svg>

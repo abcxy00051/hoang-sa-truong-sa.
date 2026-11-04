@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <defs>
+    <linearGradient id="bg08" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09152E" />
+      <stop offset="50%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0C4A6E" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" rx="20" fill="url(#bg08)" />
+  <!-- Digital Sovereignty Shield & Youth Innovation Hub (Right) -->
+  <g transform="translate(565, 205)">
+    <circle r="135" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="2" />
+    <path d="M0,-85 L72,-52 L72,12 C72,58 0,92 0,92 C0,92 -72,58 -72,12 L-72,-52 Z"
+          fill="#1E3A8A" fill-opacity="0.85" stroke="#FDE047" stroke-width="3" />
+    <polygon points="0,-42 10,-14 40,-14 16,4 25,32 0,15 -25,32 -16,4 -40,-14 -10,-14" fill="#FDE047" />
+    <text x="0" y="118" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="800">CHỦ QUYỀN SỐ &amp; TRÍ TUỆ TRẺ</text>
+  </g>
+  <!-- Left Card: Responsibilities of High School Youth -->
+  <g transform="translate(42, 48)">
+    <rect width="365" height="330" rx="14" fill="#071126" fill-opacity="0.92" stroke="#38BDF8" stroke-opacity="0.45" />
+    <text x="22" y="36" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="800">TUỔI TRẺ THPT VỚI BIỂN ĐẢO QUÊ HƯƠNG</text>
+    <line x1="22" y1="48" x2="345" y2="48" stroke="#38BDF8" stroke-opacity="0.35" />
+
+    <text x="22" y="80" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">1. Nắm vững tri thức Lịch sử &amp; Pháp lý</text>
+    <text x="22" y="100" fill="#E0F2FE" font-family="sans-serif" font-size="11">Hiểu rõ chứng cứ lịch sử và UNCLOS 1982, Luật Biển</text>
+    <text x="22" y="117" fill="#E0F2FE" font-family="sans-serif" font-size="11">Việt Nam 2012 để thuyết minh, bảo vệ lẽ phải.</text>
+
+    <text x="22" y="150" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">2. Tỉnh táo trên không gian mạng &amp; AI</text>
+    <text x="22" y="170" fill="#E0F2FE" font-family="sans-serif" font-size="11">Nhận diện, kiên quyết không sử dụng bản đồ thiếu</text>
+    <text x="22" y="187" fill="#E0F2FE" font-family="sans-serif" font-size="11">Hoàng Sa – Trường Sa hoặc có đường yêu sách phi pháp.</text>
+
+    <text x="22" y="220" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">3. Định hướng nghề nghiệp &amp; Hành động</text>
+    <text x="22" y="240" fill="#E0F2FE" font-family="sans-serif" font-size="11">Hàng hải, hải dương học, logistics, năng lượng sạch,</text>
+    <text x="22" y="257" fill="#E0F2FE" font-family="sans-serif" font-size="11">công nghệ số và các phong trào hướng về biển đảo.</text>
+
+    <rect x="22" y="276" width="320" height="36" rx="8" fill="#1E1B4B" stroke="#FDE047" stroke-opacity="0.5" />
+    <text x="182" y="299" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="700">Chạm tri thức – Vững chủ quyền trên không gian số</text>
+  </g>
+  <rect x="42" y="405" width="716" height="44" rx="10" fill="#060E21" fill-opacity="0.92" stroke="#38BDF8" stroke-opacity="0.4" />
+  <text x="400" y="432" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 08: TUỔI TRẺ VỚI TRÁCH NHIỆM BẢO VỆ BIỂN ĐẢO TỔ QUỐC</text>
+</svg>

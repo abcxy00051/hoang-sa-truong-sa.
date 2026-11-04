@@ -1,60 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none">
   <defs>
-    <linearGradient id="bgLib" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#071936" />
-      <stop offset="55%" stop-color="#0C264E" />
-      <stop offset="100%" stop-color="#1E3A8A" />
+    <linearGradient id="libBg" x1="0" y1="0" x2="800" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#040D1D" />
+      <stop offset="50%" stop-color="#081E42" />
+      <stop offset="100%" stop-color="#0F356B" />
     </linearGradient>
-    <linearGradient id="goldBook" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FDE68A" />
+    <linearGradient id="goldLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEF08A" />
       <stop offset="50%" stop-color="#F59E0B" />
-      <stop offset="100%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
     </linearGradient>
+    <radialGradient id="libAura" cx="50%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.22" />
+      <stop offset="65%" stop-color="#0284C7" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#040D1D" stop-opacity="0" />
+    </radialGradient>
   </defs>
 
-  <rect width="640" height="360" fill="url(#bgLib)" />
+  <rect width="800" height="460" fill="url(#libBg)" />
+  <rect width="800" height="460" fill="url(#libAura)" />
 
-  <!-- Decorative Grid & Glow -->
-  <circle cx="320" cy="180" r="150" fill="#F59E0B" fill-opacity="0.12" />
-  <circle cx="320" cy="180" r="115" stroke="#FBBF24" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 6" />
-
-  <!-- Left Floating Document Card (Infographic THPT) -->
-  <g transform="translate(85, 82) rotate(-6)">
-    <rect width="150" height="190" rx="14" fill="#0F2952" stroke="#38BDF8" stroke-width="1.5" />
-    <rect x="18" y="22" width="60" height="8" rx="4" fill="#38BDF8" />
-    <rect x="18" y="40" width="114" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
-    <rect x="18" y="54" width="96" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
-    <rect x="18" y="76" width="114" height="64" rx="8" fill="#0284C7" fill-opacity="0.3" stroke="#38BDF8" stroke-opacity="0.4" />
-    <text x="75" y="113" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">HỌC LIỆU SỐ</text>
-    <rect x="18" y="154" width="80" height="16" rx="8" fill="#F59E0B" fill-opacity="0.25" />
+  <!-- Architectural Library Grid & Shelving Lines -->
+  <g stroke="#38BDF8" stroke-opacity="0.1" stroke-width="1">
+    <line x1="60" y1="60" x2="740" y2="60" />
+    <line x1="60" y1="140" x2="740" y2="140" />
+    <line x1="60" y1="360" x2="740" y2="360" />
+    <line x1="120" y1="40" x2="120" y2="420" />
+    <line x1="680" y1="40" x2="680" y2="420" />
   </g>
 
-  <!-- Right Floating Document Card (Tư liệu Pháp lý & Địa lý) -->
-  <g transform="translate(405, 68) rotate(6)">
-    <rect width="150" height="190" rx="14" fill="#0F2952" stroke="#FBBF24" stroke-width="1.5" />
-    <rect x="18" y="22" width="70" height="8" rx="4" fill="#FBBF24" />
-    <rect x="18" y="40" width="114" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
-    <rect x="18" y="54" width="102" height="6" rx="3" fill="#94A3B8" opacity="0.6" />
-    <rect x="18" y="76" width="114" height="64" rx="8" fill="#F59E0B" fill-opacity="0.18" stroke="#FBBF24" stroke-opacity="0.4" />
-    <text x="75" y="113" text-anchor="middle" fill="#FEF3C7" font-family="sans-serif" font-size="11" font-weight="700">TƯ LIỆU CHUẨN</text>
-    <rect x="18" y="154" width="90" height="16" rx="8" fill="#38BDF8" fill-opacity="0.25" />
+  <!-- Left Dossier Card: TƯ LIỆU LỊCH SỬ & CHÂU BẢN -->
+  <g transform="translate(65, 86) rotate(-5)">
+    <rect width="195" height="248" rx="16" fill="#071936" fill-opacity="0.95" stroke="#38BDF8" stroke-width="1.8" />
+    <rect x="20" y="22" width="95" height="22" rx="11" fill="#0284C7" fill-opacity="0.35" stroke="#38BDF8" stroke-opacity="0.5" />
+    <text x="67.5" y="37" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="9.5" font-weight="800">CHUYÊN ĐỀ LỊCH SỬ</text>
+    <rect x="20" y="58" width="155" height="90" rx="10" fill="#0C264E" stroke="#38BDF8" stroke-opacity="0.35" />
+    <path d="M45 118 L75 86 L108 112 L135 78 L155 118 Z" fill="#0284C7" fill-opacity="0.45" />
+    <text x="97.5" y="105" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="800">CHÂU BẢN &amp; SỬ LIỆU</text>
+    <rect x="20" y="164" width="145" height="7" rx="3.5" fill="#94A3B8" opacity="0.7" />
+    <rect x="20" y="180" width="125" height="7" rx="3.5" fill="#94A3B8" opacity="0.5" />
+    <rect x="20" y="196" width="105" height="7" rx="3.5" fill="#38BDF8" opacity="0.6" />
+    <rect x="20" y="216" width="110" height="18" rx="9" fill="#F59E0B" fill-opacity="0.2" />
+    <text x="75" y="228" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="8.5" font-weight="700">KHỐI 10 • 11 • 12</text>
   </g>
 
-  <!-- Center Open Book / Royal Archive Showcase -->
-  <g transform="translate(205, 85)">
-    <rect x="0" y="0" width="230" height="190" rx="18" fill="#040D1D" fill-opacity="0.9" stroke="url(#goldBook)" stroke-width="2.5" />
-    <!-- Open Book Icon Graphic -->
-    <path d="M115 55 C95 45, 65 45, 45 55 L45 135 C65 125, 95 125, 115 135 C135 125, 165 125, 185 135 L185 55 C165 45, 135 45, 115 55 Z" fill="#071936" stroke="#FBBF24" stroke-width="3" stroke-linejoin="round" />
-    <line x1="115" y1="55" x2="115" y2="135" stroke="#FBBF24" stroke-width="3" />
-    <!-- Book Lines -->
-    <line x1="60" y1="75" x2="100" y2="75" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" />
-    <line x1="60" y1="92" x2="96" y2="92" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
-    <line x1="60" y1="108" x2="92" y2="108" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
-    <line x1="130" y1="75" x2="170" y2="75" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" />
-    <line x1="130" y1="92" x2="166" y2="92" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
-    <line x1="130" y1="108" x2="162" y2="108" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+  <!-- Right Dossier Card: PHÁP LÝ QUỐC TẾ & UNCLOS 1982 -->
+  <g transform="translate(538, 74) rotate(5)">
+    <rect width="195" height="248" rx="16" fill="#071936" fill-opacity="0.95" stroke="#FBBF24" stroke-width="1.8" />
+    <rect x="20" y="22" width="110" height="22" rx="11" fill="#F59E0B" fill-opacity="0.22" stroke="#FBBF24" stroke-opacity="0.6" />
+    <text x="75" y="37" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9.5" font-weight="800">PHÁP LÝ BIỂN ĐẢO</text>
+    <rect x="20" y="58" width="155" height="90" rx="10" fill="#0C264E" stroke="#FBBF24" stroke-opacity="0.4" />
+    <text x="97.5" y="96" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="13" font-weight="900">UNCLOS 1982</text>
+    <text x="97.5" y="116" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="10" font-weight="600">Luật Biển Việt Nam 2012</text>
+    <rect x="20" y="164" width="145" height="7" rx="3.5" fill="#94A3B8" opacity="0.7" />
+    <rect x="20" y="180" width="130" height="7" rx="3.5" fill="#94A3B8" opacity="0.5" />
+    <rect x="20" y="196" width="115" height="7" rx="3.5" fill="#FBBF24" opacity="0.6" />
+    <rect x="20" y="216" width="126" height="18" rx="9" fill="#38BDF8" fill-opacity="0.22" />
+    <text x="83" y="228" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="8.5" font-weight="700">NGUỒN CHÍNH THỐNG</text>
+  </g>
 
-    <rect x="28" y="150" width="174" height="24" rx="12" fill="url(#goldBook)" />
-    <text x="115" y="166" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11" font-weight="800">THƯ VIỆN TRI THỨC BIỂN ĐẢO</text>
+  <!-- Center Illuminated Encyclopedia & Digital Codex -->
+  <g transform="translate(245, 58)">
+    <rect width="310" height="295" rx="22" fill="#040D1D" fill-opacity="0.94" stroke="url(#goldLeaf)" stroke-width="2.5" />
+
+    <!-- Top Academic Crest -->
+    <circle cx="155" cy="42" r="20" fill="#F59E0B" fill-opacity="0.2" stroke="#FBBF24" stroke-width="1.5" />
+    <text x="155" y="47" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="900">★</text>
+
+    <!-- Open Codex Graphic -->
+    <path d="M155 86 C125 72, 78 72, 46 86 L46 202 C78 188, 125 188, 155 202 C185 188, 232 188, 264 202 L264 86 C232 72, 185 72, 155 86 Z" fill="#081E42" stroke="#FBBF24" stroke-width="3" stroke-linejoin="round" />
+    <line x1="155" y1="86" x2="155" y2="202" stroke="#FBBF24" stroke-width="3" />
+
+    <!-- Left Page Lines -->
+    <line x1="66" y1="108" x2="132" y2="108" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+    <line x1="66" y1="126" x2="128" y2="126" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.8" />
+    <line x1="66" y1="142" x2="124" y2="142" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
+    <line x1="66" y1="158" x2="118" y2="158" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
+    <line x1="66" y1="174" x2="108" y2="174" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round" />
+
+    <!-- Right Page Lines -->
+    <line x1="178" y1="108" x2="244" y2="108" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" />
+    <line x1="178" y1="126" x2="240" y2="126" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.8" />
+    <line x1="178" y1="142" x2="236" y2="142" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
+    <line x1="178" y1="158" x2="230" y2="158" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
+    <line x1="178" y1="174" x2="220" y2="174" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" />
+
+    <!-- Topic Pills Row -->
+    <rect x="34" y="218" width="74" height="22" rx="11" fill="#0C264E" stroke="#38BDF8" stroke-opacity="0.5" />
+    <text x="71" y="233" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="9.5" font-weight="700">Địa lý biển</text>
+
+    <rect x="118" y="218" width="74" height="22" rx="11" fill="#0C264E" stroke="#FBBF24" stroke-opacity="0.5" />
+    <text x="155" y="233" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9.5" font-weight="700">Sử liệu cổ</text>
+
+    <rect x="202" y="218" width="74" height="22" rx="11" fill="#0C264E" stroke="#22C55E" stroke-opacity="0.5" />
+    <text x="239" y="233" text-anchor="middle" fill="#86EFAC" font-family="sans-serif" font-size="9.5" font-weight="700">Kinh tế biển</text>
+
+    <!-- Golden Ribbon Title -->
+    <rect x="32" y="252" width="246" height="28" rx="14" fill="url(#goldLeaf)" />
+    <text x="155" y="270" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11" font-weight="900">THƯ VIỆN TRI THỨC BIỂN ĐẢO</text>
+  </g>
+
+  <!-- Bottom Search & Classification Strip -->
+  <g transform="translate(185, 384)">
+    <rect width="430" height="42" rx="21" fill="#040D1D" fill-opacity="0.9" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2" />
+    <circle cx="28" cy="21" r="6" fill="#FBBF24" />
+    <text x="48" y="25" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">7 Chuyên đề • 35+ Bài viết chuẩn GDPT 2018 • Tra cứu tức thì</text>
   </g>
 </svg>

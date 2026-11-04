@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <defs>
+    <linearGradient id="bg05" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#051C36" />
+      <stop offset="55%" stop-color="#0C3B66" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" rx="20" fill="url(#bg05)" />
+  <!-- 6 Pillars of Sustainable Blue Economy Chart -->
+  <g transform="translate(42, 48)">
+    <rect width="365" height="330" rx="14" fill="#06172B" fill-opacity="0.92" stroke="#38BDF8" stroke-opacity="0.45" />
+    <text x="22" y="34" fill="#FDE68A" font-family="sans-serif" font-size="13" font-weight="800">6 NGÀNH KINH TẾ BIỂN CHỦ LỰC</text>
+    <text x="22" y="52" fill="#BAE6FD" font-family="sans-serif" font-size="10">Chiến lược phát triển bền vững kinh tế biển Việt Nam</text>
+    <!-- Horizontal Bars -->
+    <g transform="translate(22, 72)">
+      <text x="0" y="12" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">1. Du lịch và dịch vụ biển</text>
+      <rect x="0" y="18" width="310" height="12" rx="6" fill="#1E293B" />
+      <rect x="0" y="18" width="295" height="12" rx="6" fill="#F59E0B" />
+
+      <text x="0" y="50" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">2. Kinh tế hàng hải &amp; Cảng biển nước sâu</text>
+      <rect x="0" y="56" width="310" height="12" rx="6" fill="#1E293B" />
+      <rect x="0" y="56" width="280" height="12" rx="6" fill="#38BDF8" />
+
+      <text x="0" y="88" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">3. Khai thác dầu khí &amp; Khoáng sản biển</text>
+      <rect x="0" y="94" width="310" height="12" rx="6" fill="#1E293B" />
+      <rect x="0" y="94" width="260" height="12" rx="6" fill="#FB923C" />
+
+      <text x="0" y="126" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">4. Nuôi trồng &amp; Khai thác hải sản bền vững</text>
+      <rect x="0" y="132" width="310" height="12" rx="6" fill="#1E293B" />
+      <rect x="0" y="132" width="250" height="12" rx="6" fill="#2DD4BF" />
+
+      <text x="0" y="164" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">5. Công nghiệp ven biển</text>
+      <rect x="0" y="170" width="310" height="12" rx="6" fill="#1E293B" />
+      <rect x="0" y="170" width="225" height="12" rx="6" fill="#818CF8" />
+
+      <text x="0" y="202" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">6. Năng lượng tái tạo &amp; Kinh tế biển mới</text>
+      <rect x="0" y="208" width="310" height="12" rx="6" fill="#1E293B" />
+      <rect x="0" y="208" width="240" height="12" rx="6" fill="#34D399" />
+    </g>
+  </g>
+  <!-- Offshore Wind Turbine & Deepwater Container Ship Illustration (Right) -->
+  <g transform="translate(445, 58)">
+    <!-- Wind Turbine -->
+    <line x1="95" y1="85" x2="95" y2="255" stroke="#E2E8F0" stroke-width="5" />
+    <circle cx="95" cy="85" r="7" fill="#FDE047" />
+    <path d="M95,85 L95,22" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round" />
+    <path d="M95,85 L150,118" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round" />
+    <path d="M95,85 L40,118" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round" />
+    <!-- Cargo Ship -->
+    <g transform="translate(135, 175)">
+      <polygon points="0,55 165,55 145,85 20,85" fill="#0F172A" stroke="#38BDF8" stroke-width="2" />
+      <rect x="25" y="30" width="32" height="24" fill="#F59E0B" />
+      <rect x="61" y="30" width="32" height="24" fill="#0284C7" />
+      <rect x="97" y="30" width="32" height="24" fill="#10B981" />
+    </g>
+    <path d="M20,262 Q160,242 305,262" stroke="#38BDF8" stroke-width="3" fill="none" />
+    <rect x="15" y="282" width="295" height="65" rx="12" fill="#06172B" fill-opacity="0.9" stroke="#F59E0B" stroke-opacity="0.45" />
+    <text x="162" y="308" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">CẢNG CỬA NGÕ QUỐC TẾ &amp; ĐIỆN GIÓ</text>
+    <text x="162" y="328" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="11">Lạch Huyện • Liên Chiểu • Cái Mép – Thị Vải</text>
+  </g>
+  <rect x="42" y="405" width="716" height="44" rx="10" fill="#041426" fill-opacity="0.92" stroke="#38BDF8" stroke-opacity="0.4" />
+  <text x="400" y="432" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 05: KINH TẾ VÀ TÀI NGUYÊN BIỂN ĐẢO VIỆT NAM</text>
+</svg>

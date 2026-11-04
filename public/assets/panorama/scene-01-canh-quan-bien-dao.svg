@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" fill="none">
+  <defs>
+    <linearGradient id="skyPano1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#030B1C" />
+      <stop offset="30%" stop-color="#08244F" />
+      <stop offset="52%" stop-color="#0284C7" />
+      <stop offset="56%" stop-color="#38BDF8" />
+      <stop offset="60%" stop-color="#0369A1" />
+      <stop offset="82%" stop-color="#062852" />
+      <stop offset="100%" stop-color="#020B1A" />
+    </linearGradient>
+    <radialGradient id="sunGlow1" cx="50%" cy="46%" r="35%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.65" />
+      <stop offset="45%" stop-color="#F59E0B" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#08244F" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="2400" height="1200" fill="url(#skyPano1)" />
+  <circle cx="1200" cy="540" r="560" fill="url(#sunGlow1)" />
+
+  <!-- Equirectangular Spherical Grid Lines (2:1 Projection) -->
+  <g stroke="#7DD3FC" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="10 8">
+    <line x1="0" y1="300" x2="2400" y2="300" />
+    <line x1="0" y1="600" x2="2400" y2="600" stroke="#FDE047" stroke-opacity="0.38" stroke-dasharray="none" />
+    <line x1="0" y1="900" x2="2400" y2="900" />
+    <line x1="400" y1="0" x2="400" y2="1200" />
+    <line x1="800" y1="0" x2="800" y2="1200" />
+    <line x1="1200" y1="0" x2="1200" y2="1200" />
+    <line x1="1600" y1="0" x2="1600" y2="1200" />
+    <line x1="2000" y1="0" x2="2000" y2="1200" />
+  </g>
+
+  <!-- Seamless Horizon Ocean Surface -->
+  <path d="M0 615 Q300 598 600 615 T1200 615 T1800 615 T2400 615 L2400 1200 L0 1200 Z" fill="#0369A1" fill-opacity="0.68" />
+  <path d="M0 740 Q400 715 800 740 T1600 740 T2400 740 L2400 1200 L0 1200 Z" fill="#062147" fill-opacity="0.86" />
+
+  <!-- West / Northwest Zone (Left): Hoàng Sa Pattle Island & 1938 Sovereignty Stele -->
+  <g transform="translate(260, 445)">
+    <ellipse cx="220" cy="185" rx="235" ry="42" fill="#22D3EE" fill-opacity="0.25" stroke="#38BDF8" stroke-width="2" />
+    <path d="M35 180 Q220 112 405 180 Z" fill="#0B2954" stroke="#FBBF24" stroke-width="2.5" />
+    <!-- WMO 48860 Weather Station & Lighthouse -->
+    <rect x="150" y="95" width="65" height="65" rx="6" fill="#1E3A8A" stroke="#93C5FD" stroke-width="2" />
+    <circle cx="182" cy="76" r="15" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2" />
+    <!-- 1938 Sovereignty Stele -->
+    <path d="M265 85 L285 60 L305 85 L305 162 L265 162 Z" fill="#0F172A" stroke="#FDE047" stroke-width="2.5" />
+    <text x="220" y="232" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="22" font-weight="800">QUẦN ĐẢO HOÀNG SA — ĐẢO HOÀNG SA (PATTLE) &amp; TRẠM WMO 48860</text>
+  </g>
+
+  <!-- Center Zone: Đảo Trường Sa Lớn, Cột mốc Chủ quyền & Hải đăng -->
+  <g transform="translate(940, 390)">
+    <ellipse cx="260" cy="240" rx="295" ry="52" fill="#38BDF8" fill-opacity="0.28" stroke="#7DD3FC" stroke-width="2.5" />
+    <path d="M30 232 Q260 140 490 232 Z" fill="#0A254B" stroke="#FDE047" stroke-width="3" />
+    <!-- Lighthouse -->
+    <path d="M188 32 L222 32 L232 200 L178 200 Z" fill="#0F172A" stroke="#FBBF24" stroke-width="2.5" />
+    <rect x="176" y="14" width="58" height="18" rx="5" fill="#F59E0B" />
+    <circle cx="205" cy="0" r="16" fill="#FEF08A" />
+    <!-- Sovereignty Stele -->
+    <path d="M292 78 L316 42 L340 78 L340 202 L292 202 Z" fill="#172554" stroke="#FEF08A" stroke-width="3" />
+    <circle cx="316" cy="96" r="11" fill="#DC2626" />
+    <text x="316" y="101" text-anchor="middle" fill="#FEF08A" font-size="14" font-weight="900">★</text>
+    <!-- Bàng vuông foliage -->
+    <circle cx="118" cy="175" r="28" fill="#059669" stroke="#34D399" stroke-width="2" />
+    <circle cx="395" cy="178" r="26" fill="#059669" stroke="#34D399" stroke-width="2" />
+    <text x="260" y="295" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="24" font-weight="800">ĐẢO TRƯỜNG SA LỚN — CỘT MỐC CHỦ QUYỀN &amp; HẢI ĐĂNG TIỀN TIÊU</text>
+  </g>
+
+  <!-- East / Southeast Zone (Right): Hải đăng Song Tử Tây & Âu tàu -->
+  <g transform="translate(1690, 440)">
+    <ellipse cx="220" cy="190" rx="230" ry="40" fill="#0EA5E9" fill-opacity="0.25" stroke="#38BDF8" stroke-width="2" />
+    <path d="M45 182 Q220 120 395 182 Z" fill="#0C2D5E" stroke="#7DD3FC" stroke-width="2.2" />
+    <!-- Harbor Basin & Patrol Vessel -->
+    <path d="M125 198 L295 198 L275 222 L145 222 Z" fill="#0284C7" stroke="#BAE6FD" stroke-width="2" />
+    <!-- Song Tu Tay Lighthouse -->
+    <path d="M210 52 L236 52 L244 168 L202 168 Z" fill="#E2E8F0" stroke="#F59E0B" stroke-width="2" />
+    <circle cx="223" cy="40" r="12" fill="#FEF08A" />
+    <text x="220" y="252" text-anchor="middle" fill="#BAE6FD" font-family="Inter, sans-serif" font-size="22" font-weight="800">ÂU TÀU TRƯỜNG SA &amp; CỤM HẢI ĐĂNG BIỂN ĐÔNG</text>
+  </g>
+</svg>

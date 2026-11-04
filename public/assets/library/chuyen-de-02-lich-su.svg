@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <defs>
+    <linearGradient id="bg02" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#271306" />
+      <stop offset="50%" stop-color="#451A03" />
+      <stop offset="100%" stop-color="#0C2A4A" />
+    </linearGradient>
+    <linearGradient id="scroll02" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="100%" stop-color="#FDE68A" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" rx="20" fill="url(#bg02)" />
+  <!-- Ancient Parchment Scroll -->
+  <g transform="translate(48, 45)">
+    <rect width="340" height="330" rx="14" fill="url(#scroll02)" stroke="#D97706" stroke-width="3" />
+    <rect x="14" y="14" width="312" height="302" rx="8" stroke="#92400E" stroke-opacity="0.4" stroke-width="1.5" />
+    <rect x="242" y="28" width="68" height="68" rx="6" fill="#DC2626" fill-opacity="0.15" stroke="#DC2626" stroke-width="2" />
+    <text x="276" y="58" text-anchor="middle" fill="#B91C1C" font-family="serif" font-size="12" font-weight="700">CHÂU BẢN</text>
+    <text x="276" y="76" text-anchor="middle" fill="#B91C1C" font-family="serif" font-size="11" font-weight="700">MINH MẠNG</text>
+    <text x="28" y="48" fill="#78350F" font-family="serif" font-size="16" font-weight="800">CHÍNH SỬ &amp; CHÂU BẢN</text>
+    <line x1="28" y1="60" x2="215" y2="60" stroke="#B45309" stroke-width="2" />
+    <text x="28" y="92" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• Thế kỷ XVII–XVIII: Đội Hoàng Sa</text>
+    <text x="40" y="110" fill="#78350F" font-family="sans-serif" font-size="11">Kiêm quản Đội Bắc Hải (70 suất/năm)</text>
+    <text x="28" y="140" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• Năm 1816: Vua Gia Long</text>
+    <text x="40" y="158" fill="#78350F" font-family="sans-serif" font-size="11">Thủy quân cùng đội Hoàng Sa khảo sát</text>
+    <text x="28" y="188" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• Năm 1836: Vua Minh Mạng</text>
+    <text x="40" y="206" fill="#78350F" font-family="sans-serif" font-size="11">Phạm Hữu Nhật cắm mốc, dựng bia</text>
+    <text x="28" y="236" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• 1938 &amp; 1956–1975–Nay</text>
+    <text x="40" y="254" fill="#78350F" font-family="sans-serif" font-size="11">Thực thi &amp; bảo vệ chủ quyền liên tục</text>
+    <rect x="28" y="274" width="284" height="36" rx="8" fill="#78350F" />
+    <text x="170" y="297" text-anchor="middle" fill="#FEF3C7" font-family="sans-serif" font-size="11" font-weight="700">DI SẢN TƯ LIỆU THẾ GIỚI UNESCO (2014)</text>
+  </g>
+  <!-- Traditional Wooden Flotilla & Sovereignty Stele (Right) -->
+  <g transform="translate(435, 65)">
+    <circle cx="155" cy="145" r="125" fill="#0F172A" fill-opacity="0.65" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="2" />
+    <!-- Sailing Vessel of Hoang Sa Flotilla -->
+    <path d="M85,185 L225,185 L200,220 L110,220 Z" fill="#D97706" stroke="#FEF3C7" stroke-width="2" />
+    <line x1="155" y1="80" x2="155" y2="185" stroke="#FEF3C7" stroke-width="3" />
+    <path d="M155,85 L215,135 L155,168 Z" fill="#EF4444" fill-opacity="0.85" stroke="#FEF3C7" stroke-width="1.5" />
+    <path d="M150,95 L100,145 L150,168 Z" fill="#F59E0B" fill-opacity="0.85" stroke="#FEF3C7" stroke-width="1.5" />
+    <!-- Waves -->
+    <path d="M55,225 Q105,208 155,225 T255,225" stroke="#38BDF8" stroke-width="3" fill="none" />
+    <text x="155" y="295" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">ĐỘI HOÀNG SA &amp; BẮC HẢI</text>
+    <text x="155" y="315" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="11">Khởi hành tháng 2 • Trở về tháng 8 âm lịch</text>
+  </g>
+  <rect x="48" y="405" width="704" height="44" rx="10" fill="#1C1917" fill-opacity="0.9" stroke="#F59E0B" stroke-opacity="0.45" />
+  <text x="400" y="432" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 02: LỊCH SỬ XÁC LẬP VÀ THỰC THI CHỦ QUYỀN HOÀNG SA – TRƯỜNG SA</text>
+</svg>

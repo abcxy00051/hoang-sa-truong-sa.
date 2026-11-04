@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trợ lý AI Biển Đảo Việt Nam | Chạm tri thức, Vững chủ quyền</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-deep: #06182c;
+        --bg-card: rgba(11, 37, 69, 0.88);
+        --border-subtle: rgba(56, 189, 248, 0.25);
+        --accent-cyan: #38bdf8;
+        --accent-gold: #fbbf24;
+        --text-main: #f8fafc;
+        --text-muted: #cbd5e1;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+        background: radial-gradient(circle at top right, #0f3661 0%, #06182c 60%, #030d18 100%);
+        color: var(--text-main);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        padding: 16px 24px;
+        border-bottom: 1px solid var(--border-subtle);
+        background: rgba(6, 24, 44, 0.85);
+        backdrop-filter: blur(12px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand-badge {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #0284c7, #38bdf8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 18px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(56, 189, 248, 0.35);
+      }
+
+      .brand-text h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .brand-text p {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      .status-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(16, 185, 129, 0.15);
+        border: 1px solid rgba(16, 185, 129, 0.4);
+        color: #34d399;
+      }
+
+      .status-pill.warn {
+        background: rgba(245, 158, 11, 0.15);
+        border-color: rgba(245, 158, 11, 0.45);
+        color: #fbbf24;
+      }
+
+      main {
+        flex: 1;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        gap: 24px;
+      }
+
+      @media (max-width: 900px) {
+        main {
+          grid-template-columns: 1fr;
+          padding: 16px;
+        }
+      }
+
+      .panel {
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+      }
+
+      .panel h2 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: var(--accent-cyan);
+      }
+
+      .panel p {
+        font-size: 13.5px;
+        line-height: 1.6;
+        color: var(--text-muted);
+        margin-bottom: 14px;
+      }
+
+      .prompt-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .prompt-card {
+        background: rgba(15, 23, 42, 0.65);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 12px;
+        padding: 12px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .prompt-card:hover {
+        border-color: var(--accent-cyan);
+        background: rgba(14, 116, 144, 0.25);
+      }
+
+      .prompt-card .tag {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--accent-gold);
+        margin-bottom: 4px;
+        display: block;
+      }
+
+      .prompt-card .text {
+        font-size: 13px;
+        color: #f1f5f9;
+        line-height: 1.45;
+      }
+
+      .chat-stage {
+        position: relative;
+        min-height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      #coze-mount-container {
+        width: 100%;
+        height: 650px;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .token-setup-box {
+        max-width: 560px;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.9);
+        border: 1px solid rgba(251, 191, 36, 0.45);
+        border-radius: 16px;
+        padding: 24px;
+        text-align: left;
+      }
+
+      .token-setup-box h3 {
+        color: var(--accent-gold);
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+
+      .token-setup-box ol {
+        padding-left: 20px;
+        font-size: 13.5px;
+        line-height: 1.7;
+        color: var(--text-muted);
+        margin-bottom: 16px;
+      }
+
+      .token-setup-box ol li {
+        margin-bottom: 6px;
+      }
+
+      .token-setup-box a {
+        color: var(--accent-cyan);
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      .input-row {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .input-row input {
+        flex: 1;
+        padding: 11px 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(56, 189, 248, 0.4);
+        background: rgba(6, 24, 44, 0.9);
+        color: #fff;
+        font-size: 14px;
+        outline: none;
+      }
+
+      .btn {
+        padding: 11px 18px;
+        border-radius: 10px;
+        border: none;
+        font-weight: 700;
+        font-size: 13.5px;
+        cursor: pointer;
+        background: linear-gradient(135deg, #0284c7, #38bdf8);
+        color: #fff;
+        transition: opacity 0.2s;
+      }
+
+      .btn:hover {
+        opacity: 0.92;
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #e2e8f0;
+        margin-top: 12px;
+        width: 100%;
+      }
+
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #10b981;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        display: none;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <div class="brand-badge">AI</div>
+        <div class="brand-text">
+          <h1>Trợ lý AI Biển Đảo Việt Nam</h1>
+          <p>Trợ lý Tri thức Lịch sử, Địa lý &amp; Pháp lý Biển Đảo Việt Nam (Bot ID: 7699128420429725701)</p>
+        </div>
+      </div>
+      <div id="statusPill" class="status-pill">Đang kết nối Coze AI...</div>
+    </header>
+
+    <main>
+      <aside class="panel">
+        <h2>Gợi ý câu hỏi tra cứu nhanh</h2>
+        <p>Nhấn vào bất kỳ câu hỏi nào bên dưới để sao chép và gửi cho Trợ lý AI Biển Đảo Việt Nam:</p>
+        <div class="prompt-list">
+          <div class="prompt-card" onclick="copyText('Hãy trình bày quá trình xác lập và thực thi chủ quyền của Việt Nam đối với quần đảo Hoàng Sa và Trường Sa qua các châu bản triều Nguyễn.')">
+            <span class="tag">Lịch sử &amp; Chủ quyền</span>
+            <div class="text">"Hãy trình bày quá trình xác lập và thực thi chủ quyền của Việt Nam đối với quần đảo Hoàng Sa và Trường Sa qua các châu bản triều Nguyễn."</div>
+          </div>
+          <div class="prompt-card" onclick="copyText('Phân biệt chủ quyền ở lãnh hải và quyền chủ quyền ở vùng đặc quyền kinh tế theo UNCLOS 1982 và Luật Biển Việt Nam 2012.')">
+            <span class="tag">Pháp lý Quốc tế &amp; UNCLOS 1982</span>
+            <div class="text">"Phân biệt chủ quyền ở lãnh hải và quyền chủ quyền ở vùng đặc quyền kinh tế theo UNCLOS 1982 và Luật Biển Việt Nam 2012."</div>
+          </div>
+          <div class="prompt-card" onclick="copyText('So sánh đặc điểm vị trí địa lý và điều kiện tự nhiên của hai quần đảo Hoàng Sa và Trường Sa.')">
+            <span class="tag">Địa lý Biển Đông</span>
+            <div class="text">"So sánh đặc điểm vị trí địa lý và điều kiện tự nhiên của hai quần đảo Hoàng Sa và Trường Sa."</div>
+          </div>
+          <div class="prompt-card" onclick="copyText('Gợi ý dàn ý bài thuyết trình 10 phút dành cho học sinh THPT: Tuổi trẻ với trách nhiệm bảo vệ chủ quyền biển đảo Tổ quốc.')">
+            <span class="tag">Học tập &amp; Ngoại khóa THPT</span>
+            <div class="text">"Gợi ý dàn ý bài thuyết trình 10 phút dành cho học sinh THPT: Tuổi trẻ với trách nhiệm bảo vệ chủ quyền biển đảo Tổ quốc."</div>
+          </div>
+        </div>
+
+        <button class="btn btn-secondary" onclick="reconnectServer()">
+          Kiểm tra kết nối máy chủ (.env)
+        </button>
+      </aside>
+
+      <section class="panel chat-stage">
+        <div id="setupBox" class="token-setup-box" style="display: none">
+          <h3>🔒 Cấu hình xác thực an toàn phía máy chủ (.env)</h3>
+          <p>
+            Để bảo mật tuyệt đối (không đưa Personal Access Token vào mã nguồn Frontend hoặc GitHub), hệ thống sử dụng cơ chế cấp khóa từ biến môi trường phía máy chủ qua endpoint <code>/api/coze/token</code>:
+          </p>
+          <ol>
+            <li>
+              Mở tệp <code>.env</code> tại thư mục gốc của dự án (tệp này đã được bảo vệ trong <code>.gitignore</code>).
+            </li>
+            <li>
+              Điền <code>COZE_API_TOKEN=pat_...</code> hoặc cấu hình <code>COZE_OAUTH_CLIENT_ID</code>, <code>COZE_OAUTH_PUBLIC_KEY_ID</code>, <code>COZE_OAUTH_PRIVATE_KEY</code> rồi lưu tệp.
+            </li>
+            <li>
+              Nhấn nút <strong>Kiểm tra &amp; Kết nối lại</strong> bên dưới để khởi chạy <strong>Trợ lý AI Biển Đảo Việt Nam</strong>.
+            </li>
+          </ol>
+          <div class="input-row">
+            <button class="btn" onclick="reconnectServer()">Kiểm tra &amp; Kết nối lại</button>
+          </div>
+        </div>
+
+        <div id="coze-mount-container"></div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast">Đã sao chép câu hỏi! Bạn hãy dán (Ctrl+V) vào khung chat nhé.</div>
+
+    <!-- Coze WebChat SDK chính thức -->
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+    <script>
+      const BOT_ID = '7699128420429725701';
+      const CHATBOT_TITLE = 'Trợ lý AI Biển Đảo Việt Nam';
+
+      let currentClient = null;
+
+      function copyText(text) {
+        navigator.clipboard.writeText(text);
+        const toast = document.getElementById('toast');
+        toast.style.display = 'block';
+        setTimeout(() => {
+          toast.style.display = 'none';
+        }, 2500);
+      }
+
+      async function fetchServerAuthPayload() {
+        try {
+          const res = await fetch('/api/coze/token', { cache: 'no-store' });
+          if (res.ok) {
+            return await res.json();
+          }
+        } catch (e) {
+          // Lỗi kết nối máy chủ
+        }
+        return null;
+      }
+
+      function launchCozeBot(authPayload) {
+        const setupBox = document.getElementById('setupBox');
+        const mountContainer = document.getElementById('coze-mount-container');
+        const statusPill = document.getElementById('statusPill');
+
+        setupBox.style.display = 'none';
+        mountContainer.style.display = 'block';
+        mountContainer.innerHTML = '';
+
+        statusPill.className = 'status-pill';
+        statusPill.textContent = '● Trợ lý AI Biển Đảo Việt Nam đang trực tuyến';
+
+        if (currentClient && typeof currentClient.destroy === 'function') {
+          try {
+            currentClient.destroy();
+          } catch (e) {}
+        }
+
+        currentClient = new CozeWebSDK.WebChatClient({
+          config: {
+            bot_id: authPayload.botId || BOT_ID,
+            isIframe: false,
+          },
+          componentProps: {
+            title: CHATBOT_TITLE,
+            width: '100%',
+          },
+          ui: {
+            base: {
+              layout: window.innerWidth < 768 ? 'mobile' : 'pc',
+              lang: 'en',
+            },
+            asstBtn: {
+              isNeed: false,
+            },
+            header: {
+              isShow: true,
+              isNeedClose: false,
+            },
+            chatBot: {
+              title: CHATBOT_TITLE,
+              uploadable: true,
+              width: '100%',
+              el: mountContainer,
+            },
+          },
+          auth: {
+            type: 'token',
+            token: authPayload.token,
+            onRefreshToken: async function () {
+              const refreshed = await fetchServerAuthPayload();
+              return refreshed && refreshed.token ? refreshed.token : '';
+            },
+          },
+          el: mountContainer,
+        });
+
+        if (currentClient && typeof currentClient.showChatBot === 'function') {
+          try {
+            currentClient.showChatBot();
+          } catch (e) {}
+        }
+      }
+
+      function showSetupGuide() {
+        document.getElementById('coze-mount-container').style.display = 'none';
+        document.getElementById('setupBox').style.display = 'block';
+        const statusPill = document.getElementById('statusPill');
+        statusPill.className = 'status-pill warn';
+        statusPill.textContent = 'Chờ cấu hình khóa xác thực trong .env phía máy chủ';
+      }
+
+      async function reconnectServer() {
+        const payload = await fetchServerAuthPayload();
+        if (payload && payload.configured && payload.token) {
+          launchCozeBot(payload);
+        } else {
+          showSetupGuide();
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        reconnectServer();
+      });
+    </script>
+  </body>
+</html>

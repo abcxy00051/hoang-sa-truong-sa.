@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" fill="none">
+  <defs>
+    <linearGradient id="dawnSky360" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07132B" />
+      <stop offset="32%" stop-color="#1E3A8A" />
+      <stop offset="52%" stop-color="#D97706" />
+      <stop offset="60%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#04142C" />
+    </linearGradient>
+    <radialGradient id="dawnSun" cx="22%" cy="50%" r="32%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.85" />
+      <stop offset="45%" stop-color="#F59E0B" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="2400" height="1200" fill="url(#dawnSky360)" />
+  <circle cx="520" cy="580" r="480" fill="url(#dawnSun)" />
+
+  <!-- Spherical Grid -->
+  <g stroke="#FDE047" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="10 8">
+    <line x1="0" y1="300" x2="2400" y2="300" />
+    <line x1="0" y1="600" x2="2400" y2="600" stroke="#FEF08A" stroke-opacity="0.45" stroke-dasharray="none" />
+    <line x1="0" y1="900" x2="2400" y2="900" />
+    <line x1="600" y1="0" x2="600" y2="1200" />
+    <line x1="1200" y1="0" x2="1200" y2="1200" />
+    <line x1="1800" y1="0" x2="1800" y2="1200" />
+  </g>
+
+  <path d="M0 615 Q600 595 1200 615 T2400 615 L2400 1200 L0 1200 Z" fill="#0369A1" fill-opacity="0.76" />
+
+  <!-- Left Zone: Bình minh Cực Đông tại Đảo Tiên Nữ (114°39′18″Đ) -->
+  <g transform="translate(260, 410)">
+    <circle cx="240" cy="145" r="58" fill="#FEF08A" fill-opacity="0.9" />
+    <path d="M60 205 Q240 150 420 205 Z" fill="#0F2952" stroke="#FBBF24" stroke-width="2.5" />
+    <path d="M222 65 L258 65 L266 190 L214 190 Z" fill="#F59E0B" stroke="#FEF08A" stroke-width="2" />
+    <text x="240" y="265" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="22" font-weight="800">BÌNH MINH ĐẢO TIÊN NỮ — CỰC ĐÔNG TRƯỜNG SA (114°39′Đ)</text>
+  </g>
+
+  <!-- Center Zone: Địa chất Núi lửa cổ Đảo Lý Sơn (Quảng Ngãi) & Phú Quý -->
+  <g transform="translate(950, 405)">
+    <path d="M40 210 L130 85 L275 65 L395 105 L475 210 Z" fill="#1E293B" stroke="#F59E0B" stroke-width="2.5" />
+    <ellipse cx="260" cy="210" rx="85" ry="42" fill="#0284C7" />
+    <text x="260" y="275" text-anchor="middle" fill="#FEF08A" font-family="Inter, sans-serif" font-size="24" font-weight="800">ĐỊA CHẤT NÚI LỬA CỔ LÝ SƠN &amp; CỔNG TÒ VÒ TRIỆU NĂM</text>
+  </g>
+
+  <!-- Right Zone: Quần đảo Cát Bà – Vịnh Hạ Long & Vườn Quốc gia Ven biển -->
+  <g transform="translate(1690, 415)">
+    <path d="M40 200 Q110 55 180 200 Z" fill="#064E3B" stroke="#34D399" stroke-width="2" />
+    <path d="M160 200 Q245 30 330 200 Z" fill="#047857" stroke="#6EE7B7" stroke-width="2.5" />
+    <path d="M300 200 Q375 75 450 200 Z" fill="#065F46" stroke="#34D399" stroke-width="2" />
+    <text x="245" y="265" text-anchor="middle" fill="#A7F3D0" font-family="Inter, sans-serif" font-size="22" font-weight="800">DI SẢN ĐỊA CHẤT КАРСТ VỊNH HẠ LONG – QUẦN ĐẢO CÁT BÀ</text>
+  </g>
+</svg>

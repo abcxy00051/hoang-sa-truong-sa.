@@ -12,7 +12,8 @@ import {
   Eye,
   Layers
 } from 'lucide-react'
-import { FEATURES_DATA, HISTORICAL_MILESTONES_PREVIEW } from '../data/homeData'
+import { FEATURES_DATA } from '../data/homeData'
+import SovereigntyTimelineModule from './SovereigntyTimelineModule'
 
 const ICON_MAP = {
   Map: Map,
@@ -42,16 +43,16 @@ export default function FeatureGrid({
       <div className="container">
         {/* Section Heading */}
         <div className="section-header">
-          <span className="section-eyebrow">6 KHU VỰC CHỨC NĂNG TRỌNG TÂM</span>
+          <span className="section-eyebrow">8 PHÂN HỆ CHỨC NĂNG TRỌNG TÂM</span>
           <h2 className="section-title">
             Hệ sinh thái Học tập &amp; Khám phá <span className="text-ocean">Biển Đảo Số</span>
           </h2>
           <p className="section-subtitle">
-            Mỗi khu vực chức năng mở ra một phương thức tiếp cận tri thức độc đáo — từ quan sát không
-            gian địa lý trên <strong>Bản đồ số Hoàng Sa – Trường Sa</strong>, tra cứu{' '}
-            <strong>Thư viện tri thức biển đảo</strong> đến tương tác trực tiếp với{' '}
-            <strong>Trợ lý AI</strong>, <strong>Phòng học tương tác</strong>,{' '}
-            <strong>Dòng thời gian lịch sử</strong> và <strong>Triển lãm số</strong>.
+            Mỗi phân hệ mở ra một phương thức tiếp cận tri thức chuyên sâu — từ{' '}
+            <strong>Bản đồ số</strong>, <strong>Thư viện tri thức</strong>,{' '}
+            <strong>Trợ lý AI</strong>, <strong>Phòng học tương tác</strong> đến{' '}
+            <strong>Dòng thời gian lịch sử</strong>, <strong>Trải nghiệm 360 độ</strong>,{' '}
+            <strong>Không gian triển lãm</strong> và <strong>Hồ sơ bản đồ</strong>.
           </p>
 
           {onOpenEcosystemPage && (
@@ -62,7 +63,7 @@ export default function FeatureGrid({
                 onClick={onOpenEcosystemPage}
               >
                 <Layers size={18} />
-                <span>Mở Trang Hệ sinh thái số hoàn chỉnh</span>
+                <span>Mở Trung tâm Hệ sinh thái số (8 Phân hệ)</span>
                 <ArrowRight size={17} />
               </button>
             </div>
@@ -155,49 +156,28 @@ export default function FeatureGrid({
           })}
         </div>
 
-        {/* Sovereignty Milestone Strip & Bottom CTA Banner */}
-        <div id="cot-moc" className="sovereignty-banner">
-          <div className="sovereignty-banner-content">
-            <div className="sovereignty-banner-left">
-              <div className="sovereignty-tag">
-                <ShieldAlert size={16} />
-                <span>DÒNG CHẢY CHỦ QUYỀN VIỆT NAM</span>
-              </div>
-              <h3>Từ đội Hoàng Sa thế kỷ XVII đến Luật Biển Việt Nam hiện đại</h3>
-              <p>
-                Nhà nước Việt Nam qua các thời kỳ lịch sử đã xác lập và thực thi chủ quyền liên tục,
-                hòa bình đối với hai quần đảo Hoàng Sa và Trường Sa. Hãy cùng học sinh khám phá
-                những bằng chứng lịch sử và pháp lý không thể chối cãi.
-              </p>
-              <div className="sovereignty-cta-row">
-                <button
-                  type="button"
-                  className="btn-primary-gold"
-                  onClick={onOpenEcosystemPage || onStartExplore}
-                >
-                  <Compass size={19} />
-                  <span>Khám phá Hệ sinh thái số</span>
-                </button>
-                <button
-                  type="button"
-                  className="btn-outline-light"
-                  onClick={() => handleExploreClick('dong-thoi-gian-lich-su')}
-                >
-                  <span>Xem Dòng thời gian lịch sử</span>
-                </button>
-              </div>
-            </div>
-
-            <div className="sovereignty-timeline-mini">
-              {HISTORICAL_MILESTONES_PREVIEW.map((milestone, idx) => (
-                <div key={idx} className="mini-milestone-card">
-                  <span className="mini-milestone-period">{milestone.period}</span>
-                  <h4>{milestone.title}</h4>
-                  <p>{milestone.summary}</p>
-                </div>
-              ))}
-            </div>
+        {/* Sovereignty Milestone Interactive Section (#cot-moc) */}
+        <div id="cot-moc" className="sovereignty-home-section">
+          <div className="section-header">
+            <span className="section-eyebrow">
+              CỘT MỐC CHỦ QUYỀN • BIÊN NIÊN SỬ BIỂN ĐẢO VIỆT NAM
+            </span>
+            <h2 className="section-title">
+              Dòng thời gian <span className="text-ocean">Xác lập &amp; Thực thi Chủ quyền</span> qua 6 Thời kỳ Lịch sử
+            </h2>
+            <p className="section-subtitle">
+              Từ hoạt động truyền thống của cư dân Việt cổ, đội Hoàng Sa kiêm quản Bắc Hải thời chúa
+              Nguyễn – Tây Sơn, Châu bản triều Nguyễn đến Công ước Liên Hợp Quốc về Luật Biển năm
+              1982 và Luật Biển Việt Nam năm 2012.
+            </p>
           </div>
+
+          <SovereigntyTimelineModule
+            isCompactHome={true}
+            onOpenFullTimelinePage={() =>
+              handleExploreClick('dong-thoi-gian-lich-su')
+            }
+          />
         </div>
       </div>
     </section>

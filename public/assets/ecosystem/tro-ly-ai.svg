@@ -1,59 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none">
   <defs>
-    <linearGradient id="bgAi" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#040D1D" />
-      <stop offset="50%" stop-color="#071936" />
+    <linearGradient id="aiBg" x1="0" y1="0" x2="800" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030B18" />
+      <stop offset="50%" stop-color="#071B3A" />
+      <stop offset="100%" stop-color="#026AA7" />
+    </linearGradient>
+    <linearGradient id="aiCoreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" />
       <stop offset="100%" stop-color="#0284C7" />
     </linearGradient>
-    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#0EA5E9" />
-    </linearGradient>
+    <radialGradient id="aiGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.32" />
+      <stop offset="65%" stop-color="#0EA5E9" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#030B18" stop-opacity="0" />
+    </radialGradient>
   </defs>
 
-  <rect width="640" height="360" fill="url(#bgAi)" />
+  <rect width="800" height="460" fill="url(#aiBg)" />
+  <rect width="800" height="460" fill="url(#aiGlow)" />
 
-  <!-- Neural Network Connections -->
-  <g stroke="#38BDF8" stroke-opacity="0.25" stroke-width="1.5">
-    <line x1="120" y1="90" x2="260" y2="150" />
-    <line x1="100" y1="240" x2="260" y2="190" />
-    <line x1="520" y1="85" x2="380" y2="150" />
-    <line x1="530" y1="255" x2="380" y2="195" />
+  <!-- Neural Knowledge Constellation Nodes -->
+  <g stroke="#38BDF8" stroke-opacity="0.28" stroke-width="1.6">
+    <line x1="90" y1="105" x2="185" y2="155" />
+    <line x1="75" y1="240" x2="185" y2="215" />
+    <line x1="105" y1="355" x2="185" y2="295" />
+    <line x1="710" y1="100" x2="615" y2="155" />
+    <line x1="725" y1="240" x2="615" y2="215" />
+    <line x1="695" y1="355" x2="615" y2="295" />
   </g>
-  <circle cx="120" cy="90" r="7" fill="#FBBF24" />
-  <circle cx="100" cy="240" r="6" fill="#38BDF8" />
-  <circle cx="520" cy="85" r="6" fill="#38BDF8" />
-  <circle cx="530" cy="255" r="7" fill="#FBBF24" />
 
-  <!-- Chat Interface Panel -->
-  <g transform="translate(135, 48)">
-    <rect width="370" height="264" rx="20" fill="#071936" fill-opacity="0.92" stroke="#38BDF8" stroke-width="2" />
-    <!-- Top Window Bar -->
-    <rect x="0" y="0" width="370" height="44" rx="20" fill="#0C264E" />
-    <circle cx="24" cy="22" r="5" fill="#F59E0B" />
-    <circle cx="40" cy="22" r="5" fill="#38BDF8" />
-    <circle cx="56" cy="22" r="5" fill="#22C55E" />
-    <text x="185" y="26" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="11.5" font-weight="800">TRỢ LÝ AI GIÁO DỤC BIỂN ĐẢO</text>
+  <!-- Left Knowledge Nodes -->
+  <g transform="translate(42, 82)">
+    <rect width="115" height="42" rx="10" fill="#071936" stroke="#FBBF24" stroke-width="1.4" />
+    <text x="57.5" y="19" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="9.5" font-weight="800">UNCLOS 1982</text>
+    <text x="57.5" y="33" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="8.5">Pháp lý quốc tế</text>
+  </g>
+  <g transform="translate(28, 218)">
+    <rect width="115" height="42" rx="10" fill="#071936" stroke="#38BDF8" stroke-width="1.4" />
+    <text x="57.5" y="19" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="9.5" font-weight="800">CHÂU BẢN</text>
+    <text x="57.5" y="33" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="8.5">Sử liệu triều Nguyễn</text>
+  </g>
+  <g transform="translate(52, 336)">
+    <rect width="115" height="42" rx="10" fill="#071936" stroke="#22D3EE" stroke-width="1.4" />
+    <text x="57.5" y="19" text-anchor="middle" fill="#67E8F9" font-family="sans-serif" font-size="9.5" font-weight="800">ĐỊA LÝ BIỂN</text>
+    <text x="57.5" y="33" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="8.5">Tọa độ &amp; Hải lý</text>
+  </g>
 
-    <!-- User Question Bubble -->
-    <rect x="110" y="62" width="236" height="46" rx="12" fill="#0284C7" />
-    <text x="126" y="82" fill="#FFFFFF" font-family="sans-serif" font-size="10.5" font-weight="600">Hỏi: Ý nghĩa của đường cơ sở và</text>
-    <text x="126" y="98" fill="#E0F2FE" font-family="sans-serif" font-size="10.5">vùng biển Việt Nam theo UNCLOS?</text>
+  <!-- Right Knowledge Nodes -->
+  <g transform="translate(642, 82)">
+    <rect width="118" height="42" rx="10" fill="#071936" stroke="#38BDF8" stroke-width="1.4" />
+    <text x="59" y="19" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="9.5" font-weight="800">GDPT 2018</text>
+    <text x="59" y="33" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="8.5">Khối 10 • 11 • 12</text>
+  </g>
+  <g transform="translate(656, 218)">
+    <rect width="118" height="42" rx="10" fill="#071936" stroke="#FBBF24" stroke-width="1.4" />
+    <text x="59" y="19" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="9.5" font-weight="800">COZE AI ENGINE</text>
+    <text x="59" y="33" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="8.5">Trợ lý 24/7</text>
+  </g>
+  <g transform="translate(636, 336)">
+    <rect width="118" height="42" rx="10" fill="#071936" stroke="#22C55E" stroke-width="1.4" />
+    <text x="59" y="19" text-anchor="middle" fill="#86EFAC" font-family="sans-serif" font-size="9.5" font-weight="800">ÔN TẬP NHANH</text>
+    <text x="59" y="33" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="8.5">Tóm tắt &amp; Gợi ý</text>
+  </g>
 
-    <!-- AI Response Bubble -->
-    <g transform="translate(24, 124)">
-      <circle cx="22" cy="22" r="18" fill="url(#cyanGlow)" />
-      <text x="22" y="26" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11" font-weight="900">AI</text>
-      <rect x="50" y="0" width="272" height="78" rx="12" fill="#0F2952" stroke="#FBBF24" stroke-opacity="0.6" stroke-width="1.2" />
-      <text x="64" y="22" fill="#FCD34D" font-family="sans-serif" font-size="10.5" font-weight="700">✦ Trợ lý AI giải đáp (Chuẩn THPT):</text>
-      <rect x="64" y="34" width="230" height="7" rx="3.5" fill="#E0F2FE" opacity="0.8" />
-      <rect x="64" y="48" width="205" height="7" rx="3.5" fill="#E0F2FE" opacity="0.65" />
-      <rect x="64" y="62" width="160" height="7" rx="3.5" fill="#38BDF8" opacity="0.85" />
+  <!-- Center AI Interactive Workspace Window -->
+  <g transform="translate(180, 46)">
+    <rect width="440" height="352" rx="22" fill="#051329" fill-opacity="0.95" stroke="#38BDF8" stroke-width="2" />
+    <!-- Window Header -->
+    <rect width="440" height="52" rx="22" fill="#0B254B" />
+    <circle cx="26" cy="26" r="6" fill="#F59E0B" />
+    <circle cx="44" cy="26" r="6" fill="#38BDF8" />
+    <circle cx="62" cy="26" r="6" fill="#22C55E" />
+    <text x="220" y="30" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="12.5" font-weight="800">TRỢ LÝ AI GIÁO DỤC BIỂN ĐẢO VIỆT NAM</text>
+
+    <!-- Student Query Bubble -->
+    <g transform="translate(120, 72)">
+      <rect width="292" height="58" rx="14" fill="#0284C7" />
+      <text x="16" y="23" fill="#FEF08A" font-family="sans-serif" font-size="10" font-weight="800">HỌC SINH THPT HỎI:</text>
+      <text x="16" y="40" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="600">Phân biệt Lãnh hải 12 hải lý và Vùng đặc</text>
+      <text x="16" y="53" fill="#E0F2FE" font-family="sans-serif" font-size="10.5">quyền kinh tế 200 hải lý theo UNCLOS 1982?</text>
     </g>
 
-    <!-- Input Bar Prompt -->
-    <rect x="24" y="218" width="322" height="30" rx="15" fill="#040D1D" stroke="#38BDF8" stroke-opacity="0.45" />
-    <text x="42" y="237" fill="#94A3B8" font-family="sans-serif" font-size="10">Nhập câu hỏi Lịch sử - Địa lý biển đảo...</text>
-    <circle cx="330" cy="233" r="10" fill="#F59E0B" />
+    <!-- AI Verified Answer Bubble -->
+    <g transform="translate(24, 148)">
+      <circle cx="24" cy="24" r="22" fill="url(#aiCoreGrad)" stroke="#FBBF24" stroke-width="2" />
+      <text x="24" y="29" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="12.5" font-weight="900">AI</text>
+
+      <rect x="58" y="0" width="334" height="122" rx="14" fill="#091E40" stroke="#FBBF24" stroke-opacity="0.65" stroke-width="1.5" />
+      <text x="74" y="24" fill="#FCD34D" font-family="sans-serif" font-size="11" font-weight="800">✦ Giải đáp chuẩn kiến thức Địa lý &amp; Pháp luật THPT:</text>
+      <text x="74" y="45" fill="#E0F2FE" font-family="sans-serif" font-size="10.5">1. Lãnh hải (12 hải lý): Vùng biển thuộc chủ quyền</text>
+      <text x="74" y="61" fill="#E0F2FE" font-family="sans-serif" font-size="10.5">hoàn toàn và đầy đủ của quốc gia ven biển.</text>
+      <text x="74" y="81" fill="#7DD3FC" font-family="sans-serif" font-size="10.5">2. Vùng đặc quyền kinh tế (200 hải lý): Quốc gia có</text>
+      <text x="74" y="97" fill="#7DD3FC" font-family="sans-serif" font-size="10.5">quyền chủ quyền về kinh tế và quyền tài phán.</text>
+      <rect x="74" y="104" width="168" height="12" rx="6" fill="#F59E0B" fill-opacity="0.22" />
+    </g>
+
+    <!-- Prompt Input Bar -->
+    <g transform="translate(24, 290)">
+      <rect width="392" height="40" rx="20" fill="#030B18" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1.4" />
+      <text x="22" y="24" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Đặt câu hỏi về Hoàng Sa, Trường Sa, lịch sử, pháp lý...</text>
+      <circle cx="370" cy="20" r="13" fill="#F59E0B" />
+      <text x="370" y="24" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11" font-weight="900">→</text>
+    </g>
   </g>
 </svg>
