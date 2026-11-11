@@ -1,152 +1,292 @@
 import React, { useState, useEffect } from 'react'
+import {
+  Routes,
+  Route,
+  useNavigate,
+  useLocation,
+  useParams
+} from 'react-router-dom'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import AboutSection from './components/AboutSection'
-import FeatureGrid from './components/FeatureGrid'
-import InteractivePreviewModal from './components/InteractivePreviewModal'
 import Footer from './components/Footer'
+import InteractivePreviewModal from './components/InteractivePreviewModal'
 import CozeFloatingChatbot from './components/CozeFloatingChatbot'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
 import EcosystemPage from './pages/EcosystemPage'
+import StudentTeacherPage from './pages/StudentTeacherPage'
+import SovereigntyPage from './pages/SovereigntyPage'
+import ContactPage from './pages/ContactPage'
 import FeatureDetailPage from './pages/FeatureDetailPage'
-import { FEATURES_DATA } from './data/homeData'
+import NotFoundPage from './pages/NotFoundPage'
+import { FEATURES_DATA, getFeatureRoutePath } from './data/homeData'
 
-function parseHashRoute(hash) {
-  const cleanHash = (hash || '').replace(/^#/, '')
-  if (cleanHash === 'he-sinh-thai-so') {
-    return { page: 'ecosystem', featureId: null }
+function DynamicFeatureRoute({
+  activeRole,
+  onRoleChange,
+  onNavigateFeature,
+  onBackEcosystem,
+  onBackHome
+}) {
+  const { featureId } = useParams()
+  const normalized =
+    featureId === 'khong-gian-kham-pha' ? 'trien-lam-so' : featureId
+  const exists = FEATURES_DATA.some((f) => f.id === normalized)
+  if (!exists) {
+    return <NotFoundPage />
   }
-  if (cleanHash.startsWith('he-sinh-thai/')) {
-    const rawId = cleanHash.replace('he-sinh-thai/', '')
-    const normalizedId =
-      rawId === 'khong-gian-kham-pha' ? 'trien-lam-so' : rawId
-    const exists = FEATURES_DATA.some((f) => f.id === normalizedId)
-    if (exists) {
-      return { page: 'feature', featureId: normalizedId }
-    }
-  }
-  return { page: 'home', featureId: null, sectionId: cleanHash || null }
+  return (
+    <FeatureDetailPage
+      featureId={normalized}
+      activeRole={activeRole}
+      onRoleChange={onRoleChange}
+      onNavigateFeature={onNavigateFeature}
+      onBackEcosystem={onBackEcosystem}
+      onBackHome={onBackHome}
+    />
+  )
 }
 
 export default function App() {
   const [activeRole, setActiveRole] = useState('student')
   const [selectedFeatureId, setSelectedFeatureId] = useState(null)
-  const [routeState, setRouteState] = useState(() =>
-    parseHashRoute(window.location.hash)
-  )
+  const navigate = useNavigate()
+  const location = useLocation()
 
+  // Cuộn mượt lên đầu trang khi chuyển đường dẫn (Multi-page navigation)
   useEffect(() => {
-    const handleHashChange = () => {
-      const nextRoute = parseHashRoute(window.location.hash)
-      setRouteState(nextRoute)
-      if (nextRoute.page !== 'home') {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [location.pathname])
+
+  // Tương thích ngược nếu người dùng mở link hash cũ (#he-sinh-thai-so, #he-sinh-thai/...)
+  useEffect(() => {
+    const cleanHash = (window.location.hash || '').replace(/^#/, '')
+    if (!cleanHash) return
+    if (cleanHash === 'he-sinh-thai-so') {
+      navigate('/he-sinh-thai-so', { replace: true })
+    } else if (cleanHash === 'gioi-thieu') {
+      navigate('/gioi-thieu', { replace: true })
+    } else if (cleanHash === 'doi-tuong') {
+      navigate('/goc-hoc-sinh-giao-vien', { replace: true })
+    } else if (cleanHash === 'cot-moc') {
+      navigate('/cot-moc-chu-quyen', { replace: true })
+    } else if (cleanHash.startsWith('he-sinh-thai/')) {
+      const rawId = cleanHash.replace('he-sinh-thai/', '')
+      navigate(getFeatureRoutePath(rawId), { replace: true })
     }
-    window.addEventListener('hashchange', handleHashChange)
-    return () => window.removeEventListener('hashchange', handleHashChange)
-  }, [])
+  }, [navigate])
 
   const openEcosystemPage = () => {
-    window.location.hash = 'he-sinh-thai-so'
-    setRouteState({ page: 'ecosystem', featureId: null })
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    navigate('/he-sinh-thai-so')
   }
 
   const navigateToFeaturePage = (featureId) => {
-    const normalizedId =
-      featureId === 'khong-gian-kham-pha' ? 'trien-lam-so' : featureId
-    window.location.hash = `he-sinh-thai/${normalizedId}`
-    setRouteState({ page: 'feature', featureId: normalizedId })
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    const path = getFeatureRoutePath(featureId)
+    navigate(path)
   }
 
-  const navigateToHome = (sectionHash = '#trang-chu') => {
-    const targetSection = sectionHash.replace(/^#/, '')
-    window.location.hash = targetSection
-    setRouteState({ page: 'home', featureId: null, sectionId: targetSection })
-    setTimeout(() => {
-      const el = document.getElementById(targetSection)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
-    }, 40)
-  }
-
-  const handleNavigateNav = (navItem) => {
-    if (navItem.page === 'ecosystem' || navItem.id === 'features') {
-      openEcosystemPage()
-    } else {
-      navigateToHome(navItem.href || '#trang-chu')
-    }
+  const navigateToHome = () => {
+    navigate('/')
   }
 
   return (
     <div className="app-wrapper">
       <Navbar
-        onStartExplore={openEcosystemPage}
         activeRole={activeRole}
         onRoleChange={setActiveRole}
-        currentPage={routeState.page}
-        onNavigateNav={handleNavigateNav}
       />
 
-      <main>
-        {routeState.page === 'home' && (
-          <>
-            <HeroSection
-              onStartExplore={openEcosystemPage}
-              onSelectFeature={(id) => navigateToFeaturePage(id)}
-            />
-
-            <AboutSection
-              activeRole={activeRole}
-              onRoleChange={setActiveRole}
-              onStartExplore={openEcosystemPage}
-            />
-
-            <FeatureGrid
-              onSelectFeature={(id) => setSelectedFeatureId(id)}
-              onNavigateFeature={(id) => navigateToFeaturePage(id)}
-              onOpenEcosystemPage={openEcosystemPage}
-              onStartExplore={openEcosystemPage}
-            />
-          </>
-        )}
-
-        {routeState.page === 'ecosystem' && (
-          <EcosystemPage
-            activeRole={activeRole}
-            onRoleChange={setActiveRole}
-            onNavigateFeature={(id) => navigateToFeaturePage(id)}
-            onQuickPreview={(id) => setSelectedFeatureId(id)}
-            onBackHome={() => navigateToHome('#trang-chu')}
+      <main key={location.pathname} className="multi-page-main">
+        <Routes>
+          {/* I. CÁC TRANG CHÍNH ĐỘC LẬP */}
+          <Route
+            path="/"
+            element={
+              <HomePage
+                onStartExplore={openEcosystemPage}
+                onSelectFeature={(id) => setSelectedFeatureId(id)}
+                onNavigateFeature={navigateToFeaturePage}
+              />
+            }
           />
-        )}
 
-        {routeState.page === 'feature' && (
-          <FeatureDetailPage
-            featureId={routeState.featureId}
-            activeRole={activeRole}
-            onRoleChange={setActiveRole}
-            onNavigateFeature={(id) => navigateToFeaturePage(id)}
-            onBackEcosystem={openEcosystemPage}
-            onBackHome={() => navigateToHome('#trang-chu')}
+          <Route path="/gioi-thieu" element={<AboutPage />} />
+
+          <Route
+            path="/he-sinh-thai-so"
+            element={
+              <EcosystemPage
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onQuickPreview={(id) => setSelectedFeatureId(id)}
+                onBackHome={navigateToHome}
+              />
+            }
           />
-        )}
+
+          <Route
+            path="/goc-hoc-sinh-giao-vien"
+            element={
+              <StudentTeacherPage
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+              />
+            }
+          />
+
+          <Route
+            path="/cot-moc-chu-quyen"
+            element={
+              <SovereigntyPage
+                activeRole={activeRole}
+                onNavigateFeature={navigateToFeaturePage}
+              />
+            }
+          />
+
+          <Route path="/lien-he" element={<ContactPage />} />
+
+          {/* II. CÁC TRANG CON TRONG HỆ SINH THÁI SỐ */}
+          <Route
+            path="/ban-do-so"
+            element={
+              <FeatureDetailPage
+                featureId="ban-do-so"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/thu-vien-tri-thuc"
+            element={
+              <FeatureDetailPage
+                featureId="thu-vien-tri-thuc"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/tro-ly-ai"
+            element={
+              <FeatureDetailPage
+                featureId="tro-ly-ai"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/phong-hoc-tuong-tac"
+            element={
+              <FeatureDetailPage
+                featureId="phong-hoc-tuong-tac"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/trai-nghiem-360"
+            element={
+              <FeatureDetailPage
+                featureId="trai-nghiem-360"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/trien-lam-so"
+            element={
+              <FeatureDetailPage
+                featureId="trien-lam-so"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/dong-thoi-gian-lich-su"
+            element={
+              <FeatureDetailPage
+                featureId="dong-thoi-gian-lich-su"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/ho-so-ban-do"
+            element={
+              <FeatureDetailPage
+                featureId="ho-so-ban-do"
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          <Route
+            path="/he-sinh-thai-so/:featureId"
+            element={
+              <DynamicFeatureRoute
+                activeRole={activeRole}
+                onRoleChange={setActiveRole}
+                onNavigateFeature={navigateToFeaturePage}
+                onBackEcosystem={openEcosystemPage}
+                onBackHome={navigateToHome}
+              />
+            }
+          />
+
+          {/* Trang 404 khi đường dẫn không tồn tại */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </main>
 
-      <Footer
-        onSelectFeature={(id) => navigateToFeaturePage(id)}
-        onNavigateNav={handleNavigateNav}
-      />
+      <Footer />
 
       <InteractivePreviewModal
         selectedFeatureId={selectedFeatureId}
         onClose={() => setSelectedFeatureId(null)}
         onSelectFeature={(id) => setSelectedFeatureId(id)}
-        onNavigateFeature={(id) => navigateToFeaturePage(id)}
+        onNavigateFeature={(id) => {
+          setSelectedFeatureId(null)
+          navigateToFeaturePage(id)
+        }}
       />
 
       {/* Nút Chatbot nổi "Trợ lý AI Biển Đảo Việt Nam" ở góc dưới bên phải toàn trang */}

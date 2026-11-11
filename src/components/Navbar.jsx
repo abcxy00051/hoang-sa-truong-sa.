@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { Compass, Menu, X, Sparkles, GraduationCap, ShieldCheck } from 'lucide-react'
 import { NAV_LINKS } from '../data/homeData'
 
+const ECOSYSTEM_CHILD_PATHS = new Set([
+  '/he-sinh-thai-so',
+  '/ban-do-so',
+  '/thu-vien-tri-thuc',
+  '/tro-ly-ai',
+  '/phong-hoc-tuong-tac',
+  '/trai-nghiem-360',
+  '/trien-lam-so',
+  '/ho-so-ban-do'
+])
+
 export default function Navbar({
-  onStartExplore,
   activeRole,
-  onRoleChange,
-  currentPage = 'home',
-  onNavigateNav
+  onRoleChange
 }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [selectedNavId, setSelectedNavId] = useState('home')
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,29 +30,35 @@ export default function Navbar({
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const activeNavId =
-    currentPage === 'ecosystem' || currentPage === 'feature'
-      ? 'features'
-      : selectedNavId || 'home'
-
-  const handleLinkClick = (e, item) => {
-    setSelectedNavId(item.id)
+  useEffect(() => {
     setMobileMenuOpen(false)
-    if (onNavigateNav) {
-      e.preventDefault()
-      onNavigateNav(item)
+  }, [location.pathname])
+
+  const isNavItemActive = (item) => {
+    const pathname = location.pathname
+    if (item.path === '/') {
+      return pathname === '/'
     }
+    if (item.path === '/he-sinh-thai-so') {
+      return (
+        ECOSYSTEM_CHILD_PATHS.has(pathname) ||
+        pathname.startsWith('/he-sinh-thai')
+      )
+    }
+    if (item.path === '/cot-moc-chu-quyen') {
+      return pathname === '/cot-moc-chu-quyen' || pathname === '/dong-thoi-gian-lich-su'
+    }
+    return pathname === item.path || pathname.startsWith(item.path + '/')
   }
 
   return (
-    <header className={`site-navbar ${isScrolled || currentPage !== 'home' ? 'scrolled' : ''}`}>
+    <header className={`site-navbar ${isScrolled || location.pathname !== '/' ? 'scrolled' : ''}`}>
       <div className="container navbar-inner">
         {/* Brand Identity */}
-        <a
-          href="#trang-chu"
+        <Link
+          to="/"
           className="brand-logo"
           aria-label="Biển Đảo Việt Nam - Trang chủ"
-          onClick={(e) => handleLinkClick(e, { id: 'home', href: '#trang-chu', page: 'home' })}
         >
           <div className="brand-emblem">
             <Compass className="brand-icon" size={26} />
@@ -53,22 +68,21 @@ export default function Navbar({
             <span className="brand-title">BIỂN ĐẢO VIỆT NAM</span>
             <span className="brand-slogan">Chạm tri thức - Vững chủ quyền</span>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <ul className="nav-list">
             {NAV_LINKS.map((item) => {
-              const isItemActive = activeNavId === item.id
+              const isItemActive = isNavItemActive(item)
               return (
                 <li key={item.id}>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.path}
                     className={`nav-link ${isItemActive ? 'active' : ''}`}
-                    onClick={(e) => handleLinkClick(e, item)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               )
             })}
@@ -96,10 +110,10 @@ export default function Navbar({
             </button>
           </div>
 
-          <button type="button" className="btn-gold-nav" onClick={onStartExplore}>
+          <Link to="/he-sinh-thai-so" className="btn-gold-nav">
             <ShieldCheck size={16} />
             <span>Hệ sinh thái số</span>
-          </button>
+          </Link>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -149,28 +163,25 @@ export default function Navbar({
             <ul className="mobile-nav-list">
               {NAV_LINKS.map((item) => (
                 <li key={item.id}>
-                  <a
-                    href={item.href}
-                    className={`mobile-nav-link ${activeNavId === item.id ? 'active' : ''}`}
-                    onClick={(e) => handleLinkClick(e, item)}
+                  <Link
+                    to={item.path}
+                    className={`mobile-nav-link ${isNavItemActive(item) ? 'active' : ''}`}
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
 
-            <button
-              type="button"
+            <Link
+              to="/he-sinh-thai-so"
               className="btn-primary-gold mobile-cta-btn"
-              onClick={() => {
-                setMobileMenuOpen(false)
-                onStartExplore()
-              }}
+              onClick={() => setMobileMenuOpen(false)}
             >
               <ShieldCheck size={18} />
               <span>Khám phá Hệ sinh thái số</span>
-            </button>
+            </Link>
           </div>
         </div>
       )}

@@ -1,10 +1,38 @@
 export const NAV_LINKS = [
-  { id: 'home', label: 'Trang chủ', href: '#trang-chu', page: 'home' },
-  { id: 'about', label: 'Giới thiệu dự án', href: '#gioi-thieu', page: 'home' },
-  { id: 'features', label: 'Hệ sinh thái số', href: '#he-sinh-thai-so', page: 'ecosystem' },
-  { id: 'audiences', label: 'Góc Học sinh & Giáo viên', href: '#doi-tuong', page: 'home' },
-  { id: 'sovereignty', label: 'Cột mốc Chủ quyền', href: '#cot-moc', page: 'home' }
+  { id: 'home', label: 'Trang chủ', href: '/', path: '/' },
+  { id: 'about', label: 'Giới thiệu dự án', href: '/gioi-thieu', path: '/gioi-thieu' },
+  { id: 'features', label: 'Hệ sinh thái số', href: '/he-sinh-thai-so', path: '/he-sinh-thai-so' },
+  {
+    id: 'audiences',
+    label: 'Góc Học sinh & Giáo viên',
+    href: '/goc-hoc-sinh-giao-vien',
+    path: '/goc-hoc-sinh-giao-vien'
+  },
+  {
+    id: 'sovereignty',
+    label: 'Cột mốc Chủ quyền',
+    href: '/cot-moc-chu-quyen',
+    path: '/cot-moc-chu-quyen'
+  },
+  { id: 'contact', label: 'Liên hệ', href: '/lien-he', path: '/lien-he' }
 ]
+
+export const ECOSYSTEM_SUBPAGE_ROUTES = [
+  { id: 'ban-do-so', path: '/ban-do-so', label: 'Bản đồ số' },
+  { id: 'thu-vien-tri-thuc', path: '/thu-vien-tri-thuc', label: 'Thư viện tri thức' },
+  { id: 'tro-ly-ai', path: '/tro-ly-ai', label: 'Trợ lý AI' },
+  { id: 'phong-hoc-tuong-tac', path: '/phong-hoc-tuong-tac', label: 'Phòng học tương tác' },
+  { id: 'trai-nghiem-360', path: '/trai-nghiem-360', label: 'Trải nghiệm 360°' },
+  { id: 'trien-lam-so', path: '/trien-lam-so', label: 'Triển lãm số' },
+  { id: 'dong-thoi-gian-lich-su', path: '/cot-moc-chu-quyen', label: 'Dòng thời gian lịch sử' },
+  { id: 'ho-so-ban-do', path: '/ho-so-ban-do', label: 'Hồ sơ bản đồ' }
+]
+
+export function getFeatureRoutePath(featureId) {
+  const normalized = featureId === 'khong-gian-kham-pha' ? 'trien-lam-so' : featureId
+  const found = ECOSYSTEM_SUBPAGE_ROUTES.find((r) => r.id === normalized)
+  return found ? found.path : `/${normalized}`
+}
 
 export const ECOSYSTEM_CATEGORIES = [
   { id: 'all', label: 'Tất cả 8 phân hệ' },

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {
   Compass,
   MapPin,
@@ -56,41 +57,36 @@ export default function HeroSection({ onStartExplore, onSelectFeature }) {
 
             {/* Primary CTA Buttons */}
             <div className="hero-cta-group">
-              <button
-                type="button"
+              <Link
+                to="/he-sinh-thai-so"
                 className="btn-primary-gold"
-                onClick={onStartExplore}
               >
                 <Compass size={20} />
                 <span>Bắt đầu khám phá</span>
                 <ArrowRight size={18} />
-              </button>
+              </Link>
 
-              <a href="#gioi-thieu" className="btn-secondary-glass">
+              <Link to="/gioi-thieu" className="btn-secondary-glass">
                 <BookOpen size={18} />
                 <span>Tìm hiểu dự án</span>
-              </a>
+              </Link>
             </div>
 
             {/* Quick Jump Chips to Core Modules */}
             <div className="hero-quick-chips">
-              <span className="quick-chips-label">Truy cập nhanh:</span>
-              <button
-                type="button"
-                className="quick-chip"
-                onClick={() => onSelectFeature('ban-do-so')}
-              >
+              <span className="quick-chips-label">Trang chức năng:</span>
+              <Link to="/ban-do-so" className="quick-chip">
                 <MapPin size={13} />
-                <span>Bản đồ số Hoàng Sa - Trường Sa</span>
-              </button>
-              <button
-                type="button"
-                className="quick-chip"
-                onClick={() => onSelectFeature('tro-ly-ai')}
-              >
+                <span>Bản đồ số (/ban-do-so)</span>
+              </Link>
+              <Link to="/tro-ly-ai" className="quick-chip">
                 <Sparkles size={13} />
-                <span>Hỏi đáp Trợ lý AI</span>
-              </button>
+                <span>Trợ lý AI (/tro-ly-ai)</span>
+              </Link>
+              <Link to="/cot-moc-chu-quyen" className="quick-chip">
+                <Shield size={13} />
+                <span>Cột mốc Chủ quyền</span>
+              </Link>
             </div>
           </div>
 

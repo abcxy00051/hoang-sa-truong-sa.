@@ -15292,3 +15292,139 @@ ul {
   border-bottom: 1px solid var(--moonstone) !important;
 }
 
+/* ==========================================================================
+   27. MULTI-PAGE PORTAL ARCHITECTURE & PAGE TRANSITIONS
+   ========================================================================== */
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition-wrapper,
+.ecosystem-page,
+.feature-detail-page {
+  animation: pageFadeIn 0.28s ease-out;
+}
+
+.portal-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.portal-directory-card {
+  background: var(--light-blue);
+  border: 1px solid var(--timberwolf);
+  border-radius: var(--radius-lg);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.22s ease;
+  color: var(--midnight-green);
+}
+
+.portal-directory-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--moonstone);
+  box-shadow: var(--shadow-md);
+}
+
+.portal-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.portal-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--moonstone);
+  color: var(--alice-blue);
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.portal-directory-card:hover .portal-card-link {
+  background: var(--midnight-green);
+  color: var(--alice-blue);
+}
+
+/* Contact Page Grid & Form */
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-field label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--midnight-green);
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  font-family: inherit;
+  font-size: 0.92rem;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--timberwolf);
+  background: var(--alice-blue);
+  color: var(--midnight-green);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+  border-color: var(--moonstone);
+}
+
+@media (max-width: 960px) {
+  .contact-page-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+

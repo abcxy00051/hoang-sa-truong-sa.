@@ -1,17 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Compass, Mail, Phone, MapPin, ShieldCheck, ArrowUp } from 'lucide-react'
-import { NAV_LINKS, FEATURES_DATA } from '../data/homeData'
+import { NAV_LINKS, ECOSYSTEM_SUBPAGE_ROUTES } from '../data/homeData'
 
-export default function Footer({ onSelectFeature, onNavigateNav }) {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const handleNavClick = (e, link) => {
-    if (onNavigateNav) {
-      e.preventDefault()
-      onNavigateNav(link)
-    }
   }
 
   return (
@@ -20,7 +14,7 @@ export default function Footer({ onSelectFeature, onNavigateNav }) {
         <div className="footer-grid">
           {/* Column 1: Brand & Mission */}
           <div className="footer-brand-col">
-            <div className="brand-logo footer-logo">
+            <Link to="/" className="brand-logo footer-logo">
               <div className="brand-emblem">
                 <Compass className="brand-icon" size={26} />
                 <span className="brand-star">★</span>
@@ -29,11 +23,11 @@ export default function Footer({ onSelectFeature, onNavigateNav }) {
                 <span className="brand-title">BIỂN ĐẢO VIỆT NAM</span>
                 <span className="brand-slogan">Chạm tri thức - Vững chủ quyền</span>
               </div>
-            </div>
+            </Link>
 
             <p className="footer-mission">
-              Hệ sinh thái giáo dục số hỗ trợ giảng dạy và học tập kiến thức Lịch sử, Địa lý, Pháp
-              luật về chủ quyền Biển đảo Việt Nam dành cho học sinh THPT và giáo viên.
+              Hệ sinh thái giáo dục số đa trang hỗ trợ giảng dạy và học tập kiến thức Lịch sử, Địa
+              lý, Pháp luật về chủ quyền Biển đảo Việt Nam dành cho học sinh THPT và giáo viên.
             </p>
 
             <div className="footer-sovereignty-pill">
@@ -42,33 +36,27 @@ export default function Footer({ onSelectFeature, onNavigateNav }) {
             </div>
           </div>
 
-          {/* Column 2: Quick Navigation */}
+          {/* Column 2: 6 Main Multi-page Routes */}
           <div className="footer-links-col">
-            <h4>Điều hướng</h4>
+            <h4>Chuyên trang chính</h4>
             <ul>
               {NAV_LINKS.map((link) => (
                 <li key={link.id}>
-                  <a href={link.href} onClick={(e) => handleNavClick(e, link)}>
-                    {link.label}
-                  </a>
+                  <Link to={link.path}>{link.label}</Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: 6 Core Modules */}
+          {/* Column 3: Ecosystem Sub-pages */}
           <div className="footer-links-col">
-            <h4>6 Khu vực chức năng</h4>
+            <h4>Các trang Hệ sinh thái số</h4>
             <ul>
-              {FEATURES_DATA.map((feature) => (
-                <li key={feature.id}>
-                  <button
-                    type="button"
-                    className="footer-link-btn"
-                    onClick={() => onSelectFeature(feature.id)}
-                  >
-                    {feature.code}. {feature.title}
-                  </button>
+              {ECOSYSTEM_SUBPAGE_ROUTES.slice(0, 6).map((sub) => (
+                <li key={sub.id}>
+                  <Link to={sub.path}>
+                    {sub.label} ({sub.path})
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -88,7 +76,11 @@ export default function Footer({ onSelectFeature, onNavigateNav }) {
               </li>
               <li>
                 <Phone size={16} />
-                <span>Hỗ trợ học liệu số &amp; ngoại khóa THPT</span>
+                <span>
+                  <Link to="/lien-he" style={{ textDecoration: 'underline' }}>
+                    Gửi thông điệp tại trang Liên hệ (/lien-he)
+                  </Link>
+                </span>
               </li>
             </ul>
           </div>
@@ -97,7 +89,7 @@ export default function Footer({ onSelectFeature, onNavigateNav }) {
         <div className="footer-bottom">
           <p>
             © {new Date().getFullYear()} <strong>BIỂN ĐẢO VIỆT NAM</strong> — Chạm tri thức, Vững chủ
-            quyền. Thiết kế chuẩn mực phục vụ giáo dục THPT.
+            quyền. Thiết kế cổng thông tin đa trang phục vụ giáo dục THPT.
           </p>
           <button
             type="button"
