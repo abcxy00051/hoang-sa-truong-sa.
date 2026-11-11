@@ -1,47 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
   <defs>
-    <linearGradient id="a6-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#113747"/>
-      <stop offset="55%" stop-color="#1A718D"/>
-      <stop offset="100%" stop-color="#113747"/>
+    <linearGradient id="oa6-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A718D"/>
+      <stop offset="55%" stop-color="#113747"/>
+      <stop offset="100%" stop-color="#1A718D"/>
     </linearGradient>
-    <linearGradient id="a6-gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
+    <linearGradient id="oa6-aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B6E0EB"/>
+      <stop offset="100%" stop-color="#29B4D1"/>
     </linearGradient>
   </defs>
 
-  <rect width="480" height="260" fill="url(#a6-bg)"/>
+  <rect width="480" height="260" fill="url(#oa6-bg)"/>
+  <path d="M0 220 Q120 202 240 220 T480 220 V260 H0 Z" fill="#113747" fill-opacity="0.55"/>
 
   <!-- Left Exam Sheet Card -->
-  <g transform="translate(28, 26)">
-    <rect width="262" height="188" rx="16" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
-    <rect x="18" y="16" width="174" height="24" rx="7" fill="url(#a6-gold)"/>
+  <g transform="translate(26, 22)">
+    <rect width="264" height="190" rx="16" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
+    <rect x="18" y="16" width="174" height="24" rx="7" fill="url(#oa6-aqua)"/>
     <text x="105" y="32" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">ĐỀ KIỂM TRA TỔNG HỢP</text>
 
     <!-- Timer Pill -->
-    <rect x="200" y="16" width="46" height="24" rx="7" fill="#1A718D" stroke="#FEF08A" stroke-width="1.2"/>
-    <text x="223" y="32" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="800">15:00</text>
+    <rect x="200" y="16" width="46" height="24" rx="7" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.4"/>
+    <text x="223" y="32" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="800">15:00</text>
 
     <circle cx="28" cy="64" r="4" fill="#29B4D1"/>
     <text x="40" y="68" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="700">20 câu hỏi liên chuyên đề</text>
 
-    <circle cx="28" cy="92" r="4" fill="#FEF08A"/>
+    <circle cx="28" cy="92" r="4" fill="#B6E0EB"/>
     <text x="40" y="96" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="700">Đồng hồ bấm giờ thực tế</text>
 
-    <circle cx="28" cy="120" r="4" fill="#34D399"/>
+    <circle cx="28" cy="120" r="4" fill="#29B4D1"/>
     <text x="40" y="124" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="700">Phân tích điểm từng mảng</text>
 
-    <rect x="18" y="142" width="226" height="28" rx="8" fill="#29B4D1" fill-opacity="0.22" stroke="#29B4D1" stroke-width="1.2"/>
-    <text x="131" y="160" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">★ Mở khóa Huy hiệu Thủ khoa</text>
+    <rect x="18" y="144" width="228" height="28" rx="8" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.2"/>
+    <text x="132" y="162" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">★ Mở khóa Huy hiệu Thủ khoa</text>
   </g>
 
   <!-- Right Grand Score Medal -->
-  <g transform="translate(382, 116)">
-    <circle cx="0" cy="0" r="68" fill="#113747" stroke="url(#a6-gold)" stroke-width="4"/>
-    <circle cx="0" cy="0" r="56" fill="none" stroke="#29B4D1" stroke-width="1.5" stroke-dasharray="5 4"/>
-    <text x="0" y="-6" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="28" font-weight="900">10.0</text>
-    <text x="0" y="16" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">THANG ĐIỂM</text>
-    <text x="0" y="34" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">20 CÂU HỎI</text>
+  <g transform="translate(382, 114)">
+    <circle cx="0" cy="0" r="68" fill="#113747" stroke="#B6E0EB" stroke-width="4"/>
+    <circle cx="0" cy="0" r="56" fill="#1A718D" fill-opacity="0.45" stroke="#29B4D1" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <text x="0" y="-6" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="29" font-weight="900">10.0</text>
+    <text x="0" y="16" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">THANG ĐIỂM</text>
+    <text x="0" y="34" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="900">20 CÂU HỎI</text>
   </g>
 </svg>

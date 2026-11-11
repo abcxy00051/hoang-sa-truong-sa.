@@ -1,46 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
   <defs>
-    <linearGradient id="a3-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#113747"/>
-      <stop offset="55%" stop-color="#1A718D"/>
-      <stop offset="100%" stop-color="#113747"/>
+    <linearGradient id="oa3-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A718D"/>
+      <stop offset="55%" stop-color="#113747"/>
+      <stop offset="100%" stop-color="#1A718D"/>
     </linearGradient>
   </defs>
 
-  <rect width="480" height="260" fill="url(#a3-bg)"/>
+  <rect width="480" height="260" fill="url(#oa3-bg)"/>
+  <path d="M0 220 Q120 202 240 220 T480 220 V260 H0 Z" fill="#113747" fill-opacity="0.55"/>
 
-  <!-- Connecting Maritime Route Curves -->
-  <path d="M188 54 C235 54 245 112 292 112" stroke="#FEF08A" stroke-width="3" stroke-dasharray="5 4"/>
-  <path d="M188 112 C235 112 245 54 292 54" stroke="#29B4D1" stroke-width="3"/>
-  <path d="M188 170 L292 170" stroke="#34D399" stroke-width="3"/>
+  <!-- Connecting Maritime Route Curves in Cyan & Ice-Aqua -->
+  <path d="M188 50 C235 50 245 108 292 108" stroke="#B6E0EB" stroke-width="3" stroke-dasharray="5 4"/>
+  <path d="M188 108 C235 108 245 50 292 50" stroke="#29B4D1" stroke-width="3"/>
+  <path d="M188 166 L292 166" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="4 3"/>
 
   <!-- Left Column: Mốc thời gian -->
-  <g transform="translate(28, 32)">
-    <rect x="0" y="0" width="160" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
+  <g transform="translate(26, 28)">
+    <rect x="0" y="0" width="162" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
     <circle cx="22" cy="22" r="6" fill="#29B4D1"/>
-    <text x="90" y="27" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Năm 1816</text>
+    <text x="92" y="27" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Năm 1816</text>
 
-    <rect x="0" y="58" width="160" height="44" rx="10" fill="#113747" stroke="#FEF08A" stroke-width="2"/>
-    <circle cx="22" cy="80" r="6" fill="#FEF08A"/>
-    <text x="90" y="85" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Năm 1982</text>
+    <rect x="0" y="58" width="162" height="44" rx="10" fill="#113747" stroke="#B6E0EB" stroke-width="2"/>
+    <circle cx="22" cy="80" r="6" fill="#B6E0EB"/>
+    <text x="92" y="85" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Năm 1982</text>
 
-    <rect x="0" y="116" width="160" height="44" rx="10" fill="#113747" stroke="#34D399" stroke-width="2"/>
-    <circle cx="22" cy="138" r="6" fill="#34D399"/>
-    <text x="90" y="143" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Năm 2012</text>
+    <rect x="0" y="116" width="162" height="44" rx="10" fill="#29B4D1" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="22" cy="138" r="6" fill="#113747"/>
+    <text x="92" y="143" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Năm 2012</text>
   </g>
 
   <!-- Right Column: Sự kiện Lịch sử & Pháp lý -->
-  <g transform="translate(292, 32)">
-    <rect x="0" y="0" width="160" height="44" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="2"/>
-    <text x="80" y="21" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Công ước Luật Biển</text>
-    <text x="80" y="36" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="700">UNCLOS Liên Hợp Quốc</text>
+  <g transform="translate(292, 28)">
+    <rect x="0" y="0" width="162" height="44" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="2"/>
+    <text x="81" y="20" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Công ước Luật Biển</text>
+    <text x="81" y="35" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="700">UNCLOS Liên Hợp Quốc</text>
 
-    <rect x="0" y="58" width="160" height="44" rx="10" fill="#1A718D" stroke="#FEF08A" stroke-width="2"/>
-    <text x="80" y="79" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Vua Gia Long cắm cờ</text>
-    <text x="80" y="94" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="700">xác lập chủ quyền Hoàng Sa</text>
+    <rect x="0" y="58" width="162" height="44" rx="10" fill="#1A718D" stroke="#B6E0EB" stroke-width="2"/>
+    <text x="81" y="78" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Vua Gia Long cắm cờ</text>
+    <text x="81" y="93" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="700">xác lập chủ quyền Hoàng Sa</text>
 
-    <rect x="0" y="116" width="160" height="44" rx="10" fill="#1A718D" stroke="#34D399" stroke-width="2"/>
-    <text x="80" y="137" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Luật Biển Việt Nam</text>
-    <text x="80" y="152" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="700">Quốc hội khóa XIII thông qua</text>
+    <rect x="0" y="116" width="162" height="44" rx="10" fill="#113747" stroke="#B6E0EB" stroke-width="2"/>
+    <text x="81" y="136" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Luật Biển Việt Nam</text>
+    <text x="81" y="151" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="700">Quốc hội khóa XIII thông qua</text>
   </g>
 </svg>

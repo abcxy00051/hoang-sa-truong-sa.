@@ -1,137 +1,136 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
   <defs>
-    <linearGradient id="cls-hero-bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#113747"/>
-      <stop offset="52%" stop-color="#1A718D"/>
+    <linearGradient id="oh-bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A718D"/>
+      <stop offset="50%" stop-color="#113747"/>
+      <stop offset="100%" stop-color="#1A718D"/>
+    </linearGradient>
+    <linearGradient id="oh-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A718D"/>
       <stop offset="100%" stop-color="#113747"/>
     </linearGradient>
-    <linearGradient id="cls-card-glass" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1A718D" stop-opacity="0.92"/>
-      <stop offset="100%" stop-color="#113747" stop-opacity="0.96"/>
+    <linearGradient id="oh-aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B6E0EB"/>
+      <stop offset="100%" stop-color="#29B4D1"/>
     </linearGradient>
-    <linearGradient id="cls-gold-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="55%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
-    </linearGradient>
-    <radialGradient id="cls-radar-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#29B4D1" stop-opacity="0.36"/>
-      <stop offset="70%" stop-color="#1A718D" stop-opacity="0.12"/>
+    <radialGradient id="oh-radar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#29B4D1" stop-opacity="0.45"/>
+      <stop offset="65%" stop-color="#1A718D" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#113747" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- Background Frame -->
-  <rect width="800" height="500" rx="22" fill="url(#cls-hero-bg)"/>
+  <!-- Main Ocean Teal Frame -->
+  <rect width="800" height="500" rx="22" fill="url(#oh-bg)" stroke="#29B4D1" stroke-width="2"/>
 
-  <!-- Subtle Nautical Coordinate Grid -->
-  <g stroke="#29B4D1" stroke-opacity="0.14" stroke-width="1">
+  <!-- Soft Ocean Wave & Grid Backdrop -->
+  <g stroke="#B6E0EB" stroke-opacity="0.14" stroke-width="1">
     <line x1="0" y1="90" x2="800" y2="90"/>
     <line x1="0" y1="180" x2="800" y2="180"/>
     <line x1="0" y1="270" x2="800" y2="270"/>
     <line x1="0" y1="360" x2="800" y2="360"/>
-    <line x1="130" y1="0" x2="130" y2="500"/>
-    <line x1="265" y1="0" x2="265" y2="500"/>
+    <line x1="135" y1="0" x2="135" y2="500"/>
+    <line x1="268" y1="0" x2="268" y2="500"/>
     <line x1="400" y1="0" x2="400" y2="500"/>
-    <line x1="535" y1="0" x2="535" y2="500"/>
-    <line x1="670" y1="0" x2="670" y2="500"/>
+    <line x1="532" y1="0" x2="532" y2="500"/>
+    <line x1="665" y1="0" x2="665" y2="500"/>
   </g>
+  <path d="M0 420 Q200 395 400 420 T800 420 V500 H0 Z" fill="#113747" fill-opacity="0.55"/>
 
-  <!-- Top Header Banner Pill -->
-  <rect x="150" y="18" width="500" height="38" rx="19" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
-  <circle cx="176" cy="37" r="6" fill="#FDE047"/>
-  <text x="405" y="42" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13.5" font-weight="800" letter-spacing="1.2">LỚP HỌC SỐ BIỂN ĐẢO THPT • HỌC TẬP &amp; THỬ THÁCH</text>
+  <!-- Top Header Pill -->
+  <rect x="145" y="18" width="510" height="38" rx="19" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
+  <circle cx="172" cy="37" r="6" fill="#29B4D1"/>
+  <text x="405" y="42" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900" letter-spacing="1.2">LỚP HỌC SỐ BIỂN ĐẢO THPT • HỆ SINH THÁI ĐẠI DƯƠNG SỐ</text>
 
   <!-- Center Maritime Radar & East Sea Map Hub -->
-  <circle cx="400" cy="246" r="158" fill="url(#cls-radar-glow)"/>
-  <circle cx="400" cy="246" r="136" fill="#113747" fill-opacity="0.88" stroke="#29B4D1" stroke-width="2.2"/>
-  <circle cx="400" cy="246" r="118" fill="none" stroke="#B6E0EB" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="5 4"/>
-  <circle cx="400" cy="246" r="88" fill="none" stroke="#29B4D1" stroke-opacity="0.28" stroke-width="1"/>
+  <circle cx="400" cy="246" r="156" fill="url(#oh-radar)"/>
+  <circle cx="400" cy="246" r="134" fill="#113747" stroke="#29B4D1" stroke-width="2.5"/>
+  <circle cx="400" cy="246" r="115" fill="none" stroke="#B6E0EB" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <circle cx="400" cy="246" r="84" fill="none" stroke="#29B4D1" stroke-opacity="0.35" stroke-width="1"/>
 
-  <!-- Vietnam S-Curve Mainland & Coastline inside Center Hub -->
-  <path d="M352 146 C366 154 360 172 348 186 C338 198 358 214 374 234 C386 250 384 278 366 300 C354 314 338 322 332 332" fill="none" stroke="#FEF08A" stroke-width="5.5" stroke-linecap="round"/>
-  <path d="M356 146 C370 154 364 172 352 186 C342 198 362 214 378 234 C390 250 388 278 370 300 C358 314 342 322 336 332" fill="none" stroke="#29B4D1" stroke-width="2" stroke-dasharray="3 3"/>
+  <!-- Radar Sweep Sector -->
+  <path d="M400 246 L496 154 A134 134 0 0 1 534 246 Z" fill="#29B4D1" fill-opacity="0.22"/>
+
+  <!-- Vietnam S-Curve Coastline in Pure Ice-Aqua & Cyan -->
+  <path d="M350 146 C364 154 358 172 346 186 C336 198 356 214 372 234 C384 250 382 278 364 300 C352 314 336 322 330 332" fill="none" stroke="#B6E0EB" stroke-width="6" stroke-linecap="round"/>
+  <path d="M355 146 C369 154 363 172 351 186 C341 198 361 214 377 234 C389 250 387 278 369 300 C357 314 341 322 335 332" fill="none" stroke="#29B4D1" stroke-width="2.2" stroke-dasharray="4 3"/>
 
   <!-- Sovereignty Markers: Hoàng Sa & Trường Sa -->
   <!-- Hoàng Sa -->
-  <circle cx="426" cy="202" r="13" fill="#EF4444" fill-opacity="0.26"/>
-  <circle cx="426" cy="202" r="6.5" fill="#EF4444" stroke="#FEF08A" stroke-width="2"/>
-  <rect x="440" y="189" width="76" height="24" rx="6" fill="#1A718D" stroke="#FEF08A" stroke-width="1.2"/>
-  <text x="478" y="205" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">HOÀNG SA</text>
+  <circle cx="424" cy="202" r="14" fill="#29B4D1" fill-opacity="0.28"/>
+  <circle cx="424" cy="202" r="6.5" fill="#B6E0EB" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="438" y="189" width="80" height="24" rx="7" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.5"/>
+  <text x="478" y="205" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">HOÀNG SA</text>
 
   <!-- Trường Sa -->
-  <circle cx="446" cy="284" r="15" fill="#EF4444" fill-opacity="0.26"/>
-  <circle cx="446" cy="284" r="7" fill="#EF4444" stroke="#FEF08A" stroke-width="2"/>
-  <rect x="462" y="271" width="78" height="24" rx="6" fill="#1A718D" stroke="#FEF08A" stroke-width="1.2"/>
-  <text x="501" y="287" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">TRƯỜNG SA</text>
+  <circle cx="444" cy="284" r="15" fill="#29B4D1" fill-opacity="0.28"/>
+  <circle cx="444" cy="284" r="7" fill="#29B4D1" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="460" y="271" width="82" height="24" rx="7" fill="#1A718D" stroke="#29B4D1" stroke-width="1.5"/>
+  <text x="501" y="287" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">TRƯỜNG SA</text>
 
   <!-- Phú Quốc -->
-  <circle cx="316" cy="316" r="5" fill="#29B4D1" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="316" cy="316" r="5" fill="#29B4D1" stroke="#B6E0EB" stroke-width="1.5"/>
   <text x="316" y="334" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="9.5" font-weight="700">Phú Quốc</text>
 
-  <!-- Center Top Badge: 200 Hải lý EEZ -->
-  <rect x="336" y="122" width="128" height="22" rx="11" fill="#29B4D1"/>
-  <text x="400" y="137" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="900">BẢN ĐỒ SỐ BIỂN ĐÔNG</text>
+  <!-- Center Top Badge -->
+  <rect x="330" y="120" width="140" height="24" rx="12" fill="url(#oh-aqua)"/>
+  <text x="400" y="136" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="900">HẢI ĐỒ TƯƠNG TÁC SỐ</text>
 
   <!-- =========================================================================
-       LEFT COLUMN CARDS (CHUYÊN ĐỀ & HOẠT ĐỘNG TƯƠNG TÁC)
+       LEFT COLUMN CARDS (08 CHUYÊN ĐỀ & 06 HOẠT ĐỘNG)
        ========================================================================= -->
-  <!-- Card Top-Left: 08 Chuyên đề THPT -->
   <g transform="translate(26, 76)">
-    <rect width="218" height="156" rx="16" fill="url(#cls-card-glass)" stroke="#29B4D1" stroke-width="1.8"/>
-    <rect x="16" y="16" width="44" height="44" rx="12" fill="#29B4D1" fill-opacity="0.2" stroke="#29B4D1" stroke-width="1.5"/>
-    <text x="38" y="44" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="18" font-weight="900">08</text>
-    <text x="72" y="34" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13.5" font-weight="800">CHUYÊN ĐỀ THPT</text>
-    <text x="72" y="52" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">80 Câu hỏi Trắc nghiệm</text>
+    <rect width="218" height="156" rx="16" fill="url(#oh-card)" stroke="#29B4D1" stroke-width="2"/>
+    <rect x="16" y="16" width="46" height="46" rx="12" fill="url(#oh-aqua)"/>
+    <text x="39" y="45" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="19" font-weight="900">08</text>
+    <text x="72" y="35" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13.5" font-weight="900">CHUYÊN ĐỀ THPT</text>
+    <text x="72" y="53" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">80 Câu hỏi Trắc nghiệm</text>
 
-    <rect x="16" y="72" width="186" height="22" rx="6" fill="#113747" stroke="#29B4D1" stroke-opacity="0.45"/>
+    <rect x="16" y="72" width="186" height="22" rx="6" fill="#113747" stroke="#29B4D1" stroke-opacity="0.6"/>
     <circle cx="28" cy="83" r="3.5" fill="#29B4D1"/>
-    <text x="38" y="87" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Địa lý • Lịch sử Hoàng Sa – Trường Sa</text>
+    <text x="38" y="87" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Địa lý • Sử liệu Hoàng Sa – Trường Sa</text>
 
-    <rect x="16" y="100" width="186" height="22" rx="6" fill="#113747" stroke="#29B4D1" stroke-opacity="0.45"/>
-    <circle cx="28" cy="111" r="3.5" fill="#FEF08A"/>
+    <rect x="16" y="100" width="186" height="22" rx="6" fill="#113747" stroke="#29B4D1" stroke-opacity="0.6"/>
+    <circle cx="28" cy="111" r="3.5" fill="#B6E0EB"/>
     <text x="38" y="115" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">UNCLOS 1982 &amp; Luật Biển VN 2012</text>
 
-    <rect x="16" y="128" width="186" height="18" rx="5" fill="#29B4D1" fill-opacity="0.22"/>
-    <text x="109" y="140" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="9.5" font-weight="800">✓ 100% Có đáp án &amp; nguồn sử liệu</text>
+    <rect x="16" y="128" width="186" height="19" rx="6" fill="#29B4D1" fill-opacity="0.25"/>
+    <text x="109" y="141" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="9.5" font-weight="800">✓ Giải thích chi tiết &amp; nguồn chuẩn</text>
   </g>
 
-  <!-- Card Bottom-Left: 06 Hoạt động Tương tác -->
   <g transform="translate(26, 250)">
-    <rect width="218" height="162" rx="16" fill="url(#cls-card-glass)" stroke="#B6E0EB" stroke-opacity="0.6" stroke-width="1.8"/>
-    <text x="18" y="28" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="12.5" font-weight="900" letter-spacing="0.5">06 HOẠT ĐỘNG TƯƠNG TÁC</text>
+    <rect width="218" height="162" rx="16" fill="url(#oh-card)" stroke="#B6E0EB" stroke-opacity="0.75" stroke-width="2"/>
+    <text x="18" y="28" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="12.5" font-weight="900" letter-spacing="0.5">06 HOẠT ĐỘNG TƯƠNG TÁC</text>
 
-    <!-- 2x3 Mini Pills -->
-    <rect x="16" y="40" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.2"/>
+    <rect x="16" y="40" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.4"/>
     <text x="61" y="59" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">1. Trắc nghiệm</text>
 
-    <rect x="112" y="40" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.2"/>
+    <rect x="112" y="40" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.4"/>
     <text x="157" y="59" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">2. Đúng / Sai</text>
 
-    <rect x="16" y="78" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.2"/>
+    <rect x="16" y="78" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.4"/>
     <text x="61" y="97" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">3. Ghép Mốc</text>
 
-    <rect x="112" y="78" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.2"/>
+    <rect x="112" y="78" width="90" height="30" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.4"/>
     <text x="157" y="97" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">4. Bản đồ Số</text>
 
-    <rect x="16" y="116" width="90" height="30" rx="8" fill="#113747" stroke="#FEF08A" stroke-width="1.2"/>
-    <text x="61" y="135" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">5. Ba Cấp độ</text>
+    <rect x="16" y="116" width="90" height="30" rx="8" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.4"/>
+    <text x="61" y="135" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">5. Ba Cấp độ</text>
 
-    <rect x="112" y="116" width="90" height="30" rx="8" fill="#29B4D1"/>
+    <rect x="112" y="116" width="90" height="30" rx="8" fill="url(#oh-aqua)"/>
     <text x="157" y="135" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="900">6. Đề Tổng hợp</text>
   </g>
 
   <!-- =========================================================================
-       RIGHT COLUMN CARDS (HUY HIỆU HẢI TRÌNH & BIỂU ĐỒ ĐIỂM THỰC TẾ)
+       RIGHT COLUMN CARDS (05 HUY HIỆU & BIỂU ĐỒ ĐIỂM THỰC TẾ)
        ========================================================================= -->
-  <!-- Card Top-Right: 05 Huy hiệu Thành tích Biển Đảo -->
   <g transform="translate(556, 76)">
-    <rect width="218" height="156" rx="16" fill="url(#cls-card-glass)" stroke="url(#cls-gold-grad)" stroke-width="2"/>
-    <circle cx="42" cy="40" r="20" fill="url(#cls-gold-grad)" stroke="#113747" stroke-width="2"/>
+    <rect width="218" height="156" rx="16" fill="url(#oh-card)" stroke="#B6E0EB" stroke-width="2"/>
+    <circle cx="42" cy="40" r="20" fill="url(#oh-aqua)" stroke="#113747" stroke-width="2"/>
     <polygon points="42,27 45,35 54,35 47,40 49,49 42,44 35,49 37,40 30,35 39,35" fill="#113747"/>
 
-    <text x="70" y="35" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">05 HUY HIỆU BIỂN ĐẢO</text>
-    <text x="70" y="52" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Mở khóa từ kết quả thực</text>
+    <text x="70" y="35" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">05 HUY HIỆU BIỂN ĐẢO</text>
+    <text x="70" y="52" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Huân chương Hải trình</text>
 
     <!-- 5 Mini Maritime Medal Icons Row -->
     <g transform="translate(18, 70)">
@@ -141,44 +140,41 @@
       <circle cx="55" cy="18" r="15" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
       <text x="55" y="22" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">II</text>
 
-      <circle cx="92" cy="18" r="15" fill="#113747" stroke="#FEF08A" stroke-width="2"/>
-      <text x="92" y="22" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">III</text>
+      <circle cx="92" cy="18" r="15" fill="#113747" stroke="#B6E0EB" stroke-width="2"/>
+      <text x="92" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">III</text>
 
       <circle cx="129" cy="18" r="15" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
       <text x="129" y="22" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">IV</text>
 
-      <circle cx="166" cy="18" r="15" fill="url(#cls-gold-grad)" stroke="#FFFFFF" stroke-width="1.5"/>
+      <circle cx="166" cy="18" r="15" fill="url(#oh-aqua)" stroke="#FFFFFF" stroke-width="1.5"/>
       <text x="166" y="22" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">★</text>
     </g>
 
-    <rect x="16" y="116" width="186" height="26" rx="8" fill="#113747" stroke="#FEF08A" stroke-opacity="0.5"/>
-    <text x="109" y="133" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">Ra khơi → Hoa tiêu → Thủ khoa</text>
+    <rect x="16" y="116" width="186" height="26" rx="8" fill="#113747" stroke="#29B4D1"/>
+    <text x="109" y="133" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">Ra khơi → Hoa tiêu → Thủ khoa</text>
   </g>
 
-  <!-- Card Bottom-Right: Biểu đồ Điểm số & Hồ sơ Học sinh -->
   <g transform="translate(556, 250)">
-    <rect width="218" height="162" rx="16" fill="url(#cls-card-glass)" stroke="#29B4D1" stroke-width="1.8"/>
+    <rect width="218" height="162" rx="16" fill="url(#oh-card)" stroke="#29B4D1" stroke-width="2"/>
     <text x="18" y="28" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="12.5" font-weight="900">BIỂU ĐỒ ĐIỂM &amp; TIẾN ĐỘ</text>
     <text x="18" y="45" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="600">Theo dõi 8 chuyên đề thang 10.0</text>
 
-    <!-- Rising Bar Chart -->
     <g transform="translate(20, 62)">
-      <rect x="0" y="38" width="16" height="32" rx="4" fill="#29B4D1" fill-opacity="0.55"/>
+      <rect x="0" y="38" width="16" height="32" rx="4" fill="#1A718D" stroke="#29B4D1"/>
       <rect x="22" y="28" width="16" height="42" rx="4" fill="#29B4D1" fill-opacity="0.7"/>
-      <rect x="44" y="18" width="16" height="52" rx="4" fill="#29B4D1" fill-opacity="0.85"/>
+      <rect x="44" y="18" width="16" height="52" rx="4" fill="#29B4D1" fill-opacity="0.88"/>
       <rect x="66" y="10" width="16" height="60" rx="4" fill="#29B4D1"/>
-      <rect x="88" y="2" width="16" height="68" rx="4" fill="url(#cls-gold-grad)"/>
+      <rect x="88" y="2" width="16" height="68" rx="4" fill="#B6E0EB"/>
 
-      <!-- Score Badge Circle -->
-      <circle cx="148" cy="36" r="30" fill="#113747" stroke="url(#cls-gold-grad)" stroke-width="3"/>
-      <text x="148" y="35" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="900">10.0</text>
-      <text x="148" y="49" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="8.5" font-weight="700">ĐIỂM TỐI ĐA</text>
+      <circle cx="148" cy="36" r="30" fill="#113747" stroke="#B6E0EB" stroke-width="3"/>
+      <text x="148" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="900">10.0</text>
+      <text x="148" y="49" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="8.5" font-weight="800">ĐIỂM TỐI ĐA</text>
     </g>
 
     <text x="109" y="148" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="700">Lưu hồ sơ học tập theo thiết bị</text>
   </g>
 
   <!-- Bottom Motto Ribbon -->
-  <rect x="70" y="436" width="660" height="42" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.6"/>
+  <rect x="70" y="436" width="660" height="42" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
   <text x="400" y="462" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="800" letter-spacing="1.2">CHẠM TRI THỨC • VỮNG CHỦ QUYỀN • RÈN LUYỆN TƯ DUY CÔNG DÂN BIỂN</text>
 </svg>

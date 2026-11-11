@@ -57,7 +57,7 @@ export const INTERACTIVE_ACTIVITIES = [
     shortTitle: '1. Bài học & Trắc nghiệm',
     subtitle: '8 chuyên đề học tập • 80 câu hỏi trắc nghiệm có giải thích',
     iconName: 'BookOpen',
-    image: '/assets/classroom/act-01-trac-nghiem-chu-de.svg',
+    image: '/assets/classroom/act-01-trac-nghiem-chu-de.svg?v=ocean2',
     badge: '8 Chuyên đề × 10 Câu'
   },
   {
@@ -67,7 +67,7 @@ export const INTERACTIVE_ACTIVITIES = [
     shortTitle: '2. Câu hỏi Đúng / Sai',
     subtitle: '16 nhận định pháp lý, lịch sử và địa lý biển đảo',
     iconName: 'CheckCircle2',
-    image: '/assets/classroom/act-02-dung-sai.svg',
+    image: '/assets/classroom/act-02-dung-sai.svg?v=ocean2',
     badge: '16 Nhận định Chuẩn'
   },
   {
@@ -77,7 +77,7 @@ export const INTERACTIVE_ACTIVITIES = [
     shortTitle: '3. Ghép Mốc Thời gian',
     subtitle: '3 chặng lịch sử – pháp lý với 18 cặp sự kiện tiêu biểu',
     iconName: 'Clock',
-    image: '/assets/classroom/act-03-ghep-moc-thoi-gian.svg',
+    image: '/assets/classroom/act-03-ghep-moc-thoi-gian.svg?v=ocean2',
     badge: '3 Chặng • 18 Cặp Mốc'
   },
   {
@@ -87,7 +87,7 @@ export const INTERACTIVE_ACTIVITIES = [
     shortTitle: '4. Nhận diện Địa danh',
     subtitle: 'Định vị trực tiếp 12 tọa độ trọng điểm trên bản đồ Biển Đông',
     iconName: 'Map',
-    image: '/assets/classroom/act-04-nhan-dien-ban-do.svg',
+    image: '/assets/classroom/act-04-nhan-dien-ban-do.svg?v=ocean2',
     badge: '12 Tọa độ Bản đồ'
   },
   {
@@ -97,7 +97,7 @@ export const INTERACTIVE_ACTIVITIES = [
     shortTitle: '5. Thử thách Kiến thức',
     subtitle: 'Phân hóa năng lực theo cấp độ Dễ, Trung bình và Nâng cao',
     iconName: 'Award',
-    image: '/assets/classroom/act-05-thu-thach-cap-do.svg',
+    image: '/assets/classroom/act-05-thu-thach-cap-do.svg?v=ocean2',
     badge: 'Dễ • Trung bình • Nâng cao'
   },
   {
@@ -107,7 +107,7 @@ export const INTERACTIVE_ACTIVITIES = [
     shortTitle: '6. Kiểm tra Tổng hợp',
     subtitle: 'Đề thi tổng hợp 20 câu liên chuyên đề có đồng hồ tính giờ',
     iconName: 'GraduationCap',
-    image: '/assets/classroom/act-06-kiem-tra-tong-hop.svg',
+    image: '/assets/classroom/act-06-kiem-tra-tong-hop.svg?v=ocean2',
     badge: '20 Câu • Thang 10 điểm'
   }
 ]
@@ -148,7 +148,7 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
     rankLabel: 'Huy hiệu Hạng I • Khởi hành Hải trình',
     requirementText: 'Hoàn thành ít nhất 1 bài tập hoặc hoạt động bất kỳ trong Phòng học tương tác.',
     iconName: 'Compass',
-    badgeImage: '/assets/classroom/badges/badge-01-khoi-hanh.svg',
+    badgeImage: '/assets/classroom/badges/badge-01-khoi-hanh.svg?v=ocean2',
     targetActivity: 'topic-quiz',
     accent: 'cyan',
     checkUnlocked: (records) => (records?.stats?.totalAttempts || 0) >= 1,
@@ -163,7 +163,7 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
     rankLabel: 'Huy hiệu Hạng II • Học thuật Biển Đảo',
     requirementText: 'Hoàn thành đạt yêu cầu (từ 5.0/10 điểm trở lên) tối thiểu 4/8 chuyên đề học tập.',
     iconName: 'BookOpen',
-    badgeImage: '/assets/classroom/badges/badge-02-nha-nghien-cuu.svg',
+    badgeImage: '/assets/classroom/badges/badge-02-nha-nghien-cuu.svg?v=ocean2',
     targetActivity: 'topic-quiz',
     accent: 'ocean',
     checkUnlocked: (records) => {
@@ -191,7 +191,7 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
     rankLabel: 'Huy hiệu Hạng III • Châu bản & UNCLOS 1982',
     requirementText: 'Hoàn thành cả bài tập Đúng/Sai và trò chơi Ghép Sự kiện với Mốc thời gian đạt từ 7.0/10 điểm.',
     iconName: 'Clock',
-    badgeImage: '/assets/classroom/badges/badge-03-su-gia-lich-su.svg',
+    badgeImage: '/assets/classroom/badges/badge-03-su-gia-lich-su.svg?v=ocean2',
     targetActivity: 'true-false',
     accent: 'gold',
     checkUnlocked: (records) => {
@@ -233,7 +233,7 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
     rankLabel: 'Huy hiệu Hạng IV • Định vị Tọa độ Chủ quyền',
     requirementText: 'Hoàn thành Trò chơi Nhận diện 12 Địa danh Bản đồ Biển Đông với độ chính xác từ 75% trở lên.',
     iconName: 'Map',
-    badgeImage: '/assets/classroom/badges/badge-04-hoa-tieu-ban-do.svg',
+    badgeImage: '/assets/classroom/badges/badge-04-hoa-tieu-ban-do.svg?v=ocean2',
     targetActivity: 'map-identify',
     accent: 'cyan',
     checkUnlocked: (records) => {
@@ -263,7 +263,7 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
     rankLabel: 'Huy hiệu Hạng V • Huân chương Danh dự Cao nhất',
     requirementText: 'Hoàn thành Bài Kiểm tra Tổng hợp 20 câu đạt từ 8.0/10 điểm trở lên.',
     iconName: 'Award',
-    badgeImage: '/assets/classroom/badges/badge-05-thu-khoa-chu-quyen.svg',
+    badgeImage: '/assets/classroom/badges/badge-05-thu-khoa-chu-quyen.svg?v=ocean2',
     targetActivity: 'comprehensive-exam',
     accent: 'gold',
     checkUnlocked: (records) => {

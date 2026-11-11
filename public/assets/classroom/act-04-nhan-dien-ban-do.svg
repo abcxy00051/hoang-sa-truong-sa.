@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
   <defs>
-    <linearGradient id="a4-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#113747"/>
-      <stop offset="50%" stop-color="#1A718D"/>
-      <stop offset="100%" stop-color="#113747"/>
+    <linearGradient id="oa4-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A718D"/>
+      <stop offset="50%" stop-color="#113747"/>
+      <stop offset="100%" stop-color="#1A718D"/>
     </linearGradient>
   </defs>
 
-  <rect width="480" height="260" fill="url(#a4-bg)"/>
+  <rect width="480" height="260" fill="url(#oa4-bg)"/>
 
   <!-- Radar Grid Background -->
-  <g stroke="#29B4D1" stroke-opacity="0.22" stroke-width="1">
+  <g stroke="#29B4D1" stroke-opacity="0.24" stroke-width="1">
     <line x1="0" y1="65" x2="480" y2="65"/>
     <line x1="0" y1="130" x2="480" y2="130"/>
     <line x1="0" y1="195" x2="480" y2="195"/>
@@ -18,37 +18,37 @@
     <line x1="240" y1="0" x2="240" y2="260"/>
     <line x1="360" y1="0" x2="360" y2="260"/>
   </g>
-  <circle cx="256" cy="118" r="88" fill="none" stroke="#29B4D1" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <circle cx="256" cy="116" r="88" fill="#29B4D1" fill-opacity="0.1" stroke="#B6E0EB" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="5 4"/>
 
-  <!-- Vietnam Coastline Curve -->
-  <path d="M110 26 C132 42 122 68 102 90 C88 106 124 128 148 156 C164 176 156 206 122 228" fill="none" stroke="#FEF08A" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Vietnam Coastline Curve in Ice-Aqua & Cyan -->
+  <path d="M110 24 C132 40 122 66 102 88 C88 104 124 126 148 154 C164 174 156 204 122 226" fill="none" stroke="#B6E0EB" stroke-width="6" stroke-linecap="round"/>
 
   <!-- Pin 1: Hoàng Sa -->
-  <g transform="translate(236, 72)">
-    <circle cx="0" cy="0" r="16" fill="#EF4444" fill-opacity="0.28"/>
-    <circle cx="0" cy="0" r="7" fill="#EF4444" stroke="#FEF08A" stroke-width="2"/>
-    <rect x="14" y="-13" width="136" height="26" rx="7" fill="#113747" stroke="#FEF08A" stroke-width="1.5"/>
-    <text x="82" y="4" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">M1: HOÀNG SA</text>
+  <g transform="translate(232, 68)">
+    <circle cx="0" cy="0" r="16" fill="#29B4D1" fill-opacity="0.32"/>
+    <circle cx="0" cy="0" r="7" fill="#B6E0EB" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="14" y="-13" width="140" height="26" rx="7" fill="#113747" stroke="#B6E0EB" stroke-width="1.8"/>
+    <text x="84" y="4" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="900">M1: HOÀNG SA</text>
   </g>
 
   <!-- Pin 2: Trường Sa -->
-  <g transform="translate(268, 152)">
-    <circle cx="0" cy="0" r="16" fill="#34D399" fill-opacity="0.26"/>
-    <circle cx="0" cy="0" r="7" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
-    <rect x="14" y="-13" width="142" height="26" rx="7" fill="#113747" stroke="#34D399" stroke-width="1.5"/>
-    <text x="85" y="4" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">M2: TRƯỜNG SA</text>
+  <g transform="translate(264, 148)">
+    <circle cx="0" cy="0" r="16" fill="#29B4D1" fill-opacity="0.32"/>
+    <circle cx="0" cy="0" r="7" fill="#29B4D1" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="14" y="-13" width="144" height="26" rx="7" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+    <text x="86" y="4" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="900">M2: TRƯỜNG SA</text>
   </g>
 
-  <!-- Pin 3: Phú Quốc / Côn Đảo -->
-  <g transform="translate(82, 204)">
+  <!-- Pin 3: Phú Quốc -->
+  <g transform="translate(82, 200)">
     <circle cx="0" cy="0" r="6" fill="#29B4D1" stroke="#FFFFFF" stroke-width="1.8"/>
     <text x="14" y="4" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">M3: Phú Quốc</text>
   </g>
 
   <!-- Compass Rose Top-Left -->
-  <g transform="translate(52, 52)">
-    <circle cx="0" cy="0" r="22" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
-    <polygon points="0,-16 5,0 0,16 -5,0" fill="#FEF08A"/>
+  <g transform="translate(52, 50)">
+    <circle cx="0" cy="0" r="22" fill="#113747" stroke="#B6E0EB" stroke-width="2"/>
+    <polygon points="0,-16 5,0 0,16 -5,0" fill="#FFFFFF"/>
     <polygon points="-16,0 0,-5 16,0 0,5" fill="#29B4D1"/>
   </g>
 </svg>

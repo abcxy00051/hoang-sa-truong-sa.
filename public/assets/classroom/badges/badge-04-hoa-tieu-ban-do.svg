@@ -5,22 +5,21 @@
       <stop offset="50%" stop-color="#29B4D1"/>
       <stop offset="100%" stop-color="#1A718D"/>
     </linearGradient>
-    <linearGradient id="b4-gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="55%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
+    <linearGradient id="b4-aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#B6E0EB"/>
+      <stop offset="100%" stop-color="#29B4D1"/>
     </linearGradient>
   </defs>
 
   <!-- Ship Wheel Spokes around Outer Perimeter -->
-  <g stroke="url(#b4-gold)" stroke-width="5" stroke-linecap="round">
+  <g stroke="url(#b4-aqua)" stroke-width="5" stroke-linecap="round">
     <line x1="80" y1="8" x2="80" y2="144"/>
     <line x1="12" y1="76" x2="148" y2="76"/>
     <line x1="32" y1="28" x2="128" y2="124"/>
     <line x1="128" y1="28" x2="32" y2="124"/>
   </g>
 
-  <!-- Outer Wheel Rim -->
   <circle cx="80" cy="76" r="56" fill="#113747" stroke="url(#b4-cyan)" stroke-width="5"/>
   <circle cx="80" cy="76" r="46" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
 
@@ -30,22 +29,20 @@
   <line x1="36" y1="76" x2="124" y2="76" stroke="#1A718D" stroke-width="1"/>
   <line x1="80" y1="32" x2="80" y2="120" stroke="#1A718D" stroke-width="1"/>
 
-  <!-- Radar Sweep Sector -->
   <path d="M80 76 L112 46 A45 45 0 0 1 124 76 Z" fill="#29B4D1" fill-opacity="0.32"/>
 
-  <!-- Golden Sovereign Anchor in Center -->
-  <circle cx="80" cy="48" r="6" fill="none" stroke="url(#b4-gold)" stroke-width="3"/>
-  <line x1="80" y1="54" x2="80" y2="100" stroke="url(#b4-gold)" stroke-width="4" stroke-linecap="round"/>
-  <line x1="64" y1="64" x2="96" y2="64" stroke="url(#b4-gold)" stroke-width="3.5" stroke-linecap="round"/>
-  <path d="M56 84 C56 98 68 104 80 104 C92 104 104 98 104 84" fill="none" stroke="url(#b4-gold)" stroke-width="4" stroke-linecap="round"/>
-  <polygon points="54,80 62,86 52,89" fill="url(#b4-gold)"/>
-  <polygon points="106,80 98,86 108,89" fill="url(#b4-gold)"/>
+  <!-- Sovereign Anchor in Center -->
+  <circle cx="80" cy="48" r="6" fill="none" stroke="url(#b4-aqua)" stroke-width="3"/>
+  <line x1="80" y1="54" x2="80" y2="100" stroke="url(#b4-aqua)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="64" y1="64" x2="96" y2="64" stroke="url(#b4-aqua)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M56 84 C56 98 68 104 80 104 C92 104 104 98 104 84" fill="none" stroke="url(#b4-aqua)" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="54,80 62,86 52,89" fill="#B6E0EB"/>
+  <polygon points="106,80 98,86 108,89" fill="#B6E0EB"/>
 
-  <!-- Coordinate Pings (Hoàng Sa & Trường Sa) -->
-  <circle cx="96" cy="56" r="3.5" fill="#EF4444" stroke="#FEF08A" stroke-width="1.2"/>
-  <circle cx="102" cy="78" r="3.5" fill="#EF4444" stroke="#FEF08A" stroke-width="1.2"/>
+  <circle cx="96" cy="56" r="3.5" fill="#29B4D1" stroke="#FFFFFF" stroke-width="1.2"/>
+  <circle cx="102" cy="78" r="3.5" fill="#B6E0EB" stroke="#FFFFFF" stroke-width="1.2"/>
 
   <!-- Bottom Ribbon -->
-  <path d="M22 126 L34 118 H126 L138 126 L130 144 H30 Z" fill="url(#b4-gold)" stroke="#113747" stroke-width="2"/>
+  <path d="M22 126 L34 118 H126 L138 126 L130 144 H30 Z" fill="url(#b4-aqua)" stroke="#113747" stroke-width="2"/>
   <text x="80" y="135" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="900" letter-spacing="0.8">HOA TIÊU BẢN ĐỒ</text>
 </svg>

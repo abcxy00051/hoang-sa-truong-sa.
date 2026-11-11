@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
   <defs>
-    <linearGradient id="b5-gold" x1="15" y1="10" x2="145" y2="145" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="45%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#B45309"/>
+    <linearGradient id="b5-aqua" x1="15" y1="10" x2="145" y2="145" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#B6E0EB"/>
+      <stop offset="100%" stop-color="#29B4D1"/>
     </linearGradient>
     <linearGradient id="b5-ocean" x1="30" y1="25" x2="130" y2="130" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#1A718D"/>
@@ -11,29 +11,26 @@
     </linearGradient>
   </defs>
 
-  <!-- Grand Starburst Medal of Honor -->
-  <circle cx="80" cy="74" r="68" fill="#F59E0B" fill-opacity="0.18"/>
-  <polygon points="80,4 95,25 120,14 120,40 146,48 131,72 146,96 120,104 120,130 95,119 80,140 65,119 40,130 40,104 14,96 29,72 14,48 40,40 40,14 65,25" fill="url(#b5-gold)" stroke="#113747" stroke-width="2.5"/>
+  <circle cx="80" cy="74" r="68" fill="#29B4D1" fill-opacity="0.22"/>
+  <polygon points="80,4 95,25 120,14 120,40 146,48 131,72 146,96 120,104 120,130 95,119 80,140 65,119 40,130 40,104 14,96 29,72 14,48 40,40 40,14 65,25" fill="url(#b5-aqua)" stroke="#113747" stroke-width="2.5"/>
 
-  <!-- Inner Medallion Ring -->
-  <circle cx="80" cy="74" r="49" fill="url(#b5-ocean)" stroke="#FEF08A" stroke-width="2.5"/>
+  <circle cx="80" cy="74" r="49" fill="url(#b5-ocean)" stroke="#FFFFFF" stroke-width="2.5"/>
   <circle cx="80" cy="74" r="43" fill="none" stroke="#29B4D1" stroke-width="1.5" stroke-dasharray="4 3"/>
 
   <!-- Laurel Wreath Left & Right -->
-  <path d="M50 96 C40 82 42 58 56 44" fill="none" stroke="url(#b5-gold)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M110 96 C120 82 118 58 104 44" fill="none" stroke="url(#b5-gold)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M50 96 C40 82 42 58 56 44" fill="none" stroke="#B6E0EB" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 96 C120 82 118 58 104 44" fill="none" stroke="#B6E0EB" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Sovereignty Milestone (Cột mốc chủ quyền Trường Sa) & Golden Star -->
-  <polygon points="80,32 84,41 94,41 86,47 89,56 80,50 71,56 74,47 66,41 76,41" fill="#FDE047" stroke="#113747" stroke-width="1"/>
+  <!-- Sovereignty Milestone (Cột mốc chủ quyền Trường Sa) & Star -->
+  <polygon points="80,32 84,41 94,41 86,47 89,56 80,50 71,56 74,47 66,41 76,41" fill="#B6E0EB" stroke="#113747" stroke-width="1"/>
   <path d="M71 60 L80 53 L89 60 V94 H71 Z" fill="#FFFFFF" stroke="#113747" stroke-width="1.8"/>
-  <rect x="75" y="64" width="10" height="10" rx="1.5" fill="#EF4444"/>
-  <circle cx="80" cy="69" r="2.2" fill="#FDE047"/>
+  <rect x="75" y="64" width="10" height="10" rx="1.5" fill="#29B4D1"/>
+  <circle cx="80" cy="69" r="2.2" fill="#FFFFFF"/>
   <rect x="66" y="94" width="28" height="6" rx="2" fill="#B6E0EB" stroke="#113747" stroke-width="1.5"/>
 
-  <!-- Waves under Milestone -->
   <path d="M48 105 Q64 99 80 105 T112 105" fill="none" stroke="#29B4D1" stroke-width="3" stroke-linecap="round"/>
 
   <!-- Bottom Honor Ribbon -->
-  <path d="M16 126 L28 118 H132 L144 126 L136 145 H24 Z" fill="#EF4444" stroke="url(#b5-gold)" stroke-width="2.2"/>
-  <text x="80" y="135" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10.2" font-weight="900" letter-spacing="0.8">THỦ KHOA BIỂN ĐẢO</text>
+  <path d="M16 126 L28 118 H132 L144 126 L136 145 H24 Z" fill="#1A718D" stroke="#B6E0EB" stroke-width="2.2"/>
+  <text x="80" y="135" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.2" font-weight="900" letter-spacing="0.8">THỦ KHOA BIỂN ĐẢO</text>
 </svg>

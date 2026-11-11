@@ -13411,7 +13411,7 @@ ul {
 }
 
 .cls-badge-item.accent-gold {
-  border-color: rgba(245, 158, 11, 0.45);
+  border-color: rgba(41, 180, 209, 0.55);
 }
 
 .cls-badge-item.is-unlocked {
@@ -13421,7 +13421,7 @@ ul {
 }
 
 .cls-badge-item.is-unlocked.accent-gold {
-  border-color: #F59E0B;
+  border-color: #B6E0EB;
 }
 
 .cls-badge-medal-showcase {
@@ -13440,7 +13440,7 @@ ul {
 }
 
 .cls-badge-item.accent-gold .cls-badge-medal-showcase {
-  border-color: #F59E0B;
+  border-color: #B6E0EB;
 }
 
 .cls-badge-medal-img {
@@ -13479,7 +13479,7 @@ ul {
 }
 
 .cls-badge-corner-chip.unlocked {
-  background: #F59E0B;
+  background: #29B4D1;
   color: #113747;
 }
 
@@ -13557,9 +13557,9 @@ ul {
 }
 
 .cls-badge-status-pill.unlocked {
-  background: #F59E0B;
+  background: #29B4D1;
   color: #113747;
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+  box-shadow: 0 2px 8px rgba(41, 180, 209, 0.35);
 }
 
 .cls-badge-status-pill.locked {
@@ -13608,7 +13608,7 @@ ul {
 }
 
 .cls-badge-item.is-unlocked .cls-badge-pct-num {
-  color: #FEF08A;
+  color: #B6E0EB;
 }
 
 .cls-badge-progress-track {
@@ -13631,7 +13631,7 @@ ul {
 }
 
 .cls-badge-progress-fill.is-complete {
-  background: linear-gradient(90deg, #F59E0B 0%, #FEF08A 100%);
+  background: linear-gradient(90deg, #29B4D1 0%, #B6E0EB 100%);
 }
 
 .cls-badge-action-row {
@@ -13717,7 +13717,7 @@ ul {
   background: #113747;
   overflow: hidden;
   width: 100%;
-  border-bottom: 1px solid rgba(41, 180, 209, 0.3);
+  border-bottom: 1px solid rgba(41, 180, 209, 0.35);
 }
 
 .cls-act-card-img {
@@ -13735,7 +13735,7 @@ ul {
   padding: 3px 9px;
   border-radius: 999px;
   background: rgba(17, 55, 71, 0.94);
-  color: #FEF08A;
+  color: #B6E0EB;
   font-size: 0.65rem;
   font-weight: 800;
   border: 1px solid #29B4D1;

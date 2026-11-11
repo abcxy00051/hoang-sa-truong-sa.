@@ -1,31 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
   <defs>
-    <linearGradient id="a5-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#113747"/>
-      <stop offset="50%" stop-color="#1A718D"/>
-      <stop offset="100%" stop-color="#113747"/>
+    <linearGradient id="oa5-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A718D"/>
+      <stop offset="50%" stop-color="#113747"/>
+      <stop offset="100%" stop-color="#1A718D"/>
     </linearGradient>
-    <linearGradient id="a5-gold" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="100%" stop-color="#D97706"/>
+    <linearGradient id="oa5-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B6E0EB"/>
+      <stop offset="100%" stop-color="#29B4D1"/>
     </linearGradient>
   </defs>
 
-  <rect width="480" height="260" fill="url(#a5-bg)"/>
+  <rect width="480" height="260" fill="url(#oa5-bg)"/>
+  <path d="M0 220 Q120 202 240 220 T480 220 V260 H0 Z" fill="#113747" fill-opacity="0.55"/>
 
   <!-- Step 1: CẤP ĐỘ DỄ -->
-  <g transform="translate(34, 114)">
-    <rect width="124" height="96" rx="14" fill="#113747" stroke="#34D399" stroke-width="2.2"/>
-    <circle cx="62" cy="28" r="14" fill="#10B981" fill-opacity="0.22" stroke="#34D399" stroke-width="1.8"/>
-    <text x="62" y="33" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="900">01</text>
-    <text x="62" y="60" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">CẤP ĐỘ DỄ</text>
+  <g transform="translate(32, 110)">
+    <rect width="124" height="96" rx="14" fill="#113747" stroke="#B6E0EB" stroke-width="2"/>
+    <circle cx="62" cy="28" r="14" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.6"/>
+    <text x="62" y="33" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="900">01</text>
+    <text x="62" y="60" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">CẤP ĐỘ DỄ</text>
     <text x="62" y="78" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Khởi động Ra khơi</text>
   </g>
 
   <!-- Step 2: TRUNG BÌNH -->
-  <g transform="translate(178, 72)">
-    <rect width="124" height="138" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="2.2"/>
-    <circle cx="62" cy="30" r="15" fill="#29B4D1" fill-opacity="0.24" stroke="#29B4D1" stroke-width="1.8"/>
+  <g transform="translate(178, 68)">
+    <rect width="124" height="138" rx="14" fill="#1A718D" stroke="#29B4D1" stroke-width="2.2"/>
+    <circle cx="62" cy="30" r="15" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
     <text x="62" y="35" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="900">02</text>
     <text x="62" y="68" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">TRUNG BÌNH</text>
     <text x="62" y="88" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Vượt sóng</text>
@@ -33,14 +34,14 @@
   </g>
 
   <!-- Step 3: NÂNG CAO -->
-  <g transform="translate(322, 30)">
-    <rect width="124" height="180" rx="14" fill="url(#a5-gold)" stroke="#FFFFFF" stroke-width="2"/>
+  <g transform="translate(324, 26)">
+    <rect width="124" height="180" rx="14" fill="url(#oa5-top)" stroke="#FFFFFF" stroke-width="2"/>
     <circle cx="62" cy="34" r="18" fill="#113747"/>
-    <polygon points="62,21 65,30 74,30 67,35 70,44 62,39 54,44 57,35 50,30 59,30" fill="#FEF08A"/>
+    <polygon points="62,21 65,30 74,30 67,35 70,44 62,39 54,44 57,35 50,30 59,30" fill="#B6E0EB"/>
     <text x="62" y="80" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="900">NÂNG CAO</text>
     <text x="62" y="102" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Làm chủ</text>
     <text x="62" y="118" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Hải trình</text>
     <rect x="20" y="136" width="84" height="24" rx="12" fill="#113747"/>
-    <text x="62" y="152" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="900">CHINH PHỤC</text>
+    <text x="62" y="152" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="900">CHINH PHỤC</text>
   </g>
 </svg>

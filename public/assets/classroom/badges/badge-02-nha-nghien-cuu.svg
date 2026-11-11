@@ -9,30 +9,29 @@
       <stop offset="0%" stop-color="#113747"/>
       <stop offset="100%" stop-color="#1A718D"/>
     </linearGradient>
-    <linearGradient id="b2-gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="50%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#B45309"/>
+    <linearGradient id="b2-aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#B6E0EB"/>
+      <stop offset="100%" stop-color="#29B4D1"/>
     </linearGradient>
   </defs>
 
-  <!-- Outer Aura -->
-  <circle cx="80" cy="76" r="68" fill="#29B4D1" fill-opacity="0.15"/>
+  <circle cx="80" cy="76" r="68" fill="#29B4D1" fill-opacity="0.18"/>
 
   <!-- Naval Shield Frame -->
   <path d="M80 10 L134 28 V74 C134 108 110 132 80 144 C50 132 26 108 26 74 V28 Z" fill="url(#b2-shield)" stroke="#B6E0EB" stroke-width="3"/>
-  <path d="M80 18 L125 34 V73 C125 101 105 122 80 133 C55 122 35 101 35 73 V34 Z" fill="url(#b2-inner)" stroke="url(#b2-gold)" stroke-width="2"/>
+  <path d="M80 18 L125 34 V73 C125 101 105 122 80 133 C55 122 35 101 35 73 V34 Z" fill="url(#b2-inner)" stroke="#29B4D1" stroke-width="2"/>
 
   <!-- Lighthouse Light Beams -->
-  <polygon points="80,46 40,32 40,54" fill="#FDE68A" fill-opacity="0.38"/>
-  <polygon points="80,46 120,32 120,54" fill="#FDE68A" fill-opacity="0.38"/>
+  <polygon points="80,46 40,32 40,54" fill="#B6E0EB" fill-opacity="0.4"/>
+  <polygon points="80,46 120,32 120,54" fill="#B6E0EB" fill-opacity="0.4"/>
 
   <!-- Island Lighthouse -->
   <path d="M72 88 L75 50 H85 L88 88 Z" fill="#FFFFFF" stroke="#113747" stroke-width="1.5"/>
-  <path d="M73.5 62 H86.5 L87.5 72 H72.5 Z" fill="#EF4444"/>
-  <rect x="73" y="43" width="14" height="7" rx="2" fill="url(#b2-gold)" stroke="#113747" stroke-width="1.2"/>
-  <path d="M70 43 L80 34 L90 43 Z" fill="#EF4444" stroke="#113747" stroke-width="1.2"/>
-  <circle cx="80" cy="46.5" r="2.5" fill="#FEF08A"/>
+  <path d="M73.5 62 H86.5 L87.5 72 H72.5 Z" fill="#29B4D1"/>
+  <rect x="73" y="43" width="14" height="7" rx="2" fill="#B6E0EB" stroke="#113747" stroke-width="1.2"/>
+  <path d="M70 43 L80 34 L90 43 Z" fill="#29B4D1" stroke="#113747" stroke-width="1.2"/>
+  <circle cx="80" cy="46.5" r="2.5" fill="#FFFFFF"/>
 
   <!-- Open Maritime Book at Base of Lighthouse -->
   <path d="M46 86 Q63 82 80 90 Q97 82 114 86 V104 Q97 100 80 108 Q63 100 46 104 Z" fill="#B6E0EB" stroke="#113747" stroke-width="2"/>
@@ -42,13 +41,12 @@
   <line x1="107" y1="92" x2="87" y2="95" stroke="#1A718D" stroke-width="2" stroke-linecap="round"/>
   <line x1="107" y1="98" x2="89" y2="100" stroke="#1A718D" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- 4 Golden Stars representing Topic Mastery -->
-  <circle cx="52" cy="68" r="3" fill="#FDE047"/>
+  <circle cx="52" cy="68" r="3" fill="#B6E0EB"/>
   <circle cx="62" cy="56" r="2.5" fill="#29B4D1"/>
   <circle cx="98" cy="56" r="2.5" fill="#29B4D1"/>
-  <circle cx="108" cy="68" r="3" fill="#FDE047"/>
+  <circle cx="108" cy="68" r="3" fill="#B6E0EB"/>
 
   <!-- Bottom Ribbon -->
-  <path d="M22 126 L34 118 H126 L138 126 L130 144 H30 Z" fill="url(#b2-gold)" stroke="#113747" stroke-width="2"/>
+  <path d="M22 126 L34 118 H126 L138 126 L130 144 H30 Z" fill="url(#b2-aqua)" stroke="#113747" stroke-width="2"/>
   <text x="80" y="135" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="900" letter-spacing="0.8">CHUYÊN ĐỀ</text>
 </svg>

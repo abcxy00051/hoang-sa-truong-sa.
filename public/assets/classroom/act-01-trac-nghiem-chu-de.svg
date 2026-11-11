@@ -1,50 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
   <defs>
-    <linearGradient id="a1-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#113747"/>
-      <stop offset="55%" stop-color="#1A718D"/>
-      <stop offset="100%" stop-color="#113747"/>
+    <linearGradient id="oa1-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A718D"/>
+      <stop offset="60%" stop-color="#113747"/>
+      <stop offset="100%" stop-color="#1A718D"/>
     </linearGradient>
-    <linearGradient id="a1-gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
+    <linearGradient id="oa1-aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B6E0EB"/>
+      <stop offset="100%" stop-color="#29B4D1"/>
     </linearGradient>
   </defs>
 
-  <rect width="480" height="260" fill="url(#a1-bg)"/>
-  <circle cx="380" cy="120" r="110" fill="#29B4D1" fill-opacity="0.14"/>
+  <rect width="480" height="260" fill="url(#oa1-bg)"/>
+  <circle cx="380" cy="116" r="108" fill="#29B4D1" fill-opacity="0.18"/>
+  <path d="M0 218 Q120 198 240 218 T480 218 V260 H0 Z" fill="#113747" fill-opacity="0.6"/>
 
   <!-- Left Panel: 8 Chuyên đề Book & Quiz Console -->
-  <rect x="26" y="24" width="256" height="192" rx="14" fill="#113747" fill-opacity="0.92" stroke="#29B4D1" stroke-width="2"/>
-  <rect x="42" y="38" width="136" height="22" rx="6" fill="#29B4D1"/>
-  <text x="110" y="53" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">08 CHUYÊN ĐỀ THPT</text>
+  <rect x="24" y="20" width="260" height="196" rx="16" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
+  <rect x="40" y="34" width="144" height="24" rx="7" fill="url(#oa1-aqua)"/>
+  <text x="112" y="50" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">08 CHUYÊN ĐỀ THPT</text>
 
-  <!-- Option A (Correct Highlighted) -->
-  <rect x="42" y="70" width="224" height="32" rx="8" fill="#1A718D" stroke="#FEF08A" stroke-width="1.8"/>
-  <circle cx="60" cy="86" r="10" fill="url(#a1-gold)"/>
-  <text x="60" y="90" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">A</text>
-  <text x="78" y="90" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">Bờ biển dài 3.260 km ✓</text>
+  <!-- Option A (Selected / Correct in Bright Ocean Cyan & Ice Aqua) -->
+  <rect x="40" y="68" width="228" height="34" rx="9" fill="#1A718D" stroke="#B6E0EB" stroke-width="2"/>
+  <circle cx="58" cy="85" r="10.5" fill="#B6E0EB"/>
+  <text x="58" y="89" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">A</text>
+  <text x="76" y="89" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">Bờ biển dài 3.260 km ✓</text>
 
   <!-- Option B -->
-  <rect x="42" y="110" width="224" height="28" rx="8" fill="#113747" stroke="#29B4D1" stroke-opacity="0.55"/>
-  <circle cx="60" cy="124" r="9" fill="#1A718D"/>
-  <text x="60" y="128" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">B</text>
-  <text x="78" y="128" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Hoàng Sa &amp; Trường Sa</text>
+  <rect x="40" y="110" width="228" height="28" rx="8" fill="#113747" stroke="#29B4D1" stroke-opacity="0.65"/>
+  <circle cx="58" cy="124" r="9" fill="#1A718D"/>
+  <text x="58" y="128" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">B</text>
+  <text x="76" y="128" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Hoàng Sa &amp; Trường Sa</text>
 
   <!-- Option C -->
-  <rect x="42" y="146" width="224" height="28" rx="8" fill="#113747" stroke="#29B4D1" stroke-opacity="0.55"/>
-  <circle cx="60" cy="160" r="9" fill="#1A718D"/>
-  <text x="60" y="164" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">C</text>
-  <text x="78" y="164" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Công ước UNCLOS 1982</text>
+  <rect x="40" y="146" width="228" height="28" rx="8" fill="#113747" stroke="#29B4D1" stroke-opacity="0.65"/>
+  <circle cx="58" cy="160" r="9" fill="#1A718D"/>
+  <text x="58" y="164" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">C</text>
+  <text x="76" y="164" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Công ước UNCLOS 1982</text>
 
-  <text x="42" y="198" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">★ Có giải thích &amp; nguồn SGK chuẩn</text>
+  <text x="40" y="198" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">★ Giải thích chi tiết &amp; nguồn SGK</text>
 
   <!-- Right Emblem: 80 Questions Compass Badge -->
-  <g transform="translate(376, 114)">
-    <circle cx="0" cy="0" r="68" fill="#113747" stroke="url(#a1-gold)" stroke-width="3.5"/>
-    <circle cx="0" cy="0" r="56" fill="none" stroke="#29B4D1" stroke-width="1.5" stroke-dasharray="5 4"/>
-    <text x="0" y="-8" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="30" font-weight="900">80</text>
-    <text x="0" y="14" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="800">CÂU HỎI</text>
-    <text x="0" y="32" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="800">8 × 10 CÂU</text>
+  <g transform="translate(378, 112)">
+    <circle cx="0" cy="0" r="68" fill="#113747" stroke="#B6E0EB" stroke-width="3.5"/>
+    <circle cx="0" cy="0" r="56" fill="#1A718D" fill-opacity="0.45" stroke="#29B4D1" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="0" y="-8" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="31" font-weight="900">80</text>
+    <text x="0" y="14" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="800">CÂU HỎI</text>
+    <text x="0" y="32" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="900">8 × 10 CÂU</text>
   </g>
 </svg>

@@ -700,7 +700,7 @@ export default function InteractiveClassroomModule({ activeRole = 'student' }) {
           <div className="cls-hero-visual-col">
             <div className="cls-hero-artwork-frame">
               <img
-                src="/assets/classroom/hero-phong-hoc-tuong-tac.svg"
+                src="/assets/classroom/hero-phong-hoc-tuong-tac.svg?v=ocean2"
                 alt="Phòng học tương tác – Lớp học số và học sinh khám phá biển đảo Việt Nam"
                 className="cls-hero-artwork-img"
               />
