@@ -1,10 +1,139 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" fill="none">
-  <rect width="420" height="220" rx="16" fill="#2A1608" />
-  <rect x="20" y="20" width="380" height="180" rx="12" fill="#43230D" stroke="#FDE047" stroke-opacity="0.5" />
-  <text x="38" y="52" fill="#FEF08A" font-family="serif" font-size="14" font-weight="800">GIAI ĐOẠN 02: THẾ KỶ XVII – XVIII</text>
-  <text x="38" y="78" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="700">Đội Hoàng Sa kiêm quản Đội Bắc Hải</text>
-  <text x="38" y="100" fill="#FED7AA" font-family="sans-serif" font-size="11">• Chúa Nguyễn lập Đội Hoàng Sa (70 suất/năm)</text>
-  <text x="38" y="120" fill="#FED7AA" font-family="sans-serif" font-size="11">• Thiên Nam tứ chí lộ đồ thư (1686) – Đỗ Bá</text>
-  <text x="38" y="140" fill="#FED7AA" font-family="sans-serif" font-size="11">• Phủ biên tạp lục (1776) – Lê Quý Đôn</text>
-  <text x="38" y="160" fill="#FED7AA" font-family="sans-serif" font-size="11">• Sắc chỉ triều Tây Sơn (1786) cử Hội Đức hầu</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="era2Bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747" />
+      <stop offset="52%" stop-color="#1A718D" />
+      <stop offset="100%" stop-color="#113747" />
+    </linearGradient>
+    <linearGradient id="era2Card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#B6E0EB" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="18" fill="url(#era2Bg)" />
+
+  <!-- Nautical Grid Lines -->
+  <g stroke="#B6E0EB" stroke-opacity="0.14" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90" stroke-dasharray="5 5" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="270" x2="800" y2="270" stroke-dasharray="5 5" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+    <line x1="200" y1="0" x2="200" y2="450" stroke-dasharray="5 5" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" stroke-dasharray="5 5" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="24" y="20" width="752" height="52" rx="12" fill="#113747" stroke="#29B4D1" stroke-width="2" />
+  <rect x="38" y="31" width="136" height="30" rx="8" fill="#29B4D1" />
+  <text x="106" y="51" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="12.5" font-weight="900">
+    GIAI ĐOẠN 02
+  </text>
+  <text x="190" y="45" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="900">
+    THẾ KỶ XVII – XVIII: ĐỘI HOÀNG SA KIÊM QUẢN ĐỘI BẮC HẢI
+  </text>
+  <text x="190" y="63" fill="#B6E0EB" font-family="sans-serif" font-size="11.5" font-weight="700">
+    70 suất đinh An Vĩnh – An Hải • Thiên Nam tứ chí lộ đồ thư (1686) • Phủ biên tạp lục (1776) • Tờ sai Tây Sơn (1786)
+  </text>
+
+  <!-- Left Visual Panel: Naval Route Diagram of Hoang Sa & Bac Hai Flotillas -->
+  <g transform="translate(24, 88)">
+    <rect width="348" height="296" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8" />
+    <text x="174" y="28" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="12" font-weight="900">
+      HẢI TRÌNH CÔNG VỤ THƯỜNG NIÊN (THÁNG 2 – THÁNG 8 ÂL)
+    </text>
+    <line x1="20" y1="38" x2="328" y2="38" stroke="#1A718D" stroke-width="1.5" />
+
+    <!-- Step 1: Departure -->
+    <rect x="20" y="52" width="144" height="54" rx="10" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.5" />
+    <text x="92" y="71" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="900">1. ĐẢO LÝ SƠN (THÁNG 2)</text>
+    <text x="92" y="87" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5" font-weight="700">Nhận Giấy sai • 70 suất</text>
+    <text x="92" y="100" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5" font-weight="700">5 thuyền câu • 6 tháng lương</text>
+
+    <!-- Step 2: Hoang Sa -->
+    <rect x="188" y="52" width="140" height="54" rx="10" fill="#29B4D1" stroke="#FFFFFF" stroke-width="1.5" />
+    <text x="258" y="71" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="11" font-weight="900">2. ĐỘI HOÀNG SA</text>
+    <text x="258" y="87" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="9.5" font-weight="800">Ra Bãi Cát Vàng (Hoàng Sa)</text>
+    <text x="258" y="100" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="9.5" font-weight="700">Thu lượm hóa vật, hải sản</text>
+
+    <!-- Step 3: Bac Hai -->
+    <rect x="188" y="128" width="140" height="54" rx="10" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.5" />
+    <text x="258" y="147" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="11" font-weight="900">3. ĐỘI BẮC HẢI</text>
+    <text x="258" y="163" text-anchor="middle" fill="#1A718D" font-family="sans-serif" font-size="9.5" font-weight="800">Ra Vạn Lý Trường Sa</text>
+    <text x="258" y="176" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="9.5" font-weight="700">Do Đội Hoàng Sa kiêm quản</text>
+
+    <!-- Step 4: Return to Phu Xuan -->
+    <rect x="20" y="128" width="144" height="54" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="1.5" />
+    <text x="92" y="147" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="900">4. CỬA EO – PHÚ XUÂN</text>
+    <text x="92" y="163" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5" font-weight="700">Tháng 8 ÂL về kinh đô</text>
+    <text x="92" y="176" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5" font-weight="700">Cân nghiệm &amp; nộp hóa vật</text>
+
+    <!-- Connecting Arrows -->
+    <line x1="164" y1="79" x2="188" y2="79" stroke="#29B4D1" stroke-width="2.5" />
+    <line x1="258" y1="106" x2="258" y2="128" stroke="#29B4D1" stroke-width="2.5" stroke-dasharray="4 3" />
+    <line x1="188" y1="155" x2="164" y2="155" stroke="#29B4D1" stroke-width="2.5" />
+
+    <!-- Quote Box inside Visual Panel -->
+    <rect x="20" y="198" width="308" height="82" rx="10" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.5" />
+    <text x="32" y="218" fill="#113747" font-family="sans-serif" font-size="10.5" font-weight="900">
+      TRÍCH &quot;PHỦ BIÊN TẠP LỤC&quot; – LÊ QUÝ ĐÔN (1776):
+    </text>
+    <text x="32" y="236" fill="#113747" font-family="sans-serif" font-size="10" font-style="italic" font-weight="700">
+      &quot;Họ Nguyễn đặt đội Hoàng Sa 70 suất, lấy người xã An Vĩnh
+    </text>
+    <text x="32" y="252" fill="#113747" font-family="sans-serif" font-size="10" font-style="italic" font-weight="700">
+      sung vào, cắt phiên mỗi năm cứ tháng 2 nhận giấy sai đi,
+    </text>
+    <text x="32" y="268" fill="#113747" font-family="sans-serif" font-size="10" font-style="italic" font-weight="700">
+      lại đặt đội Bắc Hải do đội Hoàng Sa kiêm quản...&quot;
+    </text>
+  </g>
+
+  <!-- Right Panel: 4 Key Historical Milestones of Era 2 -->
+  <g transform="translate(388, 88)">
+    <rect width="388" height="68" rx="10" fill="url(#era2Card)" stroke="#29B4D1" stroke-width="1.6" />
+    <rect x="12" y="12" width="96" height="20" rx="5" fill="#113747" />
+    <text x="60" y="26" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="900">NỬA ĐẦU TK XVII</text>
+    <text x="118" y="26" fill="#113747" font-family="sans-serif" font-size="12" font-weight="900">Chúa Nguyễn lập Đội Hoàng Sa (70 suất)</text>
+    <text x="12" y="48" fill="#113747" font-family="sans-serif" font-size="10.5" font-weight="700">
+      Tuyển dân đinh An Vĩnh, An Hải (Quảng Ngãi), miễn thuế sưu dịch, cấp lương.
+    </text>
+
+    <g transform="translate(0, 76)">
+      <rect width="388" height="68" rx="10" fill="url(#era2Card)" stroke="#29B4D1" stroke-width="1.6" />
+      <rect x="12" y="12" width="96" height="20" rx="5" fill="#113747" />
+      <text x="60" y="26" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="900">NĂM 1686</text>
+      <text x="118" y="26" fill="#113747" font-family="sans-serif" font-size="12" font-weight="900">Thiên Nam tứ chí lộ đồ thư – Đỗ Bá</text>
+      <text x="12" y="48" fill="#113747" font-family="sans-serif" font-size="10.5" font-weight="700">
+        Bản đồ cổ nhất vẽ rõ &quot;Bãi Cát Vàng&quot; dài 400 dặm, rộng 20 dặm ngoài biển.
+      </text>
+    </g>
+
+    <g transform="translate(0, 152)">
+      <rect width="388" height="68" rx="10" fill="url(#era2Card)" stroke="#29B4D1" stroke-width="1.6" />
+      <rect x="12" y="12" width="96" height="20" rx="5" fill="#113747" />
+      <text x="60" y="26" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="900">ĐẦU TK XVIII &amp; 1776</text>
+      <text x="118" y="26" fill="#113747" font-family="sans-serif" font-size="12" font-weight="900">Lập Đội Bắc Hải &amp; Bộ &quot;Phủ biên tạp lục&quot;</text>
+      <text x="12" y="48" fill="#113747" font-family="sans-serif" font-size="10.5" font-weight="700">
+        Quản lý toàn diện Trường Sa, Côn Lôn, Hà Tiên; Lê Quý Đôn chép năm 1776.
+      </text>
+    </g>
+
+    <g transform="translate(0, 228)">
+      <rect width="388" height="68" rx="10" fill="url(#era2Card)" stroke="#29B4D1" stroke-width="1.6" />
+      <rect x="12" y="12" width="96" height="20" rx="5" fill="#1A718D" />
+      <text x="60" y="26" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="9.5" font-weight="900">NĂM 1786</text>
+      <text x="118" y="26" fill="#113747" font-family="sans-serif" font-size="12" font-weight="900">Tờ sai Triều Tây Sơn (Thái Đức thứ 9)</text>
+      <text x="12" y="48" fill="#113747" font-family="sans-serif" font-size="10.5" font-weight="700">
+        Sai Hội Đức hầu thống suất Đội Hoàng Sa đi 4 thuyền câu giữ vững chủ quyền.
+      </text>
+    </g>
+  </g>
+
+  <!-- Footer Summary Bar -->
+  <rect x="24" y="398" width="752" height="36" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5" />
+  <text x="400" y="421" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="12" font-weight="800">
+    NHÀ NƯỚC ĐẦU TIÊN CHIẾM HỮU THỰC TẾ &amp; THỰC THI CHỦ QUYỀN LIÊN TỤC TẠI HOÀNG SA – TRƯỜNG SA
+  </text>
 </svg>

@@ -25,11 +25,6 @@ export default function SovereigntyPage({
       {/* 1. HERO BANNER RIÊNG CỦA TRANG CỘT MỐC CHỦ QUYỀN (/cot-moc-chu-quyen) */}
       <section className="ecosystem-hero-premium">
         <div className="eco-hero-backdrop" aria-hidden="true">
-          <img
-            src="/assets/ecosystem/card-dong-thoi-gian-lich-su.svg"
-            alt=""
-            className="eco-hero-bg-img"
-          />
           <div className="eco-hero-depth-overlay" />
           <div className="eco-hero-grid-mesh" />
         </div>

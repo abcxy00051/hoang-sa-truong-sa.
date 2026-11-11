@@ -34,7 +34,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Nhận định nghiên cứu khảo cổ học khẳng định: Người Việt cổ đã sớm vươn ra sinh sống trên hệ thống đảo ven bờ và làm chủ kỹ thuật đóng thuyền, đi biển trên Biển Đông, tạo nền tảng truyền thống hàng hải cho các thế hệ sau vươn ra các quần đảo xa bờ.',
         documentQuote:
           'Di tích khảo cổ học văn hóa Sa Huỳnh tại đảo Lý Sơn (xóm Ốc, suối Chình) minh chứng cư dân cổ đã định cư và hoạt động hàng hải liên tục từ hơn 2.000 năm trước.',
-        image: '/assets/exhibition/hall-lich-su.svg',
+        image: '/assets/timeline/era-01-truoc-tk17.svg?v=ocean3',
         imageCaption:
           'Đồ họa giáo dục mô phỏng không gian văn hóa biển và hải trình truyền thống của cư dân Việt trên Biển Đông.',
         sourceName:
@@ -54,7 +54,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Đánh dấu bước phát triển quan trọng về tư duy quản lý lãnh thổ và vẽ bản đồ quốc gia (quốc đồ) của nhà nước quân chủ Đại Việt, đặt nền móng cho các tập bản đồ vẽ chi tiết Bãi Cát Vàng ở các thế kỷ tiếp theo.',
         documentQuote:
           'Hệ thống "Hồng Đức bản đồ" là tiền thân để các thế hệ nho sĩ thế kỷ XVII kế thừa và bổ sung chi tiết phần hải đảo ngoài khơi miền Trung.',
-        image: '/assets/library/topic-lich-su.svg',
+        image: '/assets/ecosystem/ho-so-ban-do.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa truyền thống biên soạn địa chí và bản đồ cương vực thời Lê sơ.',
         sourceName:
@@ -74,7 +74,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Nhận định của các nhà nghiên cứu lịch sử – bản đồ học cho thấy ngay từ thế kỷ XVI, trong nhận thức của các nhà hàng hải quốc tế, quần đảo Hoàng Sa (Pracel) và vùng bờ biển miền Trung Việt Nam (Costa de Pracel) đã có mối quan hệ địa lý – nhân văn gắn kết hữu cơ.',
         documentQuote:
           'Địa danh "Ilhas dos Pracel" (Quần đảo Hoàng Sa) và "Costa de Pracel" (Bờ biển Hoàng Sa tại miền Trung Việt Nam) xuất hiện song hành trên nhiều hải đồ châu Âu thế kỷ XVI–XVII.',
-        image: '/assets/ecosystem/dong-thoi-gian-lich-su.svg',
+        image: '/assets/library/bai-16-kiem-chung-ban-do-so.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa đối chiếu địa danh Pracel và Costa de Pracel trên hải đồ cổ.',
         sourceName:
@@ -106,7 +106,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Ý nghĩa lịch sử – pháp lý: Việc lập đội Hoàng Sa chứng tỏ Nhà nước Việt Nam là nhà nước đầu tiên trong lịch sử đã chiếm hữu thực tế và quản lý liên tục quần đảo Hoàng Sa khi quần đảo này còn là đất vô chủ.',
         documentQuote:
           '"Họ Nguyễn đặt đội Hoàng Sa 70 suất, lấy người xã An Vĩnh sung vào, cắt phiên mỗi năm cứ tháng 2 nhận giấy sai đi..." (Trích Phủ biên tạp lục, 1776).',
-        image: '/assets/exhibition/hall-lich-su.svg',
+        image: '/assets/timeline/era-02-tk17-18.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng hải trình thường niên từ tháng 2 đến tháng 8 âm lịch của đội Hoàng Sa.',
         sourceName:
@@ -126,7 +126,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Là tư liệu bản đồ và địa chí thành văn có niên đại xác định sớm nhất của Việt Nam khẳng định rõ ràng vị trí địa lý và thẩm quyền quản lý của chính quyền Đàng Trong đối với Bãi Cát Vàng (Hoàng Sa, Trường Sa).',
         documentQuote:
           '"Giữa biển có một dải cát dài, gọi là Bãi Cát Vàng, dài độ 400 dặm, rộng 20 dặm, đứng dựng giữa biển..." (Đỗ Bá, 1686).',
-        image: '/assets/exhibition/hall-lich-su.svg',
+        image: '/assets/library/bai-04-thuc-thi-chu-quyen.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng hồ sơ bản đồ Toản tập Thiên Nam tứ chí lộ đồ thư (1686).',
         sourceName:
@@ -146,7 +146,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Khẳng định quy mô quản lý toàn diện của Nhà nước Việt Nam: Đội Hoàng Sa phụ trách vùng biển đảo phía Bắc (quần đảo Hoàng Sa) và Đội Bắc Hải phụ trách vùng biển đảo phía Nam (quần đảo Trường Sa và vùng biển Nam Bộ).',
         documentQuote:
           '"Họ Nguyễn lại đặt đội Bắc Hải, không định bao nhiêu suất, hoặc người thôn Tứ Chính ở Bình Thuận, hoặc người xã Cảnh Dương, ai tình nguyện thì cấp giấy sai đi..." (Lê Quý Đôn, 1776).',
-        image: '/assets/ecosystem/dong-thoi-gian-lich-su.svg',
+        image: '/assets/library/chuyen-de-02-lich-su.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa phạm vi hoạt động phối hợp của đội Hoàng Sa và đội Bắc Hải.',
         sourceName:
@@ -166,7 +166,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Cung cấp bằng chứng lịch sử – ngoại giao cực kỳ đắt giá: không chỉ ghi nhận hoạt động quản lý nội bộ mà còn chứng minh các nước láng giềng đương thời đã biết rõ và tôn trọng tư cách công vụ nhà nước của đội Hoàng Sa thuộc chính quyền Đàng Trong.',
         documentQuote:
           '"Trước họ Nguyễn có đặt đội Hoàng Sa 70 suất, lại đặt đội Bắc Hải... đều do đội Hoàng Sa cai quản." (Phủ biên tạp lục, Quyển 2, 1776).',
-        image: '/assets/library/topic-lich-su.svg',
+        image: '/assets/timeline/era-02-tk17-18.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng trích đoạn Quyển 2 bộ Phủ biên tạp lục của Lê Quý Đôn (1776).',
         sourceName:
@@ -186,7 +186,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Chứng minh dù có sự thay đổi triều đại từ chúa Nguyễn sang Tây Sơn, tư cách chủ quyền nhà nước và hoạt động thực thi chủ quyền của đội Hoàng Sa vẫn được duy trì liên tục, không hề gián đoạn.',
         documentQuote:
           '"Sai Hội Đức hầu, cai đội Hoàng Sa luôn xem xét đốc suất trong đội cắm biển hiệu đi 4 chiếc thuyền câu vượt biển thẳng đến Hoàng Sa..." (Tờ sai năm Thái Đức thứ 9 – 1786).',
-        image: '/assets/exhibition/hall-lich-su.svg',
+        image: '/assets/library/bai-04-thuc-thi-chu-quyen.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng hồ sơ Tờ sai thời Tây Sơn lưu giữ tại nhà thờ tộc họ Võ trên đảo Lý Sơn.',
         sourceName:
@@ -218,7 +218,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Sự kiện năm 1816 dưới triều vua Gia Long được nhiều học giả quốc tế và trong nước ghi nhận là mốc son chính quy hóa hoạt động thực thi chủ quyền của Vương triều Nguyễn bằng lực lượng Thủy quân nhà nước.',
         documentQuote:
           '"Năm Bính Tý, niên hiệu Gia Long thứ 15 (1816), mùa xuân, tháng 3, Vua mệnh cho Thủy quân và đội Hoàng Sa đi thuyền ra Hoàng Sa để xem xét đo đạc thủy trình." (Đại Nam thực lục chính biên, Đệ nhất kỷ, Quyển 52).',
-        image: '/assets/library/topic-lich-su.svg',
+        image: '/assets/timeline/era-03-thoi-nguyen.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa Thủy quân triều Nguyễn cùng đội Hoàng Sa ra đảo đo đạc thủy trình năm 1816.',
         sourceName:
@@ -238,7 +238,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Chứng minh nhà nước Đại Nam không chỉ thực thi quyền lực tối cao trên đảo mà còn thực hiện trách nhiệm nhân đạo và bảo đảm an toàn hàng hải quốc tế trên Biển Đông.',
         documentQuote:
           '"Chỗ bãi Hoàng Sa thuộc mặt biển Quảng Ngãi, xa trông trời nước một màu, không phân biệt được nông hay sâu... Năm ngoái trẫm nghĩ tới muốn dựng miếu lập bia ở chỗ ấy, lại trồng nhiều cây cối..." (Châu bản Minh Mạng & Đại Nam thực lục).',
-        image: '/assets/exhibition/hall-lich-su.svg',
+        image: '/assets/library/chuyen-de-02-lich-su.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng hoạt động dựng miếu, lập bia và trồng cây tại Hoàng Sa dưới triều Minh Mạng.',
         sourceName:
@@ -258,7 +258,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Mỗi cột mốc gỗ đều khắc rõ 33 chữ Hán ghi niên hiệu nhà vua và tên vị chỉ huy Thủy quân, là bằng chứng pháp lý hành chính trực tiếp, hoàn hảo theo tiêu chuẩn luật pháp quốc tế về thực thi chủ quyền nhà nước.',
         documentQuote:
           'Dòng chữ khắc trên cột mốc năm 1836: "Minh Mạng thập thất niên, tuế tại Bính Thân, Thủy quân Chánh đội trưởng suất đội Phạm Hữu Nhật phụng mệnh vãng Hoàng Sa tương độ chí thử lưu chí đẳng tự" (Năm Minh Mạng thứ 17, năm Bính Thân, Thủy quân Chánh đội trưởng suất đội Phạm Hữu Nhật vâng mệnh ra Hoàng Sa trông nom đo đạc đến đây lưu dấu để ghi nhớ).',
-        image: '/assets/exhibition/hall-lich-su.svg',
+        image: '/assets/timeline/era-03-thoi-nguyen.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng Châu bản Minh Mạng thứ 17 (1836) và nội dung cột mốc chủ quyền của Phạm Hữu Nhật.',
         sourceName:
@@ -278,7 +278,7 @@ export const TIMELINE_ERAS_PART1 = [
           'Sự thống nhất hoàn toàn giữa bản đồ chính thống của Nhà nước Việt Nam (Đại Nam nhất thống toàn đồ) và bản đồ của học giả phương Tây đương thời (An Nam đại quốc họa đồ) là chứng cứ khách quan bác bỏ mọi yêu sách phi lý từ bên ngoài.',
         documentQuote:
           'Trên "Đại Nam nhất thống toàn đồ" (1838), hai quần đảo "Hoàng Sa" và "Vạn Lý Trường Sa" được vẽ trong cùng một dải kiểm soát biển đảo với các đảo ven bờ của Đại Nam.',
-        image: '/assets/library/topic-phap-luat.svg',
+        image: '/assets/ecosystem/ho-so-ban-do.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng vị trí Hoàng Sa và Vạn Lý Trường Sa trên bản đồ cổ năm 1838.',
         sourceName:

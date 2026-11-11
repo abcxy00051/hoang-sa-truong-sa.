@@ -183,7 +183,7 @@ export default function SovereigntyTimelineModule({
             <div className="tl-hero-visual-col">
               <div className="tl-hero-artwork-frame">
                 <img
-                  src="/assets/timeline/hero-dong-thoi-gian.svg"
+                  src="/assets/timeline/hero-dong-thoi-gian.svg?v=ocean3"
                   alt="Hành trình lịch sử và chủ quyền biển đảo Việt Nam qua bản đồ cổ, châu bản và tư liệu lịch sử"
                   className="tl-hero-artwork-img"
                 />
@@ -250,14 +250,14 @@ export default function SovereigntyTimelineModule({
                     className="tl-era-img"
                     loading="lazy"
                   />
-                  <div className="tl-era-badge-overlay">
+                </div>
+                <div className="tl-era-card-body">
+                  <div className="tl-era-card-meta-row">
                     <span className="era-code-tag">{era.code}</span>
                     <span className="era-count-tag">
                       {era.milestones.length} sự kiện
                     </span>
                   </div>
-                </div>
-                <div className="tl-era-card-body">
                   <h4>{era.periodRange}</h4>
                   <p>{era.subtitle}</p>
                 </div>

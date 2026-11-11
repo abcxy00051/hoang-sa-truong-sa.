@@ -9,12 +9,12 @@
  */
 
 export const ERA_BANNER_IMAGES = {
-  'era-1': '/assets/timeline/era-01-truoc-tk17.svg',
-  'era-2': '/assets/timeline/era-02-tk17-18.svg',
-  'era-3': '/assets/timeline/era-03-thoi-nguyen.svg',
-  'era-4': '/assets/timeline/era-04-phap-thuoc.svg',
-  'era-5': '/assets/timeline/era-05-1945-1975.svg',
-  'era-6': '/assets/timeline/era-06-1975-nay.svg'
+  'era-1': '/assets/timeline/era-01-truoc-tk17.svg?v=ocean3',
+  'era-2': '/assets/timeline/era-02-tk17-18.svg?v=ocean3',
+  'era-3': '/assets/timeline/era-03-thoi-nguyen.svg?v=ocean3',
+  'era-4': '/assets/timeline/era-04-phap-thuoc.svg?v=ocean3',
+  'era-5': '/assets/timeline/era-05-1945-1975.svg?v=ocean3',
+  'era-6': '/assets/timeline/era-06-1975-nay.svg?v=ocean3'
 }
 
 // 1. SƠ ĐỒ PHÂN CHIA 6 GIAI ĐOẠN LỊCH SỬ & TÍNH LIÊN TỤC CỦA CHỦ QUYỀN

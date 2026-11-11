@@ -15975,3 +15975,688 @@ ul {
   }
 }
 
+/* ==========================================================================
+   28. CHUẨN HÓA PHÔNG MÀU CHỮ & KHUNG ĐỒ HỌA TRANG CỘT MỐC CHỦ QUYỀN,
+       DÒNG THỜI GIAN LỊCH SỬ & HỒ SƠ BẢN ĐỒ (OCEAN TECHNOLOGY PALETTE)
+   ========================================================================== */
+
+/* 1. Hero Banner Cột mốc Chủ quyền & Hệ sinh thái */
+.ecosystem-hero-premium .hero-badge-gold {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+  border: 1.5px solid #B6E0EB !important;
+  font-weight: 800 !important;
+}
+
+.ecosystem-hero-premium .hero-badge-coordinates {
+  background: rgba(17, 55, 71, 0.9) !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid #29B4D1 !important;
+  font-weight: 700 !important;
+}
+
+.eco-overview-glass-panel .eco-panel-status {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 800 !important;
+}
+
+/* 2. Hero Banner Hành trình Lịch sử & Chủ quyền Biển đảo (.tl-hero-banner) */
+.tl-hero-banner {
+  background: linear-gradient(135deg, #113747 0%, #1A718D 100%) !important;
+  border: 2px solid #29B4D1 !important;
+  color: #FFFFFF !important;
+}
+
+.tl-hero-pill.gold {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+  border: 1.5px solid #FFFFFF !important;
+  font-weight: 800 !important;
+}
+
+.tl-hero-pill.cyan {
+  background: rgba(17, 55, 71, 0.92) !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.tl-hero-title {
+  color: #FFFFFF !important;
+}
+
+.tl-hero-lead {
+  color: #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.tl-hero-desc {
+  color: #B6E0EB !important;
+}
+
+/* Fix 3 thẻ quy tắc học thuật (.tl-rule-chip) bị trùng màu chữ với nền */
+.tl-rule-chip,
+.tl-rule-chip.fact,
+.tl-rule-chip.research {
+  background: #B6E0EB !important;
+  color: #113747 !important;
+  border: 1.5px solid #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.tl-rule-chip.primary {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+  border: 1.5px solid #FFFFFF !important;
+  font-weight: 900 !important;
+}
+
+.tl-rule-chip svg {
+  color: #113747 !important;
+  flex-shrink: 0;
+}
+
+/* 3. Khung chọn 6 Giai đoạn Lịch sử & Thẻ Giai đoạn (.timeline-eras-selector-box) */
+.timeline-eras-selector-box {
+  background: linear-gradient(135deg, #113747 0%, #1A718D 100%) !important;
+  border: 2px solid #29B4D1 !important;
+  color: #FFFFFF !important;
+}
+
+.timeline-eras-selector-box .eras-eyebrow {
+  color: #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.timeline-eras-selector-box .eras-box-header h3 {
+  color: #FFFFFF !important;
+}
+
+.era-all-pill {
+  background: rgba(17, 55, 71, 0.88) !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.era-all-pill:hover,
+.era-all-pill.active {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+  border-color: #FFFFFF !important;
+}
+
+.tl-eras-visual-grid .tl-era-visual-card {
+  background: #B6E0EB !important;
+  border: 2px solid rgba(41, 180, 209, 0.55) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  transition: all 0.22s ease !important;
+}
+
+.tl-eras-visual-grid .tl-era-visual-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: #FFFFFF !important;
+  box-shadow: 0 12px 28px rgba(17, 55, 71, 0.35) !important;
+}
+
+.tl-eras-visual-grid .tl-era-visual-card.active {
+  background: #FFFFFF !important;
+  border: 2.5px solid #29B4D1 !important;
+  box-shadow: 0 12px 30px rgba(17, 55, 71, 0.4) !important;
+}
+
+.tl-era-img-wrap {
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  background: #113747 !important;
+  border-bottom: 1.5px solid rgba(41, 180, 209, 0.45) !important;
+}
+
+.tl-era-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  background: #113747 !important;
+}
+
+.tl-era-card-body {
+  padding: 14px 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+.tl-era-card-meta-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+}
+
+.tl-era-visual-card .era-code-tag {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  font-size: 0.73rem !important;
+  font-weight: 800 !important;
+}
+
+.tl-era-visual-card.active .era-code-tag {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+}
+
+.tl-era-visual-card .era-count-tag {
+  background: rgba(26, 113, 141, 0.16) !important;
+  color: #113747 !important;
+  padding: 3px 10px !important;
+  border-radius: 999px !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+}
+
+.tl-era-visual-card h4 {
+  color: #113747 !important;
+  font-size: 1rem !important;
+  font-weight: 900 !important;
+  margin: 0 !important;
+}
+
+.tl-era-visual-card p {
+  color: #455C68 !important;
+  font-size: 0.81rem !important;
+  font-weight: 600 !important;
+  line-height: 1.48 !important;
+  margin: 0 !important;
+}
+
+/* Thanh tìm kiếm & Chú giải trong khung Giai đoạn */
+.timeline-search-input-wrap input {
+  background: #FFFFFF !important;
+  color: #113747 !important;
+  border: 1.5px solid #29B4D1 !important;
+  font-weight: 600 !important;
+}
+
+.timeline-search-input-wrap input::placeholder {
+  color: #455C68 !important;
+}
+
+.tl-search-icon,
+.tl-clear-btn {
+  color: #1A718D !important;
+}
+
+.legend-chip.fact {
+  background: #B6E0EB !important;
+  color: #113747 !important;
+  border: 1.5px solid #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.legend-chip.significance {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+  border: 1.5px solid #FFFFFF !important;
+  font-weight: 800 !important;
+}
+
+/* 4. Banner Tóm tắt Giai đoạn & Trục Thời gian Ngang (.tl-horizontal-axis-box) */
+.selected-era-summary-banner {
+  background: #B6E0EB !important;
+  border: 2px solid #1A718D !important;
+}
+
+.selected-era-summary-banner .era-banner-badge {
+  color: #1A718D !important;
+  font-weight: 900 !important;
+}
+
+.selected-era-summary-banner h4 {
+  color: #113747 !important;
+}
+
+.selected-era-summary-banner p {
+  color: #113747 !important;
+}
+
+.tl-horizontal-axis-box {
+  background: #B6E0EB !important;
+  border: 1.5px solid #1A718D !important;
+}
+
+.tl-horiz-eyebrow {
+  color: #1A718D !important;
+  font-weight: 800 !important;
+}
+
+.tl-horiz-header h4 {
+  color: #113747 !important;
+}
+
+.tl-track-btn,
+.tl-track-scroll-btn {
+  background: #113747 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.tl-track-btn:hover,
+.tl-track-scroll-btn:hover {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+  border-color: #113747 !important;
+}
+
+.tl-horiz-progress-rail {
+  background: rgba(17, 55, 71, 0.18) !important;
+}
+
+.tl-horiz-progress-fill {
+  background: linear-gradient(90deg, #113747, #1A718D, #29B4D1) !important;
+}
+
+.tl-horiz-node-card {
+  background: #FFFFFF !important;
+  border: 1.5px solid rgba(26, 113, 141, 0.35) !important;
+}
+
+.tl-horiz-node-card:hover {
+  border-color: #1A718D !important;
+  box-shadow: 0 6px 16px rgba(17, 55, 71, 0.12) !important;
+}
+
+.tl-horiz-node-card .tl-horiz-dot {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+}
+
+.tl-horiz-node-card .tl-horiz-era {
+  color: #1A718D !important;
+}
+
+.tl-horiz-node-card .tl-horiz-time {
+  color: #113747 !important;
+}
+
+.tl-horiz-node-card .tl-horiz-title {
+  color: #455C68 !important;
+  font-weight: 600 !important;
+}
+
+.tl-horiz-node-card.active {
+  background: linear-gradient(135deg, #113747 0%, #1A718D 100%) !important;
+  border: 2px solid #29B4D1 !important;
+  box-shadow: 0 8px 20px rgba(17, 55, 71, 0.25) !important;
+}
+
+.tl-horiz-node-card.active .tl-horiz-dot {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+}
+
+.tl-horiz-node-card.active .tl-horiz-era {
+  color: #29B4D1 !important;
+}
+
+.tl-horiz-node-card.active .tl-horiz-time,
+.tl-horiz-node-card.active .tl-horiz-title {
+  color: #FFFFFF !important;
+}
+
+/* 5. Trục Biên niên sử Dọc (.timeline-vertical-stream) & Hồ sơ Sự kiện (.inspector-sticky-card) */
+.timeline-vertical-stream {
+  background: #B6E0EB !important;
+  border: 1.5px solid #1A718D !important;
+}
+
+.stream-head h4 {
+  color: #113747 !important;
+}
+
+.axis-dot {
+  background: #FFFFFF !important;
+  border: 2px solid #1A718D !important;
+  color: #113747 !important;
+}
+
+.timeline-axis-item.active .axis-dot {
+  background: #113747 !important;
+  border-color: #29B4D1 !important;
+  color: #29B4D1 !important;
+}
+
+.axis-line {
+  background: rgba(26, 113, 141, 0.35) !important;
+}
+
+.axis-card-body {
+  background: #FFFFFF !important;
+  border: 1.5px solid rgba(26, 113, 141, 0.3) !important;
+}
+
+.timeline-axis-item.active .axis-card-body {
+  background: #FFFFFF !important;
+  border: 2.5px solid #1A718D !important;
+  box-shadow: 0 8px 20px rgba(17, 55, 71, 0.15) !important;
+}
+
+.axis-time-badge {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+  border: 1px solid #29B4D1 !important;
+}
+
+.axis-cat-badge {
+  color: #1A718D !important;
+  font-weight: 800 !important;
+}
+
+.axis-card-body h5 {
+  color: #113747 !important;
+}
+
+.axis-short-fact {
+  color: #455C68 !important;
+  font-weight: 500 !important;
+}
+
+.axis-card-footer {
+  border-top: 1px dashed rgba(26, 113, 141, 0.3) !important;
+}
+
+.axis-era-label {
+  color: #113747 !important;
+  font-weight: 700 !important;
+}
+
+.axis-open-modal-btn {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+}
+
+.axis-open-modal-btn:hover {
+  background: #113747 !important;
+  color: #FFFFFF !important;
+}
+
+/* Cột Phải: Hồ sơ Sự kiện 7 trường */
+.inspector-sticky-card,
+.timeline-detail-modal {
+  background: #FFFFFF !important;
+  border: 2px solid #1A718D !important;
+  color: #113747 !important;
+}
+
+.inspector-era-pill {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+}
+
+.inspector-cat-pill {
+  background: #B6E0EB !important;
+  color: #113747 !important;
+  border: 1px solid #29B4D1 !important;
+}
+
+.inspector-step-btns button {
+  background: #B6E0EB !important;
+  color: #113747 !important;
+  border: 1px solid #1A718D !important;
+}
+
+.inspector-step-btns button:hover {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+}
+
+.inspector-time-banner {
+  background: #B6E0EB !important;
+  border: 1.5px solid #29B4D1 !important;
+  color: #113747 !important;
+}
+
+.tl-chrono-precision-note {
+  color: #455C68 !important;
+  font-weight: 600 !important;
+}
+
+.tl-field-label {
+  color: #1A718D !important;
+}
+
+.inspector-milestone-title {
+  color: #113747 !important;
+}
+
+.inspector-media-box {
+  background: #113747 !important;
+  border: 1.5px solid #1A718D !important;
+}
+
+.inspector-img,
+.modal-timeline-img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: contain !important;
+  background: #113747 !important;
+}
+
+.inspector-img-caption {
+  background: #B6E0EB !important;
+  color: #113747 !important;
+  border-top: 1px solid #29B4D1 !important;
+  font-weight: 600 !important;
+}
+
+.inspector-section-block.tl-context-block,
+.inspector-section-block.is-fact-block,
+.inspector-section-block.is-significance-block {
+  background: #B6E0EB !important;
+  border-left: 4px solid #1A718D !important;
+}
+
+.inspector-section-block .block-heading,
+.inspector-section-block .block-heading h4,
+.inspector-section-block p {
+  color: #113747 !important;
+}
+
+.inspector-quote-box {
+  background: rgba(182, 224, 235, 0.45) !important;
+  border: 1.5px dashed #1A718D !important;
+  color: #113747 !important;
+}
+
+.inspector-quote-box p {
+  color: #113747 !important;
+}
+
+.inspector-source-footer,
+.tl-source-distinction-box,
+.tl-source-distinction-box p {
+  color: #113747 !important;
+}
+
+/* 6. Hệ thống Sơ đồ & Infographic Lịch sử (.tl-infographics-hub) */
+.tl-infographics-hub .eras-eyebrow {
+  color: #1A718D !important;
+  font-weight: 800 !important;
+}
+
+.tl-hub-header h3,
+.tl-info-banner-head h4 {
+  color: #113747 !important;
+}
+
+.tl-info-banner-head p {
+  color: #455C68 !important;
+  font-weight: 600 !important;
+}
+
+.tl-hub-tab-btn {
+  background: #FFFFFF !important;
+  color: #113747 !important;
+  border: 1.5px solid rgba(26, 113, 141, 0.35) !important;
+  font-weight: 800 !important;
+}
+
+.tl-hub-tab-btn:hover,
+.tl-hub-tab-btn.active {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+  border-color: #29B4D1 !important;
+}
+
+.tl-flow-col-card {
+  background: #FFFFFF !important;
+  border: 1.5px solid #29B4D1 !important;
+  border-top: 4px solid #113747 !important;
+}
+
+.tl-flow-col-card h5,
+.tl-flow-col-card ul {
+  color: #113747 !important;
+}
+
+.tl-source-type-card {
+  background: #FFFFFF !important;
+  border: 1.5px solid rgba(26, 113, 141, 0.35) !important;
+  border-left: 6px solid #1A718D !important;
+}
+
+.tl-source-type-def,
+.tl-source-type-card ul {
+  color: #113747 !important;
+}
+
+/* 7. Phân hệ Hồ sơ Bản đồ (.atlas-dossier-module) */
+.atlas-toolbar {
+  background: #B6E0EB !important;
+  border: 1.5px solid #1A718D !important;
+}
+
+.atlas-cat-btn {
+  background: #FFFFFF !important;
+  color: #113747 !important;
+  border: 1px solid rgba(26, 113, 141, 0.35) !important;
+  font-weight: 800 !important;
+}
+
+.atlas-cat-btn:hover,
+.atlas-cat-btn.active {
+  background: #113747 !important;
+  color: #29B4D1 !important;
+  border-color: #29B4D1 !important;
+}
+
+.atlas-search-wrap input {
+  background: #FFFFFF !important;
+  color: #113747 !important;
+  border: 1.5px solid #1A718D !important;
+}
+
+.atlas-search-icon {
+  color: #1A718D !important;
+}
+
+.atlas-dossier-item {
+  background: #FFFFFF !important;
+  border: 1.5px solid rgba(26, 113, 141, 0.3) !important;
+}
+
+.atlas-dossier-item.active {
+  background: #B6E0EB !important;
+  border: 2px solid #1A718D !important;
+}
+
+.atlas-item-code {
+  color: #1A718D !important;
+}
+
+.atlas-item-period {
+  color: #113747 !important;
+  font-weight: 800 !important;
+}
+
+.atlas-dossier-item h4 {
+  color: #113747 !important;
+}
+
+.atlas-item-origin {
+  color: #455C68 !important;
+  font-weight: 600 !important;
+}
+
+.atlas-toponym-chip {
+  background: rgba(26, 113, 141, 0.14) !important;
+  color: #113747 !important;
+}
+
+.atlas-inspector-panel {
+  background: #FFFFFF !important;
+  border: 2px solid #1A718D !important;
+}
+
+.atlas-visual-toolbar {
+  background: #113747 !important;
+  color: #FFFFFF !important;
+  border-bottom: 1.5px solid #29B4D1 !important;
+}
+
+.atlas-visual-tag {
+  color: #29B4D1 !important;
+  font-weight: 800 !important;
+}
+
+.atlas-zoom-controls span {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+}
+
+.atlas-zoom-controls button {
+  background: #1A718D !important;
+  color: #FFFFFF !important;
+  border: 1px solid #29B4D1 !important;
+}
+
+.atlas-zoom-controls button:hover {
+  background: #29B4D1 !important;
+  color: #113747 !important;
+}
+
+.atlas-visual-canvas {
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  background: #113747 !important;
+}
+
+.atlas-visual-canvas img {
+  object-fit: contain !important;
+  background: #113747 !important;
+}
+
+.atlas-origin-subtitle,
+.atlas-analysis-card p,
+.atlas-source-footer,
+.atlas-source-footer p {
+  color: #113747 !important;
+}
+
+.atlas-analysis-card {
+  background: #B6E0EB !important;
+  border: 1px solid #29B4D1 !important;
+}
+
+

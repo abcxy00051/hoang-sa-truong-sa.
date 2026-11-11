@@ -62,11 +62,6 @@ export default function ContactPage() {
       {/* 1. HERO BANNER RIÊNG CỦA TRANG LIÊN HỆ (/lien-he) */}
       <section className="ecosystem-hero-premium">
         <div className="eco-hero-backdrop" aria-hidden="true">
-          <img
-            src="/assets/ecosystem/hero-ocean-ecosystem.svg"
-            alt=""
-            className="eco-hero-bg-img"
-          />
           <div className="eco-hero-depth-overlay" />
           <div className="eco-hero-grid-mesh" />
         </div>

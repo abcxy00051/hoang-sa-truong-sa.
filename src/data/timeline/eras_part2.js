@@ -30,7 +30,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Mở đầu giai đoạn quản lý kết hợp nghiên cứu hải dương học hiện đại đối với hai quần đảo Hoàng Sa và Trường Sa từ cơ sở khoa học đặt tại đất liền Việt Nam (Nha Trang).',
         documentQuote:
           'Báo cáo khoa học của Tiến sĩ A. Krempf (Giám đốc Viện Hải dương học Đông Dương tại Nha Trang) ghi nhận chi tiết cấu trúc địa chất san hô của Hoàng Sa và Trường Sa (1925–1927).',
-        image: '/assets/exhibition/hall-thien-nhien.svg',
+        image: '/assets/library/chuyen-de-04-dia-ly-tu-nhien.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa hoạt động khảo sát hải dương học tại Hoàng Sa và Trường Sa.',
         sourceName:
@@ -50,7 +50,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Là văn bản pháp lý hành chính hiện đại đặt quần đảo Trường Sa trực thuộc một tỉnh đất liền của Việt Nam (tỉnh Bà Rịa), tạo tiền đề pháp lý liên tục cho các giai đoạn sau.',
         documentQuote:
           '"Điều 1: Đảo gọi là Spratly và các đảo nhỏ Caye d’Amboine, Itu-Aba, nhóm Deux-Îles, Loaito, Thi-Tu cùng các đảo phụ thuộc nằm trong Biển Đông nay được sáp nhập vào tỉnh Bà Rịa." (Nghị định ngày 21/12/1933).',
-        image: '/assets/library/topic-phap-luat.svg',
+        image: '/assets/timeline/era-04-phap-thuoc.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng Nghị định hành chính ngày 21/12/1933 sáp nhập quần đảo Trường Sa vào tỉnh Bà Rịa.',
         sourceName:
@@ -70,7 +70,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Khẳng định rõ ràng việc Pháp thực thi chủ quyền tại Hoàng Sa là nhân danh vương quốc An Nam (Việt Nam) trên cơ sở chủ quyền lịch sử từ thời các vua Nguyễn ("các cù lao Hoàng Sa thuộc về chủ quyền nước Nam đã lâu đời").',
         documentQuote:
           'Dòng chữ khắc trên Bia chủ quyền năm 1938 tại đảo Hoàng Sa: "République Française – Royaume d’Annam – Archipel des Paracels 1816 – Île de Pattle 1938" (Cộng hòa Pháp – Vương quốc An Nam – Quần đảo Hoàng Sa 1816 – Đảo Hoàng Sa 1938).',
-        image: '/assets/exhibition/hall-hoang-sa-truong-sa.svg',
+        image: '/assets/timeline/era-04-phap-thuoc.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng hồ sơ Nghị định số 156-SC (15/6/1938) và Bia chủ quyền tại Hoàng Sa.',
         sourceName:
@@ -90,7 +90,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Minh chứng cho bộ máy quản lý hành chính ngày càng chi tiết, chặt chẽ và thường trực trên cả hai nhóm đảo Đông – Tây của quần đảo Hoàng Sa.',
         documentQuote:
           'Các trạm khí tượng trên đảo Hoàng Sa và đảo Phú Lâm đều đặn phát bản tin thời tiết phục vụ hàng hải và hàng không quốc tế trong mạng lưới Tổ chức Khí tượng Thế giới.',
-        image: '/assets/ecosystem/ban-do-so.svg',
+        image: '/assets/library/bai-05-thuc-thi-hien-dai.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa hai khu vực hành chính nhóm Lưỡi Liềm và nhóm An Vĩnh tại quần đảo Hoàng Sa.',
         sourceName:
@@ -122,7 +122,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Trước sự hiện diện của đại diện 51 quốc gia tại một hội nghị quốc tế lớn, tuyên bố chủ quyền của phái đoàn Việt Nam không gặp bất kỳ sự phản đối hay bảo lưu nào, khẳng định sự thừa nhận mặc nhiên của cộng đồng quốc tế đối với chủ quyền hợp pháp của Việt Nam.',
         documentQuote:
           '"...Và vì phải thẳng thắn lợi dụng tất cả mọi cơ hội để dập tắt những mầm mống tranh chấp sau này, chúng tôi khẳng định chủ quyền đã có từ lâu đời của chúng tôi trên quần đảo Trường Sa và Hoàng Sa..." (Biên bản Hội nghị San Francisco ngày 07/9/1951).',
-        image: '/assets/library/topic-phap-luat.svg',
+        image: '/assets/timeline/era-05-1945-1975.svg?v=ocean3',
         imageCaption:
           'Đồ họa mô phỏng sự kiện pháp lý quốc tế tại Hội nghị Hòa bình San Francisco ngày 07/9/1951.',
         sourceName:
@@ -142,7 +142,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Chứng minh về mặt pháp luật quốc tế, chính quyền quản lý miền Nam Việt Nam lúc bấy giờ đã tiếp tục thực thi liên tục các quyền năng hành chính nhà nước đối với cả hai quần đảo Hoàng Sa và Trường Sa.',
         documentQuote:
           'Hệ thống Sắc lệnh 143-NV (1956), Sắc lệnh 174-NV (1961) và Nghị định 420-BNV (1973) duy trì tính liên tục về mặt địa giới hành chính của hai quần đảo.',
-        image: '/assets/ecosystem/dong-thoi-gian-lich-su.svg',
+        image: '/assets/library/bai-05-thuc-thi-hien-dai.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa hệ thống văn bản quản lý địa giới hành chính Hoàng Sa và Trường Sa giai đoạn 1956–1973.',
         sourceName:
@@ -162,7 +162,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Theo nguyên tắc cơ bản của Hiến chương Liên Hợp Quốc và luật pháp quốc tế hiện đại (nghiêm cấm sử dụng vũ lực để thôn tính lãnh thổ), việc sử dụng vũ lực quân sự năm 1974 hoàn toàn không thể tạo ra danh nghĩa chủ quyền hợp pháp đối với quần đảo Hoàng Sa của Việt Nam.',
         documentQuote:
           'Nguyên tắc pháp lý quốc tế hiện đại khẳng định: Hành vi chiếm đóng bằng vũ lực bất hợp pháp không bao giờ làm phát sinh chủ quyền lãnh thổ (Ex injuria jus non oritur).',
-        image: '/assets/library/topic-phap-luat.svg',
+        image: '/assets/library/chuyen-de-03-phap-ly.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa nguyên tắc luật pháp quốc tế bác bỏ việc dùng vũ lực xâm chiếm lãnh thổ.',
         sourceName:
@@ -182,7 +182,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Việc kịp thời tiếp quản và giải phóng quần đảo Trường Sa vào tháng 4/1975 có ý nghĩa chiến lược to lớn, bảo vệ vững chắc chủ quyền thiêng liêng của Tổ quốc trên Biển Đông ngay trong thời khắc thống nhất đất nước.',
         documentQuote:
           'Lá cờ chiến thắng tung bay trên đảo Trường Sa ngày 29/4/1975 hòa chung niềm vui đại thắng mùa Xuân thống nhất non sông.',
-        image: '/assets/exhibition/hall-nguoi-giu-bien.svg',
+        image: '/assets/timeline/era-05-1945-1975.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa chiến công giải phóng và tiếp quản quần đảo Trường Sa tháng 4/1975.',
         sourceName:
@@ -214,7 +214,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Đặt nền tảng pháp lý quốc gia và hành chính thống nhất cho việc quản lý các vùng biển, thềm lục địa cùng hai huyện đảo Hoàng Sa và Trường Sa của nước Việt Nam thống nhất.',
         documentQuote:
           'Quyết định số 193-HĐBT (09/12/1982) và Quyết định số 194-HĐBT (11/12/1982) chính thức thiết lập bộ máy hành chính cấp huyện cho Trường Sa và Hoàng Sa.',
-        image: '/assets/ecosystem/ban-do-so.svg',
+        image: '/assets/timeline/era-06-1975-nay.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa hệ thống đường cơ sở năm 1982 và hai huyện đảo Hoàng Sa, Trường Sa.',
         sourceName:
@@ -234,7 +234,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Khẳng định ý chí quyết tâm bảo vệ từng tấc đảo, từng sải biển thiêng liêng của Tổ quốc và thực thi quyền chủ quyền, quyền tài phán hợp pháp trên vùng thềm lục địa phía Nam.',
         documentQuote:
           'Hệ thống Nhà giàn DK1 từ năm 1989 đến nay là biểu tượng kiên cường nơi vùng biển thềm lục địa phía Nam của Tổ quốc.',
-        image: '/assets/exhibition/hall-nguoi-giu-bien.svg',
+        image: '/assets/library/bai-12-hai-dang-nha-gian-dk1.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa cụm trạm Kinh tế – Khoa học – Kỹ thuật Nhà giàn DK1 trên thềm lục địa phía Nam.',
         sourceName:
@@ -254,7 +254,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Gắn kết chặt chẽ việc thực thi pháp luật biển quốc tế (UNCLOS 1982) với việc kiện toàn hệ thống hành chính dân sự cấp xã, thị trấn trên quần đảo Trường Sa.',
         documentQuote:
           '"Quốc hội một lần nữa khẳng định chủ quyền của Việt Nam đối với hai quần đảo Hoàng Sa và Trường Sa và chủ trương giải quyết các bất đồng liên quan đến Biển Đông thông qua thương lượng hòa bình..." (Nghị quyết Quốc hội ngày 23/6/1994).',
-        image: '/assets/exhibition/hall-hoang-sa-truong-sa.svg',
+        image: '/assets/library/bai-07-8-cum-dao-truong-sa.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa diện mạo hành chính thị trấn Trường Sa và hai xã đảo Song Tử Tây, Sinh Tồn.',
         sourceName:
@@ -274,7 +274,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Là mốc son lập pháp quan trọng bậc nhất trong lịch sử pháp luật biển Việt Nam, hoàn toàn phù hợp với UNCLOS 1982 và khẳng định nguyên tắc giải quyết tranh chấp bằng biện pháp hòa bình (Khoản 3 Điều 4).',
         documentQuote:
           '"Điều 1. Phạm vi điều chỉnh: Luật này quy định về đường cơ sở, nội thủy, lãnh hải, vùng tiếp giáp lãnh hải, vùng đặc quyền kinh tế, thềm lục địa, các đảo, quần đảo Hoàng Sa, quần đảo Trường Sa và quần đảo khác thuộc chủ quyền, quyền chủ quyền, quyền tài phán quốc gia của Việt Nam..." (Luật Biển Việt Nam 2012).',
-        image: '/assets/library/topic-phap-luat.svg',
+        image: '/assets/library/bai-02-5-vung-bien.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa cấu trúc 5 vùng biển theo Luật Biển Việt Nam năm 2012 và UNCLOS 1982.',
         sourceName:
@@ -294,7 +294,7 @@ export const TIMELINE_ERAS_PART2 = [
           'Kết hợp chặt chẽ giữa việc bảo tồn, phát huy giá trị chứng cứ lịch sử – pháp lý cấp quốc tế với chiến lược đưa Việt Nam trở thành quốc gia mạnh về biển, giàu từ biển, bảo đảm vững chắc quốc phòng – an ninh và môi trường sinh thái biển.',
         documentQuote:
           '"Việt Nam phải trở thành quốc gia mạnh về biển, giàu từ biển, phát triển bền vững, thịnh vượng, an ninh và an toàn..." (Nghị quyết số 36-NQ/TW, 2018).',
-        image: '/assets/exhibition/hall-tuoi-tre.svg',
+        image: '/assets/library/chuyen-de-08-tuoi-tre.svg?v=ocean3',
         imageCaption:
           'Đồ họa minh họa định hướng phát triển bền vững kinh tế biển gắn với bảo vệ chủ quyền trong kỷ nguyên số.',
         sourceName:

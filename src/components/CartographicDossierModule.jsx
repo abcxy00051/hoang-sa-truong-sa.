@@ -31,7 +31,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'Hồng Đức bản đồ — Tập bản đồ Quốc gia thời Vua Lê Thánh Tông',
     origin: 'Triều đại nhà Lê sơ (Việt Nam)',
     toponyms: ['Bãi Cát Vàng', 'Cù lao Ré', 'Phủ Tư Nghĩa'],
-    image: '/assets/ecosystem/ho-so-ban-do.svg',
+    image: '/assets/timeline/era-01-truoc-tk17.svg?v=ocean3',
     cartographicFact:
       'Tập bản đồ địa lý hành chính quốc gia được biên绘 dưới triều vua Lê Thánh Tông (1490), tiếp nối bằng các truyền bản thế kỷ XVII ghi nhận vùng biển đảo ngoài khơi miền Trung gắn liền với hệ thống phòng thủ ven biển Đại Việt.',
     legalSignificance:
@@ -47,7 +47,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'Toản tập Thiên Nam tứ chí lộ đồ thư — Bản đồ Bãi Cát Vàng của Đỗ Bá Công Đạo',
     origin: 'Chúa Nguyễn (Đàng Trong — Việt Nam)',
     toponyms: ['Bãi Cát Vàng', 'Đội Hoàng Sa', 'Cửa Đại Chiêm', 'Cửa Sa Kỳ'],
-    image: '/assets/exhibition/hall-lich-su.svg',
+    image: '/assets/timeline/era-02-tk17-18.svg?v=ocean3',
     cartographicFact:
       'Trong phần bản đồ phủ Quảng Ngãi thuộc "Toản tập Thiên Nam tứ chí lộ đồ thư" (1686), tác giả Đỗ Bá Công Đạo vẽ rõ "Bãi Cát Vàng" ngoài khơi và chú thích: "Giữa biển có một dải cát dài gọi là Bãi Cát Vàng, dài độ 400 dặm, rộng 20 dặm... Họ Nguyễn mỗi năm vào tháng cuối mùa đông đưa 18 chiếc thuyền đến đấy lấy hóa vật".',
     legalSignificance:
@@ -63,7 +63,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'Đại Nam nhất thống toàn đồ — Bản đồ Quốc gia Triều Nguyễn',
     origin: 'Triều Nguyễn (Quốc sử quán / Nội các triều Nguyễn)',
     toponyms: ['Hoàng Sa', 'Vạn Lý Trường Sa', 'Đảo Lý Sơn'],
-    image: '/assets/ecosystem/ho-so-ban-do.svg',
+    image: '/assets/timeline/era-03-thoi-nguyen.svg?v=ocean3',
     cartographicFact:
       'Bản đồ hành chính toàn quốc của triều Nguyễn vẽ rõ hai địa danh "Hoàng Sa" và "Vạn Lý Trường Sa" nằm trong vùng biển thuộc chủ quyền của nước Đại Nam, tách biệt hoàn toàn với vùng biển đảo Hải Nam.',
     legalSignificance:
@@ -79,7 +79,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'Hải đồ Hàng hải Bồ Đào Nha & Hà Lan ghi nhận "Costa de Pracel" và "I. de Pracel"',
     origin: 'Các nhà bản đồ học phương Tây (Fernão Vaz Dourado, Van Langren, Willem Blaeu)',
     toponyms: ['I. de Pracel', 'Costa de Pracel', 'C. Varella', 'Pulo Canton'],
-    image: '/assets/exhibition/hall-lich-su.svg',
+    image: '/assets/library/bai-16-kiem-chung-ban-do-so.svg?v=ocean3',
     cartographicFact:
       'Các bản đồ hàng hải châu Âu thế kỷ XVI–XVII vẽ quần đảo ngoài khơi miền Trung Việt Nam với tên gọi "I. de Pracel" (Quần đảo Hoàng Sa – Trường Sa) và đồng thời gọi vùng bờ biển miền Trung Việt Nam đối diện là "Costa de Pracel" (Bờ biển Hoàng Sa).',
     legalSignificance:
@@ -95,7 +95,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'An Nam đại quốc họa đồ (Tabula Geographica Imperii Anamitici) — Giám mục Jean-Louis Taberd',
     origin: 'Giám mục Jean-Louis Taberd (Pháp)',
     toponyms: ['Paracel seu Cát Vàng', 'Imperium Anamiticum'],
-    image: '/assets/ecosystem/ho-so-ban-do.svg',
+    image: '/assets/ecosystem/ho-so-ban-do.svg?v=ocean3',
     cartographicFact:
       'Bản đồ thể hiện lãnh thổ Đế chế An Nam năm 1838, tại khu vực vĩ độ 16°–17° Bắc và kinh độ 111°–112° Đông vẽ cụm đảo kèm dòng chữ Latinh và chữ Quốc ngữ: "Paracel seu Cát Vàng" (nghĩa là Paracel hay Cát Vàng thuộc An Nam).',
     legalSignificance:
@@ -111,7 +111,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'Hoàng triều trực tỉnh địa dư toàn đồ (1904) & Trung Quốc địa đồ (1908)',
     origin: 'Bản đồ chính thức xuất bản tại Trung Quốc thời nhà Thanh',
     toponyms: ['Đảo Hải Nam (Châu Nhai — 18°10′B)', 'Cực Nam lãnh thổ nhà Thanh'],
-    image: '/assets/exhibition/hall-lich-su.svg',
+    image: '/assets/library/bai-04-thuc-thi-chu-quyen.svg?v=ocean3',
     cartographicFact:
       'Các tập bản đồ chính thống của nhà Thanh như "Hoàng triều trực tỉnh địa dư toàn đồ" (1904) và "Trung Quốc địa đồ" (1908) đều thể hiện cực Nam của lãnh thổ Trung Quốc dừng lại ở đảo Hải Nam (khoảng vĩ độ 18°10′ Bắc), hoàn toàn không bao gồm hai quần đảo Hoàng Sa và Trường Sa.',
     legalSignificance:
@@ -127,7 +127,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'Sơ đồ Hệ thống Đường cơ sở thẳng ven bờ lục địa Việt Nam (11 điểm A1 – A11)',
     origin: 'Chính phủ nước Cộng hòa Xã hội Chủ nghĩa Việt Nam',
     toponyms: ['A1 (Hòn Nhạn)', 'A6 (Hòn Hải)', 'A8 (Mũi Đại Lãnh)', 'A11 (Đảo Cồn Cỏ)'],
-    image: '/assets/ecosystem/ban-do-so.svg',
+    image: '/assets/library/bai-02-5-vung-bien.svg?v=ocean3',
     cartographicFact:
       'Hệ thống đường cơ sở thẳng dùng để tính chiều rộng lãnh hải ven bờ lục địa Việt Nam gồm 10 đoạn thẳng nối 11 điểm chuẩn từ điểm A1 (tại đảo Hòn Nhạn, quần đảo Thổ Chu, tỉnh Kiên Giang) đến điểm A11 (tại đảo Cồn Cỏ, tỉnh Quảng Trị).',
     legalSignificance:
@@ -143,7 +143,7 @@ const CARTOGRAPHIC_DOSSIERS = [
     title: 'Hồ sơ Bản đồ Hành chính Huyện Hoàng Sa (TP. Đà Nẵng) & Huyện Trường Sa (Tỉnh Khánh Hòa)',
     origin: 'Cục Đo đạc, Bản đồ và Thông tin địa lý Việt Nam',
     toponyms: ['Huyện Hoàng Sa (Đà Nẵng)', 'Huyện Trường Sa (Khánh Hòa)', 'Thị trấn Trường Sa', 'Xã Song Tử Tây', 'Xã Sinh Tồn'],
-    image: '/assets/exhibition/hall-hoang-sa-truong-sa.svg',
+    image: '/assets/timeline/era-06-1975-nay.svg?v=ocean3',
     cartographicFact:
       'Thể hiện đầy đủ ranh giới hành chính quốc gia trên đất liền và trên biển, trong đó huyện Hoàng Sa trực thuộc thành phố Đà Nẵng và huyện Trường Sa (gồm thị trấn Trường Sa, xã đảo Song Tử Tây, xã đảo Sinh Tồn) trực thuộc tỉnh Khánh Hòa.',
     legalSignificance:

@@ -98,11 +98,6 @@ export default function StudentTeacherPage({ activeRole = 'student', onRoleChang
       {/* 1. HERO BANNER RIÊNG CỦA TRANG GÓC HỌC SINH & GIÁO VIÊN (/goc-hoc-sinh-giao-vien) */}
       <section className="ecosystem-hero-premium">
         <div className="eco-hero-backdrop" aria-hidden="true">
-          <img
-            src="/assets/ecosystem/card-phong-hoc-tuong-tac.svg"
-            alt=""
-            className="eco-hero-bg-img"
-          />
           <div className="eco-hero-depth-overlay" />
           <div className="eco-hero-grid-mesh" />
         </div>
