@@ -6,7 +6,7 @@ import { TOPIC_5_KINH_TE } from './library/topic5_KinhTe.js'
 import { TOPIC_4_DOI_SONG } from './library/topic4_DoiSong.js'
 import { TOPIC_6_MOI_TRUONG } from './library/topic6_MoiTruong.js'
 import { TOPIC_7_TUOI_TRE } from './library/topic7_TuoiTre.js'
-import { TOPIC_ACADEMIC_VISUALS } from './libraryVisualsData.js'
+import { TOPIC_ACADEMIC_VISUALS, LESSON_ACADEMIC_VISUALS } from './libraryVisualsData.js'
 
 const RAW_MODULES_CONFIG = [
   {
@@ -97,15 +97,26 @@ function parseReadingMinutes(readingTimeStr) {
   return match ? parseInt(match[1], 10) : 14
 }
 
-const SECONDARY_LESSON_BANNERS = {
-  1: '/assets/library/bai-02-5-vung-bien.svg',
-  2: '/assets/library/bai-04-thuc-thi-chu-quyen.svg',
-  3: '/assets/library/bai-06-unclos-luat-bien.svg',
-  4: '/assets/library/bai-08-khi-hau-hai-van.svg',
-  5: '/assets/library/bai-10-tai-nguyen-hang-hai.svg',
-  6: '/assets/library/bai-12-hai-dang-nha-gian-dk1.svg',
-  7: '/assets/library/bai-14-16-khu-bao-ton-bien.svg',
-  8: '/assets/library/bai-16-kiem-chung-ban-do-so.svg'
+const LESSON_BANNERS_BY_ID = {
+  'cd01-bai-01': '/assets/library/chuyen-de-01-tong-quan.svg',
+  'cd01-bai-02': '/assets/library/bai-02-5-vung-bien.svg',
+  'cd01-bai-03': '/assets/library/bai-03-he-thong-dao-chien-luoc.svg',
+  'cd02-bai-01': '/assets/library/chuyen-de-02-lich-su.svg',
+  'cd02-bai-02': '/assets/library/bai-04-thuc-thi-chu-quyen.svg',
+  'cd02-bai-03': '/assets/library/bai-05-thuc-thi-hien-dai.svg',
+  'cd03-bai-01': '/assets/library/chuyen-de-03-phap-ly.svg',
+  'cd03-bai-02': '/assets/library/bai-06-unclos-luat-bien.svg',
+  'cd04-tn-bai-01': '/assets/library/chuyen-de-04-dia-ly-tu-nhien.svg',
+  'cd04-tn-bai-02': '/assets/library/bai-07-8-cum-dao-truong-sa.svg',
+  'cd04-tn-bai-03': '/assets/library/bai-08-khi-hau-hai-van.svg',
+  'cd05-bai-01': '/assets/library/chuyen-de-05-kinh-te.svg',
+  'cd05-bai-02': '/assets/library/bai-10-tai-nguyen-hang-hai.svg',
+  'cd04-bai-01': '/assets/library/chuyen-de-06-doi-song.svg',
+  'cd04-bai-02': '/assets/library/bai-12-hai-dang-nha-gian-dk1.svg',
+  'cd06-bai-01': '/assets/library/chuyen-de-07-moi-truong.svg',
+  'cd06-bai-02': '/assets/library/bai-14-16-khu-bao-ton-bien.svg',
+  'cd07-bai-01': '/assets/library/bai-16-kiem-chung-ban-do-so.svg',
+  'cd07-bai-02': '/assets/library/chuyen-de-08-tuoi-tre.svg'
 }
 
 // Danh sách 8 Chuyên đề Học liệu Số chính thống
@@ -116,10 +127,8 @@ export const LIBRARY_THEMATIC_MODULES = RAW_MODULES_CONFIG.map((cfg) => {
   const enrichedLessons = raw.lessons.map((lesson, lIdx) => {
     const lessonNumber = `Bài ${orderIndex}.${lIdx + 1}`
     const minutes = parseReadingMinutes(lesson.readingTime)
-    const lessonImage =
-      lIdx === 1 && SECONDARY_LESSON_BANNERS[orderIndex]
-        ? SECONDARY_LESSON_BANNERS[orderIndex]
-        : bannerImage
+    const lessonImage = LESSON_BANNERS_BY_ID[lesson.id] || bannerImage
+    const lessonAcademicVisual = LESSON_ACADEMIC_VISUALS[lesson.id] || academicVisual
     return {
       ...lesson,
       topicOrder: orderIndex,
@@ -133,7 +142,7 @@ export const LIBRARY_THEMATIC_MODULES = RAW_MODULES_CONFIG.map((cfg) => {
         illustrationLabel: 'Đồ họa học thuật chuẩn hóa',
         commentaryLabel: 'Phân tích & Nhận định học thuật chuyên sâu'
       },
-      academicVisual
+      academicVisual: lessonAcademicVisual
     }
   })
 

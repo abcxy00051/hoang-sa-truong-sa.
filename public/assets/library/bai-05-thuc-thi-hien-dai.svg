@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg05" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#113747" />
+      <stop offset="55%" stop-color="#1A718D" />
+      <stop offset="100%" stop-color="#113747" />
+    </linearGradient>
+    <pattern id="grid05" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#29B4D1" stroke-width="0.6" stroke-opacity="0.2" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg05)" />
+  <rect width="800" height="500" fill="url(#grid05)" />
+
+  <!-- Top Header Badge -->
+  <rect x="36" y="28" width="390" height="34" rx="8" fill="#113747" stroke="#29B4D1" stroke-width="1.5" />
+  <text x="54" y="50" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="800">BÀI 2.3 • THỰC THI CHỦ QUYỀN TỪ THẾ KỶ XX ĐẾN NAY</text>
+
+  <!-- 3 Historical Stage Columns (1884-1945, 1945-1975, 1975-Nay) -->
+  <g transform="translate(36, 82)">
+    <!-- Column 1: 1884-1945 -->
+    <rect x="0" y="0" width="232" height="310" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8" />
+    <rect x="16" y="16" width="200" height="28" rx="8" fill="#113747" />
+    <text x="116" y="35" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="900">1. GIAI ĐOẠN 1884 – 1945</text>
+    <text x="116" y="68" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Quản lý Hành chính &amp; Khoa học</text>
+    <rect x="18" y="84" width="196" height="60" rx="8" fill="#113747" fill-opacity="0.08" />
+    <text x="28" y="106" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">• Nghị định 4702-CP (1933):</text>
+    <text x="28" y="124" fill="#455C68" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Sáp nhập Trường Sa vào Bà Rịa</text>
+    <rect x="18" y="154" width="196" height="62" rx="8" fill="#113747" fill-opacity="0.08" />
+    <text x="28" y="176" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">• Nghị định 156-SC (15/6/1938):</text>
+    <text x="28" y="194" fill="#455C68" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Đơn vị hành chính Hoàng Sa</text>
+    <rect x="18" y="226" width="196" height="66" rx="8" fill="#1A718D" />
+    <text x="116" y="248" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Trạm Khí tượng Quốc tế WMO</text>
+    <text x="116" y="268" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">Hoàng Sa (48860) • Ba Bình (48819)</text>
+
+    <!-- Column 2: 1945-1975 -->
+    <rect x="248" y="0" width="232" height="310" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="2" />
+    <rect x="264" y="16" width="200" height="28" rx="8" fill="#29B4D1" />
+    <text x="364" y="35" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="900">2. GIAI ĐOẠN 1945 – 1975</text>
+    <text x="364" y="68" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Hội nghị San Francisco 1951</text>
+    <rect x="266" y="84" width="196" height="72" rx="8" fill="#1A718D" />
+    <text x="364" y="106" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">Ngày 07/09/1951 (51 Quốc gia)</text>
+    <text x="364" y="124" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="600">Tuyên bố khẳng định chủ quyền</text>
+    <text x="364" y="142" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="600">không có quốc gia nào phản đối</text>
+    <rect x="266" y="168" width="196" height="56" rx="8" fill="#1A718D" fill-opacity="0.7" />
+    <text x="276" y="188" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">• Sắc lệnh 143-NV (1956):</text>
+    <text x="276" y="206" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="600">Trường Sa thuộc tỉnh Phước Tuy</text>
+    <rect x="266" y="236" width="196" height="56" rx="8" fill="#1A718D" fill-opacity="0.7" />
+    <text x="276" y="256" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">• Sắc lệnh 174-NV (1961):</text>
+    <text x="276" y="274" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="600">Xã Định Hải thuộc tỉnh Quảng Nam</text>
+
+    <!-- Column 3: 1975-Present -->
+    <rect x="496" y="0" width="232" height="310" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8" />
+    <rect x="512" y="16" width="200" height="28" rx="8" fill="#113747" />
+    <text x="612" y="35" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="900">3. TỪ NĂM 1975 ĐẾN NAY</text>
+    <text x="612" y="68" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">Nhà nước CHXHCN Việt Nam</text>
+    <rect x="514" y="84" width="196" height="60" rx="8" fill="#113747" fill-opacity="0.08" />
+    <text x="524" y="106" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">• Huyện đảo Hoàng Sa (Đà Nẵng)</text>
+    <text x="524" y="124" fill="#455C68" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">&amp; Huyện đảo Trường Sa (Khánh Hòa)</text>
+    <rect x="514" y="154" width="196" height="62" rx="8" fill="#113747" fill-opacity="0.08" />
+    <text x="524" y="176" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">• Nghị quyết Quốc hội (1994):</text>
+    <text x="524" y="194" fill="#455C68" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Phê chuẩn Công ước UNCLOS 1982</text>
+    <rect x="514" y="226" width="196" height="66" rx="8" fill="#113747" />
+    <text x="612" y="248" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">LUẬT BIỂN VIỆT NAM 2012</text>
+    <text x="612" y="268" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Thị trấn Trường Sa • Song Tử Tây • Sinh Tồn</text>
+  </g>
+
+  <!-- Bottom Banner -->
+  <rect x="36" y="414" width="728" height="58" rx="12" fill="#113747" stroke="#29B4D1" stroke-width="1.5" />
+  <text x="400" y="439" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="800">TÍNH LIÊN TỤC LỊCH SỬ – HÀNH CHÍNH – NGOẠI GIAO CỦA NHÀ NƯỚC VIỆT NAM QUA CÁC THỜI KỲ</text>
+  <text x="400" y="459" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="700">Chứng cứ pháp lý quốc tế vững chắc theo nguyên tắc Kế thừa Nhà nước và Thực thi chủ quyền liên tục</text>
+</svg>
