@@ -1,17 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" fill="none">
-  <rect width="420" height="220" rx="16" fill="#072138" />
-  <g transform="translate(26, 26)">
-    <rect width="172" height="168" rx="14" fill="#064E3B" fill-opacity="0.65" stroke="#34D399" stroke-width="2" />
-    <circle cx="86" cy="65" r="28" fill="#10B981" fill-opacity="0.3" stroke="#6EE7B7" stroke-width="2.5" />
-    <path d="M74,65 L83,74 L100,56" stroke="#6EE7B7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-    <text x="86" y="122" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="15" font-weight="800">NHẬN ĐỊNH ĐÚNG</text>
-    <text x="86" y="144" text-anchor="middle" fill="#D1FAE5" font-family="sans-serif" font-size="10">Căn cứ sử liệu &amp; UNCLOS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
+  <defs>
+    <linearGradient id="a2-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="50%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="260" fill="url(#a2-bg)"/>
+
+  <!-- Left Card: ĐÚNG (True Shield) -->
+  <g transform="translate(28, 28)">
+    <rect width="198" height="184" rx="16" fill="#113747" stroke="#10B981" stroke-width="2.5"/>
+    <circle cx="99" cy="64" r="34" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="3"/>
+    <path d="M84 64 L95 75 L116 52" stroke="#34D399" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="99" y="124" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="16" font-weight="900">NHẬN ĐỊNH ĐÚNG</text>
+    <text x="99" y="146" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Chuẩn UNCLOS 1982</text>
+    <text x="99" y="164" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="600">&amp; Luật Biển VN 2012</text>
   </g>
-  <g transform="translate(222, 26)">
-    <rect width="172" height="168" rx="14" fill="#450A0A" fill-opacity="0.6" stroke="#F87171" stroke-width="2" />
-    <circle cx="86" cy="65" r="28" fill="#EF4444" fill-opacity="0.25" stroke="#FCA5A5" stroke-width="2.5" />
-    <path d="M75,54 L97,76 M97,54 L75,76" stroke="#FCA5A5" stroke-width="4" stroke-linecap="round" />
-    <text x="86" y="122" text-anchor="middle" fill="#FECACA" font-family="sans-serif" font-size="15" font-weight="800">NHẬN ĐỊNH SAI</text>
-    <text x="86" y="144" text-anchor="middle" fill="#FEE2E2" font-family="sans-serif" font-size="10">Giải thích rõ điểm sai</text>
+
+  <!-- Right Card: SAI (False Shield) -->
+  <g transform="translate(254, 28)">
+    <rect width="198" height="184" rx="16" fill="#113747" stroke="#F87171" stroke-width="2.5"/>
+    <circle cx="99" cy="64" r="34" fill="#EF4444" fill-opacity="0.2" stroke="#F87171" stroke-width="3"/>
+    <path d="M86 51 L112 77 M112 51 L86 77" stroke="#FCA5A5" stroke-width="5" stroke-linecap="round"/>
+    <text x="99" y="124" text-anchor="middle" fill="#FCA5A5" font-family="Inter, Segoe UI, sans-serif" font-size="16" font-weight="900">NHẬN ĐỊNH SAI</text>
+    <text x="99" y="146" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Phân tích điểm sai</text>
+    <text x="99" y="164" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="600">&amp; Dẫn chứng bác bỏ</text>
   </g>
+
+  <!-- Center VS / Scale Emblem -->
+  <circle cx="240" cy="116" r="22" fill="#F59E0B" stroke="#113747" stroke-width="3"/>
+  <text x="240" y="121" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">16</text>
 </svg>

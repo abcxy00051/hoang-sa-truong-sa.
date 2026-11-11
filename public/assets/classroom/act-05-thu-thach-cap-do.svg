@@ -1,19 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" fill="none">
-  <rect width="420" height="220" rx="16" fill="#081C38" />
-  <!-- 3 Rising Level Pillars -->
-  <g transform="translate(42, 32)">
-    <rect x="0" y="86" width="96" height="68" rx="10" fill="#065F46" stroke="#34D399" stroke-width="2" />
-    <text x="48" y="116" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="13" font-weight="800">CẤP ĐỘ DỄ</text>
-    <text x="48" y="136" text-anchor="middle" fill="#D1FAE5" font-family="sans-serif" font-size="10">Khởi động</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
+  <defs>
+    <linearGradient id="a5-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="50%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <linearGradient id="a5-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
 
-    <rect x="120" y="48" width="96" height="106" rx="10" fill="#075985" stroke="#38BDF8" stroke-width="2" />
-    <text x="168" y="88" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="13" font-weight="800">TRUNG BÌNH</text>
-    <text x="168" y="108" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="10">Vượt sóng</text>
+  <rect width="480" height="260" fill="url(#a5-bg)"/>
 
-    <rect x="240" y="10" width="96" height="144" rx="10" fill="#78350F" stroke="#FDE047" stroke-width="2" />
-    <text x="288" y="64" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="13" font-weight="800">NÂNG CAO</text>
-    <text x="288" y="84" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="10">Làm chủ hải trình</text>
-    <circle cx="288" cy="118" r="14" fill="#FDE047" />
-    <text x="288" y="123" text-anchor="middle" fill="#451A03" font-family="sans-serif" font-size="13" font-weight="800">★</text>
+  <!-- Step 1: CẤP ĐỘ DỄ -->
+  <g transform="translate(34, 114)">
+    <rect width="124" height="96" rx="14" fill="#113747" stroke="#34D399" stroke-width="2.2"/>
+    <circle cx="62" cy="28" r="14" fill="#10B981" fill-opacity="0.22" stroke="#34D399" stroke-width="1.8"/>
+    <text x="62" y="33" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="900">01</text>
+    <text x="62" y="60" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">CẤP ĐỘ DỄ</text>
+    <text x="62" y="78" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Khởi động Ra khơi</text>
+  </g>
+
+  <!-- Step 2: TRUNG BÌNH -->
+  <g transform="translate(178, 72)">
+    <rect width="124" height="138" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="2.2"/>
+    <circle cx="62" cy="30" r="15" fill="#29B4D1" fill-opacity="0.24" stroke="#29B4D1" stroke-width="1.8"/>
+    <text x="62" y="35" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="900">02</text>
+    <text x="62" y="68" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="13" font-weight="900">TRUNG BÌNH</text>
+    <text x="62" y="88" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Vượt sóng</text>
+    <text x="62" y="104" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="700">Đại dương</text>
+  </g>
+
+  <!-- Step 3: NÂNG CAO -->
+  <g transform="translate(322, 30)">
+    <rect width="124" height="180" rx="14" fill="url(#a5-gold)" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="62" cy="34" r="18" fill="#113747"/>
+    <polygon points="62,21 65,30 74,30 67,35 70,44 62,39 54,44 57,35 50,30 59,30" fill="#FEF08A"/>
+    <text x="62" y="80" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="900">NÂNG CAO</text>
+    <text x="62" y="102" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Làm chủ</text>
+    <text x="62" y="118" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">Hải trình</text>
+    <rect x="20" y="136" width="84" height="24" rx="12" fill="#113747"/>
+    <text x="62" y="152" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="900">CHINH PHỤC</text>
   </g>
 </svg>

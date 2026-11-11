@@ -164,39 +164,113 @@ export default function ClassroomAnalyticsAndBadges({
               </span>
               <h4>Huy hiệu Chinh phục Tri thức Biển đảo</h4>
             </div>
+            <span className="cls-real-data-note">
+              Bộ 5 Huân chương Hải trình Biển Đảo
+            </span>
           </div>
 
           <div className="cls-badges-list">
-            {CLASSROOM_ACHIEVEMENT_BADGES.map((badge) => {
+            {CLASSROOM_ACHIEVEMENT_BADGES.map((badge, index) => {
               const IconComp = BADGE_ICON_MAP[badge.iconName] || Award
               const isUnlocked = badge.checkUnlocked(records)
               const progressText = badge.getProgressText(records)
+              const progressPercent =
+                typeof badge.getProgressPercent === 'function'
+                  ? badge.getProgressPercent(records)
+                  : isUnlocked
+                    ? 100
+                    : 0
 
               return (
                 <div
                   key={badge.id}
-                  className={`cls-badge-item ${
+                  className={`cls-badge-item accent-${badge.accent || 'cyan'} ${
                     isUnlocked ? 'is-unlocked' : 'is-locked'
                   }`}
                 >
-                  <div className="cls-badge-icon-wrap">
-                    {isUnlocked ? <IconComp size={20} /> : <Lock size={18} />}
+                  <div className="cls-badge-medal-showcase">
+                    {badge.badgeImage ? (
+                      <img
+                        src={badge.badgeImage}
+                        alt={badge.title}
+                        className="cls-badge-medal-img"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="cls-badge-icon-wrap">
+                        {isUnlocked ? <IconComp size={22} /> : <Lock size={18} />}
+                      </div>
+                    )}
+                    <span
+                      className={`cls-badge-corner-chip ${
+                        isUnlocked ? 'unlocked' : 'locked'
+                      }`}
+                    >
+                      {isUnlocked ? '★' : `#0${index + 1}`}
+                    </span>
                   </div>
+
                   <div className="cls-badge-info">
-                    <div className="cls-badge-title-row">
-                      <h5>{badge.title}</h5>
+                    <div className="cls-badge-rank-row">
+                      <span className="cls-badge-rank-tag">
+                        {badge.rankLabel || `Huy hiệu Hạng 0${index + 1}`}
+                      </span>
                       <span
                         className={`cls-badge-status-pill ${
                           isUnlocked ? 'unlocked' : 'locked'
                         }`}
                       >
-                        {isUnlocked ? '✓ Đã đạt huy hiệu' : 'Chưa mở khóa'}
+                        {isUnlocked ? (
+                          <>
+                            <CheckCircle2 size={12} />
+                            <span>Đã đạt huy hiệu</span>
+                          </>
+                        ) : (
+                          <>
+                            <Sparkles size={11} />
+                            <span>Đang chinh phục</span>
+                          </>
+                        )}
                       </span>
                     </div>
+
+                    <div className="cls-badge-title-row">
+                      <h5>{badge.title}</h5>
+                    </div>
+
                     <p>{badge.requirementText}</p>
-                    <span className="cls-badge-progress-txt">
-                      Tiến độ thực tế: <strong>{progressText}</strong>
-                    </span>
+
+                    <div className="cls-badge-progress-footer">
+                      <div className="cls-badge-progress-meta">
+                        <span className="cls-badge-progress-txt">
+                          Tiến độ: <strong>{progressText}</strong>
+                        </span>
+                        <span className="cls-badge-pct-num">
+                          {progressPercent}%
+                        </span>
+                      </div>
+
+                      <div className="cls-badge-progress-track">
+                        <div
+                          className={`cls-badge-progress-fill ${
+                            isUnlocked ? 'is-complete' : ''
+                          }`}
+                          style={{ width: `${Math.max(8, progressPercent)}%` }}
+                        />
+                      </div>
+
+                      {!isUnlocked && badge.targetActivity && (
+                        <div className="cls-badge-action-row">
+                          <button
+                            type="button"
+                            className="cls-badge-go-btn"
+                            onClick={() => onSwitchActivity(badge.targetActivity)}
+                          >
+                            <span>Chinh phục ngay →</span>
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               )

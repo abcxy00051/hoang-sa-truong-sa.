@@ -1,16 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" fill="none">
-  <rect width="420" height="220" rx="16" fill="#062241" />
-  <circle cx="345" cy="65" r="75" fill="#0284C7" fill-opacity="0.22" />
-  <rect x="24" y="24" width="210" height="172" rx="12" fill="#0A325C" stroke="#38BDF8" stroke-opacity="0.5" />
-  <text x="40" y="54" fill="#FDE68A" font-family="sans-serif" font-size="13" font-weight="800">8 CHUYÊN ĐỀ HỌC TẬP</text>
-  <rect x="40" y="70" width="175" height="22" rx="6" fill="#061930" stroke="#38BDF8" stroke-opacity="0.4" />
-  <text x="50" y="85" fill="#E0F2FE" font-family="sans-serif" font-size="10">A. Tổng quan &amp; 5 vùng biển</text>
-  <rect x="40" y="100" width="175" height="22" rx="6" fill="#059669" fill-opacity="0.35" stroke="#34D399" />
-  <text x="50" y="115" fill="#A7F3D0" font-family="sans-serif" font-size="10" font-weight="700">B. Hoàng Sa &amp; Trường Sa ✓</text>
-  <rect x="40" y="130" width="175" height="22" rx="6" fill="#061930" stroke="#38BDF8" stroke-opacity="0.4" />
-  <text x="50" y="145" fill="#E0F2FE" font-family="sans-serif" font-size="10">C. Cơ sở lịch sử &amp; UNCLOS</text>
-  <text x="40" y="178" fill="#67E8F9" font-family="sans-serif" font-size="11" font-weight="700">80 câu trắc nghiệm có giải thích</text>
-  <circle cx="322" cy="115" r="52" fill="#0B3B6B" stroke="#F59E0B" stroke-width="2.5" />
-  <text x="322" y="112" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="22" font-weight="800">8x10</text>
-  <text x="322" y="132" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="10" font-weight="700">CÂU HỎI</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
+  <defs>
+    <linearGradient id="a1-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <linearGradient id="a1-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="260" fill="url(#a1-bg)"/>
+  <circle cx="380" cy="120" r="110" fill="#29B4D1" fill-opacity="0.14"/>
+
+  <!-- Left Panel: 8 Chuyên đề Book & Quiz Console -->
+  <rect x="26" y="24" width="256" height="192" rx="14" fill="#113747" fill-opacity="0.92" stroke="#29B4D1" stroke-width="2"/>
+  <rect x="42" y="38" width="136" height="22" rx="6" fill="#29B4D1"/>
+  <text x="110" y="53" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">08 CHUYÊN ĐỀ THPT</text>
+
+  <!-- Option A (Correct Highlighted) -->
+  <rect x="42" y="70" width="224" height="32" rx="8" fill="#1A718D" stroke="#FEF08A" stroke-width="1.8"/>
+  <circle cx="60" cy="86" r="10" fill="url(#a1-gold)"/>
+  <text x="60" y="90" text-anchor="middle" fill="#113747" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="900">A</text>
+  <text x="78" y="90" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">Bờ biển dài 3.260 km ✓</text>
+
+  <!-- Option B -->
+  <rect x="42" y="110" width="224" height="28" rx="8" fill="#113747" stroke="#29B4D1" stroke-opacity="0.55"/>
+  <circle cx="60" cy="124" r="9" fill="#1A718D"/>
+  <text x="60" y="128" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">B</text>
+  <text x="78" y="128" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Hoàng Sa &amp; Trường Sa</text>
+
+  <!-- Option C -->
+  <rect x="42" y="146" width="224" height="28" rx="8" fill="#113747" stroke="#29B4D1" stroke-opacity="0.55"/>
+  <circle cx="60" cy="160" r="9" fill="#1A718D"/>
+  <text x="60" y="164" text-anchor="middle" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">C</text>
+  <text x="78" y="164" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="700">Công ước UNCLOS 1982</text>
+
+  <text x="42" y="198" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="10.5" font-weight="800">★ Có giải thích &amp; nguồn SGK chuẩn</text>
+
+  <!-- Right Emblem: 80 Questions Compass Badge -->
+  <g transform="translate(376, 114)">
+    <circle cx="0" cy="0" r="68" fill="#113747" stroke="url(#a1-gold)" stroke-width="3.5"/>
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#29B4D1" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="0" y="-8" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="30" font-weight="900">80</text>
+    <text x="0" y="14" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Segoe UI, sans-serif" font-size="12" font-weight="800">CÂU HỎI</text>
+    <text x="0" y="32" text-anchor="middle" fill="#29B4D1" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="800">8 × 10 CÂU</text>
+  </g>
 </svg>

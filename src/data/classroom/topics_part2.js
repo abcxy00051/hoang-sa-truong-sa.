@@ -13,7 +13,7 @@ export const CLASSROOM_TOPICS_PART2 = [
       'Hệ thống hóa quy chế pháp lý của 5 vùng biển (Nội thủy, Lãnh hải, Tiếp giáp lãnh hải, Đặc quyền kinh tế, Thềm lục địa) theo UNCLOS 1982 và Luật Biển Việt Nam 2012.',
     iconName: 'Scale',
     badge: '10 câu hỏi • UNCLOS 1982',
-    image: '/assets/library/topic-phap-luat.svg',
+    image: '/assets/library/chuyen-de-04-phap-luat-unclos.svg',
     summaryPoints: [
       'UNCLOS 1982 được ký kết ngày 10/12/1982 tại Montego Bay (Jamaica), có hiệu lực từ ngày 16/11/1994.',
       'Quốc hội Việt Nam phê chuẩn UNCLOS 1982 ngày 23/6/1994 và thông qua Luật Biển Việt Nam ngày 21/6/2012.',
@@ -190,7 +190,7 @@ export const CLASSROOM_TOPICS_PART2 = [
       'Phân tích tầm quan trọng chiến lược của các ngành kinh tế biển mũi nhọn, giao thông hàng hải và thế trận quốc phòng – an ninh trên biển.',
     iconName: 'ShieldAlert',
     badge: '10 câu hỏi • Kinh tế & Quốc phòng',
-    image: '/assets/ecosystem/phong-hoc-tuong-tac.svg',
+    image: '/assets/library/chuyen-de-05-kinh-te-moi-truong.svg',
     summaryPoints: [
       'Nghị quyết số 36-NQ/TW (năm 2018) xác định Chiến lược phát triển bền vững kinh tế biển Việt Nam đến năm 2030, tầm nhìn đến năm 2045.',
       '6 ngành kinh tế biển trọng điểm: Du lịch & dịch vụ biển; Kinh tế hàng hải; Khai thác dầu khí & tài nguyên khoáng sản biển; Nuôi trồng & khai thác hải sản; Công nghiệp ven biển; Năng lượng tái tạo & các ngành kinh tế biển mới.',
@@ -367,7 +367,7 @@ export const CLASSROOM_TOPICS_PART2 = [
       'Nhận diện các hệ sinh thái biển tiêu biểu (rạn san hô, thảm cỏ biển, rừng ngập mặn), nguy cơ ô nhiễm rác thải nhựa và giải pháp bảo tồn bền vững.',
     iconName: 'Layers',
     badge: '10 câu hỏi • Sinh thái & Môi trường',
-    image: '/assets/library/topic-da-phuong-tien.svg',
+    image: '/assets/library/bai-12-he-sinh-thai-bien.svg',
     summaryPoints: [
       'Ba hệ sinh thái biển – ven biển quan trọng bậc nhất: Rừng ngập mặn, Rạn san hô và Thảm cỏ biển.',
       'Rừng ngập mặn Việt Nam phát triển mạnh nhất ở vùng ven biển Nam Bộ (đặc biệt là Mũi Cà Mau, Cần Giờ), giúp chắn sóng, chống xói lở và hấp thụ carbon xanh (Blue Carbon).',
@@ -544,7 +544,7 @@ export const CLASSROOM_TOPICS_PART2 = [
       'Xác định vai trò, nghĩa vụ công dân của học sinh THPT trong học tập lịch sử – pháp luật, nhận diện thông tin xấu độc trên không gian mạng và hành động thiết thực hướng về biển đảo.',
     iconName: 'GraduationCap',
     badge: '10 câu hỏi • Công dân & Tuổi trẻ',
-    image: '/assets/library/topic-cau-chuyen.svg',
+    image: '/assets/library/chuyen-de-06-trach-nhiem-the-he-tre.svg',
     summaryPoints: [
       'Chủ động học tập, nắm vững kiến thức Lịch sử, Địa lý, Luật Biển Việt Nam 2012 và UNCLOS 1982.',
       'Kiểm chứng nguồn bản đồ, tuyệt đối không chia sẻ hoặc sử dụng ấn phẩm có đường yêu sách phi pháp vi phạm chủ quyền biển đảo Việt Nam.',

@@ -6859,11 +6859,13 @@ ul {
 }
 
 .topic-overview-thumb {
-  width: 68px;
-  height: 52px;
+  width: 132px;
+  height: 82px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid var(--ocean-400);
+  border-radius: 12px;
+  border: 2px solid #29B4D1;
+  box-shadow: 0 6px 16px rgba(17, 55, 71, 0.16);
+  flex-shrink: 0;
 }
 
 .topic-summary-bullets strong {
@@ -13385,43 +13387,143 @@ ul {
 .cls-badges-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .cls-badge-item {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid var(--slate-200);
-  background: #B6E0EB;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1.5px solid rgba(26, 113, 141, 0.32);
+  background: linear-gradient(135deg, rgba(182, 224, 235, 0.72) 0%, rgba(255, 255, 255, 0.94) 100%);
+  box-shadow: 0 6px 18px rgba(17, 55, 71, 0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cls-badge-item:hover {
+  transform: translateY(-2px);
+  border-color: #29B4D1;
+  box-shadow: 0 12px 26px rgba(17, 55, 71, 0.13);
+}
+
+.cls-badge-item.accent-gold {
+  border-color: rgba(245, 158, 11, 0.45);
 }
 
 .cls-badge-item.is-unlocked {
-  background: linear-gradient(135deg, #B6E0EB 0%, #29B4D1 100%);
-  border-color: #29B4D1;
+  background: linear-gradient(135deg, #113747 0%, #1A718D 100%);
+  border: 2px solid #29B4D1;
+  box-shadow: 0 12px 28px rgba(17, 55, 71, 0.22);
 }
 
-.cls-badge-icon-wrap {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+.cls-badge-item.is-unlocked.accent-gold {
+  border-color: #F59E0B;
+}
+
+.cls-badge-medal-showcase {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  background: radial-gradient(circle at 50% 42%, #1A718D 0%, #113747 100%);
+  border: 2px solid #29B4D1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: var(--slate-200);
-  color: var(--slate-600);
+  box-shadow: 0 8px 18px rgba(17, 55, 71, 0.22);
+  padding: 4px;
+}
+
+.cls-badge-item.accent-gold .cls-badge-medal-showcase {
+  border-color: #F59E0B;
+}
+
+.cls-badge-medal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.28));
+  transition: transform 0.25s ease;
+}
+
+.cls-badge-item:hover .cls-badge-medal-img {
+  transform: scale(1.07);
+}
+
+.cls-badge-corner-chip {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 22px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 0.64rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(17, 55, 71, 0.25);
+}
+
+.cls-badge-corner-chip.locked {
+  background: #1A718D;
+  color: #FFFFFF;
+}
+
+.cls-badge-corner-chip.unlocked {
+  background: #F59E0B;
+  color: #113747;
+}
+
+.cls-badge-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #113747;
+  color: #29B4D1;
 }
 
 .cls-badge-item.is-unlocked .cls-badge-icon-wrap {
-  background: var(--navy-900);
-  color: var(--gold-300);
+  background: #29B4D1;
+  color: #113747;
 }
 
 .cls-badge-info {
   flex: 1;
+  min-width: 0;
+}
+
+.cls-badge-rank-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+.cls-badge-rank-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1A718D;
+}
+
+.cls-badge-item.is-unlocked .cls-badge-rank-tag {
+  color: #B6E0EB;
 }
 
 .cls-badge-title-row {
@@ -13429,42 +13531,129 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .cls-badge-title-row h5 {
-  font-size: 0.9rem;
-  font-weight: 800;
-  color: var(--navy-900);
+  font-size: 0.96rem;
+  font-weight: 900;
+  color: #113747;
+  margin: 0;
+}
+
+.cls-badge-item.is-unlocked .cls-badge-title-row h5 {
+  color: #FFFFFF;
 }
 
 .cls-badge-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-size: 0.68rem;
   font-weight: 800;
-  padding: 2px 8px;
+  padding: 3px 10px;
   border-radius: 999px;
+  white-space: nowrap;
 }
 
 .cls-badge-status-pill.unlocked {
-  background: #29B4D1;
-  color: var(--white);
+  background: #F59E0B;
+  color: #113747;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
 }
 
 .cls-badge-status-pill.locked {
-  background: var(--slate-200);
-  color: var(--slate-600);
+  background: #113747;
+  color: #B6E0EB;
+  border: 1px solid #29B4D1;
 }
 
 .cls-badge-info p {
   font-size: 0.78rem;
-  color: var(--slate-600);
-  line-height: 1.45;
-  margin-bottom: 4px;
+  color: #455C68;
+  line-height: 1.46;
+  margin-bottom: 8px;
+}
+
+.cls-badge-item.is-unlocked .cls-badge-info p {
+  color: #B6E0EB;
+}
+
+.cls-badge-progress-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cls-badge-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
 .cls-badge-progress-txt {
   font-size: 0.74rem;
-  color: var(--ocean-700);
+  color: #113747;
+}
+
+.cls-badge-item.is-unlocked .cls-badge-progress-txt {
+  color: #FFFFFF;
+}
+
+.cls-badge-pct-num {
+  font-size: 0.72rem;
+  font-weight: 900;
+  color: #1A718D;
+}
+
+.cls-badge-item.is-unlocked .cls-badge-pct-num {
+  color: #FEF08A;
+}
+
+.cls-badge-progress-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(17, 55, 71, 0.14);
+  overflow: hidden;
+}
+
+.cls-badge-item.is-unlocked .cls-badge-progress-track {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cls-badge-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1A718D 0%, #29B4D1 100%);
+  transition: width 0.35s ease;
+}
+
+.cls-badge-progress-fill.is-complete {
+  background: linear-gradient(90deg, #F59E0B 0%, #FEF08A 100%);
+}
+
+.cls-badge-action-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.cls-badge-go-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.73rem;
+  font-weight: 800;
+  color: #1A718D;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cls-badge-go-btn:hover {
+  color: #113747;
 }
 
 /* 6 Activity Cards Grid */
@@ -13501,7 +13690,7 @@ ul {
 .cls-activity-visual-card {
   background: var(--white);
   border-radius: 16px;
-  border: 1px solid var(--slate-200);
+  border: 1.5px solid rgba(26, 113, 141, 0.28);
   overflow: hidden;
   text-align: left;
   cursor: pointer;
@@ -13513,41 +13702,44 @@ ul {
 
 .cls-activity-visual-card:hover {
   transform: translateY(-4px);
-  border-color: var(--ocean-500);
-  box-shadow: 0 12px 26px rgba(17, 55, 71, 0.12);
+  border-color: #29B4D1;
+  box-shadow: 0 12px 26px rgba(17, 55, 71, 0.14);
 }
 
 .cls-activity-visual-card.active {
-  border: 2px solid var(--gold-500);
-  box-shadow: 0 14px 30px rgba(41, 180, 209, 0.2);
+  border: 2px solid #29B4D1;
+  box-shadow: 0 14px 30px rgba(41, 180, 209, 0.25);
 }
 
 .cls-act-card-img-wrap {
   position: relative;
-  height: 108px;
-  background: var(--navy-950);
+  height: 122px;
+  background: #113747;
   overflow: hidden;
   width: 100%;
+  border-bottom: 1px solid rgba(41, 180, 209, 0.3);
 }
 
 .cls-act-card-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #113747;
   display: block;
 }
 
 .cls-act-card-badge {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
-  padding: 3px 8px;
+  bottom: 7px;
+  right: 7px;
+  padding: 3px 9px;
   border-radius: 999px;
-  background: rgba(17, 55, 71, 0.88);
-  color: var(--gold-300);
-  font-size: 0.66rem;
+  background: rgba(17, 55, 71, 0.94);
+  color: #FEF08A;
+  font-size: 0.65rem;
   font-weight: 800;
-  border: 1px solid rgba(41, 180, 209, 0.45);
+  border: 1px solid #29B4D1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cls-act-card-body {

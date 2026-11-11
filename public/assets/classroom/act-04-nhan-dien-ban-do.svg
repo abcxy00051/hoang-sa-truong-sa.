@@ -1,24 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" fill="none">
-  <rect width="420" height="220" rx="16" fill="#04243C" />
-  <g stroke="#38BDF8" stroke-opacity="0.16" stroke-width="1">
-    <line x1="0" y1="55" x2="420" y2="55" stroke-dasharray="4 4" />
-    <line x1="0" y1="110" x2="420" y2="110" />
-    <line x1="0" y1="165" x2="420" y2="165" stroke-dasharray="4 4" />
-    <line x1="140" y1="0" x2="140" y2="220" />
-    <line x1="280" y1="0" x2="280" y2="220" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
+  <defs>
+    <linearGradient id="a4-bg" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="50%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="260" fill="url(#a4-bg)"/>
+
+  <!-- Radar Grid Background -->
+  <g stroke="#29B4D1" stroke-opacity="0.22" stroke-width="1">
+    <line x1="0" y1="65" x2="480" y2="65"/>
+    <line x1="0" y1="130" x2="480" y2="130"/>
+    <line x1="0" y1="195" x2="480" y2="195"/>
+    <line x1="120" y1="0" x2="120" y2="260"/>
+    <line x1="240" y1="0" x2="240" y2="260"/>
+    <line x1="360" y1="0" x2="360" y2="260"/>
   </g>
-  <path d="M110,25 C135,45 122,70 108,90 C95,110 128,135 148,162 C160,178 152,195 130,206"
-        stroke="#F59E0B" stroke-width="5" stroke-linecap="round" fill="none" />
-  <g transform="translate(235, 78)">
-    <circle r="18" fill="#EF4444" fill-opacity="0.28" />
-    <circle r="8" fill="#EF4444" stroke="#FEF08A" stroke-width="2" />
-    <text x="16" y="4" fill="#FEF08A" font-family="sans-serif" font-size="12" font-weight="800">M1: Hoàng Sa</text>
+  <circle cx="256" cy="118" r="88" fill="none" stroke="#29B4D1" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- Vietnam Coastline Curve -->
+  <path d="M110 26 C132 42 122 68 102 90 C88 106 124 128 148 156 C164 176 156 206 122 228" fill="none" stroke="#FEF08A" stroke-width="5.5" stroke-linecap="round"/>
+
+  <!-- Pin 1: Hoàng Sa -->
+  <g transform="translate(236, 72)">
+    <circle cx="0" cy="0" r="16" fill="#EF4444" fill-opacity="0.28"/>
+    <circle cx="0" cy="0" r="7" fill="#EF4444" stroke="#FEF08A" stroke-width="2"/>
+    <rect x="14" y="-13" width="136" height="26" rx="7" fill="#113747" stroke="#FEF08A" stroke-width="1.5"/>
+    <text x="82" y="4" text-anchor="middle" fill="#FEF08A" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">M1: HOÀNG SA</text>
   </g>
-  <g transform="translate(265, 152)">
-    <circle r="18" fill="#10B981" fill-opacity="0.28" />
-    <circle r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="2" />
-    <text x="16" y="4" fill="#A7F3D0" font-family="sans-serif" font-size="12" font-weight="800">M2: Trường Sa</text>
+
+  <!-- Pin 2: Trường Sa -->
+  <g transform="translate(268, 152)">
+    <circle cx="0" cy="0" r="16" fill="#34D399" fill-opacity="0.26"/>
+    <circle cx="0" cy="0" r="7" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="14" y="-13" width="142" height="26" rx="7" fill="#113747" stroke="#34D399" stroke-width="1.5"/>
+    <text x="85" y="4" text-anchor="middle" fill="#34D399" font-family="Inter, Segoe UI, sans-serif" font-size="11.5" font-weight="800">M2: TRƯỜNG SA</text>
   </g>
-  <rect x="18" y="156" width="165" height="44" rx="8" fill="#061629" stroke="#38BDF8" stroke-opacity="0.5" />
-  <text x="100" y="182" text-anchor="middle" fill="#67E8F9" font-family="sans-serif" font-size="11" font-weight="700">12 Tọa độ Bản đồ Biển Đông</text>
+
+  <!-- Pin 3: Phú Quốc / Côn Đảo -->
+  <g transform="translate(82, 204)">
+    <circle cx="0" cy="0" r="6" fill="#29B4D1" stroke="#FFFFFF" stroke-width="1.8"/>
+    <text x="14" y="4" fill="#B6E0EB" font-family="Inter, Segoe UI, sans-serif" font-size="11" font-weight="800">M3: Phú Quốc</text>
+  </g>
+
+  <!-- Compass Rose Top-Left -->
+  <g transform="translate(52, 52)">
+    <circle cx="0" cy="0" r="22" fill="#113747" stroke="#29B4D1" stroke-width="2"/>
+    <polygon points="0,-16 5,0 0,16 -5,0" fill="#FEF08A"/>
+    <polygon points="-16,0 0,-5 16,0 0,5" fill="#29B4D1"/>
+  </g>
 </svg>

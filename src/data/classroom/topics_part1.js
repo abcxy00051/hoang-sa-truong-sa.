@@ -13,7 +13,7 @@ export const CLASSROOM_TOPICS_PART1 = [
       'Khám phá diện tích vùng biển, chiều dài bờ biển, 28 tỉnh thành ven biển và hệ thống hàng nghìn đảo lớn nhỏ của Tổ quốc.',
     iconName: 'Compass',
     badge: '10 câu hỏi • Địa lý THPT',
-    image: '/assets/library/topic-dia-ly.svg',
+    image: '/assets/library/chuyen-de-01-dia-ly.svg',
     summaryPoints: [
       'Đường bờ biển Việt Nam dài khoảng 3.260 km kéo dài từ Quảng Ninh đến Kiên Giang.',
       'Vùng biển Việt Nam thuộc Biển Đông có diện tích khoảng 1 triệu km², gấp hơn 3 lần diện tích đất liền.',
@@ -185,7 +185,7 @@ export const CLASSROOM_TOPICS_PART1 = [
       'Tìm hiểu tọa độ địa lý, cấu trúc cụm đảo, đặc điểm địa hình san hô, khí hậu và vị trí hành chính của hai quần đảo Hoàng Sa và Trường Sa.',
     iconName: 'Map',
     badge: '10 câu hỏi • Hoàng Sa & Trường Sa',
-    image: '/assets/ecosystem/ban-do-so.svg',
+    image: '/assets/library/chuyen-de-03-hoang-sa-truong-sa.svg',
     summaryPoints: [
       'Quần đảo Hoàng Sa trực thuộc thành phố Đà Nẵng, chia thành 2 nhóm chính: nhóm An Vĩnh (phía Đông) và nhóm Lưỡi Liềm (phía Tây).',
       'Quần đảo Trường Sa trực thuộc tỉnh Khánh Hòa, nằm ở phía Đông Nam vùng biển Việt Nam, chia thành 8 cụm đảo/đá san hô.',
@@ -357,7 +357,7 @@ export const CLASSROOM_TOPICS_PART1 = [
       'Tìm hiểu hoạt động của đội Hoàng Sa, đội Bắc Hải thời chúa Nguyễn – Tây Sơn, Châu bản triều Nguyễn và sự tiếp nối quản lý liên tục đến ngày nay.',
     iconName: 'Clock',
     badge: '10 câu hỏi • Lịch sử THPT',
-    image: '/assets/library/topic-lich-su.svg',
+    image: '/assets/library/chuyen-de-02-lich-su-chu-quyen.svg',
     summaryPoints: [
       'Chúa Nguyễn lập đội Hoàng Sa và đội Bắc Hải từ đầu thế kỷ XVII để khai thác sản vật và tuần tra vùng biển đảo.',
       'Vua Gia Long (1816) và vua Minh Mạng (1834–1838) cử Thủy quân và đội Hoàng Sa ra cắm cờ, đo đạc thủy trình, dựng miếu, trồng cây và vẽ bản đồ.',
@@ -534,7 +534,7 @@ export const CLASSROOM_TOPICS_PART1 = [
       'Nắm vững các thư tịch cổ Việt Nam, Châu bản, Mộc bản triều Nguyễn, bản đồ lịch sử và nguyên tắc chiếm hữu thực sự trong luật pháp quốc tế.',
     iconName: 'BookOpen',
     badge: '10 câu hỏi • Sử liệu & Pháp lý',
-    image: '/assets/library/topic-phap-luat.svg',
+    image: '/assets/library/bai-04-chau-ban-trieu-nguyen.svg',
     summaryPoints: [
       'Các thư tịch cổ tiêu biểu: Toản tập Thiên Nam tứ chí lộ đồ thư (Đỗ Bá, thế kỷ XVII), Phủ biên tạp lục (Lê Quý Đôn, 1776), Đại Nam thực lục, Đại Nam nhất thống chí.',
       'Bản đồ Đại Nam nhất thống toàn đồ (khoảng 1838) vẽ rõ cả hai địa danh "Hoàng Sa" và "Vạn Lý Trường Sa" thuộc lãnh thổ Việt Nam.',

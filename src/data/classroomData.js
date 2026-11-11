@@ -145,24 +145,38 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
   {
     id: 'badge-first-sail',
     title: 'Khởi hành Ra khơi',
+    rankLabel: 'Huy hiệu Hạng I • Khởi hành Hải trình',
     requirementText: 'Hoàn thành ít nhất 1 bài tập hoặc hoạt động bất kỳ trong Phòng học tương tác.',
     iconName: 'Compass',
+    badgeImage: '/assets/classroom/badges/badge-01-khoi-hanh.svg',
+    targetActivity: 'topic-quiz',
     accent: 'cyan',
     checkUnlocked: (records) => (records?.stats?.totalAttempts || 0) >= 1,
+    getProgressPercent: (records) =>
+      (records?.stats?.totalAttempts || 0) >= 1 ? 100 : 0,
     getProgressText: (records) =>
       `${Math.min(1, records?.stats?.totalAttempts || 0)}/1 lượt hoàn thành`
   },
   {
     id: 'badge-topic-explorer',
     title: 'Nhà Nghiên cứu Chuyên đề',
+    rankLabel: 'Huy hiệu Hạng II • Học thuật Biển Đảo',
     requirementText: 'Hoàn thành đạt yêu cầu (từ 5.0/10 điểm trở lên) tối thiểu 4/8 chuyên đề học tập.',
     iconName: 'BookOpen',
+    badgeImage: '/assets/classroom/badges/badge-02-nha-nghien-cuu.svg',
+    targetActivity: 'topic-quiz',
     accent: 'ocean',
     checkUnlocked: (records) => {
       const done = Object.values(records?.topicMastery || {}).filter(
         (m) => m.completed
       ).length
       return done >= 4
+    },
+    getProgressPercent: (records) => {
+      const done = Object.values(records?.topicMastery || {}).filter(
+        (m) => m.completed
+      ).length
+      return Math.min(100, Math.round((done / 4) * 100))
     },
     getProgressText: (records) => {
       const done = Object.values(records?.topicMastery || {}).filter(
@@ -174,8 +188,11 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
   {
     id: 'badge-historian',
     title: 'Sứ giả Lịch sử & Pháp lý',
+    rankLabel: 'Huy hiệu Hạng III • Châu bản & UNCLOS 1982',
     requirementText: 'Hoàn thành cả bài tập Đúng/Sai và trò chơi Ghép Sự kiện với Mốc thời gian đạt từ 7.0/10 điểm.',
     iconName: 'Clock',
+    badgeImage: '/assets/classroom/badges/badge-03-su-gia-lich-su.svg',
+    targetActivity: 'true-false',
     accent: 'gold',
     checkUnlocked: (records) => {
       const history = records?.attemptHistory || []
@@ -186,6 +203,17 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
         (a) => a.activityType === 'timeline-match' && a.score10 >= 7
       )
       return hasTF && hasTimeline
+    },
+    getProgressPercent: (records) => {
+      const history = records?.attemptHistory || []
+      const hasTF = history.some(
+        (a) => a.activityType === 'true-false' && a.score10 >= 7
+      )
+      const hasTimeline = history.some(
+        (a) => a.activityType === 'timeline-match' && a.score10 >= 7
+      )
+      const count = (hasTF ? 1 : 0) + (hasTimeline ? 1 : 0)
+      return Math.min(100, count * 50)
     },
     getProgressText: (records) => {
       const history = records?.attemptHistory || []
@@ -202,14 +230,24 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
   {
     id: 'badge-navigator',
     title: 'Hoa tiêu Bản đồ Biển Đông',
+    rankLabel: 'Huy hiệu Hạng IV • Định vị Tọa độ Chủ quyền',
     requirementText: 'Hoàn thành Trò chơi Nhận diện 12 Địa danh Bản đồ Biển Đông với độ chính xác từ 75% trở lên.',
     iconName: 'Map',
+    badgeImage: '/assets/classroom/badges/badge-04-hoa-tieu-ban-do.svg',
+    targetActivity: 'map-identify',
     accent: 'cyan',
     checkUnlocked: (records) => {
       const history = records?.attemptHistory || []
       return history.some(
         (a) => a.activityType === 'map-identify' && a.accuracyPercent >= 75
       )
+    },
+    getProgressPercent: (records) => {
+      const history = records?.attemptHistory || []
+      const bestMap = history
+        .filter((a) => a.activityType === 'map-identify')
+        .reduce((max, a) => Math.max(max, a.accuracyPercent || 0), 0)
+      return Math.min(100, Math.round((bestMap / 75) * 100))
     },
     getProgressText: (records) => {
       const history = records?.attemptHistory || []
@@ -222,14 +260,24 @@ export const CLASSROOM_ACHIEVEMENT_BADGES = [
   {
     id: 'badge-comprehensive-master',
     title: 'Thủ khoa Chủ quyền Biển đảo',
+    rankLabel: 'Huy hiệu Hạng V • Huân chương Danh dự Cao nhất',
     requirementText: 'Hoàn thành Bài Kiểm tra Tổng hợp 20 câu đạt từ 8.0/10 điểm trở lên.',
     iconName: 'Award',
+    badgeImage: '/assets/classroom/badges/badge-05-thu-khoa-chu-quyen.svg',
+    targetActivity: 'comprehensive-exam',
     accent: 'gold',
     checkUnlocked: (records) => {
       const history = records?.attemptHistory || []
       return history.some(
         (a) => a.activityType === 'comprehensive-exam' && a.score10 >= 8
       )
+    },
+    getProgressPercent: (records) => {
+      const history = records?.attemptHistory || []
+      const bestExam = history
+        .filter((a) => a.activityType === 'comprehensive-exam')
+        .reduce((max, a) => Math.max(max, a.score10 || 0), 0)
+      return Math.min(100, Math.round((bestExam / 8) * 100))
     },
     getProgressText: (records) => {
       const history = records?.attemptHistory || []
