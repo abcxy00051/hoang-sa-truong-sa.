@@ -440,11 +440,6 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
           ================================================================ */}
       <section className="digital-map-hero-banner">
         <div className="digital-map-hero-bg" aria-hidden="true">
-          <img
-            src="/assets/ecosystem/ban-do-so.svg"
-            alt="Bản đồ đại dương và địa hình biển Việt Nam"
-            className="digital-map-hero-img"
-          />
           <div className="digital-map-hero-overlay" />
         </div>
 
@@ -453,7 +448,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
             <div className="digital-map-badges">
               <span className="hero-badge-gold">
                 <Compass size={14} />
-                <span>HỆ THỐNG THÔNG TIN ĐỊA LÝ BIỂN ĐẢO (WEBGIS 2D &amp; 3D)</span>
+                <span>HỆ THỐNG THÔNG TIN ĐỊA LÝ BIỂN ĐẢO (WEBGIS)</span>
               </span>
               <span className="hero-badge-coordinates">
                 <Globe size={14} />
@@ -468,7 +463,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
             <p className="digital-map-hero-desc">
               Khám phá không gian địa lý và các vùng biển đảo bằng công nghệ bản đồ tương tác.
               Hệ thống tích hợp đồng bộ <strong>Bản đồ 2D GIS</strong>,{' '}
-              <strong>Mô hình Địa cầu &amp; Địa hình 3D</strong>, bộ công cụ đo khoảng cách
+              <strong>Sa bàn Địa hình Biển 3D</strong>, bộ công cụ đo khoảng cách
               hải lý Haversine, tra cứu hệ thống điểm chuẩn đường cơ sở và kho{' '}
               <strong>Hồ sơ Bản đồ</strong> chính thống.
             </p>
@@ -487,14 +482,14 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                 type="button"
                 className={`btn-secondary-glass ${viewMode !== '2d' ? 'active-3d-btn' : ''}`}
                 onClick={() => {
-                  setViewMode(viewMode === '2d' ? '3d-globe' : '2d')
+                  setViewMode(viewMode === '2d' ? '3d-terrain' : '2d')
                   scrollToWorkspace()
                 }}
               >
-                <Globe size={18} />
+                <Compass size={18} />
                 <span>
                   {viewMode === '2d'
-                    ? 'Chuyển sang Chế độ 3D'
+                    ? 'Xem Địa hình Biển 3D'
                     : 'Quay lại Bản đồ 2D'}
                 </span>
               </button>
@@ -523,8 +518,8 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
             </div>
             <div className="map-stat-tile">
               <span className="tile-tag">CHẾ ĐỘ KẾT XUẤT</span>
-              <strong>GIS 2D &amp; Mô hình 3D</strong>
-              <span>Bản đồ phẳng, Địa cầu 3D &amp; Sa bàn địa hình</span>
+              <strong>Bản đồ 2D &amp; Địa hình 3D</strong>
+              <span>Bản đồ phẳng GIS &amp; Sa bàn địa hình biển</span>
             </div>
             <div className="map-stat-tile">
               <span className="tile-tag">HỒ SƠ BẢN ĐỒ</span>
@@ -556,8 +551,8 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
           II, III & IV. TRẠM ĐIỀU KHIỂN GIS (CHẾ ĐỘ 2D/3D, LỚP DỮ LIỆU, CÔNG CỤ ĐO)
           ================================================================ */}
       <div ref={workspaceAnchorRef} className="gis-master-toolbar">
-        {/* 1. Chuyển đổi chế độ Bản đồ 2D / Địa cầu 3D / Địa hình 3D */}
-        <div className="gis-mode-switcher" role="tablist" aria-label="Chế độ hiển thị Bản đồ 2D và 3D">
+        {/* 1. Chuyển đổi chế độ Bản đồ 2D / Địa hình Biển 3D */}
+        <div className="gis-mode-switcher" role="tablist" aria-label="Chế độ hiển thị Bản đồ 2D và Địa hình 3D">
           <button
             type="button"
             role="tab"
@@ -567,16 +562,6 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
           >
             <Layers size={16} />
             <span>Bản đồ 2D GIS</span>
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={viewMode === '3d-globe'}
-            className={`gis-mode-btn ${viewMode === '3d-globe' ? 'active' : ''}`}
-            onClick={() => setViewMode('3d-globe')}
-          >
-            <Globe size={16} />
-            <span>Địa cầu 3D</span>
           </button>
           <button
             type="button"
@@ -890,10 +875,8 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
         <div className="map-canvas-column">
           {viewMode !== '2d' ? (
             <EastSea3DCanvas
-              subMode3D={viewMode === '3d-terrain' ? 'terrain' : 'globe'}
-              onChangeSubMode3D={(sub) =>
-                setViewMode(sub === 'terrain' ? '3d-terrain' : '3d-globe')
-              }
+              subMode3D="terrain"
+              onChangeSubMode3D={() => setViewMode('3d-terrain')}
               markers={filteredMarkers}
               selectedMarkerId={selectedMarker.id}
               onSelectMarker={(m) => handleSelectMarker(m, false)}
@@ -1090,13 +1073,13 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                             strokeOpacity="0.15"
                             strokeDasharray="4 6"
                           />
-                          <text
+                           <text
                             x="14"
                             y={y - 6}
-                            fill="#1A718D"
+                            fill="#B6E0EB"
                             fontSize="11"
                             fontFamily="monospace"
-                            opacity="0.75"
+                            opacity="0.82"
                           >
                             {lat}°B
                           </text>
@@ -1120,10 +1103,10 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                           <text
                             x={x + 6}
                             y="22"
-                            fill="#1A718D"
+                            fill="#B6E0EB"
                             fontSize="11"
                             fontFamily="monospace"
-                            opacity="0.75"
+                            opacity="0.82"
                           >
                             {lng}°Đ
                           </text>
@@ -1137,14 +1120,14 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                 <path
                   d={MAINLAND_PATH}
                   fill="url(#vietnamLandGrad)"
-                  stroke="#29B4D1"
+                  stroke="#B6E0EB"
                   strokeWidth="1.5"
-                  strokeOpacity="0.55"
+                  strokeOpacity="0.65"
                 />
                 <path
                   d={COASTLINE_PATH}
                   fill="none"
-                  stroke="#29B4D1"
+                  stroke="#B6E0EB"
                   strokeWidth="3.2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -1156,10 +1139,10 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                     <text
                       x="235"
                       y="135"
-                      fill="#1A718D"
-                      fontSize="14"
-                      fontWeight="800"
-                      letterSpacing="1"
+                      fill="#113747"
+                      fontSize="13.5"
+                      fontWeight="900"
+                      letterSpacing="0.8"
                     >
                       ★ THỦ ĐÔ HÀ NỘI
                     </text>
@@ -1168,30 +1151,30 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       cy="124"
                       r="5"
                       fill="#113747"
-                      stroke="#1A718D"
+                      stroke="#B6E0EB"
                       strokeWidth="2"
                     />
 
                     <text
-                      x="210"
+                      x="182"
                       y="650"
-                      fill="#1A718D"
+                      fill="#113747"
                       fontSize="12"
-                      fontWeight="700"
+                      fontWeight="900"
                     >
                       TP. HỒ CHÍ MINH
                     </text>
-                    <circle cx="268" cy="642" r="4" fill="#1A718D" />
+                    <circle cx="268" cy="642" r="4.5" fill="#113747" stroke="#B6E0EB" strokeWidth="1.5" />
 
                     <text
                       x="355"
                       y="198"
                       textAnchor="middle"
-                      fill="#1A718D"
+                      fill="#B6E0EB"
                       fontSize="13"
-                      fontWeight="700"
+                      fontWeight="800"
                       letterSpacing="1.5"
-                      opacity="0.75"
+                      opacity="0.85"
                     >
                       VỊNH BẮC BỘ
                     </text>
@@ -1200,11 +1183,11 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       x="110"
                       y="725"
                       textAnchor="middle"
-                      fill="#1A718D"
+                      fill="#B6E0EB"
                       fontSize="12.5"
-                      fontWeight="700"
+                      fontWeight="800"
                       letterSpacing="1.2"
-                      opacity="0.7"
+                      opacity="0.85"
                     >
                       VỊNH THÁI LAN
                     </text>
@@ -1217,7 +1200,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       fontSize="26"
                       fontWeight="800"
                       letterSpacing="6"
-                      opacity="0.28"
+                      opacity="0.32"
                     >
                       BIỂN ĐÔNG
                     </text>
@@ -1263,7 +1246,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                               x="0"
                               y="38"
                               textAnchor="middle"
-                              fill="#1A718D"
+                              fill="#B6E0EB"
                               fontSize="9.5"
                               fontWeight="700"
                             >
@@ -1324,7 +1307,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                               x="-8"
                               y="4"
                               textAnchor="end"
-                              fill="#1A718D"
+                              fill="#B6E0EB"
                               fontSize="9"
                               fontFamily="monospace"
                               fontWeight="800"
@@ -1354,15 +1337,15 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       height="20"
                       rx="10"
                       fill="#113747"
-                      fillOpacity="0.85"
+                      fillOpacity="0.92"
                       stroke="#29B4D1"
-                      strokeWidth="0.8"
+                      strokeWidth="1"
                     />
                     <text
                       x={(daNangPt.x + hoangSaPt.x) / 2}
                       y={(daNangPt.y + hoangSaPt.y) / 2 - 9}
                       textAnchor="middle"
-                      fill="#1A718D"
+                      fill="#B6E0EB"
                       fontSize="9.5"
                       fontWeight="700"
                     >
@@ -1397,15 +1380,15 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       height="20"
                       rx="10"
                       fill="#113747"
-                      fillOpacity="0.85"
+                      fillOpacity="0.92"
                       stroke="#29B4D1"
-                      strokeWidth="0.8"
+                      strokeWidth="1"
                     />
                     <text
                       x={(camRanhPt.x + truongSaLonPt.x) / 2}
                       y={(camRanhPt.y + truongSaLonPt.y) / 2 + 1}
                       textAnchor="middle"
-                      fill="#1A718D"
+                      fill="#B6E0EB"
                       fontSize="9.5"
                       fontWeight="700"
                     >
@@ -1534,7 +1517,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       const fillColor = isMajor
                         ? '#29B4D1'
                         : isDk1
-                        ? '#113747'
+                        ? '#1A718D'
                         : isCoastal
                         ? '#29B4D1'
                         : '#29B4D1'
@@ -1605,7 +1588,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                                 height="19"
                                 rx="6"
                                 fill={isSelected ? '#29B4D1' : '#113747'}
-                                fillOpacity={isSelected ? '0.96' : '0.82'}
+                                fillOpacity={isSelected ? '0.96' : '0.9'}
                                 stroke={isSelected ? '#B6E0EB' : fillColor}
                                 strokeWidth="1"
                               />
@@ -1617,7 +1600,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                                   isSelected
                                     ? '#113747'
                                     : isMajor
-                                    ? '#1A718D'
+                                    ? '#29B4D1'
                                     : '#B6E0EB'
                                 }
                                 fontSize={isMajor ? '11' : '10'}

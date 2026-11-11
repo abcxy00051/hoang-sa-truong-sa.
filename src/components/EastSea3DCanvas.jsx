@@ -858,15 +858,7 @@ export default function EastSea3DCanvas({
         <div className="map3d-submode-pills">
           <button
             type="button"
-            className={`submode3d-btn ${subMode3D === 'globe' ? 'active' : ''}`}
-            onClick={() => onChangeSubMode3D && onChangeSubMode3D('globe')}
-          >
-            <Globe size={15} />
-            <span>Địa cầu 3D (Orthographic Globe)</span>
-          </button>
-          <button
-            type="button"
-            className={`submode3d-btn ${subMode3D === 'terrain' ? 'active' : ''}`}
+            className="submode3d-btn active"
             onClick={() => onChangeSubMode3D && onChangeSubMode3D('terrain')}
           >
             <Layers size={15} />
@@ -876,15 +868,9 @@ export default function EastSea3DCanvas({
 
         <div className="map3d-telemetry-text">
           <Compass size={15} />
-          {subMode3D === 'globe' ? (
-            <span>
-              Tâm Địa cầu: <strong>{centerLat.toFixed(1)}°B — {centerLng.toFixed(1)}°Đ</strong> • Phóng đại: {Math.round(zoom3D * 100)}%
-            </span>
-          ) : (
-            <span>
-              Góc xoay 3D: <strong>Yaw {Math.round(yawDeg)}° • Pitch {Math.round(pitchDeg)}°</strong> • Phóng đại: {Math.round(zoom3D * 100)}%
-            </span>
-          )}
+          <span>
+            Góc xoay 3D: <strong>Yaw {Math.round(yawDeg)}° • Pitch {Math.round(pitchDeg)}°</strong> • Phóng đại: {Math.round(zoom3D * 100)}%
+          </span>
         </div>
 
         <div className="map3d-action-btns">
