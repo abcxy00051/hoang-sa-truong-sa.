@@ -23,6 +23,9 @@ import {
 import {
   loadCozeSdkScript,
   fetchCozeBackendToken,
+  getOrCreateDeviceUserId,
+  getPrivateCozeConversation,
+  resetPrivateCozeConversation,
   DEFAULT_COZE_BOT_ID,
   CHATBOT_TITLE
 } from '../utils/cozeSdk'
@@ -101,23 +104,16 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
   const [copiedIndex, setCopiedIndex] = useState(null)
   const [reloadCounter, setReloadCounter] = useState(0)
 
-  // Lưu định danh phiên cố định trên trình duyệt để Coze WebChat SDK duy trì lịch sử hội thoại
-  const [persistentSessionUserId] = useState(() => {
-    try {
-      const existing = localStorage.getItem('biendao_coze_sdk_session_uid')
-      if (existing) return existing
-      const created = `thpt-user-${Math.random().toString(36).slice(2, 10)}`
-      localStorage.setItem('biendao_coze_sdk_session_uid', created)
-      return created
-    } catch {
-      return 'hs-thpt-user'
-    }
-  })
+  // Lưu định danh thiết bị riêng biệt trên trình duyệt của từng người dùng (localStorage)
+  const [persistentSessionUserId] = useState(() => getOrCreateDeviceUserId())
+  const [privateConversation, setPrivateConversation] = useState(() =>
+    getPrivateCozeConversation(DEFAULT_COZE_BOT_ID)
+  )
 
-  // Lịch sử các câu hỏi học sinh đã chọn / sao chép để tra cứu lại nhanh
+  // Lịch sử các câu hỏi học sinh đã chọn / sao chép trên thiết bị này
   const [promptHistory, setPromptHistory] = useState(() => {
     try {
-      const raw = localStorage.getItem('biendao_coze_prompt_history_v1')
+      const raw = localStorage.getItem('biendao_coze_prompt_history_v2')
       return raw ? JSON.parse(raw) : []
     } catch {
       return []
@@ -127,13 +123,24 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
   useEffect(() => {
     try {
       localStorage.setItem(
-        'biendao_coze_prompt_history_v1',
+        'biendao_coze_prompt_history_v2',
         JSON.stringify(promptHistory)
       )
     } catch {
       // ignore storage quota errors
     }
   }, [promptHistory])
+
+  // Đồng bộ trạng thái phiên hội thoại riêng của thiết bị khi SDK tạo hoặc làm mới phiên
+  useEffect(() => {
+    const syncPrivateConv = () => {
+      setPrivateConversation(getPrivateCozeConversation(botId))
+    }
+    syncPrivateConv()
+    window.addEventListener('coze-private-session-updated', syncPrivateConv)
+    return () =>
+      window.removeEventListener('coze-private-session-updated', syncPrivateConv)
+  }, [botId])
 
   // Theo dõi kích thước màn hình để đồng bộ giao diện Máy tính & Điện thoại
   useEffect(() => {
@@ -333,6 +340,12 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
     window.dispatchEvent(new CustomEvent('open-coze-floating-chat'))
   }
 
+  const handleResetPrivateSession = () => {
+    resetPrivateCozeConversation(botId)
+    setPrivateConversation(null)
+    setReloadCounter((c) => c + 1)
+  }
+
   const scrollToChatStage = () => {
     if (chatWorkspaceRef.current) {
       chatWorkspaceRef.current.scrollIntoView({
@@ -357,7 +370,7 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
               </span>
               <span className="ai-hero-pill cyan">
                 <ShieldCheck size={14} />
-                <span>BẢO MẬT TOKEN QUA BACKEND (.ENV)</span>
+                <span>PHIÊN RIÊNG THEO TỪNG THIẾT BỊ NGƯỜI DÙNG</span>
               </span>
             </div>
 
@@ -372,7 +385,8 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
               <strong>Coze WebChat SDK v1.2.0-beta.6</strong>, hỗ trợ học sinh và
               giáo viên THPT tra cứu nhanh sử liệu Hoàng Sa – Trường Sa, Công ước
               Luật Biển UNCLOS 1982, Luật Biển Việt Nam 2012, địa lý tự nhiên và
-              gợi ý đề cương thuyết trình.
+              gợi ý đề cương thuyết trình. Mỗi thiết bị có phiên hội thoại và lịch sử
+              tra cứu hoàn toàn độc lập.
             </p>
 
             <div className="ai-hero-highlights">
@@ -408,8 +422,8 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
                 <Server size={16} />
                 <span>
                   {showSecurityModal
-                    ? 'Ẩn Kiến trúc Bảo mật Backend'
-                    : 'Phương án Bảo mật Token Backend'}
+                    ? 'Ẩn Kiến trúc Bảo mật & Cô lập Phiên'
+                    : 'Kiến trúc Bảo mật & Lịch sử Riêng'}
                 </span>
               </button>
             </div>
@@ -426,13 +440,13 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
           </div>
         </div>
 
-        {/* Hộp thuyết minh Phương án bảo mật Token qua Backend (Đáp ứng mục I.3) */}
+        {/* Hộp thuyết minh Phương án bảo mật Token & Cô lập phiên riêng */}
         {showSecurityModal && (
           <div className="ai-backend-architecture-box">
             <div className="ai-arch-header">
               <Lock size={18} />
               <h4>
-                Phương án Kiến trúc Bảo mật Xác thực Coze SDK qua Backend &amp; Biến môi trường
+                Kiến trúc Bảo mật Token Backend &amp; Cô lập Lịch sử Tìm kiếm Riêng cho Từng Thiết bị
               </h4>
             </div>
             <div className="ai-arch-steps-grid">
@@ -445,20 +459,20 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
                 </p>
               </div>
               <div className="ai-arch-step">
-                <strong>2. Endpoint Nội bộ (/api/coze/token)</strong>
+                <strong>2. Cô lập Phiên Riêng từng Người dùng</strong>
                 <p>
-                  Khi học sinh mở trang Trợ lý AI, trình duyệt gọi{' '}
-                  <code>GET /api/coze/token</code>. Máy chủ đọc{' '}
-                  <code>process.env.COZE_API_TOKEN</code> (hoặc ký OAuth JWT ngắn hạn)
-                  và cấp cho phiên làm việc.
+                  Mỗi trình duyệt/thiết bị được cấp định danh độc lập{' '}
+                  <code>{persistentSessionUserId}</code> và lưu{' '}
+                  <code>conversationId</code> riêng trong <code>localStorage</code>,
+                  tuyệt đối không gộp chung lịch sử chat giữa các máy khác nhau.
                 </p>
               </div>
               <div className="ai-arch-step">
-                <strong>3. Tự động Làm mới (onRefreshToken)</strong>
+                <strong>3. Tự động Làm mới &amp; Tạo Phiên Mới</strong>
                 <p>
-                  <code>CozeWebSDK.WebChatClient</code> sử dụng callback{' '}
-                  <code>onRefreshToken</code> để tự động xin cấp lại token mới từ
-                  Backend khi hết hạn mà không làm gián đoạn cuộc hội thoại.
+                  Người dùng có thể tạo phiên trò chuyện mới bất cứ lúc nào trên
+                  thiết bị của mình mà không ảnh hưởng tới phiên làm việc của người
+                  dùng khác.
                 </p>
               </div>
             </div>
@@ -492,7 +506,12 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
             <div className="coze-bot-meta">
               <strong>Trợ lý AI Biển Đảo Việt Nam</strong>
               <span>
-                Coze SDK v1.2.0-beta.6 • Bot ID: <code>{botId}</code>
+                Thiết bị: <code>{persistentSessionUserId}</code> • Phiên riêng:{' '}
+                <code>
+                  {privateConversation?.conversationId
+                    ? `#${privateConversation.conversationId.slice(-6)}`
+                    : 'Đang cấp mới'}
+                </code>
               </span>
             </div>
           </div>
@@ -509,9 +528,7 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
             <ShieldCheck size={15} />
             <span>
               {authStatus === 'ready' &&
-                (authMode === 'oauth_jwt'
-                  ? 'Trạng thái: Đã kết nối (OAuth JWT Backend)'
-                  : 'Trạng thái: Đã kết nối (Token Backend .env)')}
+                'Trạng thái: Đã kết nối • Lịch sử độc lập trên thiết bị này'}
               {authStatus === 'checking' && 'Trạng thái: Đang kiểm tra kết nối...'}
               {authStatus === 'unconfigured' &&
                 'Trạng thái: Chờ cấu hình COZE_API_TOKEN (.env)'}
@@ -569,6 +586,16 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
           <button
             type="button"
             className="coze-refresh-btn"
+            onClick={handleResetPrivateSession}
+            title="Xóa lịch sử trò chuyện cũ trên thiết bị này và tạo phiên hội thoại mới"
+          >
+            <Trash2 size={15} />
+            <span>Tạo phiên mới</span>
+          </button>
+
+          <button
+            type="button"
+            className="coze-refresh-btn"
             onClick={() => setReloadCounter((c) => c + 1)}
             title="Kiểm tra lại kết nối Backend và làm mới Coze SDK"
           >
@@ -594,8 +621,8 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
                 <MessageSquare size={20} />
               </div>
               <div>
-                <h3>Gợi ý Câu hỏi &amp; Lịch sử Phiên</h3>
-                <p>Chọn câu hỏi mẫu để sao chép và gửi vào khung chat Coze</p>
+                <h3>Gợi ý Câu hỏi &amp; Lịch sử Riêng</h3>
+                <p>Lịch sử lưu độc lập trên trình duyệt của riêng bạn</p>
               </div>
             </div>
 
@@ -603,12 +630,12 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
               {isMobileView ? (
                 <>
                   <Smartphone size={15} />
-                  <span>Giao diện tối ưu cho Điện thoại (Mobile)</span>
+                  <span>Phiên thiết bị Di động • Không chia sẻ máy khác</span>
                 </>
               ) : (
                 <>
                   <Monitor size={15} />
-                  <span>Giao diện tối ưu cho Máy tính (Desktop)</span>
+                  <span>Phiên thiết bị Máy tính • Không chia sẻ máy khác</span>
                 </>
               )}
             </div>
@@ -667,23 +694,42 @@ export default function CozeAiAssistant({ activeRole = 'student' }) {
               <div className="coze-history-head">
                 <div className="coze-history-title">
                   <History size={15} />
-                  <strong>Lịch sử Hội thoại &amp; Câu hỏi đã chọn</strong>
+                  <strong>Lịch sử Riêng trên Thiết bị này</strong>
                 </div>
-                {promptHistory.length > 0 && (
+                <div style={{ display: 'flex', gap: '6px' }}>
                   <button
                     type="button"
                     className="coze-clear-hist-btn"
-                    onClick={() => setPromptHistory([])}
-                    title="Xóa nhật ký câu hỏi đã chọn"
+                    onClick={handleResetPrivateSession}
+                    title="Tạo phiên hội thoại Coze mới trên thiết bị này"
                   >
-                    <Trash2 size={13} />
-                    <span>Xóa</span>
+                    <RefreshCw size={12} />
+                    <span>Phiên mới</span>
                   </button>
-                )}
+                  {promptHistory.length > 0 && (
+                    <button
+                      type="button"
+                      className="coze-clear-hist-btn"
+                      onClick={() => setPromptHistory([])}
+                      title="Xóa nhật ký câu hỏi đã chọn trên máy này"
+                    >
+                      <Trash2 size={13} />
+                      <span>Xóa</span>
+                    </button>
+                  )}
+                </div>
               </div>
               <p className="coze-sdk-session-note">
-                Phiên hội thoại Coze SDK (ID: <code>{persistentSessionUserId}</code>)
-                tự động lưu lịch sử tin nhắn trực tiếp trong khung chat bên phải.
+                Mã máy của bạn: <code>{persistentSessionUserId}</code>
+                {privateConversation?.conversationId ? (
+                  <>
+                    {' '}
+                    • Mã hội thoại riêng:{' '}
+                    <code>#{privateConversation.conversationId.slice(-8)}</code>
+                  </>
+                ) : null}
+                . Mọi tìm kiếm và tin nhắn chỉ hiển thị trên trình duyệt của thiết
+                bị này, không lưu chung với người dùng khác.
               </p>
 
               {promptHistory.length > 0 && (

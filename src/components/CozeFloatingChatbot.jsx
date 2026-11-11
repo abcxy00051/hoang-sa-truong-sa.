@@ -11,11 +11,14 @@ import {
   ExternalLink,
   Copy,
   Check,
-  Compass
+  Compass,
+  Trash2
 } from 'lucide-react'
 import {
   loadCozeSdkScript,
   fetchCozeBackendToken,
+  getOrCreateDeviceUserId,
+  resetPrivateCozeConversation,
   DEFAULT_COZE_BOT_ID,
   CHATBOT_TITLE
 } from '../utils/cozeSdk'
@@ -35,6 +38,7 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
   const [errorMessage, setErrorMessage] = useState('')
   const [copiedIdx, setCopiedIdx] = useState(null)
   const [reloadTick, setReloadTick] = useState(0)
+  const [deviceUserId] = useState(() => getOrCreateDeviceUserId())
   const [isMobile, setIsMobile] = useState(
     typeof window !== 'undefined' ? window.innerWidth < 768 : false
   )
@@ -94,7 +98,7 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
       }
 
       // Khởi tạo CozeWebSDK.WebChatClient ở chế độ Native React (isIframe: false)
-      // Khắc phục triệt để lỗi 502 Bad Gateway (TLB) từ URL iframe cũ https://api.coze.com/open-platform/sdk/chatapp
+      // Sử dụng định danh riêng của từng thiết bị (deviceUserId) để cô lập lịch sử hội thoại
       const client = new CozeWebSDK.WebChatClient({
         config: {
           bot_id: authPayload.botId || DEFAULT_COZE_BOT_ID,
@@ -114,7 +118,7 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
           }
         },
         userInfo: {
-          id: activeRole === 'teacher' ? 'gv-thpt-floating' : 'hs-thpt-floating',
+          id: `${activeRole}-${deviceUserId}`,
           url: '/assets/ecosystem/tro-ly-ai.svg',
           nickname:
             activeRole === 'teacher' ? 'Giáo viên THPT' : 'Học sinh THPT'
@@ -141,7 +145,7 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
           },
           footer: {
             isShow: true,
-            expressionText: 'Trợ lý AI Biển Đảo Việt Nam • Chạm tri thức, Vững chủ quyền'
+            expressionText: 'Trợ lý AI Biển Đảo Việt Nam • Phiên riêng trên thiết bị này'
           }
         },
         el: mountEl || undefined
@@ -165,7 +169,7 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
         err?.message || 'Không thể khởi tạo khung chat Trợ lý AI Biển Đảo Việt Nam.'
       )
     }
-  }, [activeRole, isMobile])
+  }, [activeRole, deviceUserId, isMobile])
 
   // Khởi tạo khi người dùng mở khung chat lần đầu hoặc khi nhấn làm mới kết nối
   useEffect(() => {
@@ -194,6 +198,12 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
   }
 
   const handleRefreshConnection = () => {
+    hasInitializedRef.current = false
+    setReloadTick((c) => c + 1)
+  }
+
+  const handleResetPrivateSession = () => {
+    resetPrivateCozeConversation(botId)
     hasInitializedRef.current = false
     setReloadTick((c) => c + 1)
   }
@@ -230,9 +240,7 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
                 <ShieldCheck size={12} />
                 <span>
                   {authStatus === 'ready'
-                    ? authMode === 'oauth_jwt'
-                      ? 'Trực tuyến • OAuth Token ngắn hạn'
-                      : 'Trực tuyến • Bảo mật qua Server .env'
+                    ? 'Trực tuyến • Lịch sử riêng trên thiết bị này'
                     : 'Chạm tri thức • Vững chủ quyền'}
                 </span>
               </p>
@@ -240,6 +248,16 @@ export default function CozeFloatingChatbot({ activeRole = 'student' }) {
           </div>
 
           <div className="coze-floating-controls">
+            <button
+              type="button"
+              className="coze-ctrl-btn"
+              onClick={handleResetPrivateSession}
+              title="Tạo phiên trò chuyện mới (xóa lịch sử trên thiết bị này)"
+              aria-label="Tạo phiên trò chuyện mới"
+            >
+              <Trash2 size={14} />
+            </button>
+
             <button
               type="button"
               className="coze-ctrl-btn"
