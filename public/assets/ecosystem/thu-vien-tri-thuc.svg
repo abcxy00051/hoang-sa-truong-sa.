@@ -1,109 +1,145 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="libBg" x1="0" y1="0" x2="800" y2="460" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#040D1D" />
-      <stop offset="50%" stop-color="#081E42" />
-      <stop offset="100%" stop-color="#0F356B" />
+    <linearGradient id="oceanBg2" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747" />
+      <stop offset="50%" stop-color="#15475B" />
+      <stop offset="100%" stop-color="#1A718D" />
     </linearGradient>
-    <linearGradient id="goldLeaf" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A" />
-      <stop offset="50%" stop-color="#F59E0B" />
-      <stop offset="100%" stop-color="#B45309" />
-    </linearGradient>
-    <radialGradient id="libAura" cx="50%" cy="48%" r="48%">
-      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.22" />
-      <stop offset="65%" stop-color="#0284C7" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#040D1D" stop-opacity="0" />
+    <radialGradient id="libGlow2" cx="50%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#29B4D1" stop-opacity="0.28" />
+      <stop offset="65%" stop-color="#1A718D" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#113747" stop-opacity="0" />
     </radialGradient>
+    <linearGradient id="accentPill2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#29B4D1" />
+      <stop offset="100%" stop-color="#B6E0EB" />
+    </linearGradient>
   </defs>
 
-  <rect width="800" height="460" fill="url(#libBg)" />
-  <rect width="800" height="460" fill="url(#libAura)" />
+  <!-- Ocean Technology Background -->
+  <rect width="800" height="450" fill="url(#oceanBg2)" />
+  <rect width="800" height="450" fill="url(#libGlow2)" />
 
-  <!-- Architectural Library Grid & Shelving Lines -->
-  <g stroke="#38BDF8" stroke-opacity="0.1" stroke-width="1">
-    <line x1="60" y1="60" x2="740" y2="60" />
-    <line x1="60" y1="140" x2="740" y2="140" />
-    <line x1="60" y1="360" x2="740" y2="360" />
-    <line x1="120" y1="40" x2="120" y2="420" />
-    <line x1="680" y1="40" x2="680" y2="420" />
+  <!-- Architectural Grid Lines -->
+  <g stroke="#B6E0EB" stroke-opacity="0.11" stroke-width="1">
+    <line x1="0" y1="68" x2="800" y2="68" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="382" x2="800" y2="382" />
+    <line x1="262" y1="68" x2="262" y2="382" />
+    <line x1="538" y1="68" x2="538" y2="382" />
   </g>
 
-  <!-- Left Dossier Card: TƯ LIỆU LỊCH SỬ & CHÂU BẢN -->
-  <g transform="translate(65, 86) rotate(-5)">
-    <rect width="195" height="248" rx="16" fill="#071936" fill-opacity="0.95" stroke="#38BDF8" stroke-width="1.8" />
-    <rect x="20" y="22" width="95" height="22" rx="11" fill="#0284C7" fill-opacity="0.35" stroke="#38BDF8" stroke-opacity="0.5" />
-    <text x="67.5" y="37" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="9.5" font-weight="800">CHUYÊN ĐỀ LỊCH SỬ</text>
-    <rect x="20" y="58" width="155" height="90" rx="10" fill="#0C264E" stroke="#38BDF8" stroke-opacity="0.35" />
-    <path d="M45 118 L75 86 L108 112 L135 78 L155 118 Z" fill="#0284C7" fill-opacity="0.45" />
-    <text x="97.5" y="105" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="800">CHÂU BẢN &amp; SỬ LIỆU</text>
-    <rect x="20" y="164" width="145" height="7" rx="3.5" fill="#94A3B8" opacity="0.7" />
-    <rect x="20" y="180" width="125" height="7" rx="3.5" fill="#94A3B8" opacity="0.5" />
-    <rect x="20" y="196" width="105" height="7" rx="3.5" fill="#38BDF8" opacity="0.6" />
-    <rect x="20" y="216" width="110" height="18" rx="9" fill="#F59E0B" fill-opacity="0.2" />
-    <text x="75" y="228" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="8.5" font-weight="700">KHỐI 10 • 11 • 12</text>
+  <!-- Left Column: Topics 01, 02, 03 (x: 24..250, y: 72..376) -->
+  <!-- Topic 01 -->
+  <g transform="translate(24, 72)">
+    <rect width="226" height="94" rx="14" fill="#113747" fill-opacity="0.92" stroke="#29B4D1" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="10" fill="#1A718D" />
+    <text x="70" y="25" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="800">CHUYÊN ĐỀ #01</text>
+    <text x="212" y="25" text-anchor="end" fill="#29B4D1" font-family="monospace" font-size="9" font-weight="800">ĐỊA LÝ 10 &amp; 12</text>
+    <text x="14" y="48" fill="#F4FBFE" font-family="sans-serif" font-size="11.5" font-weight="800">Địa lý &amp; Tự nhiên Biển Đảo</text>
+    <text x="14" y="66" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Diện tích &gt; 1 triệu km², 3.260 km bờ biển</text>
+    <text x="14" y="81" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="700">• Hơn 3.000 đảo ven bờ &amp; 2 quần đảo xa bờ</text>
   </g>
 
-  <!-- Right Dossier Card: PHÁP LÝ QUỐC TẾ & UNCLOS 1982 -->
-  <g transform="translate(538, 74) rotate(5)">
-    <rect width="195" height="248" rx="16" fill="#071936" fill-opacity="0.95" stroke="#FBBF24" stroke-width="1.8" />
-    <rect x="20" y="22" width="110" height="22" rx="11" fill="#F59E0B" fill-opacity="0.22" stroke="#FBBF24" stroke-opacity="0.6" />
-    <text x="75" y="37" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9.5" font-weight="800">PHÁP LÝ BIỂN ĐẢO</text>
-    <rect x="20" y="58" width="155" height="90" rx="10" fill="#0C264E" stroke="#FBBF24" stroke-opacity="0.4" />
-    <text x="97.5" y="96" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="13" font-weight="900">UNCLOS 1982</text>
-    <text x="97.5" y="116" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="10" font-weight="600">Luật Biển Việt Nam 2012</text>
-    <rect x="20" y="164" width="145" height="7" rx="3.5" fill="#94A3B8" opacity="0.7" />
-    <rect x="20" y="180" width="130" height="7" rx="3.5" fill="#94A3B8" opacity="0.5" />
-    <rect x="20" y="196" width="115" height="7" rx="3.5" fill="#FBBF24" opacity="0.6" />
-    <rect x="20" y="216" width="126" height="18" rx="9" fill="#38BDF8" fill-opacity="0.22" />
-    <text x="83" y="228" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="8.5" font-weight="700">NGUỒN CHÍNH THỐNG</text>
+  <!-- Topic 02 -->
+  <g transform="translate(24, 178)">
+    <rect width="226" height="94" rx="14" fill="#113747" fill-opacity="0.92" stroke="#B6E0EB" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="10" fill="#29B4D1" />
+    <text x="70" y="25" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="8.5" font-weight="900">CHUYÊN ĐỀ #02</text>
+    <text x="212" y="25" text-anchor="end" fill="#B6E0EB" font-family="monospace" font-size="9" font-weight="800">LỊCH SỬ 10, 11, 12</text>
+    <text x="14" y="48" fill="#F4FBFE" font-family="sans-serif" font-size="11.5" font-weight="800">Sử liệu &amp; Châu bản Chủ quyền</text>
+    <text x="14" y="66" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Đội Hoàng Sa – Bắc Hải thế kỷ XVII–XVIII</text>
+    <text x="14" y="81" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="700">• Châu bản triều Nguyễn (Di sản UNESCO)</text>
   </g>
 
-  <!-- Center Illuminated Encyclopedia & Digital Codex -->
-  <g transform="translate(245, 58)">
-    <rect width="310" height="295" rx="22" fill="#040D1D" fill-opacity="0.94" stroke="url(#goldLeaf)" stroke-width="2.5" />
+  <!-- Topic 03 -->
+  <g transform="translate(24, 284)">
+    <rect width="226" height="94" rx="14" fill="#113747" fill-opacity="0.92" stroke="#1A718D" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="10" fill="#1A718D" />
+    <text x="70" y="25" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="800">CHUYÊN ĐỀ #03</text>
+    <text x="212" y="25" text-anchor="end" fill="#29B4D1" font-family="monospace" font-size="9" font-weight="800">GDKT &amp; PHÁP LUẬT</text>
+    <text x="14" y="48" fill="#F4FBFE" font-family="sans-serif" font-size="11.5" font-weight="800">Pháp lý Quốc tế &amp; Việt Nam</text>
+    <text x="14" y="66" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Công ước Luật Biển LHQ (UNCLOS 1982)</text>
+    <text x="14" y="81" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="700">• Luật Biển Việt Nam 2012 (5 vùng biển)</text>
+  </g>
+
+  <!-- Center Hub: Digital Academic Codex (x: 266..534, y: 72..378) -->
+  <g transform="translate(266, 72)">
+    <rect width="268" height="306" rx="20" fill="#113747" fill-opacity="0.96" stroke="#29B4D1" stroke-width="2.2" />
 
     <!-- Top Academic Crest -->
-    <circle cx="155" cy="42" r="20" fill="#F59E0B" fill-opacity="0.2" stroke="#FBBF24" stroke-width="1.5" />
-    <text x="155" y="47" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="900">★</text>
+    <rect x="34" y="16" width="200" height="24" rx="12" fill="#1A718D" stroke="#B6E0EB" stroke-width="1" />
+    <text x="134" y="32" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="800">HỌC LIỆU SỐ CHUẨN GDPT 2018</text>
 
-    <!-- Open Codex Graphic -->
-    <path d="M155 86 C125 72, 78 72, 46 86 L46 202 C78 188, 125 188, 155 202 C185 188, 232 188, 264 202 L264 86 C232 72, 185 72, 155 86 Z" fill="#081E42" stroke="#FBBF24" stroke-width="3" stroke-linejoin="round" />
-    <line x1="155" y1="86" x2="155" y2="202" stroke="#FBBF24" stroke-width="3" />
+    <!-- Illuminated Open Encyclopedia Graphic -->
+    <path d="M134 68 C108 56, 66 56, 36 68 L36 168 C66 156, 108 156, 134 168 C160 156, 202 156, 232 168 L232 68 C202 56, 160 56, 134 68 Z" fill="#164A5F" stroke="#B6E0EB" stroke-width="2.5" stroke-linejoin="round" />
+    <line x1="134" y1="68" x2="134" y2="168" stroke="#29B4D1" stroke-width="2.5" />
 
-    <!-- Left Page Lines -->
-    <line x1="66" y1="108" x2="132" y2="108" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
-    <line x1="66" y1="126" x2="128" y2="126" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.8" />
-    <line x1="66" y1="142" x2="124" y2="142" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
-    <line x1="66" y1="158" x2="118" y2="158" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
-    <line x1="66" y1="174" x2="108" y2="174" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round" />
+    <!-- Left Page Content -->
+    <line x1="52" y1="88" x2="114" y2="88" stroke="#29B4D1" stroke-width="2.8" stroke-linecap="round" />
+    <line x1="52" y1="104" x2="112" y2="104" stroke="#F4FBFE" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+    <line x1="52" y1="118" x2="108" y2="118" stroke="#B6E0EB" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <line x1="52" y1="132" x2="104" y2="132" stroke="#B6E0EB" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <line x1="52" y1="146" x2="96" y2="146" stroke="#29B4D1" stroke-width="2" stroke-linecap="round" />
 
-    <!-- Right Page Lines -->
-    <line x1="178" y1="108" x2="244" y2="108" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" />
-    <line x1="178" y1="126" x2="240" y2="126" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.8" />
-    <line x1="178" y1="142" x2="236" y2="142" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
-    <line x1="178" y1="158" x2="230" y2="158" stroke="#E0F2FE" stroke-width="2.2" stroke-linecap="round" opacity="0.65" />
-    <line x1="178" y1="174" x2="220" y2="174" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" />
+    <!-- Right Page Content -->
+    <line x1="154" y1="88" x2="216" y2="88" stroke="#B6E0EB" stroke-width="2.8" stroke-linecap="round" />
+    <line x1="154" y1="104" x2="214" y2="104" stroke="#F4FBFE" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+    <line x1="154" y1="118" x2="210" y2="118" stroke="#B6E0EB" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <line x1="154" y1="132" x2="206" y2="132" stroke="#B6E0EB" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <line x1="154" y1="146" x2="198" y2="146" stroke="#29B4D1" stroke-width="2" stroke-linecap="round" />
 
-    <!-- Topic Pills Row -->
-    <rect x="34" y="218" width="74" height="22" rx="11" fill="#0C264E" stroke="#38BDF8" stroke-opacity="0.5" />
-    <text x="71" y="233" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="9.5" font-weight="700">Địa lý biển</text>
+    <!-- Grade Level Pills -->
+    <rect x="22" y="184" width="70" height="24" rx="12" fill="#1A718D" stroke="#29B4D1" stroke-width="1.2" />
+    <text x="57" y="200" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="800">KHỐI 10</text>
 
-    <rect x="118" y="218" width="74" height="22" rx="11" fill="#0C264E" stroke="#FBBF24" stroke-opacity="0.5" />
-    <text x="155" y="233" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9.5" font-weight="700">Sử liệu cổ</text>
+    <rect x="99" y="184" width="70" height="24" rx="12" fill="#1A718D" stroke="#29B4D1" stroke-width="1.2" />
+    <text x="134" y="200" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="800">KHỐI 11</text>
 
-    <rect x="202" y="218" width="74" height="22" rx="11" fill="#0C264E" stroke="#22C55E" stroke-opacity="0.5" />
-    <text x="239" y="233" text-anchor="middle" fill="#86EFAC" font-family="sans-serif" font-size="9.5" font-weight="700">Kinh tế biển</text>
+    <rect x="176" y="184" width="70" height="24" rx="12" fill="#29B4D1" />
+    <text x="211" y="200" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="9.5" font-weight="900">KHỐI 12</text>
 
-    <!-- Golden Ribbon Title -->
-    <rect x="32" y="252" width="246" height="28" rx="14" fill="url(#goldLeaf)" />
-    <text x="155" y="270" text-anchor="middle" fill="#040D1D" font-family="sans-serif" font-size="11" font-weight="900">THƯ VIỆN TRI THỨC BIỂN ĐẢO</text>
+    <!-- Academic Metrics Box -->
+    <rect x="22" y="218" width="224" height="42" rx="10" fill="#164A5F" stroke="#B6E0EB" stroke-opacity="0.4" />
+    <text x="134" y="236" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5" font-weight="700">Tích hợp Liên môn: Lịch sử • Địa lý • Pháp luật</text>
+    <text x="134" y="252" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="9.5" font-weight="800">7 Chuyên đề • 35+ Bài khảo cứu • Từ điển số</text>
+
+    <!-- Bottom Highlight Ribbon -->
+    <rect x="22" y="268" width="224" height="26" rx="13" fill="url(#accentPill2)" />
+    <text x="134" y="285" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="10" font-weight="900">THƯ VIỆN TRI THỨC BIỂN ĐẢO</text>
   </g>
 
-  <!-- Bottom Search & Classification Strip -->
-  <g transform="translate(185, 384)">
-    <rect width="430" height="42" rx="21" fill="#040D1D" fill-opacity="0.9" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2" />
-    <circle cx="28" cy="21" r="6" fill="#FBBF24" />
-    <text x="48" y="25" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="700">7 Chuyên đề • 35+ Bài viết chuẩn GDPT 2018 • Tra cứu tức thì</text>
+  <!-- Right Column: Topics 04, 05, 06 & 07 (x: 550..776, y: 72..376) -->
+  <!-- Topic 04 -->
+  <g transform="translate(550, 72)">
+    <rect width="226" height="94" rx="14" fill="#113747" fill-opacity="0.92" stroke="#29B4D1" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="10" fill="#29B4D1" />
+    <text x="70" y="25" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="8.5" font-weight="900">CHUYÊN ĐỀ #04</text>
+    <text x="212" y="25" text-anchor="end" fill="#B6E0EB" font-family="monospace" font-size="9" font-weight="800">KINH TẾ &amp; SINH THÁI</text>
+    <text x="14" y="48" fill="#F4FBFE" font-family="sans-serif" font-size="11.5" font-weight="800">Kinh tế Biển &amp; Đại dương Xanh</text>
+    <text x="14" y="66" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Hàng hải, dầu khí, thủy sản &amp; năng lượng</text>
+    <text x="14" y="81" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="700">• Bảo tồn rạn san hô, thảm cỏ biển Việt Nam</text>
+  </g>
+
+  <!-- Topic 05 -->
+  <g transform="translate(550, 178)">
+    <rect width="226" height="94" rx="14" fill="#113747" fill-opacity="0.92" stroke="#B6E0EB" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="10" fill="#1A718D" />
+    <text x="70" y="25" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="800">CHUYÊN ĐỀ #05 &amp; #06</text>
+    <text x="212" y="25" text-anchor="end" fill="#29B4D1" font-family="monospace" font-size="9" font-weight="800">GDQP &amp; AN NINH</text>
+    <text x="14" y="48" fill="#F4FBFE" font-family="sans-serif" font-size="11.5" font-weight="800">Đời sống Đảo xa &amp; Giữ biển</text>
+    <text x="14" y="66" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Hải quân, Cảnh sát biển, Kiểm ngư, DK1</text>
+    <text x="14" y="81" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="700">• Thế trận quốc phòng toàn dân trên biển</text>
+  </g>
+
+  <!-- Topic 07 -->
+  <g transform="translate(550, 284)">
+    <rect width="226" height="94" rx="14" fill="#113747" fill-opacity="0.92" stroke="#1A718D" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="10" fill="#1A718D" />
+    <text x="70" y="25" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="800">CHUYÊN ĐỀ #07</text>
+    <text x="212" y="25" text-anchor="end" fill="#B6E0EB" font-family="monospace" font-size="9" font-weight="800">KỸ NĂNG THPT</text>
+    <text x="14" y="48" fill="#F4FBFE" font-family="sans-serif" font-size="11.5" font-weight="800">Tuổi trẻ THPT với Biển Đảo</text>
+    <text x="14" y="66" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Tóm tắt ý chính, từ khóa &amp; câu hỏi ôn tập</text>
+    <text x="14" y="81" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="700">• Trích dẫn nguồn chính thống phục vụ thuyết trình</text>
   </g>
 </svg>

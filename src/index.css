@@ -14982,13 +14982,35 @@ ul {
   border-color: var(--metallic-seaweed) !important;
 }
 
+.eco-subsystem-media {
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  min-height: 220px;
+}
+
+.eco-subsystem-img,
+.feature-detail-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  background: var(--yankees-blue) !important;
+}
+
 .eco-subsystem-media-gradient {
   background: linear-gradient(
     180deg,
-    rgba(17, 55, 71, 0.15) 0%,
-    rgba(17, 55, 71, 0.05) 50%,
-    rgba(17, 55, 71, 0.68) 100%
+    rgba(17, 55, 71, 0.35) 0%,
+    rgba(17, 55, 71, 0) 16%,
+    rgba(17, 55, 71, 0) 82%,
+    rgba(17, 55, 71, 0.92) 100%
   ) !important;
+}
+
+.eco-subsystem-top-badges {
+  top: 10px !important;
+  left: 14px !important;
+  right: 14px !important;
 }
 
 .eco-subsystem-code,
@@ -14996,6 +15018,8 @@ ul {
   background: var(--powder-blue) !important;
   border: 1px solid var(--ball-blue) !important;
   color: var(--yankees-blue) !important;
+  padding: 4px 11px !important;
+  font-size: 0.72rem !important;
 }
 
 .eco-subsystem-badge,
@@ -15003,6 +15027,23 @@ ul {
   background: var(--ball-blue) !important;
   color: var(--yankees-blue) !important;
   font-weight: 800 !important;
+  padding: 4px 12px !important;
+  font-size: 0.72rem !important;
+}
+
+.eco-subsystem-media-caption {
+  bottom: 8px !important;
+  left: 14px !important;
+  right: 14px !important;
+  padding: 5px 12px !important;
+  border-radius: 8px !important;
+  background: rgba(17, 55, 71, 0.92) !important;
+  border: 1px solid rgba(41, 180, 209, 0.45) !important;
+  color: var(--powder-blue) !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
 }
 
 .feature-detail-img-caption {

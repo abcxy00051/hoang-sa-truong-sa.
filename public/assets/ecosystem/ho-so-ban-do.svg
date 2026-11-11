@@ -1,84 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="atlasBg" x1="0" y1="0" x2="800" y2="460" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#040D1D" />
-      <stop offset="50%" stop-color="#0A1E3C" />
-      <stop offset="100%" stop-color="#1E3A5F" />
+    <linearGradient id="oceanBg8" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747" />
+      <stop offset="50%" stop-color="#154A60" />
+      <stop offset="100%" stop-color="#1A718D" />
     </linearGradient>
-    <linearGradient id="parchmentGrad" x1="120" y1="60" x2="640" y2="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FEF3C7" />
-      <stop offset="55%" stop-color="#FDE68A" />
-      <stop offset="100%" stop-color="#F59E0B" />
+    <linearGradient id="atlasSheet8" x1="280" y1="74" x2="770" y2="376" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B6E0EB" />
+      <stop offset="100%" stop-color="#8CCAD9" />
     </linearGradient>
-    <linearGradient id="brassRing" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A" />
-      <stop offset="50%" stop-color="#D97706" />
-      <stop offset="100%" stop-color="#78350F" />
+    <linearGradient id="loupeRing8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B6E0EB" />
+      <stop offset="50%" stop-color="#29B4D1" />
+      <stop offset="100%" stop-color="#1A718D" />
     </linearGradient>
   </defs>
 
-  <rect width="800" height="460" fill="url(#atlasBg)" />
+  <!-- Ocean Technology Background -->
+  <rect width="800" height="450" fill="url(#oceanBg8)" />
 
-  <!-- Background Nautical Rhumb Lines (Portolan Chart Style) -->
-  <g stroke="#FBBF24" stroke-opacity="0.16" stroke-width="1">
-    <line x1="400" y1="220" x2="50" y2="40" />
-    <line x1="400" y1="220" x2="750" y2="40" />
-    <line x1="400" y1="220" x2="50" y2="400" />
-    <line x1="400" y1="220" x2="750" y2="400" />
-    <line x1="400" y1="220" x2="400" y2="10" />
-    <line x1="400" y1="220" x2="400" y2="450" />
+  <!-- Nautical Portolan Rhumb Lines -->
+  <g stroke="#B6E0EB" stroke-opacity="0.12" stroke-width="1">
+    <line x1="0" y1="68" x2="800" y2="68" />
+    <line x1="0" y1="382" x2="800" y2="382" />
+    <line x1="520" y1="225" x2="260" y2="75" />
+    <line x1="520" y1="225" x2="780" y2="75" />
+    <line x1="520" y1="225" x2="260" y2="375" />
+    <line x1="520" y1="225" x2="780" y2="375" />
   </g>
 
-  <!-- Antique Map Scroll Showcase (Đại Nam nhất thống toàn đồ / Hồng Đức bản đồ) -->
-  <g transform="translate(105, 56)">
-    <!-- Scroll Rollers Left & Right -->
-    <rect x="-16" y="-10" width="20" height="320" rx="10" fill="url(#brassRing)" />
-    <rect x="576" y="-10" width="20" height="320" rx="10" fill="url(#brassRing)" />
+  <!-- Left Column: 4 Cartographic Dossier Groups (x: 24..268, y: 72..378) -->
+  <g transform="translate(24, 72)">
+    <rect width="244" height="306" rx="16" fill="#113747" fill-opacity="0.96" stroke="#29B4D1" stroke-width="1.8" />
+    <rect x="14" y="14" width="216" height="24" rx="12" fill="#29B4D1" />
+    <text x="122" y="30" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="9.5" font-weight="900">8 HỒ SƠ ATLAS ĐỐI CHỨNG</text>
 
-    <!-- Main Parchment Sheet -->
-    <rect x="4" y="0" width="572" height="300" rx="6" fill="url(#parchmentGrad)" stroke="#92400E" stroke-width="3" />
-    <rect x="18" y="14" width="544" height="272" stroke="#B45309" stroke-width="1.5" stroke-dasharray="6 4" fill="none" />
+    <!-- Group 1 -->
+    <rect x="14" y="48" width="216" height="56" rx="10" fill="#164A5F" stroke="#B6E0EB" stroke-opacity="0.5" />
+    <text x="26" y="66" fill="#29B4D1" font-family="sans-serif" font-size="9" font-weight="800">01. BẢN ĐỒ CỔ NHÀ NƯỚC VIỆT NAM</text>
+    <text x="26" y="82" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="700">Hồng Đức (1490) • Thiên Nam (1686)</text>
+    <text x="26" y="96" fill="#B6E0EB" font-family="sans-serif" font-size="8.5">Đại Nam nhất thống toàn đồ (1838)</text>
 
-    <!-- Stylized Historical Coastline & Mountains on Parchment -->
-    <path d="M55 32 C105 85, 145 140, 140 205 C135 245, 115 268, 90 278 L32 278 L32 32 Z" fill="#D97706" fill-opacity="0.28" stroke="#78350F" stroke-width="2.5" />
+    <!-- Group 2 -->
+    <rect x="14" y="112" width="216" height="56" rx="10" fill="#164A5F" stroke="#29B4D1" stroke-opacity="0.5" />
+    <text x="26" y="130" fill="#B6E0EB" font-family="sans-serif" font-size="9" font-weight="800">02. HẢI ĐỒ &amp; BẢN ĐỒ PHƯƠNG TÂY</text>
+    <text x="26" y="146" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="700">An Nam đại quốc họa đồ (1838)</text>
+    <text x="26" y="160" fill="#B6E0EB" font-family="sans-serif" font-size="8.5">Hải đồ Bồ Đào Nha, Hà Lan TK XVI–XVII</text>
 
-    <!-- Traditional Mountain Motifs -->
-    <path d="M52 85 L68 62 L84 85 M68 135 L86 110 L104 135 M58 188 L76 164 L94 188" stroke="#78350F" stroke-width="2" fill="none" />
+    <!-- Group 3 -->
+    <rect x="14" y="176" width="216" height="56" rx="10" fill="#164A5F" stroke="#B6E0EB" stroke-opacity="0.5" />
+    <text x="26" y="194" fill="#29B4D1" font-family="sans-serif" font-size="9" font-weight="800">03. BẢN ĐỒ CỔ TRUNG QUỐC ĐỐI CHỨNG</text>
+    <text x="26" y="210" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="700">Hoàng triều trực tỉnh địa dư (1904)</text>
+    <text x="26" y="224" fill="#B6E0EB" font-family="sans-serif" font-size="8.5">Cực nam dừng tại đảo Hải Nam</text>
 
-    <!-- Traditional Cartographic Cartouches: HOÀNG SA & VẠN LÝ TRƯỜNG SA -->
-    <g transform="translate(250, 74)">
-      <ellipse cx="75" cy="36" rx="82" ry="30" fill="#FEF9C3" stroke="#92400E" stroke-width="2" stroke-dasharray="4 3" />
-      <rect x="22" y="18" width="106" height="34" rx="4" fill="#78350F" />
-      <text x="75" y="34" text-anchor="middle" fill="#FEF08A" font-family="serif" font-size="12" font-weight="900">BÃI CÁT VÀNG</text>
-      <text x="75" y="47" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9" font-weight="700">(HOÀNG SA)</text>
+    <!-- Group 4 -->
+    <rect x="14" y="240" width="216" height="52" rx="10" fill="#1A718D" stroke="#B6E0EB" stroke-width="1" />
+    <text x="26" y="258" fill="#F4FBFE" font-family="sans-serif" font-size="9" font-weight="800">04. BẢN ĐỒ PHÁP LÝ HIỆN ĐẠI</text>
+    <text x="26" y="274" fill="#B6E0EB" font-family="sans-serif" font-size="9">Đường cơ sở 1982 &amp; Luật Biển 2012</text>
+  </g>
+
+  <!-- Right Main Historical Atlas Scroll & Optical Loupe (x: 284..776, y: 72..378) -->
+  <g transform="translate(284, 72)">
+    <!-- Scroll Rollers -->
+    <rect x="-10" y="-4" width="14" height="314" rx="7" fill="url(#loupeRing8)" stroke="#113747" stroke-width="1.5" />
+    <rect x="480" y="-4" width="14" height="314" rx="7" fill="url(#loupeRing8)" stroke="#113747" stroke-width="1.5" />
+
+    <!-- Atlas Map Sheet -->
+    <rect x="4" y="0" width="476" height="306" rx="8" fill="url(#atlasSheet8)" stroke="#113747" stroke-width="2.5" />
+    <rect x="16" y="12" width="452" height="282" rx="4" stroke="#1A718D" stroke-width="1.5" stroke-dasharray="6 4" fill="none" />
+
+    <!-- Stylized Historical Coastline & Mountain Motifs -->
+    <path d="M40 24 C86 78, 122 132, 118 198 C114 238, 92 264, 68 282 L26 282 L26 24 Z" fill="#1A718D" fill-opacity="0.32" stroke="#113747" stroke-width="2.2" />
+    <path d="M40 76 L54 54 L68 76 M54 128 L70 104 L86 128 M44 182 L60 158 L76 182" stroke="#113747" stroke-width="2" fill="none" />
+
+    <!-- Cartouche 1: BÃI CÁT VÀNG (HOÀNG SA) -->
+    <g transform="translate(152, 42)">
+      <ellipse cx="88" cy="36" rx="88" ry="30" fill="#F4FBFE" fill-opacity="0.88" stroke="#113747" stroke-width="1.8" stroke-dasharray="4 3" />
+      <rect x="22" y="16" width="132" height="38" rx="6" fill="#113747" />
+      <text x="88" y="33" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="11" font-weight="900">BÃI CÁT VÀNG</text>
+      <text x="88" y="47" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="700">Hồng Đức (1490) • Hoàng Sa</text>
     </g>
 
-    <g transform="translate(305, 176)">
-      <ellipse cx="90" cy="38" rx="98" ry="32" fill="#FEF9C3" stroke="#92400E" stroke-width="2" stroke-dasharray="4 3" />
-      <rect x="22" y="20" width="136" height="36" rx="4" fill="#78350F" />
-      <text x="90" y="36" text-anchor="middle" fill="#FEF08A" font-family="serif" font-size="11.5" font-weight="900">VẠN LÝ TRƯỜNG SA</text>
-      <text x="90" y="49" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9" font-weight="700">(QUẦN ĐẢO TRƯỜNG SA)</text>
+    <!-- Cartouche 2: VẠN LÝ TRƯỜNG SA -->
+    <g transform="translate(156, 134)">
+      <ellipse cx="96" cy="38" rx="96" ry="32" fill="#F4FBFE" fill-opacity="0.88" stroke="#113747" stroke-width="1.8" stroke-dasharray="4 3" />
+      <rect x="20" y="18" width="152" height="40" rx="6" fill="#113747" />
+      <text x="96" y="35" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="11" font-weight="900">VẠN LÝ TRƯỜNG SA</text>
+      <text x="96" y="49" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="8.5" font-weight="700">Đại Nam nhất thống toàn đồ (1838)</text>
     </g>
 
-    <!-- Red Archival Stamp -->
-    <rect x="488" y="34" width="54" height="54" rx="6" fill="#DC2626" fill-opacity="0.16" stroke="#B91C1C" stroke-width="2" />
-    <text x="515" y="58" text-anchor="middle" fill="#991B1B" font-family="serif" font-size="11" font-weight="900">ĐẠI NAM</text>
-    <text x="515" y="74" text-anchor="middle" fill="#991B1B" font-family="serif" font-size="9.5" font-weight="800">TOÀN ĐỒ</text>
-  </g>
+    <!-- Archival Seal Stamp Top Right -->
+    <rect x="382" y="26" width="72" height="54" rx="6" fill="#113747" fill-opacity="0.12" stroke="#113747" stroke-width="2" />
+    <text x="418" y="48" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="10" font-weight="900">QUỐC SỬ</text>
+    <text x="418" y="64" text-anchor="middle" fill="#1A718D" font-family="sans-serif" font-size="9" font-weight="800">QUÁN TRIỀU</text>
 
-  <!-- Optical Inspection Loupe Over Map -->
-  <g transform="translate(525, 245)">
-    <line x1="48" y1="48" x2="115" y2="115" stroke="url(#brassRing)" stroke-width="14" stroke-linecap="round" />
-    <circle cx="0" cy="0" r="68" fill="#040D1D" fill-opacity="0.88" stroke="url(#brassRing)" stroke-width="6" />
-    <circle cx="0" cy="0" r="58" stroke="#38BDF8" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="4 4" />
-    <text x="0" y="-16" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="10" font-weight="800">PHÂN TÍCH BẢN ĐỒ</text>
-    <text x="0" y="4" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="800">Paracel • Cát Vàng</text>
-    <text x="0" y="22" text-anchor="middle" fill="#FCD34D" font-family="monospace" font-size="9.5">Thế kỷ XV – XX</text>
-  </g>
+    <!-- Bottom Caption on Map Sheet -->
+    <rect x="30" y="244" width="268" height="36" rx="8" fill="#113747" />
+    <text x="164" y="260" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="800">ĐỐI CHIẾU TỌA ĐỘ TRỰC TIẾP VỚI GIS</text>
+    <text x="164" y="273" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5">Kính lúp phóng to 100%–200% từng địa danh cổ</text>
 
-  <!-- Bottom Dossier Badge -->
-  <g transform="translate(155, 392)">
-    <rect width="490" height="38" rx="19" fill="#040D1D" fill-opacity="0.92" stroke="#FBBF24" stroke-opacity="0.6" />
-    <text x="245" y="24" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="800">HỒ SƠ BẢN ĐỒ CỔ VIỆT NAM, PHƯƠNG TÂY &amp; BẢN ĐỒ PHÁP LÝ HIỆN ĐẠI</text>
+    <!-- Optical Inspection Magnifying Loupe -->
+    <g transform="translate(382, 202)">
+      <line x1="44" y1="44" x2="88" y2="88" stroke="#113747" stroke-width="14" stroke-linecap="round" />
+      <line x1="44" y1="44" x2="88" y2="88" stroke="#29B4D1" stroke-width="8" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="64" fill="#113747" stroke="url(#loupeRing8)" stroke-width="5" />
+      <circle cx="0" cy="0" r="54" stroke="#29B4D1" stroke-opacity="0.65" stroke-width="1.4" stroke-dasharray="4 3" />
+      <text x="0" y="-22" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="9" font-weight="800">🔍 SOI CHI TIẾT</text>
+      <text x="0" y="-4" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="10.5" font-weight="900">Paracel seu</text>
+      <text x="0" y="12" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="11" font-weight="900">CÁT VÀNG</text>
+      <text x="0" y="30" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5" font-weight="700">Taberd • 1838</text>
+    </g>
   </g>
 </svg>

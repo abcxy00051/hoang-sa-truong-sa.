@@ -1,75 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="timeBg" x1="0" y1="0" x2="800" y2="460" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#040D1D" />
-      <stop offset="50%" stop-color="#091E40" />
-      <stop offset="100%" stop-color="#153B75" />
+    <linearGradient id="oceanBg5" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747" />
+      <stop offset="50%" stop-color="#154A60" />
+      <stop offset="100%" stop-color="#1A718D" />
     </linearGradient>
-    <linearGradient id="axisGold" x1="50" y1="240" x2="750" y2="240" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F59E0B" />
-      <stop offset="50%" stop-color="#FDE047" />
-      <stop offset="100%" stop-color="#38BDF8" />
+    <linearGradient id="axisLine5" x1="40" y1="225" x2="760" y2="225" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A718D" />
+      <stop offset="50%" stop-color="#29B4D1" />
+      <stop offset="100%" stop-color="#B6E0EB" />
     </linearGradient>
   </defs>
 
-  <rect width="800" height="460" fill="url(#timeBg)" />
+  <!-- Ocean Technology Background -->
+  <rect width="800" height="450" fill="url(#oceanBg5)" />
 
-  <!-- Subtle Historical Compass & Rings -->
-  <circle cx="400" cy="230" r="185" stroke="#FBBF24" stroke-opacity="0.14" stroke-width="1.5" stroke-dasharray="8 8" />
-  <circle cx="400" cy="230" r="125" stroke="#38BDF8" stroke-opacity="0.14" stroke-width="1.2" />
+  <!-- Subtle Compass & Chronological Rings -->
+  <circle cx="400" cy="225" r="150" stroke="#29B4D1" stroke-opacity="0.16" stroke-width="1.4" stroke-dasharray="6 6" />
+  <circle cx="400" cy="225" r="105" stroke="#B6E0EB" stroke-opacity="0.14" stroke-width="1.2" />
 
-  <!-- Top Banner Pill -->
-  <rect x="225" y="28" width="350" height="32" rx="16" fill="#051329" stroke="#FBBF24" stroke-opacity="0.6" />
-  <text x="400" y="48" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="800">BIÊN NIÊN SỬ 6 THỜI KỲ • 25 CỘT MỐC CHỦ QUYỀN</text>
+  <!-- Subtle Horizontal Bounds for Safe Zone -->
+  <line x1="0" y1="68" x2="800" y2="68" stroke="#B6E0EB" stroke-opacity="0.12" />
+  <line x1="0" y1="382" x2="800" y2="382" stroke="#B6E0EB" stroke-opacity="0.12" />
 
-  <!-- Main Chronological Axis Line -->
-  <line x1="65" y1="240" x2="735" y2="240" stroke="url(#axisGold)" stroke-width="6" stroke-linecap="round" />
+  <!-- Main Chronological Axis (y = 225) -->
+  <line x1="42" y1="225" x2="758" y2="225" stroke="url(#axisLine5)" stroke-width="5" stroke-linecap="round" />
 
-  <!-- Era Node 1: Thế kỷ XVII - XVIII (Đội Hoàng Sa) -->
-  <g transform="translate(145, 240)">
-    <line x1="0" y1="0" x2="0" y2="-68" stroke="#F59E0B" stroke-width="2.5" />
-    <circle cx="0" cy="0" r="13" fill="#F59E0B" stroke="#FFFFFF" stroke-width="3" />
-    <rect x="-95" y="-158" width="190" height="88" rx="14" fill="#051329" fill-opacity="0.95" stroke="#F59E0B" stroke-width="1.6" />
-    <text x="0" y="-134" text-anchor="middle" fill="#FCD34D" font-family="sans-serif" font-size="11" font-weight="800">THẾ KỶ XVII – XVIII</text>
-    <text x="0" y="-114" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="800">Đội Hoàng Sa &amp; Bắc Hải</text>
-    <text x="0" y="-95" text-anchor="middle" fill="#93C5FD" font-family="sans-serif" font-size="9.5">Phủ biên tạp lục (1776)</text>
-    <text x="0" y="-80" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9">Thực thi chủ quyền liên tục</text>
+  <!-- 6 Historical Periods (3 Top Row, 3 Bottom Row) -->
+  <!-- Era 1 (Top Left): Trước TK XVII -->
+  <g transform="translate(115, 225)">
+    <line x1="0" y1="0" x2="0" y2="-42" stroke="#B6E0EB" stroke-width="2.2" />
+    <circle cx="0" cy="0" r="10" fill="#1A718D" stroke="#B6E0EB" stroke-width="2.5" />
+    <rect x="-90" y="-152" width="180" height="108" rx="13" fill="#113747" fill-opacity="0.95" stroke="#B6E0EB" stroke-width="1.5" />
+    <rect x="-76" y="-142" width="152" height="18" rx="9" fill="#1A718D" />
+    <text x="0" y="-130" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="800">GIAI ĐOẠN 1 • TRƯỚC TK XVII</text>
+    <text x="0" y="-108" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="11" font-weight="800">Khởi nguồn Khai phá</text>
+    <text x="0" y="-91" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5">• Hồng Đức bản đồ (1490)</text>
+    <text x="0" y="-76" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9">• Địa danh cổ "Bãi Cát Vàng"</text>
+    <text x="0" y="-58" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5" font-weight="700">Thiên Nam tứ chí lộ đồ</text>
   </g>
 
-  <!-- Era Node 2: Thời Nguyễn (1816 - 1836) -->
-  <g transform="translate(320, 240)">
-    <line x1="0" y1="0" x2="0" y2="62" stroke="#FBBF24" stroke-width="2.5" />
-    <circle cx="0" cy="0" r="14" fill="#FDE047" stroke="#FFFFFF" stroke-width="3" />
-    <rect x="-100" y="64" width="200" height="92" rx="14" fill="#051329" fill-opacity="0.95" stroke="#FDE047" stroke-width="1.8" />
-    <text x="0" y="88" text-anchor="middle" fill="#FDE047" font-family="sans-serif" font-size="11" font-weight="800">TRIỀU NGUYỄN (1802–1884)</text>
-    <text x="0" y="108" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="800">Châu bản &amp; Cắm mốc 1816, 1836</text>
-    <text x="0" y="127" text-anchor="middle" fill="#93C5FD" font-family="sans-serif" font-size="9.5">Đại Nam nhất thống toàn đồ</text>
-    <text x="0" y="143" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="9">Di sản tư liệu thế giới UNESCO</text>
+  <!-- Era 2 (Bottom Left): TK XVII – XVIII -->
+  <g transform="translate(228, 225)">
+    <line x1="0" y1="0" x2="0" y2="42" stroke="#29B4D1" stroke-width="2.2" />
+    <circle cx="0" cy="0" r="10.5" fill="#29B4D1" stroke="#F4FBFE" stroke-width="2.5" />
+    <rect x="-94" y="42" width="188" height="110" rx="13" fill="#113747" fill-opacity="0.95" stroke="#29B4D1" stroke-width="1.6" />
+    <rect x="-80" y="52" width="160" height="18" rx="9" fill="#29B4D1" />
+    <text x="0" y="64" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="8.5" font-weight="900">GIAI ĐOẠN 2 • TK XVII – XVIII</text>
+    <text x="0" y="86" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="11" font-weight="800">Đội Hoàng Sa &amp; Bắc Hải</text>
+    <text x="0" y="103" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Chúa Nguyễn lập hải đội</text>
+    <text x="0" y="118" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9">• Phủ biên tạp lục (1776)</text>
+    <text x="0" y="136" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5" font-weight="700">Lễ Khao lề thế lính Lý Sơn</text>
   </g>
 
-  <!-- Era Node 3: 1938 - 1951 - 1975 -->
-  <g transform="translate(495, 240)">
-    <line x1="0" y1="0" x2="0" y2="-68" stroke="#38BDF8" stroke-width="2.5" />
-    <circle cx="0" cy="0" r="13" fill="#38BDF8" stroke="#FFFFFF" stroke-width="3" />
-    <rect x="-95" y="-158" width="190" height="88" rx="14" fill="#051329" fill-opacity="0.95" stroke="#38BDF8" stroke-width="1.6" />
-    <text x="0" y="-134" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="11" font-weight="800">THẾ KỶ XX (1938 – 1975)</text>
-    <text x="0" y="-114" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="800">Bia chủ quyền &amp; San Francisco</text>
-    <text x="0" y="-95" text-anchor="middle" fill="#93C5FD" font-family="sans-serif" font-size="9.5">Nghị định 156-SC (1938)</text>
-    <text x="0" y="-80" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="9">Giải phóng Trường Sa (4/1975)</text>
+  <!-- Era 3 (Top Center): Triều Nguyễn 1802–1884 -->
+  <g transform="translate(345, 225)">
+    <line x1="0" y1="0" x2="0" y2="-42" stroke="#29B4D1" stroke-width="2.2" />
+    <circle cx="0" cy="0" r="11" fill="#B6E0EB" stroke="#113747" stroke-width="2.5" />
+    <rect x="-96" y="-152" width="192" height="108" rx="13" fill="#113747" fill-opacity="0.95" stroke="#29B4D1" stroke-width="1.8" />
+    <rect x="-82" y="-142" width="164" height="18" rx="9" fill="#29B4D1" />
+    <text x="0" y="-130" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="8.5" font-weight="900">GIAI ĐOẠN 3 • 1802 – 1884</text>
+    <text x="0" y="-108" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="11" font-weight="800">Triều Nguyễn Thực thi</text>
+    <text x="0" y="-91" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• Cắm cờ 1816, dựng bia 1836</text>
+    <text x="0" y="-76" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9">• Đại Nam nhất thống toàn đồ</text>
+    <text x="0" y="-58" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5" font-weight="700">Châu bản (Di sản UNESCO)</text>
   </g>
 
-  <!-- Era Node 4: 1982 - 2012 - Nay -->
-  <g transform="translate(665, 240)">
-    <line x1="0" y1="0" x2="0" y2="62" stroke="#22D3EE" stroke-width="2.5" />
-    <circle cx="0" cy="0" r="13" fill="#22D3EE" stroke="#FFFFFF" stroke-width="3" />
-    <rect x="-98" y="64" width="196" height="92" rx="14" fill="#051329" fill-opacity="0.95" stroke="#22D3EE" stroke-width="1.6" />
-    <text x="0" y="88" text-anchor="middle" fill="#67E8F9" font-family="sans-serif" font-size="11" font-weight="800">1975 ĐẾN NAY</text>
-    <text x="0" y="108" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="800">UNCLOS 1982 &amp; Luật Biển 2012</text>
-    <text x="0" y="127" text-anchor="middle" fill="#93C5FD" font-family="sans-serif" font-size="9.5">Huyện đảo Hoàng Sa &amp; Trường Sa</text>
-    <text x="0" y="143" text-anchor="middle" fill="#A5F3FC" font-family="sans-serif" font-size="9">Nhà giàn DK1 • Kinh tế biển</text>
+  <!-- Era 4 (Bottom Center): Pháp thuộc 1884–1945 -->
+  <g transform="translate(462, 225)">
+    <line x1="0" y1="0" x2="0" y2="42" stroke="#B6E0EB" stroke-width="2.2" />
+    <circle cx="0" cy="0" r="10" fill="#1A718D" stroke="#B6E0EB" stroke-width="2.5" />
+    <rect x="-92" y="42" width="184" height="110" rx="13" fill="#113747" fill-opacity="0.95" stroke="#B6E0EB" stroke-width="1.5" />
+    <rect x="-78" y="52" width="156" height="18" rx="9" fill="#1A718D" />
+    <text x="0" y="64" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="800">GIAI ĐOẠN 4 • 1884 – 1945</text>
+    <text x="0" y="86" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="11" font-weight="800">Quản lý Hành chính</text>
+    <text x="0" y="103" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5">• Nghị định 156-SC (1938)</text>
+    <text x="0" y="118" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9">• Bia chủ quyền đảo Pattle</text>
+    <text x="0" y="136" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5" font-weight="700">Trạm khí tượng WMO 48860</text>
   </g>
 
-  <!-- Bottom Verification Footer -->
-  <rect x="195" y="408" width="410" height="32" rx="16" fill="#040D1D" fill-opacity="0.88" stroke="#38BDF8" stroke-opacity="0.4" />
-  <text x="400" y="428" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="10.5" font-weight="700">✦ Đối chiếu Chính sử, Châu bản triều Nguyễn &amp; Văn bản Pháp luật</text>
+  <!-- Era 5 (Top Right): 1945 – 1975 -->
+  <g transform="translate(576, 225)">
+    <line x1="0" y1="0" x2="0" y2="-42" stroke="#B6E0EB" stroke-width="2.2" />
+    <circle cx="0" cy="0" r="10" fill="#29B4D1" stroke="#F4FBFE" stroke-width="2.5" />
+    <rect x="-90" y="-152" width="180" height="108" rx="13" fill="#113747" fill-opacity="0.95" stroke="#29B4D1" stroke-width="1.5" />
+    <rect x="-76" y="-142" width="152" height="18" rx="9" fill="#1A718D" />
+    <text x="0" y="-130" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5" font-weight="800">GIAI ĐOẠN 5 • 1945 – 1975</text>
+    <text x="0" y="-108" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="11" font-weight="800">Đấu tranh &amp; Tiếp quản</text>
+    <text x="0" y="-91" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5">• Hội nghị San Francisco 1951</text>
+    <text x="0" y="-76" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9">• Giải phóng Trường Sa 4/1975</text>
+    <text x="0" y="-58" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5" font-weight="700">Bảo vệ chủ quyền liên tục</text>
+  </g>
+
+  <!-- Era 6 (Bottom Right): 1975 – Nay -->
+  <g transform="translate(686, 225)">
+    <line x1="0" y1="0" x2="0" y2="42" stroke="#29B4D1" stroke-width="2.2" />
+    <circle cx="0" cy="0" r="11" fill="#B6E0EB" stroke="#113747" stroke-width="2.5" />
+    <rect x="-92" y="42" width="184" height="110" rx="13" fill="#113747" fill-opacity="0.95" stroke="#B6E0EB" stroke-width="1.8" />
+    <rect x="-78" y="52" width="156" height="18" rx="9" fill="#29B4D1" />
+    <text x="0" y="64" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="8.5" font-weight="900">GIAI ĐOẠN 6 • 1975 – NAY</text>
+    <text x="0" y="86" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="11" font-weight="800">Pháp lý &amp; Biển Đảo Xanh</text>
+    <text x="0" y="103" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5">• UNCLOS 1982 &amp; Luật Biển 2012</text>
+    <text x="0" y="118" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9">• Cụm Nhà giàn DK1 (1989)</text>
+    <text x="0" y="136" text-anchor="middle" fill="#29B4D1" font-family="monospace" font-size="8.5" font-weight="700">Huyện đảo Hoàng Sa, Trường Sa</text>
+  </g>
 </svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="oceanBg4" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747" />
+      <stop offset="52%" stop-color="#154A60" />
+      <stop offset="100%" stop-color="#1A718D" />
+    </linearGradient>
+    <linearGradient id="badgeGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B6E0EB" />
+      <stop offset="50%" stop-color="#29B4D1" />
+      <stop offset="100%" stop-color="#1A718D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ocean Technology Background -->
+  <rect width="800" height="450" fill="url(#oceanBg4)" />
+
+  <!-- Subtle Background Grid -->
+  <g stroke="#B6E0EB" stroke-opacity="0.11" stroke-width="1">
+    <line x1="0" y1="68" x2="800" y2="68" />
+    <line x1="0" y1="172" x2="800" y2="172" />
+    <line x1="0" y1="276" x2="800" y2="276" />
+    <line x1="0" y1="382" x2="800" y2="382" />
+  </g>
+
+  <!-- Left Interactive Quiz & Gamified Board (x: 24..526, y: 72..378) -->
+  <g transform="translate(24, 72)">
+    <rect width="502" height="306" rx="18" fill="#113747" fill-opacity="0.96" stroke="#29B4D1" stroke-width="2" />
+
+    <!-- Top Status Bar -->
+    <rect x="18" y="14" width="166" height="24" rx="12" fill="#1A718D" />
+    <text x="101" y="30" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="800">8 CHUYÊN ĐỀ • 80+ CÂU HỎI</text>
+
+    <rect x="196" y="17" width="154" height="18" rx="9" fill="#164A5F" stroke="#29B4D1" stroke-opacity="0.6" />
+    <rect x="198" y="19" width="122" height="14" rx="7" fill="#29B4D1" />
+    <text x="484" y="30" text-anchor="end" fill="#B6E0EB" font-family="monospace" font-size="10" font-weight="800">ĐIỂM: 950 XP</text>
+
+    <!-- Question Card -->
+    <rect x="18" y="48" width="466" height="68" rx="12" fill="#164A5F" stroke="#B6E0EB" stroke-opacity="0.45" />
+    <text x="32" y="68" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="800">CÂU HỎI TƯƠNG TÁC CHUYÊN ĐỀ PHÁP LÝ BIỂN (UNCLOS 1982):</text>
+    <text x="32" y="86" fill="#F4FBFE" font-family="sans-serif" font-size="11" font-weight="700">Theo Công ước Luật Biển 1982, chiều rộng Lãnh hải và Vùng đặc quyền</text>
+    <text x="32" y="103" fill="#B6E0EB" font-family="sans-serif" font-size="10.5">kinh tế (EEZ) tính từ đường cơ sở lần lượt là bao nhiêu hải lý?</text>
+
+    <!-- 4 Answer Choices -->
+    <!-- Choice A: Correct -->
+    <rect x="18" y="126" width="226" height="50" rx="11" fill="#1A718D" stroke="#B6E0EB" stroke-width="2" />
+    <rect x="186" y="134" width="48" height="16" rx="8" fill="#B6E0EB" />
+    <text x="210" y="145" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="8.5" font-weight="900">ĐÚNG ✓</text>
+    <text x="32" y="148" fill="#F4FBFE" font-family="sans-serif" font-size="11" font-weight="800">A. 12 hải lý &amp; 200 hải lý</text>
+    <text x="32" y="165" fill="#B6E0EB" font-family="sans-serif" font-size="9">Điều 3 &amp; Điều 57 UNCLOS 1982</text>
+
+    <!-- Choice B -->
+    <rect x="258" y="126" width="226" height="50" rx="11" fill="#164A5F" stroke="#29B4D1" stroke-opacity="0.4" />
+    <text x="272" y="155" fill="#B6E0EB" font-family="sans-serif" font-size="10.5" font-weight="600">B. 24 hải lý &amp; 200 hải lý</text>
+
+    <!-- Choice C -->
+    <rect x="18" y="184" width="226" height="46" rx="11" fill="#164A5F" stroke="#29B4D1" stroke-opacity="0.4" />
+    <text x="32" y="211" fill="#B6E0EB" font-family="sans-serif" font-size="10.5" font-weight="600">C. 12 hải lý &amp; 350 hải lý</text>
+
+    <!-- Choice D -->
+    <rect x="258" y="184" width="226" height="46" rx="11" fill="#164A5F" stroke="#29B4D1" stroke-opacity="0.4" />
+    <text x="272" y="211" fill="#B6E0EB" font-family="sans-serif" font-size="10.5" font-weight="600">D. 24 hải lý &amp; 120 hải lý</text>
+
+    <!-- 4 Activity Modes Strip -->
+    <g transform="translate(18, 242)">
+      <rect x="0" y="0" width="110" height="48" rx="10" fill="#164A5F" stroke="#29B4D1" stroke-width="1.2" />
+      <text x="55" y="20" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="9" font-weight="800">TRẮC NGHIỆM</text>
+      <text x="55" y="35" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5">4 lựa chọn</text>
+
+      <rect x="118" y="0" width="110" height="48" rx="10" fill="#164A5F" stroke="#B6E0EB" stroke-width="1.2" />
+      <text x="173" y="20" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9" font-weight="800">ĐÚNG / SAI</text>
+      <text x="173" y="35" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5">Giải thích sử liệu</text>
+
+      <rect x="236" y="0" width="110" height="48" rx="10" fill="#164A5F" stroke="#29B4D1" stroke-width="1.2" />
+      <text x="291" y="20" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="9" font-weight="800">GHÉP MỐC SỬ</text>
+      <text x="291" y="35" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5">Sự kiện &amp; Năm</text>
+
+      <rect x="354" y="0" width="112" height="48" rx="10" fill="#164A5F" stroke="#B6E0EB" stroke-width="1.2" />
+      <text x="410" y="20" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9" font-weight="800">NHẬN DIỆN ĐẢO</text>
+      <text x="410" y="35" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="8.5">Tọa độ bản đồ</text>
+    </g>
+  </g>
+
+  <!-- Right Mastery & 3-Level Challenge Card (x: 542..776, y: 72..378) -->
+  <g transform="translate(542, 72)">
+    <rect width="234" height="306" rx="18" fill="#113747" fill-opacity="0.96" stroke="#B6E0EB" stroke-width="2" />
+
+    <!-- Emblem Circle -->
+    <circle cx="117" cy="74" r="46" fill="#1A718D" fill-opacity="0.35" stroke="#29B4D1" stroke-width="1.8" stroke-dasharray="5 4" />
+    <circle cx="117" cy="74" r="34" fill="#164A5F" stroke="#B6E0EB" stroke-width="1.5" />
+    <polygon points="117,45 125,63 145,65 130,78 134,98 117,88 100,98 104,78 89,65 109,63" fill="url(#badgeGrad4)" />
+
+    <text x="117" y="142" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="12" font-weight="900">THỬ THÁCH 3 CẤP ĐỘ</text>
+    <text x="117" y="159" text-anchor="middle" fill="#29B4D1" font-family="sans-serif" font-size="9.5" font-weight="700">Luyện tập cá nhân &amp; Thi đua lớp</text>
+
+    <!-- 3 Level Bars -->
+    <rect x="20" y="174" width="194" height="28" rx="10" fill="#164A5F" stroke="#29B4D1" stroke-width="1" />
+    <text x="117" y="192" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="9.5" font-weight="700">★ Cấp 1: Khởi động (Nhận biết)</text>
+
+    <rect x="20" y="210" width="194" height="28" rx="10" fill="#1A718D" stroke="#B6E0EB" stroke-width="1" />
+    <text x="117" y="228" text-anchor="middle" fill="#F4FBFE" font-family="sans-serif" font-size="9.5" font-weight="800">★★ Cấp 2: Vượt sóng (Thông hiểu)</text>
+
+    <rect x="20" y="246" width="194" height="30" rx="11" fill="#29B4D1" />
+    <text x="117" y="265" text-anchor="middle" fill="#113747" font-family="sans-serif" font-size="9.5" font-weight="900">★★★ Cấp 3: Vững chủ quyền</text>
+
+    <text x="117" y="294" text-anchor="middle" fill="#B6E0EB" font-family="sans-serif" font-size="8.5">Huy hiệu Chiến sĩ Biển Đảo THPT</text>
+  </g>
+</svg>
