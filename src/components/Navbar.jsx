@@ -11,6 +11,7 @@ export default function Navbar({
 }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [selectedNavId, setSelectedNavId] = useState('home')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +21,13 @@ export default function Navbar({
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const activeNavId =
+    currentPage === 'ecosystem' || currentPage === 'feature'
+      ? 'features'
+      : selectedNavId || 'home'
+
   const handleLinkClick = (e, item) => {
+    setSelectedNavId(item.id)
     setMobileMenuOpen(false)
     if (onNavigateNav) {
       e.preventDefault()
@@ -52,14 +59,12 @@ export default function Navbar({
         <nav className="desktop-nav" aria-label="Điều hướng chính">
           <ul className="nav-list">
             {NAV_LINKS.map((item) => {
-              const isEcoActive =
-                item.id === 'features' &&
-                (currentPage === 'ecosystem' || currentPage === 'feature')
+              const isItemActive = activeNavId === item.id
               return (
                 <li key={item.id}>
                   <a
                     href={item.href}
-                    className={`nav-link ${isEcoActive ? 'active' : ''}`}
+                    className={`nav-link ${isItemActive ? 'active' : ''}`}
                     onClick={(e) => handleLinkClick(e, item)}
                   >
                     {item.label}
@@ -146,7 +151,7 @@ export default function Navbar({
                 <li key={item.id}>
                   <a
                     href={item.href}
-                    className="mobile-nav-link"
+                    className={`mobile-nav-link ${activeNavId === item.id ? 'active' : ''}`}
                     onClick={(e) => handleLinkClick(e, item)}
                   >
                     {item.label}

@@ -47,7 +47,7 @@ export const PANORAMA_THEMATIC_SPACES = [
     coordinates: '16°32′05″B, 111°37′20″Đ (Hoàng Sa) • 08°38′30″B, 111°55′55″Đ (Trường Sa)',
     elevation: 'Cao độ quan sát: +15m so với mực nước biển',
     panoramaSvg: '/assets/panorama/scene-01-canh-quan-bien-dao.svg',
-    skyTheme: 'linear-gradient(180deg, #DCEFEB 0%, #A9D8D2 50%, #8DBFC9 85%, #477E83 100%)',
+    skyTheme: 'linear-gradient(180deg, #E9F1F6 0%, #B2D5E2 48%, #44A6B5 82%, #004554 100%)',
     dataTypeBadge: 'Mô phỏng Không gian 360° Equirectangular Giáo dục (Tỷ lệ 2:1)',
     summary:
       'Góc nhìn toàn cảnh 360° kết nối không gian địa lý hai quần đảo tiền tiêu Hoàng Sa và Trường Sa: từ Cột mốc chủ quyền thiêng liêng, ngọn Hải đăng quốc tế, Trạm khí tượng hải văn đến những rặng bàng vuông, phong ba xanh mát giữa đại dương.',
@@ -145,7 +145,7 @@ export const PANORAMA_THEMATIC_SPACES = [
     coordinates: 'Vùng biển nhiệt đới Biển Đông (06°00′B – 21°30′B)',
     elevation: 'Độ sâu quan sát thủy sinh: -5m đến +2m đới bờ',
     panoramaSvg: '/assets/panorama/scene-02-he-sinh-thai-bien.svg',
-    skyTheme: 'linear-gradient(180deg, #E3F3F0 0%, #A9D8D2 45%, #8DBFC9 80%, #477E83 100%)',
+    skyTheme: 'linear-gradient(180deg, #E9F1F6 0%, #B2D5E2 48%, #44A6B5 82%, #004554 100%)',
     dataTypeBadge: 'Mô phỏng Không gian 360° Thủy sinh & Đới bờ (Tỷ lệ 2:1)',
     summary:
       'Khám phá toàn cảnh 360° dưới lòng đại dương và vùng đới bờ Việt Nam với 3 hệ sinh thái trụ cột: Rạn san hô nhiệt đới (hơn 400 loài tạo rạn), Thảm cỏ biển nuôi dưỡng Rùa biển – Bò biển (Dugong), và Rừng ngập mặn tích trữ Carbon xanh.',
@@ -231,7 +231,7 @@ export const PANORAMA_THEMATIC_SPACES = [
     coordinates: '08°38′30″B, 111°55′55″Đ (Trường Sa) • 07°50′00″B, 109°30′00″Đ (DK1)',
     elevation: 'Cao độ quan sát: +10m trên đảo & +28m trên sàn Nhà giàn DK1',
     panoramaSvg: '/assets/panorama/scene-03-doi-song-tren-dao.svg',
-    skyTheme: 'linear-gradient(180deg, #F1F8F7 0%, #DCEFEB 48%, #8DBFC9 82%, #477E83 100%)',
+    skyTheme: 'linear-gradient(180deg, #E9F1F6 0%, #B2D5E2 48%, #44A6B5 82%, #004554 100%)',
     dataTypeBadge: 'Mô phỏng Không gian 360° Sinh hoạt Quân – Dân (Tỷ lệ 2:1)',
     summary:
       'Trải nghiệm nhịp sống kiên cường và ấm áp tình quân dân nơi đầu sóng: từ lớp học tiếng trẻ thơ tại thị trấn Trường Sa, trung tâm y tế kết nối Telemedicine, âu tàu hậu cần nghề cá đến những vườn rau xanh trên sàn thép Nhà giàn DK1.',
@@ -317,7 +317,7 @@ export const PANORAMA_THEMATIC_SPACES = [
     coordinates: '08°51′18″B, 114°39′18″Đ (Tiên Nữ) • 15°22′51″B, 109°07′03″Đ (Lý Sơn)',
     elevation: 'Cao độ quan sát: +22m từ Hải đăng Tiên Nữ & đỉnh Thới Lới',
     panoramaSvg: '/assets/panorama/scene-04-khong-gian-thien-nhien.svg',
-    skyTheme: 'linear-gradient(180deg, #F1F8F7 0%, #C5DDE3 45%, #A9D8D2 80%, #477E83 100%)',
+    skyTheme: 'linear-gradient(180deg, #E9F1F6 0%, #B2D5E2 48%, #44A6B5 82%, #004554 100%)',
     dataTypeBadge: 'Mô phỏng Không gian 360° Địa chất & Hải văn (Tỷ lệ 2:1)',
     summary:
       'Chiêm ngưỡng vẻ đẹp hùng vĩ 360° của thiên nhiên biển đảo Việt Nam: từ khoảnh khắc đón ánh bình minh đầu tiên của Tổ quốc tại đảo Tiên Nữ (Kinh độ 114°39′18″Đ), vách đá núi lửa triệu năm tại đảo Lý Sơn đến di sản thiên nhiên thế giới Vịnh Hạ Long – Quần đảo Cát Bà.',
@@ -403,7 +403,7 @@ export const PANORAMA_THEMATIC_SPACES = [
     coordinates: 'Trục tham quan 360°: Thư tịch cổ (0°–120°) • Bản đồ (120°–240°) • Hiện đại (240°–360°)',
     elevation: 'Góc nhìn tham quan trung tâm Sảnh Bảo tàng Số 360°',
     panoramaSvg: '/assets/panorama/scene-05-trung-bay-tu-lieu.svg',
-    skyTheme: 'linear-gradient(180deg, #F1F8F7 0%, #DCEFEB 48%, #C5DDE3 82%, #8DBFC9 100%)',
+    skyTheme: 'linear-gradient(180deg, #E9F1F6 0%, #B2D5E2 48%, #44A6B5 82%, #004554 100%)',
     dataTypeBadge: 'Không gian Trưng bày Tư liệu Ảo 360° (Mô phỏng Kiến trúc Bảo tàng Số)',
     summary:
       'Đứng tại tâm điểm sảnh Bảo tàng Số và xoay 360° để tham quan 3 phân khu trưng bày tư liệu cốt lõi: Khu Châu bản & Mộc bản triều Nguyễn (Di sản tư liệu thế giới UNESCO), Khu Bản đồ cổ Việt Nam – phương Tây, và Khu Sa bàn Đội Hoàng Sa & Văn bản Pháp lý Hiện đại.',

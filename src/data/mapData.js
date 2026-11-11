@@ -475,32 +475,32 @@ export const MAP_MARKERS = [
 
 export const MAP_LEGEND_ITEMS = [
   {
-    color: '#F59E0B',
-    border: '#FEF3C7',
+    color: '#44A6B5',
+    border: '#E9F1F6',
     symbol: '★',
     label: 'Hai quần đảo tiền tiêu (Quần đảo Hoàng Sa, Quần đảo Trường Sa)'
   },
   {
-    color: '#38BDF8',
-    border: '#E0F2FE',
+    color: '#B2D5E2',
+    border: '#E9F1F6',
     symbol: '●',
     label: 'Các đảo, điểm đảo tiêu biểu thuộc Hoàng Sa & Trường Sa'
   },
   {
-    color: '#F97316',
-    border: '#FFEDD5',
+    color: '#004554',
+    border: '#D3D0C8',
     symbol: '◆',
     label: 'Cụm Nhà giàn DK1 trên Thềm lục địa phía Nam'
   },
   {
-    color: '#10B981',
-    border: '#D1FAE5',
+    color: '#44A6B5',
+    border: '#B2D5E2',
     symbol: '▲',
     label: 'Đảo tiền tiêu ven bờ & Trung tâm hành chính đất liền quản lý huyện đảo'
   },
   {
     color: 'transparent',
-    border: '#38BDF8',
+    border: '#B2D5E2',
     symbol: '┼',
     label: 'Lưới tọa độ Kinh độ – Vĩ độ địa lý tự nhiên (WGS84)'
   }

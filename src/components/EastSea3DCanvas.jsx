@@ -160,9 +160,9 @@ export default function EastSea3DCanvas({
       height * 0.5,
       Math.max(width, height) * 0.72
     )
-    bgGrad.addColorStop(0, '#477E83')
-    bgGrad.addColorStop(0.55, '#3B6C71')
-    bgGrad.addColorStop(1, '#2D5559')
+    bgGrad.addColorStop(0, '#004554')
+    bgGrad.addColorStop(0.55, '#004554')
+    bgGrad.addColorStop(1, '#004554')
     ctx.fillStyle = bgGrad
     ctx.fillRect(0, 0, width, height)
 
@@ -202,9 +202,9 @@ export default function EastSea3DCanvas({
         cy,
         baseRadius
       )
-      sphereGrad.addColorStop(0, '#68A1AA')
-      sphereGrad.addColorStop(0.55, '#477E83')
-      sphereGrad.addColorStop(1, '#325D61')
+      sphereGrad.addColorStop(0, '#44A6B5')
+      sphereGrad.addColorStop(0.55, '#004554')
+      sphereGrad.addColorStop(1, '#004554')
 
       ctx.save()
       ctx.beginPath()
@@ -345,7 +345,7 @@ export default function EastSea3DCanvas({
       ctx.closePath()
       ctx.fillStyle = 'rgba(30, 64, 104, 0.92)'
       ctx.fill()
-      ctx.strokeStyle = '#38BDF8'
+      ctx.strokeStyle = '#44A6B5'
       ctx.lineWidth = 1.8
       ctx.stroke()
 
@@ -364,7 +364,7 @@ export default function EastSea3DCanvas({
         if (idx === 0) ctx.moveTo(pt.x, pt.y)
         else ctx.lineTo(pt.x, pt.y)
       })
-      ctx.strokeStyle = '#7DD3FC'
+      ctx.strokeStyle = '#B2D5E2'
       ctx.lineWidth = 3
       ctx.stroke()
 
@@ -384,7 +384,7 @@ export default function EastSea3DCanvas({
           if (idx === 0) ctx.moveTo(pt.x, pt.y)
           else ctx.lineTo(pt.x, pt.y)
         })
-        ctx.strokeStyle = '#FBBF24'
+        ctx.strokeStyle = '#44A6B5'
         ctx.lineWidth = 1.8
         ctx.setLineDash([5, 4])
         ctx.stroke()
@@ -408,7 +408,7 @@ export default function EastSea3DCanvas({
           ctx.arc(pt.x, pt.y, 16 * Math.sqrt(zoom3D), 0, Math.PI * 2)
           ctx.fillStyle = 'rgba(16, 185, 129, 0.25)'
           ctx.fill()
-          ctx.strokeStyle = '#34D399'
+          ctx.strokeStyle = '#44A6B5'
           ctx.lineWidth = 1.4
           ctx.stroke()
         })
@@ -439,14 +439,14 @@ export default function EastSea3DCanvas({
           ctx.beginPath()
           ctx.moveTo(pt.x, pt.y)
           ctx.lineTo(topX, topY)
-          ctx.strokeStyle = isMajor ? '#FBBF24' : '#38BDF8'
+          ctx.strokeStyle = isMajor ? '#44A6B5' : '#44A6B5'
           ctx.lineWidth = isSelected ? 2.5 : 1.5
           ctx.stroke()
 
           // Chân đế trên mặt biển
           ctx.beginPath()
           ctx.arc(pt.x, pt.y, isMajor ? 5 : 3.5, 0, Math.PI * 2)
-          ctx.fillStyle = isMajor ? '#F59E0B' : '#38BDF8'
+          ctx.fillStyle = isMajor ? '#44A6B5' : '#44A6B5'
           ctx.fill()
 
           // Đỉnh kim đánh dấu 3D
@@ -454,16 +454,16 @@ export default function EastSea3DCanvas({
           ctx.beginPath()
           ctx.arc(topX, topY, r, 0, Math.PI * 2)
           ctx.fillStyle = isSelected
-            ? '#FDE047'
+            ? '#B2D5E2'
             : isMajor
-            ? '#F59E0B'
+            ? '#44A6B5'
             : m.markerType === 'dk1-amber'
-            ? '#F97316'
+            ? '#004554'
             : m.markerType === 'coastal-emerald'
-            ? '#10B981'
-            : '#38BDF8'
+            ? '#44A6B5'
+            : '#44A6B5'
           ctx.fill()
-          ctx.strokeStyle = '#FFFFFF'
+          ctx.strokeStyle = '#E9F1F6'
           ctx.lineWidth = isSelected ? 2.2 : 1.4
           ctx.stroke()
 
@@ -474,7 +474,7 @@ export default function EastSea3DCanvas({
               ? 'rgba(245, 158, 11, 0.95)'
               : 'rgba(4, 13, 29, 0.85)'
             ctx.fillRect(topX - textWidth / 2 - 6, topY - r - 20, textWidth + 12, 17)
-            ctx.fillStyle = isSelected ? '#040D1D' : isMajor ? '#FDE047' : '#F8FAFC'
+            ctx.fillStyle = isSelected ? '#004554' : isMajor ? '#B2D5E2' : '#E9F1F6'
             ctx.textAlign = 'center'
             ctx.fillText(m.name, topX, topY - r - 8)
           }
@@ -628,7 +628,7 @@ export default function EastSea3DCanvas({
       ctx.closePath()
       ctx.fillStyle = 'rgba(30, 64, 104, 0.95)'
       ctx.fill()
-      ctx.strokeStyle = '#38BDF8'
+      ctx.strokeStyle = '#44A6B5'
       ctx.lineWidth = 2
       ctx.stroke()
 
@@ -672,7 +672,7 @@ export default function EastSea3DCanvas({
             cy
           )
           ctx.font = '800 10px sans-serif'
-          ctx.fillStyle = '#FDE68A'
+          ctx.fillStyle = '#B2D5E2'
           ctx.textAlign = 'center'
           ctx.fillText(label, centerPt.x, centerPt.y)
         }
@@ -713,7 +713,7 @@ export default function EastSea3DCanvas({
           ctx.beginPath()
           ctx.moveTo(basePt.x, basePt.y)
           ctx.lineTo(topPt.x, topPt.y)
-          ctx.strokeStyle = isMajor ? '#FBBF24' : '#38BDF8'
+          ctx.strokeStyle = isMajor ? '#44A6B5' : '#44A6B5'
           ctx.lineWidth = isSelected ? 3 : 1.8
           ctx.stroke()
 
@@ -722,20 +722,20 @@ export default function EastSea3DCanvas({
           ctx.beginPath()
           ctx.arc(topPt.x, topPt.y, r, 0, Math.PI * 2)
           ctx.fillStyle = isSelected
-            ? '#FDE047'
+            ? '#B2D5E2'
             : isMajor
-            ? '#F59E0B'
+            ? '#44A6B5'
             : m.markerType === 'dk1-amber'
-            ? '#F97316'
-            : '#38BDF8'
+            ? '#004554'
+            : '#44A6B5'
           ctx.fill()
-          ctx.strokeStyle = '#FFFFFF'
+          ctx.strokeStyle = '#E9F1F6'
           ctx.lineWidth = 1.6
           ctx.stroke()
 
           if (layers.placeNames && (isMajor || isSelected || zoom3D >= 1.2)) {
             ctx.font = `${isMajor || isSelected ? '800 10.5px' : '700 9.5px'} sans-serif`
-            ctx.fillStyle = isSelected ? '#FDE047' : '#F8FAFC'
+            ctx.fillStyle = isSelected ? '#B2D5E2' : '#E9F1F6'
             ctx.textAlign = 'center'
             ctx.fillText(m.name, topPt.x, topPt.y - r - 6)
           }

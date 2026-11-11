@@ -1030,19 +1030,19 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                     y2="880"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop offset="0%" stopColor="#477E83" />
-                    <stop offset="45%" stopColor="#3E7176" />
-                    <stop offset="100%" stopColor="#315B60" />
+                    <stop offset="0%" stopColor="#004554" />
+                    <stop offset="45%" stopColor="#004554" />
+                    <stop offset="100%" stopColor="#004554" />
                   </linearGradient>
                   <radialGradient id="shelfGlow" cx="35%" cy="48%" r="55%">
-                    <stop offset="0%" stopColor="#A9D8D2" stopOpacity="0.38" />
-                    <stop offset="65%" stopColor="#8DBFC9" stopOpacity="0.18" />
-                    <stop offset="100%" stopColor="#477E83" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#44A6B5" stopOpacity="0.38" />
+                    <stop offset="65%" stopColor="#44A6B5" stopOpacity="0.18" />
+                    <stop offset="100%" stopColor="#004554" stopOpacity="0" />
                   </radialGradient>
                   <radialGradient id="archipelagoHalo" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="#DCEFEB" stopOpacity="0.38" />
-                    <stop offset="70%" stopColor="#A9D8D2" stopOpacity="0.16" />
-                    <stop offset="100%" stopColor="#477E83" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#E9F1F6" stopOpacity="0.38" />
+                    <stop offset="70%" stopColor="#44A6B5" stopOpacity="0.16" />
+                    <stop offset="100%" stopColor="#004554" stopOpacity="0" />
                   </radialGradient>
                   <linearGradient
                     id="vietnamLandGrad"
@@ -1052,9 +1052,9 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                     y2="760"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop offset="0%" stopColor="#5C9297" />
-                    <stop offset="50%" stopColor="#4E8388" />
-                    <stop offset="100%" stopColor="#417277" />
+                    <stop offset="0%" stopColor="#44A6B5" />
+                    <stop offset="50%" stopColor="#44A6B5" />
+                    <stop offset="100%" stopColor="#44A6B5" />
                   </linearGradient>
                 </defs>
 
@@ -1086,14 +1086,14 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                             y1={y}
                             x2={MAP_BOUNDS.width}
                             y2={y}
-                            stroke="#38BDF8"
+                            stroke="#44A6B5"
                             strokeOpacity="0.15"
                             strokeDasharray="4 6"
                           />
                           <text
                             x="14"
                             y={y - 6}
-                            fill="#7DD3FC"
+                            fill="#B2D5E2"
                             fontSize="11"
                             fontFamily="monospace"
                             opacity="0.75"
@@ -1113,14 +1113,14 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                             y1="0"
                             x2={x}
                             y2={MAP_BOUNDS.height}
-                            stroke="#38BDF8"
+                            stroke="#44A6B5"
                             strokeOpacity="0.15"
                             strokeDasharray="4 6"
                           />
                           <text
                             x={x + 6}
                             y="22"
-                            fill="#7DD3FC"
+                            fill="#B2D5E2"
                             fontSize="11"
                             fontFamily="monospace"
                             opacity="0.75"
@@ -1137,14 +1137,14 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                 <path
                   d={MAINLAND_PATH}
                   fill="url(#vietnamLandGrad)"
-                  stroke="#38BDF8"
+                  stroke="#44A6B5"
                   strokeWidth="1.5"
                   strokeOpacity="0.55"
                 />
                 <path
                   d={COASTLINE_PATH}
                   fill="none"
-                  stroke="#38BDF8"
+                  stroke="#44A6B5"
                   strokeWidth="3.2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -1156,7 +1156,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                     <text
                       x="235"
                       y="135"
-                      fill="#FCD34D"
+                      fill="#B2D5E2"
                       fontSize="14"
                       fontWeight="800"
                       letterSpacing="1"
@@ -1167,27 +1167,27 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       cx="220"
                       cy="124"
                       r="5"
-                      fill="#EF4444"
-                      stroke="#FCD34D"
+                      fill="#004554"
+                      stroke="#B2D5E2"
                       strokeWidth="2"
                     />
 
                     <text
                       x="210"
                       y="650"
-                      fill="#E2E8F0"
+                      fill="#B2D5E2"
                       fontSize="12"
                       fontWeight="700"
                     >
                       TP. HỒ CHÍ MINH
                     </text>
-                    <circle cx="268" cy="642" r="4" fill="#FCD34D" />
+                    <circle cx="268" cy="642" r="4" fill="#B2D5E2" />
 
                     <text
                       x="355"
                       y="198"
                       textAnchor="middle"
-                      fill="#7DD3FC"
+                      fill="#B2D5E2"
                       fontSize="13"
                       fontWeight="700"
                       letterSpacing="1.5"
@@ -1200,7 +1200,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       x="110"
                       y="725"
                       textAnchor="middle"
-                      fill="#7DD3FC"
+                      fill="#B2D5E2"
                       fontSize="12.5"
                       fontWeight="700"
                       letterSpacing="1.2"
@@ -1213,7 +1213,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       x="635"
                       y="470"
                       textAnchor="middle"
-                      fill="#38BDF8"
+                      fill="#44A6B5"
                       fontSize="26"
                       fontWeight="800"
                       letterSpacing="6"
@@ -1251,19 +1251,19 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                             cx="0"
                             cy="0"
                             r="26"
-                            fill="#10B981"
+                            fill="#44A6B5"
                             fillOpacity="0.2"
-                            stroke="#34D399"
+                            stroke="#44A6B5"
                             strokeWidth="1.6"
                             strokeDasharray="4 3"
                           />
-                          <circle cx="0" cy="0" r="5" fill="#34D399" />
+                          <circle cx="0" cy="0" r="5" fill="#44A6B5" />
                           {gisLayers.placeNames && (
                             <text
                               x="0"
                               y="38"
                               textAnchor="middle"
-                              fill="#6EE7B7"
+                              fill="#B2D5E2"
                               fontSize="9.5"
                               fontWeight="700"
                             >
@@ -1283,7 +1283,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                     <path
                       d={BASELINE_1982_PATH}
                       fill="none"
-                      stroke="#A855F7"
+                      stroke="#44A6B5"
                       strokeWidth="2.2"
                       strokeDasharray="6 4"
                     />
@@ -1315,8 +1315,8 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                             width="10"
                             height="10"
                             rx="2"
-                            fill="#A855F7"
-                            stroke="#F3E8FF"
+                            fill="#44A6B5"
+                            stroke="#E9F1F6"
                             strokeWidth="1.4"
                           />
                           {gisLayers.placeNames && (
@@ -1324,7 +1324,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                               x="-8"
                               y="4"
                               textAnchor="end"
-                              fill="#E9D5FF"
+                              fill="#B2D5E2"
                               fontSize="9"
                               fontFamily="monospace"
                               fontWeight="800"
@@ -1342,7 +1342,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       y1={daNangPt.y}
                       x2={hoangSaPt.x}
                       y2={hoangSaPt.y}
-                      stroke="#FBBF24"
+                      stroke="#44A6B5"
                       strokeWidth="1.5"
                       strokeDasharray="5 5"
                       opacity="0.75"
@@ -1353,16 +1353,16 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       width="116"
                       height="20"
                       rx="10"
-                      fill="#040D1D"
+                      fill="#004554"
                       fillOpacity="0.85"
-                      stroke="#FBBF24"
+                      stroke="#44A6B5"
                       strokeWidth="0.8"
                     />
                     <text
                       x={(daNangPt.x + hoangSaPt.x) / 2}
                       y={(daNangPt.y + hoangSaPt.y) / 2 - 9}
                       textAnchor="middle"
-                      fill="#FDE68A"
+                      fill="#B2D5E2"
                       fontSize="9.5"
                       fontWeight="700"
                     >
@@ -1374,7 +1374,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       y1={lySonPt.y}
                       x2={hoangSaPt.x}
                       y2={hoangSaPt.y}
-                      stroke="#38BDF8"
+                      stroke="#44A6B5"
                       strokeWidth="1.2"
                       strokeDasharray="3 4"
                       opacity="0.65"
@@ -1385,7 +1385,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       y1={camRanhPt.y}
                       x2={truongSaLonPt.x}
                       y2={truongSaLonPt.y}
-                      stroke="#FBBF24"
+                      stroke="#44A6B5"
                       strokeWidth="1.5"
                       strokeDasharray="5 5"
                       opacity="0.75"
@@ -1396,16 +1396,16 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       width="128"
                       height="20"
                       rx="10"
-                      fill="#040D1D"
+                      fill="#004554"
                       fillOpacity="0.85"
-                      stroke="#FBBF24"
+                      stroke="#44A6B5"
                       strokeWidth="0.8"
                     />
                     <text
                       x={(camRanhPt.x + truongSaLonPt.x) / 2}
                       y={(camRanhPt.y + truongSaLonPt.y) / 2 + 1}
                       textAnchor="middle"
-                      fill="#FDE68A"
+                      fill="#B2D5E2"
                       fontSize="9.5"
                       fontWeight="700"
                     >
@@ -1422,7 +1422,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       y1={measureStartSvg.y}
                       x2={measureEndSvg.x}
                       y2={measureEndSvg.y}
-                      stroke="#22C55E"
+                      stroke="#44A6B5"
                       strokeWidth="2.8"
                       strokeDasharray="7 4"
                     />
@@ -1430,16 +1430,16 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       cx={measureStartSvg.x}
                       cy={measureStartSvg.y}
                       r="7"
-                      fill="#22C55E"
-                      stroke="#FFFFFF"
+                      fill="#44A6B5"
+                      stroke="#E9F1F6"
                       strokeWidth="2"
                     />
                     <circle
                       cx={measureEndSvg.x}
                       cy={measureEndSvg.y}
                       r="7"
-                      fill="#22C55E"
-                      stroke="#FFFFFF"
+                      fill="#44A6B5"
+                      stroke="#E9F1F6"
                       strokeWidth="2"
                     />
                     <rect
@@ -1448,15 +1448,15 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       width="160"
                       height="24"
                       rx="12"
-                      fill="#065F46"
-                      stroke="#34D399"
+                      fill="#004554"
+                      stroke="#44A6B5"
                       strokeWidth="1.5"
                     />
                     <text
                       x={(measureStartSvg.x + measureEndSvg.x) / 2}
                       y={(measureStartSvg.y + measureEndSvg.y) / 2 + 2}
                       textAnchor="middle"
-                      fill="#FFFFFF"
+                      fill="#E9F1F6"
                       fontSize="10.5"
                       fontWeight="800"
                     >
@@ -1472,9 +1472,9 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       cx="0"
                       cy="0"
                       r="20"
-                      fill="#EC4899"
+                      fill="#44A6B5"
                       fillOpacity="0.25"
-                      stroke="#F472B6"
+                      stroke="#B2D5E2"
                       strokeWidth="1.5"
                     />
                     <line
@@ -1482,7 +1482,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       y1="0"
                       x2="14"
                       y2="0"
-                      stroke="#F472B6"
+                      stroke="#B2D5E2"
                       strokeWidth="1.8"
                     />
                     <line
@@ -1490,10 +1490,10 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       y1="-14"
                       x2="0"
                       y2="14"
-                      stroke="#F472B6"
+                      stroke="#B2D5E2"
                       strokeWidth="1.8"
                     />
-                    <circle cx="0" cy="0" r="5" fill="#EC4899" stroke="#FFFFFF" />
+                    <circle cx="0" cy="0" r="5" fill="#44A6B5" stroke="#E9F1F6" />
                   </g>
                 )}
 
@@ -1506,7 +1506,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       rx="92"
                       ry="58"
                       fill="url(#archipelagoHalo)"
-                      stroke="#FBBF24"
+                      stroke="#44A6B5"
                       strokeOpacity="0.4"
                       strokeWidth="1.4"
                       strokeDasharray="6 5"
@@ -1517,7 +1517,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       rx="155"
                       ry="110"
                       fill="url(#archipelagoHalo)"
-                      stroke="#FBBF24"
+                      stroke="#44A6B5"
                       strokeOpacity="0.4"
                       strokeWidth="1.4"
                       strokeDasharray="6 5"
@@ -1532,12 +1532,12 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                       const isCoastal = marker.markerType === 'coastal-emerald'
 
                       const fillColor = isMajor
-                        ? '#F59E0B'
+                        ? '#44A6B5'
                         : isDk1
-                        ? '#F97316'
+                        ? '#004554'
                         : isCoastal
-                        ? '#10B981'
-                        : '#38BDF8'
+                        ? '#44A6B5'
+                        : '#44A6B5'
 
                       const radius = isMajor ? 11 : isSelected ? 9 : 6.5
 
@@ -1573,7 +1573,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                             cy="0"
                             r={radius}
                             fill={fillColor}
-                            stroke="#FFFFFF"
+                            stroke="#E9F1F6"
                             strokeWidth={isSelected ? '2.5' : '1.5'}
                           />
 
@@ -1582,7 +1582,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                               x="0"
                               y="3.8"
                               textAnchor="middle"
-                              fill="#040D1D"
+                              fill="#004554"
                               fontSize="11"
                               fontWeight="900"
                             >
@@ -1604,9 +1604,9 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                                 }
                                 height="19"
                                 rx="6"
-                                fill={isSelected ? '#F59E0B' : '#040D1D'}
+                                fill={isSelected ? '#44A6B5' : '#004554'}
                                 fillOpacity={isSelected ? '0.96' : '0.82'}
-                                stroke={isSelected ? '#FEF3C7' : fillColor}
+                                stroke={isSelected ? '#E9F1F6' : fillColor}
                                 strokeWidth="1"
                               />
                               <text
@@ -1615,10 +1615,10 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                                 textAnchor={isMajor ? 'middle' : 'start'}
                                 fill={
                                   isSelected
-                                    ? '#040D1D'
+                                    ? '#004554'
                                     : isMajor
-                                    ? '#FCD34D'
-                                    : '#F8FAFC'
+                                    ? '#B2D5E2'
+                                    : '#E9F1F6'
                                 }
                                 fontSize={isMajor ? '11' : '10'}
                                 fontWeight="800"
@@ -1981,7 +1981,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
             <li>
               <span
                 className="legend-symbol-badge"
-                style={{ backgroundColor: '#A855F7', borderColor: '#F3E8FF' }}
+                style={{ backgroundColor: '#44A6B5', borderColor: '#E9F1F6' }}
               >
                 ■
               </span>
@@ -1990,7 +1990,7 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
             <li>
               <span
                 className="legend-symbol-badge"
-                style={{ backgroundColor: '#10B981', borderColor: '#6EE7B7' }}
+                style={{ backgroundColor: '#44A6B5', borderColor: '#B2D5E2' }}
               >
                 🌿
               </span>

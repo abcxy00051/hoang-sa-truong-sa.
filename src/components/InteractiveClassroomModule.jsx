@@ -1597,9 +1597,9 @@ export default function InteractiveClassroomModule({ activeRole = 'student' }) {
               >
                 <defs>
                   <radialGradient id="gameSeaGrad" cx="55%" cy="48%" r="65%">
-                    <stop offset="0%" stopColor="#588F96" />
-                    <stop offset="65%" stopColor="#477E83" />
-                    <stop offset="100%" stopColor="#356267" />
+                    <stop offset="0%" stopColor="#44A6B5" />
+                    <stop offset="65%" stopColor="#004554" />
+                    <stop offset="100%" stopColor="#004554" />
                   </radialGradient>
                 </defs>
 
@@ -1637,15 +1637,15 @@ export default function InteractiveClassroomModule({ activeRole = 'student' }) {
 
                 <polygon
                   points={mainlandPolygonPoints}
-                  fill="#154e3f"
-                  stroke="#34d399"
+                  fill="#004554"
+                  stroke="#44A6B5"
                   strokeWidth="2"
                 />
 
                 <polyline
                   points={coastlinePolylinePoints}
                   fill="none"
-                  stroke="#fbbf24"
+                  stroke="#44A6B5"
                   strokeWidth="3.5"
                 />
 
@@ -1686,16 +1686,16 @@ export default function InteractiveClassroomModule({ activeRole = 'student' }) {
                         r="11"
                         fill={
                           isSolvedTarget || isCurrentAnsweredTarget
-                            ? '#10b981'
-                            : '#fbbf24'
+                            ? '#44A6B5'
+                            : '#44A6B5'
                         }
-                        stroke="#ffffff"
+                        stroke="#E9F1F6"
                         strokeWidth="2.5"
                       />
                       <text
                         y="-16"
                         textAnchor="middle"
-                        fill="#ffffff"
+                        fill="#E9F1F6"
                         fontSize="13"
                         fontWeight="800"
                         style={{
