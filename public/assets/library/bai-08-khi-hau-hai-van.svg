@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB08" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB08" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB08)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB08)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 08</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">CHẾ ĐỘ KHÍ HẬU, HẢI VĂN, DÒNG CHẢY &amp; NƯỚC TRỒI BIỂN ĐÔNG</text>
+
+  <!-- Left Panel: Monsoon & Ocean Current Circulation -->
+  <rect x="28" y="116" width="364" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="46" y="140" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">HOÀN LƯU GIÓ MÙA &amp; DÒNG BIỂN THEO MÙA</text>
+
+  <!-- Winter NE Monsoon Card -->
+  <rect x="44" y="152" width="332" height="102" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="1.2"/>
+  <text x="58" y="174" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">1. Mùa Đông: Gió mùa Đông Bắc (Tháng 11 – Tháng 4)</text>
+  <text x="58" y="194" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Gió thổi hướng Đông Bắc mạnh, sóng lớn ngoài khơi</text>
+  <text x="58" y="212" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Dòng biển chảy theo hướng Đông Bắc – Tây Nam</text>
+  <text x="58" y="230" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Tạo xoáy thuận quy mô lớn trên toàn bồn trũng Biển Đông</text>
+
+  <!-- Summer SW Monsoon Card -->
+  <rect x="44" y="264" width="332" height="102" rx="10" fill="#B6E0EB"/>
+  <text x="58" y="286" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="900">2. Mùa Hạ: Gió mùa Tây Nam (Tháng 5 – Tháng 10)</text>
+  <text x="58" y="306" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Gió thổi hướng Tây Nam, thời kỳ xuất phát hải đội cổ</text>
+  <text x="58" y="324" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Dòng biển đổi chiều Tây Nam – Đông Bắc</text>
+  <text x="58" y="342" fill="#1A718D" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Kích hoạt hiện tượng Nước trồi Nam Trung Bộ (T6–T8)</text>
+
+  <!-- Right Panel: Upwelling & Oceanographic Parameters -->
+  <rect x="406" y="116" width="366" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="424" y="140" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">THÔNG SỐ HẢI VĂN &amp; HIỆN TƯỢNG NƯỚC TRỒI</text>
+
+  <!-- 2x2 Metric Grid -->
+  <rect x="422" y="152" width="162" height="68" rx="9" fill="#113747"/>
+  <text x="434" y="172" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Nhiệt độ nước tầng mặt</text>
+  <text x="434" y="192" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">26°C – 29°C</text>
+  <text x="434" y="209" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="600">Biển nhiệt đới ấm quanh năm</text>
+
+  <rect x="594" y="152" width="162" height="68" rx="9" fill="#1A718D"/>
+  <text x="606" y="172" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Độ muối trung bình</text>
+  <text x="606" y="192" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">32‰ – 34,5‰</text>
+  <text x="606" y="209" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="600">Thay đổi theo mùa mưa – khô</text>
+
+  <!-- Upwelling Diagram Box -->
+  <rect x="422" y="230" width="334" height="136" rx="10" fill="#113747"/>
+  <text x="436" y="252" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Cơ chế Nước trồi Ninh Thuận – Bình Thuận</text>
+  <text x="436" y="272" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">• Gió mùa Tây Nam đẩy lớp nước mặt ấm ra xa bờ</text>
+  <text x="436" y="289" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">• Khối nước tầng sâu (100–200m) lạnh và giàu muối</text>
+  <text x="436" y="305" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">  dinh dưỡng (Nitrat, Phosphat, Silicat) trồi lên tầng mặt</text>
+  <rect x="436" y="318" width="306" height="36" rx="7" fill="#29B4D1"/>
+  <text x="589" y="334" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="900">Bùng nổ thực vật phù du → Ngư trường giàu cá nhất</text>
+  <text x="589" y="348" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="700">Chế độ nhật triều điển hình tại Vịnh Bắc Bộ (biên độ 3,5–4,2m)</text>
+</svg>

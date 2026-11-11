@@ -1,55 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="bg01" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#041E3A" />
-      <stop offset="55%" stop-color="#073B6B" />
-      <stop offset="100%" stop-color="#0A588A" />
+    <linearGradient id="bgCd01" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
     </linearGradient>
-    <linearGradient id="gold01" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FDE68A" />
-      <stop offset="100%" stop-color="#D97706" />
-    </linearGradient>
+    <pattern id="gridCd01" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
   </defs>
-  <rect width="800" height="480" rx="20" fill="url(#bg01)" />
-  <g stroke="#38BDF8" stroke-opacity="0.16" stroke-width="1">
-    <line x1="0" y1="120" x2="800" y2="120" stroke-dasharray="5 5" />
-    <line x1="0" y1="240" x2="800" y2="240" />
-    <line x1="0" y1="360" x2="800" y2="360" stroke-dasharray="5 5" />
-    <line x1="200" y1="0" x2="200" y2="480" stroke-dasharray="5 5" />
-    <line x1="400" y1="0" x2="400" y2="480" />
-    <line x1="600" y1="0" x2="600" y2="480" stroke-dasharray="5 5" />
-  </g>
-  <!-- Vietnam Coastline & 1 Million km2 Sea Space -->
-  <path d="M295,65 C330,90 315,120 295,148 C275,176 320,210 355,255 C385,295 375,350 335,388 C305,415 280,425 265,440"
-        stroke="url(#gold01)" stroke-width="6" stroke-linecap="round" fill="none" />
-  <path d="M310,65 C430,105 535,190 540,295 C545,375 470,435 350,455"
-        stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="8 6" fill="#0284C7" fill-opacity="0.18" />
-  <!-- 5 UNCLOS Zones Concentric Arcs -->
-  <circle cx="445" cy="210" r="14" fill="#EF4444" stroke="#FEF08A" stroke-width="2.5" />
-  <text x="468" y="215" fill="#FEF08A" font-family="sans-serif" font-size="14" font-weight="700">Hoàng Sa</text>
-  <circle cx="485" cy="345" r="14" fill="#EF4444" stroke="#FEF08A" stroke-width="2.5" />
-  <text x="508" y="350" fill="#FEF08A" font-family="sans-serif" font-size="14" font-weight="700">Trường Sa</text>
-  <!-- Key Metrics Cards -->
-  <g transform="translate(42, 48)">
-    <rect width="215" height="92" rx="14" fill="#06192E" fill-opacity="0.88" stroke="#38BDF8" stroke-opacity="0.5" />
-    <text x="18" y="32" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">ĐƯỜNG BỜ BIỂN VIỆT NAM</text>
-    <text x="18" y="64" fill="#FDE68A" font-family="sans-serif" font-size="26" font-weight="800">&gt; 3.260 km</text>
-    <text x="18" y="82" fill="#BAE6FD" font-family="sans-serif" font-size="11">Móng Cái (Quảng Ninh) → Hà Tiên</text>
-  </g>
-  <g transform="translate(42, 158)">
-    <rect width="215" height="92" rx="14" fill="#06192E" fill-opacity="0.88" stroke="#F59E0B" stroke-opacity="0.5" />
-    <text x="18" y="32" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">KHÔNG GIAN BIỂN VIỆT NAM</text>
-    <text x="18" y="64" fill="#FFFFFF" font-family="sans-serif" font-size="24" font-weight="800">~ 1 Triệu km²</text>
-    <text x="18" y="82" fill="#BAE6FD" font-family="sans-serif" font-size="11">Hơn 3.000 đảo lớn nhỏ &amp; 2 quần đảo</text>
-  </g>
-  <g transform="translate(545, 52)">
-    <rect width="215" height="118" rx="14" fill="#06192E" fill-opacity="0.88" stroke="#38BDF8" stroke-opacity="0.45" />
-    <text x="18" y="28" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">5 VÙNG BIỂN (UNCLOS 1982)</text>
-    <text x="18" y="48" fill="#E0F2FE" font-family="sans-serif" font-size="11">1. Nội thủy (Chủ quyền tuyệt đối)</text>
-    <text x="18" y="65" fill="#E0F2FE" font-family="sans-serif" font-size="11">2. Lãnh hải (12 hải lý)</text>
-    <text x="18" y="82" fill="#E0F2FE" font-family="sans-serif" font-size="11">3. Vùng tiếp giáp lãnh hải (12 hải lý)</text>
-    <text x="18" y="99" fill="#E0F2FE" font-family="sans-serif" font-size="11">4. Vùng đặc quyền kinh tế (200 HL)</text>
-  </g>
-  <rect x="42" y="405" width="716" height="44" rx="10" fill="#041527" fill-opacity="0.9" stroke="#38BDF8" stroke-opacity="0.35" />
-  <text x="400" y="432" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 01: TỔNG QUAN BIỂN ĐẢO VIỆT NAM &amp; VỊ TRÍ ĐỊA CHIẾN LƯỢC</text>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgCd01)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridCd01)"/>
+
+  <!-- Safe Middle Zone (y: 58..388) so card badges never overlap -->
+  <!-- Title Banner inside Safe Zone -->
+  <rect x="28" y="60" width="744" height="46" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="69" width="118" height="28" rx="14" fill="#29B4D1"/>
+  <text x="99" y="87" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">CHUYÊN ĐỀ 01</text>
+  <text x="172" y="88" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="15" font-weight="800">TỔNG QUAN BIỂN ĐẢO VIỆT NAM &amp; 5 VÙNG BIỂN UNCLOS 1982</text>
+
+  <!-- Left Panel: Key National Maritime Metrics -->
+  <rect x="28" y="118" width="250" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="46" y="144" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13" font-weight="800">THÔNG SỐ ĐỊA LÝ CỐT LÕI</text>
+  <line x1="46" y1="154" x2="260" y2="154" stroke="#455C68" stroke-width="1" stroke-opacity="0.4"/>
+
+  <rect x="44" y="166" width="218" height="58" rx="10" fill="#113747"/>
+  <text x="58" y="188" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="18" font-weight="900">&gt; 1.000.000 km²</text>
+  <text x="58" y="209" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="600">Không gian biển Việt Nam (gấp ~3 lần đất liền)</text>
+
+  <rect x="44" y="234" width="218" height="58" rx="10" fill="#1A718D"/>
+  <text x="58" y="256" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="18" font-weight="900">3.260 km bờ biển</text>
+  <text x="58" y="277" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="600">Móng Cái (Quảng Ninh) → Hà Tiên (Kiên Giang)</text>
+
+  <rect x="44" y="302" width="218" height="64" rx="10" fill="#113747"/>
+  <text x="58" y="324" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="16" font-weight="900">&gt; 3.000 đảo &amp; 2 quần đảo</text>
+  <text x="58" y="344" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="600">28/63 tỉnh, thành giáp biển • Hoàng Sa &amp; Trường Sa</text>
+
+  <!-- Right Panel: 5 Maritime Zones Cross-Section Schematic -->
+  <rect x="294" y="118" width="478" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="314" y="144" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="13" font-weight="800">MẶT CẮT 5 VÙNG BIỂN TÍNH TỪ ĐƯỜNG CƠ SỞ (11 ĐIỂM A1–A11)</text>
+
+  <!-- Zone Columns Header -->
+  <!-- 1. Nội thủy -->
+  <rect x="312" y="158" width="82" height="126" rx="8" fill="#1A718D" stroke="#B6E0EB" stroke-width="1"/>
+  <text x="353" y="180" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">NỘI THỦY</text>
+  <text x="353" y="198" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Trong ĐCS</text>
+  <text x="353" y="220" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Chủ quyền</text>
+  <text x="353" y="235" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">hoàn toàn,</text>
+  <text x="353" y="250" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">tuyệt đối</text>
+  <text x="353" y="272" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">Điều 9-10</text>
+
+  <!-- 2. Lãnh hải -->
+  <rect x="402" y="158" width="84" height="126" rx="8" fill="#1A718D" stroke="#29B4D1" stroke-width="1.4"/>
+  <text x="444" y="180" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">LÃNH HẢI</text>
+  <text x="444" y="198" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">0 → 12 HL</text>
+  <text x="444" y="220" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Chủ quyền</text>
+  <text x="444" y="235" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">hoàn toàn,</text>
+  <text x="444" y="250" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">đầy đủ</text>
+  <text x="444" y="272" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">Điều 11-12</text>
+
+  <!-- 3. Tiếp giáp lãnh hải -->
+  <rect x="494" y="158" width="84" height="126" rx="8" fill="#1A718D" stroke="#29B4D1" stroke-width="1.4"/>
+  <text x="536" y="180" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">TIẾP GIÁP</text>
+  <text x="536" y="198" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">12 → 24 HL</text>
+  <text x="536" y="220" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Kiểm soát</text>
+  <text x="536" y="235" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">hải quan, thuế,</text>
+  <text x="536" y="250" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">nhập cư, y tế</text>
+  <text x="536" y="272" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">Điều 13-14</text>
+
+  <!-- 4. Đặc quyền kinh tế EEZ -->
+  <rect x="586" y="158" width="84" height="126" rx="8" fill="#29B4D1"/>
+  <text x="628" y="180" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">VÙNG EEZ</text>
+  <text x="628" y="198" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Đến 200 HL</text>
+  <text x="628" y="220" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">Quyền chủ quyền</text>
+  <text x="628" y="235" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">&amp; Quyền tài phán</text>
+  <text x="628" y="250" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">kinh tế biển</text>
+  <text x="628" y="272" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="900">Điều 15-16</text>
+
+  <!-- 5. Thềm lục địa -->
+  <rect x="678" y="158" width="78" height="126" rx="8" fill="#B6E0EB"/>
+  <text x="717" y="180" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">THỀM LĐ</text>
+  <text x="717" y="198" text-anchor="middle" fill="#1A718D" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">200-350 HL</text>
+  <text x="717" y="220" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">Đáy biển &amp;</text>
+  <text x="717" y="235" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">lòng đất</text>
+  <text x="717" y="250" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">dưới đáy biển</text>
+  <text x="717" y="272" text-anchor="middle" fill="#1A718D" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="900">Điều 17-18</text>
+
+  <!-- Seabed Profile Graphic inside Right Panel -->
+  <path d="M312 308 L394 314 L486 324 L668 344 L756 362 L756 368 L312 368 Z" fill="#1A718D" stroke="#29B4D1" stroke-width="1.5"/>
+  <line x1="398" y1="156" x2="398" y2="366" stroke="#B6E0EB" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="404" y="304" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">Đường cơ sở (0 HL) → Ra khơi xa 200–350 hải lý</text>
+  <text x="320" y="360" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">Cơ sở pháp lý: Công ước LHQ về Luật Biển 1982 &amp; Luật Biển Việt Nam 2012</text>
 </svg>

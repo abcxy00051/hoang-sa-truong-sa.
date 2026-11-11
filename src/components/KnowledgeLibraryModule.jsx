@@ -250,6 +250,9 @@ export default function KnowledgeLibraryModule() {
   // Render Đồ họa học thuật (Sơ đồ tư duy, Infographic lịch sử, Biểu đồ kinh tế biển, Sơ đồ địa lý, Hệ sinh thái)
   const renderAcademicVisualSection = (visual) => {
     if (!visual) return null
+    const isAtollDiagram =
+      visual.visualType === 'geographicalDiagram' &&
+      visual.zones?.[0]?.code?.includes('TẦNG')
 
     return (
       <section id="sec-academic-visual" className="reader-block lib-visual-block">
@@ -260,7 +263,7 @@ export default function KnowledgeLibraryModule() {
               <span>{visual.visualBadge}</span>
             </span>
             <span className="lib-visual-verify-pill">
-              Phân biệt rõ: Đồ họa minh họa giáo dục dựa trên nguồn chính thống
+              Đồ họa học thuật chuẩn hóa • Đối chiếu tư liệu pháp lý &amp; khoa học
             </span>
           </div>
           <h2>III. Đồ họa học thuật &amp; Sơ đồ trực quan</h2>
@@ -268,71 +271,313 @@ export default function KnowledgeLibraryModule() {
           <p className="lib-visual-subtitle">{visual.visualSubtitle}</p>
         </div>
 
-        {/* 1. SƠ ĐỒ ĐỊA LÝ / MẶT CẮT VÙNG BIỂN & ĐỊA CHẤT */}
+        {/* 1. SƠ ĐỒ ĐỊA LÝ / MẶT CẮT VÙNG BIỂN & ĐỊA CHẤT ATOLL */}
         {visual.visualType === 'geographicalDiagram' && visual.zones && (
-          <div className="lib-geo-diagram-grid">
-            {visual.zones.map((z, idx) => (
-              <div
-                key={idx}
-                className="lib-geo-zone-card"
-                style={{ borderLeftColor: z.color }}
-              >
-                <div className="lib-geo-zone-top">
-                  <span
-                    className="lib-geo-zone-code"
-                    style={{ backgroundColor: z.color }}
-                  >
-                    {z.code}
-                  </span>
-                  <span className="lib-geo-zone-depth">{z.depthLabel}</span>
+          <div className="lib-geo-diagram-wrapper">
+            <div className="lib-svg-schematic-frame">
+              {!isAtollDiagram ? (
+                <svg
+                  viewBox="0 0 860 280"
+                  className="lib-interactive-schematic-svg"
+                  role="img"
+                  aria-label="Sơ đồ mặt cắt ngang 5 vùng biển Việt Nam theo UNCLOS 1982"
+                >
+                  <rect width="860" height="280" rx="14" fill="#113747" />
+                  {/* Top Bracket Labels: Chủ quyền vs Quyền chủ quyền & Quyền tài phán */}
+                  <rect x="24" y="16" width="286" height="28" rx="6" fill="#29B4D1" />
+                  <text x="167" y="34" text-anchor="middle" fill="#113747" fontSize="11.5" fontWeight="900">
+                    CHỦ QUYỀN QUỐC GIA HOÀN TOÀN, ĐẦY ĐỦ
+                  </text>
+                  <rect x="318" y="16" width="518" height="28" rx="6" fill="#1A718D" stroke="#29B4D1" strokeWidth="1.2" />
+                  <text x="577" y="34" text-anchor="middle" fill="#B6E0EB" fontSize="11.5" fontWeight="800">
+                    QUYỀN CHỦ QUYỀN &amp; QUYỀN TÀI PHÁN QUỐC GIA (UNCLOS 1982 &amp; LUẬT BIỂN 2012)
+                  </text>
+
+                  {/* Distance Axis */}
+                  <line x1="168" y1="62" x2="820" y2="62" stroke="#29B4D1" strokeWidth="2" />
+                  <circle cx="168" cy="62" r="5" fill="#B6E0EB" />
+                  <circle cx="310" cy="62" r="5" fill="#29B4D1" />
+                  <circle cx="452" cy="62" r="5" fill="#29B4D1" />
+                  <circle cx="668" cy="62" r="5" fill="#29B4D1" />
+                  <circle cx="820" cy="62" r="5" fill="#B6E0EB" />
+                  <text x="168" y="55" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="800">Đường cơ sở (0 HL)</text>
+                  <text x="310" y="55" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">12 Hải lý</text>
+                  <text x="452" y="55" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">24 Hải lý</text>
+                  <text x="668" y="55" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">200 Hải lý (EEZ)</text>
+                  <text x="795" y="55" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="800">Đến 350 HL</text>
+
+                  {/* 5 Zone Columns */}
+                  <rect x="24" y="74" width="140" height="128" rx="8" fill="#B6E0EB" />
+                  <text x="94" y="96" textAnchor="middle" fill="#113747" fontSize="12" fontWeight="900">1. NỘI THỦY</text>
+                  <text x="94" y="114" textAnchor="middle" fill="#1A718D" fontSize="10" fontWeight="800">Trong Đường cơ sở</text>
+                  <text x="94" y="134" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">Chủ quyền hoàn toàn,</text>
+                  <text x="94" y="149" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">tuyệt đối như đất liền</text>
+                  <text x="94" y="186" textAnchor="middle" fill="#1A718D" fontSize="10" fontWeight="900">Điều 9–10 Luật Biển</text>
+
+                  <rect x="170" y="74" width="136" height="128" rx="8" fill="#1A718D" stroke="#29B4D1" strokeWidth="1.5" />
+                  <text x="238" y="96" textAnchor="middle" fill="#B6E0EB" fontSize="12" fontWeight="900">2. LÃNH HẢI</text>
+                  <text x="238" y="114" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">0 → 12 Hải lý</text>
+                  <text x="238" y="134" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="600">Biên giới quốc gia</text>
+                  <text x="238" y="149" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="600">trên biển • Đi qua</text>
+                  <text x="238" y="164" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="600">không gây hại</text>
+                  <text x="238" y="186" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">Điều 11–12 Luật Biển</text>
+
+                  <rect x="312" y="74" width="136" height="128" rx="8" fill="#1A718D" stroke="#B6E0EB" strokeWidth="1.2" />
+                  <text x="380" y="96" textAnchor="middle" fill="#B6E0EB" fontSize="12" fontWeight="900">3. TIẾP GIÁP</text>
+                  <text x="380" y="114" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">12 → 24 Hải lý</text>
+                  <text x="380" y="134" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="600">Kiểm soát hải quan,</text>
+                  <text x="380" y="149" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="600">thuế, y tế, di cư</text>
+                  <text x="380" y="186" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">Điều 13–14 Luật Biển</text>
+
+                  <rect x="454" y="74" width="210" height="128" rx="8" fill="#29B4D1" />
+                  <text x="559" y="96" textAnchor="middle" fill="#113747" fontSize="12" fontWeight="900">4. VÙNG ĐẶC QUYỀN KINH TẾ (EEZ)</text>
+                  <text x="559" y="114" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="800">Rộng 200 Hải lý tính từ Đường cơ sở</text>
+                  <text x="559" y="134" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">Quyền chủ quyền kinh tế (thăm dò, khai thác)</text>
+                  <text x="559" y="149" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">&amp; Quyền tài phán (đảo nhân tạo, NCKH, môi trường)</text>
+                  <text x="559" y="186" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="900">Điều 56, 58 UNCLOS • Điều 15–16 Luật Biển</text>
+
+                  <rect x="670" y="74" width="166" height="128" rx="8" fill="#B6E0EB" />
+                  <text x="753" y="96" textAnchor="middle" fill="#113747" fontSize="12" fontWeight="900">5. THỀM LỤC ĐỊA</text>
+                  <text x="753" y="114" textAnchor="middle" fill="#1A718D" fontSize="10" fontWeight="800">200 → tối đa 350 HL</text>
+                  <text x="753" y="134" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">Đáy biển &amp; lòng đất</text>
+                  <text x="753" y="149" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">dưới đáy biển • Đặc</text>
+                  <text x="753" y="164" textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">quyền khoan &amp; dầu khí</text>
+                  <text x="753" y="186" textAnchor="middle" fill="#1A718D" fontSize="10" fontWeight="900">Điều 76, 77 UNCLOS</text>
+
+                  {/* Seabed Profile Bar */}
+                  <path d="M24 214 L306 220 L664 234 L836 250 L836 264 L24 264 Z" fill="#1A718D" stroke="#29B4D1" strokeWidth="1.5" />
+                  <text x="430" y="252" textAnchor="middle" fill="#B6E0EB" fontSize="11" fontWeight="800">
+                    MẶT CẮT ĐÁY BIỂN &amp; LÒNG ĐẤT DƯỚI ĐÁY BIỂN (1 HẢI LÝ QUỐC TẾ = 1.852 MÉT)
+                  </text>
+                </svg>
+              ) : (
+                <svg
+                  viewBox="0 0 860 270"
+                  className="lib-interactive-schematic-svg"
+                  role="img"
+                  aria-label="Mặt cắt địa chất đảo san hô vòng Atoll"
+                >
+                  <rect width="860" height="270" rx="14" fill="#113747" />
+                  <text x="430" y="28" textAnchor="middle" fill="#29B4D1" fontSize="12.5" fontWeight="900">
+                    MẶT CẮT ĐỊA CHẤT CẤU TRÚC ĐẢO SAN HÔ VÒNG (ATOLL) TẠI HOÀNG SA &amp; TRƯỜNG SA
+                  </text>
+                  {/* Sea Level Line */}
+                  <line x1="40" y1="126" x2="820" y2="126" stroke="#29B4D1" strokeWidth="2" strokeDasharray="6 4" />
+                  <text x="814" y="118" textAnchor="end" fill="#29B4D1" fontSize="10.5" fontWeight="800">
+                    Mực nước biển trung bình (0m)
+                  </text>
+                  {/* Deep Volcanic Seamount */}
+                  <path d="M90 250 L210 158 L650 158 L770 250 Z" fill="#455C68" stroke="#B6E0EB" strokeWidth="1.4" />
+                  <text x="430" y="226" textAnchor="middle" fill="#B6E0EB" fontSize="12" fontWeight="800">
+                    TẦNG 4: SƯỜN DỐC RẠN &amp; NỀN NÚI LỬA NGẦM CỔ ĐÁY BIỂN SÂU (&gt;1.000m – 4.000m)
+                  </text>
+                  {/* Coral Limestone Platform */}
+                  <path d="M210 158 L238 114 L346 114 L366 150 L494 150 L514 114 L622 114 L650 158 Z" fill="#1A718D" stroke="#29B4D1" strokeWidth="1.8" />
+                  {/* Lagoon */}
+                  <path d="M350 126 L366 150 L494 150 L510 126 Z" fill="#29B4D1" fillOpacity="0.45" />
+                  <text x="430" y="143" textAnchor="middle" fill="#B6E0EB" fontSize="11" fontWeight="800">
+                    TẦNG 3: VỤNG BIỂN (LAGOON 15–50m)
+                  </text>
+                  {/* Left Coral Island + Freshwater Lens */}
+                  <path d="M250 114 Q292 86 334 114 Z" fill="#B6E0EB" />
+                  <ellipse cx="292" cy="121" rx="28" ry="8" fill="#29B4D1" />
+                  <text x="292" y="68" textAnchor="middle" fill="#B6E0EB" fontSize="11" fontWeight="800">
+                    TẦNG 1: ĐẢO NỔI SAN HÔ (2–6m)
+                  </text>
+                  <text x="292" y="83" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="700">
+                    Thấu kính nước ngọt &amp; Cây phong ba, bàng vuông
+                  </text>
+                  {/* Right Reef Flat */}
+                  <text x="578" y="74" textAnchor="middle" fill="#B6E0EB" fontSize="11" fontWeight="800">
+                    TẦNG 2: VÀNH ĐÁ SAN HÔ (0–3m)
+                  </text>
+                  <text x="578" y="89" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="700">
+                    Đê chắn sóng tự nhiên bảo vệ đảo &amp; vụng biển
+                  </text>
+                </svg>
+              )}
+            </div>
+
+            <div className="lib-geo-diagram-grid">
+              {visual.zones.map((z, idx) => (
+                <div key={idx} className="lib-geo-zone-card">
+                  <div className="lib-geo-zone-top">
+                    <span className="lib-geo-zone-code">{z.code}</span>
+                    <span className="lib-geo-zone-depth">{z.depthLabel}</span>
+                  </div>
+                  <h4>{z.name}</h4>
+                  <p className="lib-geo-zone-range">
+                    <strong>Phạm vi không gian:</strong> {z.range}
+                  </p>
+                  <p className="lib-geo-zone-regime">{z.regime}</p>
                 </div>
-                <h4>{z.name}</h4>
-                <p className="lib-geo-zone-range">
-                  <strong>Phạm vi:</strong> {z.range}
-                </p>
-                <p className="lib-geo-zone-regime">{z.regime}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
 
         {/* 2. INFOGRAPHIC LỊCH SỬ / THIẾT CHẾ BIỂN ĐẢO */}
         {visual.visualType === 'historicalInfographic' && visual.milestones && (
-          <div className="lib-infographic-timeline">
-            {visual.milestones.map((m, idx) => (
-              <div key={idx} className="lib-infographic-step">
-                <div className="lib-infographic-marker">
-                  <span className="lib-step-num">0{idx + 1}</span>
-                </div>
-                <div className="lib-infographic-body">
-                  <span className="lib-step-period">{m.period}</span>
-                  <h4>{m.title}</h4>
-                  <p>{m.detail}</p>
-                  <div className="lib-step-source">
-                    <strong>Tư liệu gốc đối chiếu:</strong> {m.primarySource}
+          <div className="lib-infographic-wrapper">
+            {/* Visual Horizontal Process Flow Bar */}
+            <div className="lib-svg-schematic-frame">
+              <svg
+                viewBox="0 0 860 135"
+                className="lib-interactive-schematic-svg"
+                role="img"
+                aria-label="Lưu đồ tiến trình lịch sử và thiết chế thực thi chủ quyền"
+              >
+                <rect width="860" height="135" rx="14" fill="#113747" />
+                <line x1="115" y1="68" x2="745" y2="68" stroke="#29B4D1" strokeWidth="3" />
+                {visual.milestones.slice(0, 4).map((m, idx) => {
+                  const cx = 115 + idx * 210
+                  return (
+                    <g key={idx}>
+                      <rect
+                        x={cx - 92}
+                        y="20"
+                        width="184"
+                        height="96"
+                        rx="10"
+                        fill={idx % 2 === 0 ? '#1A718D' : '#B6E0EB'}
+                        stroke="#29B4D1"
+                        strokeWidth="1.5"
+                      />
+                      <rect
+                        x={cx - 78}
+                        y="30"
+                        width="156"
+                        height="22"
+                        rx="6"
+                        fill="#113747"
+                      />
+                      <text
+                        x={cx}
+                        y="45"
+                        textAnchor="middle"
+                        fill="#29B4D1"
+                        fontSize="10"
+                        fontWeight="800"
+                      >
+                        BƯỚC 0{idx + 1} • {m.period.slice(0, 18)}
+                      </text>
+                      <text
+                        x={cx}
+                        y="74"
+                        textAnchor="middle"
+                        fill={idx % 2 === 0 ? '#B6E0EB' : '#113747'}
+                        fontSize="10.5"
+                        fontWeight="800"
+                      >
+                        {m.title.slice(0, 26)}...
+                      </text>
+                      <text
+                        x={cx}
+                        y="96"
+                        textAnchor="middle"
+                        fill={idx % 2 === 0 ? '#29B4D1' : '#1A718D'}
+                        fontSize="9.5"
+                        fontWeight="700"
+                      >
+                        Tư liệu gốc đối chiếu ✓
+                      </text>
+                    </g>
+                  )
+                })}
+              </svg>
+            </div>
+
+            <div className="lib-infographic-timeline">
+              {visual.milestones.map((m, idx) => (
+                <div key={idx} className="lib-infographic-step">
+                  <div className="lib-infographic-marker">
+                    <span className="lib-step-num">0{idx + 1}</span>
+                    {idx < visual.milestones.length - 1 && (
+                      <span className="lib-step-connector" aria-hidden="true" />
+                    )}
+                  </div>
+                  <div className="lib-infographic-body">
+                    <span className="lib-step-period">{m.period}</span>
+                    <h4>{m.title}</h4>
+                    <p>{m.detail}</p>
+                    <div className="lib-step-source">
+                      <strong>Tư liệu gốc đối chiếu:</strong> {m.primarySource}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
 
-        {/* 3. SƠ ĐỒ TƯ DUY (MINDMAP HỌC THUẬT) */}
+        {/* 3. SƠ ĐỒ TƯ DUY (MINDMAP HỌC THUẬT CÓ ĐƯỜNG NỐI TRỰC QUAN) */}
         {visual.visualType === 'mindmap' && visual.branches && (
           <div className="lib-mindmap-container">
-            <div className="lib-mindmap-center-node">
-              <span className="mindmap-center-eyebrow">TRỌNG TÂM TƯ DUY</span>
-              <strong>{visual.centerNode?.title}</strong>
-              <span>{visual.centerNode?.subtitle}</span>
+            <div className="lib-svg-schematic-frame">
+              <svg
+                viewBox="0 0 860 250"
+                className="lib-interactive-schematic-svg"
+                role="img"
+                aria-label="Sơ đồ tư duy cấu trúc logic học thuật"
+              >
+                <rect width="860" height="250" rx="14" fill="#113747" />
+                {/* Curved Connectors from Center Hub to 4 Branch Nodes */}
+                <path d="M 330 110 C 270 110, 260 58, 220 58" stroke="#29B4D1" strokeWidth="2.2" fill="none" />
+                <path d="M 330 140 C 270 140, 260 192, 220 192" stroke="#29B4D1" strokeWidth="2.2" fill="none" />
+                <path d="M 530 110 C 590 110, 600 58, 640 58" stroke="#29B4D1" strokeWidth="2.2" fill="none" />
+                <path d="M 530 140 C 590 140, 600 192, 640 192" stroke="#29B4D1" strokeWidth="2.2" fill="none" />
+
+                {/* Center Core Node */}
+                <rect x="316" y="76" width="228" height="98" rx="16" fill="#1A718D" stroke="#29B4D1" strokeWidth="2.5" />
+                <rect x="356" y="86" width="148" height="20" rx="10" fill="#29B4D1" />
+                <text x="430" y="100" textAnchor="middle" fill="#113747" fontSize="9.5" fontWeight="900">
+                  TRUNG TÂM HỆ THỐNG LOGIC
+                </text>
+                <text x="430" y="128" textAnchor="middle" fill="#B6E0EB" fontSize="11.5" fontWeight="900">
+                  {visual.centerNode?.title?.slice(0, 32)}
+                </text>
+                <text x="430" y="148" textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="700">
+                  {visual.centerNode?.subtitle?.slice(0, 36)}
+                </text>
+
+                {/* 4 Quadrant Branch Nodes */}
+                {visual.branches.slice(0, 4).map((br, idx) => {
+                  const isLeft = idx % 2 === 0
+                  const isTop = idx < 2
+                  const bx = isLeft ? 24 : 636
+                  const by = isTop ? 24 : 156
+                  return (
+                    <g key={idx}>
+                      <rect
+                        x={bx}
+                        y={by}
+                        width="200"
+                        height="70"
+                        rx="10"
+                        fill="#B6E0EB"
+                        stroke="#29B4D1"
+                        strokeWidth="1.8"
+                      />
+                      <rect x={bx + 10} y={by + 10} width="180" height="22" rx="6" fill="#113747" />
+                      <text x={bx + 100} y={by + 25} textAnchor="middle" fill="#29B4D1" fontSize="10" fontWeight="800">
+                        {br.title.slice(0, 28)}
+                      </text>
+                      <text x={bx + 100} y={by + 52} textAnchor="middle" fill="#113747" fontSize="10" fontWeight="700">
+                        {br.items.length} luận điểm cốt lõi →
+                      </text>
+                    </g>
+                  )
+                })}
+              </svg>
             </div>
+
             <div className="lib-mindmap-branches-grid">
               {visual.branches.map((br, idx) => (
-                <div
-                  key={idx}
-                  className="lib-mindmap-branch-card"
-                  style={{ borderTopColor: br.color }}
-                >
-                  <h4 style={{ color: br.color }}>{br.title}</h4>
+                <div key={idx} className="lib-mindmap-branch-card">
+                  <div className="mindmap-branch-head">
+                    <span className="mindmap-branch-num">NHÁNH 0{idx + 1}</span>
+                    <h4>{br.title}</h4>
+                  </div>
                   <ul>
                     {br.items.map((it, i) => (
                       <li key={i}>
@@ -347,58 +592,180 @@ export default function KnowledgeLibraryModule() {
           </div>
         )}
 
-        {/* 4. BIỂU ĐỒ KINH TẾ BIỂN */}
+        {/* 4. BIỂU ĐỒ KINH TẾ BIỂN (ĐỒ HỌA TRỰC QUAN + THẺ CHỈ SỐ) */}
         {visual.visualType === 'economicChart' && visual.metrics && (
-          <div className="lib-econ-chart-wrap">
-            {visual.metrics.map((item, idx) => (
-              <div key={idx} className="lib-econ-bar-card">
-                <div className="lib-econ-bar-header">
-                  <div>
-                    <span className="lib-econ-rank">{item.rank}</span>
-                    <h4>{item.sector}</h4>
+          <div className="lib-econ-visual-wrapper">
+            <div className="lib-svg-schematic-frame">
+              <svg
+                viewBox="0 0 860 230"
+                className="lib-interactive-schematic-svg"
+                role="img"
+                aria-label="Biểu đồ 6 ngành kinh tế biển mũi nhọn Nghị quyết 36-NQ/TW"
+              >
+                <rect width="860" height="230" rx="14" fill="#113747" />
+                <text x="30" y="28" fill="#29B4D1" fontSize="12" fontWeight="900">
+                  BIỂU ĐỒ SO SÁNH MỨC ĐỘ ƯU TIÊN PHÁT TRIỂN 6 NGÀNH KINH TẾ BIỂN MŨI NHỌN (NGHỊ QUYẾT 36-NQ/TW)
+                </text>
+                {visual.metrics.map((item, idx) => {
+                  const y = 46 + idx * 29
+                  const barW = Math.round((item.progress / 100) * 470)
+                  return (
+                    <g key={idx}>
+                      <text x="30" y={y + 15} fill="#B6E0EB" fontSize="10.5" fontWeight="700">
+                        {idx + 1}. {item.sector.slice(0, 36)}
+                      </text>
+                      <rect x="290" y={y} width="480" height="20" rx="6" fill="#1A718D" />
+                      <rect
+                        x="290"
+                        y={y}
+                        width={barW}
+                        height="20"
+                        rx="6"
+                        fill={idx % 2 === 0 ? '#29B4D1' : '#B6E0EB'}
+                      />
+                      <text
+                        x={290 + barW - 10}
+                        y={y + 14}
+                        textAnchor="end"
+                        fill="#113747"
+                        fontSize="10"
+                        fontWeight="900"
+                      >
+                        {item.progress}%
+                      </text>
+                      <text x="782" y={y + 14} fill="#29B4D1" fontSize="10" fontWeight="800">
+                        {item.rank}
+                      </text>
+                    </g>
+                  )
+                })}
+              </svg>
+            </div>
+
+            <div className="lib-econ-chart-wrap">
+              {visual.metrics.map((item, idx) => (
+                <div key={idx} className="lib-econ-bar-card">
+                  <div className="lib-econ-bar-header">
+                    <div>
+                      <span className="lib-econ-rank">{item.rank}</span>
+                      <h4>{item.sector}</h4>
+                    </div>
+                    <span className="lib-econ-tag">{item.tag}</span>
                   </div>
-                  <span className="lib-econ-tag">{item.tag}</span>
+                  <p className="lib-econ-indicator">{item.indicator}</p>
+                  <div className="lib-econ-progress-track">
+                    <div
+                      className="lib-econ-progress-fill"
+                      style={{ width: `${item.progress}%` }}
+                    />
+                  </div>
                 </div>
-                <p className="lib-econ-indicator">{item.indicator}</p>
-                <div className="lib-econ-progress-track">
-                  <div
-                    className="lib-econ-progress-fill"
-                    style={{
-                      width: `${item.progress}%`,
-                      backgroundColor: item.color
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
 
-        {/* 5. SƠ ĐỒ HỆ SINH THÁI BIỂN */}
+        {/* 5. SƠ ĐỒ HỆ SINH THÁI BIỂN (MẶT CẮT SINH THÁI TỪ BỜ RA KHƠI) */}
         {visual.visualType === 'ecosystemDiagram' && visual.ecosystems && (
-          <div className="lib-eco-diagram-grid">
-            {visual.ecosystems.map((eco, idx) => (
-              <div
-                key={idx}
-                className="lib-eco-card"
-                style={{ borderTopColor: eco.color }}
+          <div className="lib-eco-visual-wrapper">
+            <div className="lib-svg-schematic-frame">
+              <svg
+                viewBox="0 0 860 220"
+                className="lib-interactive-schematic-svg"
+                role="img"
+                aria-label="Mặt cắt liên kết sinh thái từ rừng ngập mặn ven bờ đến rạn san hô ngoài khơi"
               >
-                <h4>{eco.name}</h4>
-                <p className="lib-eco-meta">
-                  <strong>Phân bố điển hình:</strong> {eco.zone}
-                </p>
-                <p className="lib-eco-meta">
-                  <strong>Đa dạng sinh học:</strong> {eco.biodiversity}
-                </p>
-                <p className="lib-eco-role">
-                  <strong>Vai trò sinh thái &amp; bảo vệ đảo:</strong>{' '}
-                  {eco.ecologicalRole}
-                </p>
-                <div className="lib-eco-threat">
-                  <strong>Nguy cơ cần ngăn chặn:</strong> {eco.threat}
+                <rect width="860" height="220" rx="14" fill="#113747" />
+                <text x="430" y="28" textAnchor="middle" fill="#29B4D1" fontSize="12" fontWeight="900">
+                  MẶT CẮT LIÊN KẾT HỆ SINH THÁI BIỂN TỪ ĐẤT LIỀN RA ĐẢO XA &amp; LÁ CHẮN BLUE CARBON
+                </text>
+
+                {/* 3 Connected Ecological Zones */}
+                <rect x="28" y="46" width="252" height="148" rx="12" fill="#B6E0EB" stroke="#29B4D1" strokeWidth="1.8" />
+                <rect x="42" y="58" width="224" height="24" rx="6" fill="#113747" />
+                <text x="154" y="74" textAnchor="middle" fill="#29B4D1" fontSize="10.5" fontWeight="800">
+                  ĐỚI 1: RỪNG NGẬP MẶN VEN BỜ
+                </text>
+                <text x="154" y="102" textAnchor="middle" fill="#113747" fontSize="10.5" fontWeight="800">
+                  Giữ phù sa &amp; Giảm 50–70% sóng bão
+                </text>
+                <text x="154" y="122" textAnchor="middle" fill="#455C68" fontSize="10" fontWeight="700">
+                  Hấp thụ Blue Carbon gấp 4–10 lần
+                </text>
+                <text x="154" y="140" textAnchor="middle" fill="#455C68" fontSize="10" fontWeight="700">
+                  rừng trên cạn • Vườn ươm ấu trùng
+                </text>
+                <rect x="52" y="156" width="204" height="24" rx="6" fill="#1A718D" />
+                <text x="154" y="172" textAnchor="middle" fill="#B6E0EB" fontSize="9.5" fontWeight="800">
+                  Cần Giờ • Mũi Cà Mau • Xuân Thủy
+                </text>
+
+                {/* Arrow 1 -> 2 */}
+                <line x1="282" y1="120" x2="302" y2="120" stroke="#29B4D1" strokeWidth="3" />
+
+                <rect x="304" y="46" width="252" height="148" rx="12" fill="#1A718D" stroke="#29B4D1" strokeWidth="1.8" />
+                <rect x="318" y="58" width="224" height="24" rx="6" fill="#29B4D1" />
+                <text x="430" y="74" textAnchor="middle" fill="#113747" fontSize="10.5" fontWeight="900">
+                  ĐỚI 2: THẢM CỎ BIỂN NƯỚC NÔNG
+                </text>
+                <text x="430" y="102" textAnchor="middle" fill="#B6E0EB" fontSize="10.5" fontWeight="800">
+                  Lọc trong nước biển &amp; Tạo Oxy hòa tan
+                </text>
+                <text x="430" y="122" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="600">
+                  Sinh cảnh Bò biển (Dugong) &amp; Rùa biển
+                </text>
+                <text x="430" y="140" textAnchor="middle" fill="#B6E0EB" fontSize="10" fontWeight="600">
+                  Ổn định trầm tích đáy ven đảo
+                </text>
+                <rect x="328" y="156" width="204" height="24" rx="6" fill="#113747" />
+                <text x="430" y="172" textAnchor="middle" fill="#29B4D1" fontSize="9.5" fontWeight="800">
+                  Phú Quốc • Côn Đảo • Thủy Triều
+                </text>
+
+                {/* Arrow 2 -> 3 */}
+                <line x1="558" y1="120" x2="578" y2="120" stroke="#29B4D1" strokeWidth="3" />
+
+                <rect x="580" y="46" width="252" height="148" rx="12" fill="#B6E0EB" stroke="#29B4D1" strokeWidth="1.8" />
+                <rect x="594" y="58" width="224" height="24" rx="6" fill="#113747" />
+                <text x="706" y="74" textAnchor="middle" fill="#29B4D1" fontSize="10.5" fontWeight="800">
+                  ĐỚI 3: RẠN SAN HÔ NGOÀI KHƠI
+                </text>
+                <text x="706" y="102" textAnchor="middle" fill="#113747" fontSize="10.5" fontWeight="800">
+                  Nơi cư trú của 25% loài sinh vật biển
+                </text>
+                <text x="706" y="122" textAnchor="middle" fill="#455C68" fontSize="10" fontWeight="700">
+                  ~400 loài san hô cứng kiến tạo nền đảo
+                </text>
+                <text x="706" y="140" textAnchor="middle" fill="#455C68" fontSize="10" fontWeight="700">
+                  Đê chắn sóng tự nhiên bảo vệ đảo
+                </text>
+                <rect x="604" y="156" width="204" height="24" rx="6" fill="#29B4D1" />
+                <text x="706" y="172" textAnchor="middle" fill="#113747" fontSize="9.5" fontWeight="900">
+                  Hoàng Sa • Trường Sa • Nha Trang
+                </text>
+              </svg>
+            </div>
+
+            <div className="lib-eco-diagram-grid">
+              {visual.ecosystems.map((eco, idx) => (
+                <div key={idx} className="lib-eco-card">
+                  <h4>{eco.name}</h4>
+                  <p className="lib-eco-meta">
+                    <strong>Phân bố điển hình:</strong> {eco.zone}
+                  </p>
+                  <p className="lib-eco-meta">
+                    <strong>Đa dạng sinh học:</strong> {eco.biodiversity}
+                  </p>
+                  <p className="lib-eco-role">
+                    <strong>Vai trò sinh thái &amp; bảo vệ đảo:</strong>{' '}
+                    {eco.ecologicalRole}
+                  </p>
+                  <div className="lib-eco-threat">
+                    <strong>Nguy cơ cần ngăn chặn:</strong> {eco.threat}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
       </section>
@@ -755,7 +1122,11 @@ export default function KnowledgeLibraryModule() {
                     {activeLesson.lessonNumber}
                   </span>
                   <span className="reader-grade-badge">
-                    {activeLesson.gradeLabel}
+                    {completedLessonIds.includes(activeLesson.id)
+                      ? '✓ Đã hoàn thành'
+                      : savedLessonIds.includes(activeLesson.id)
+                      ? '★ Đã lưu yêu thích'
+                      : 'Học liệu chuyên sâu'}
                   </span>
                   <span className="reader-time-badge">
                     <Clock size={13} /> {activeLesson.readingTime}
@@ -1299,24 +1670,12 @@ export default function KnowledgeLibraryModule() {
                 </div>
               </div>
 
-              {/* Lọc theo Khối lớp & Trạng thái đọc */}
+              {/* Lọc theo Tiến độ đọc (Đã lưu yêu thích & Đã hoàn thành) */}
               <div className="filter-group-item">
                 <span className="filter-group-label">
-                  <Filter size={14} /> Khối lớp &amp; Tiến độ:
+                  <Filter size={14} /> Tiến độ:
                 </span>
                 <div className="filter-pills-wrap">
-                  {LIBRARY_GRADES.map((g) => (
-                    <button
-                      key={g.id}
-                      type="button"
-                      className={`lib-filter-pill ${
-                        selectedGrade === g.id ? 'active' : ''
-                      }`}
-                      onClick={() => setSelectedGrade(g.id)}
-                    >
-                      {g.label}
-                    </button>
-                  ))}
                   <button
                     type="button"
                     className={`lib-filter-pill ${
@@ -1385,7 +1744,7 @@ export default function KnowledgeLibraryModule() {
                           </div>
                           <div>
                             <span className="thematic-code-pill">
-                              {mod.code} • {mod.lessonCount} Bài học • {mod.totalReadingMinutes} phút đọc • {mod.gradeTarget}
+                              {mod.code} • {mod.lessonCount} Bài học • {mod.totalReadingMinutes} phút đọc
                             </span>
                             <h2 className="thematic-main-title">{mod.title}</h2>
                             <p className="thematic-subtitle">{mod.subtitle}</p>
@@ -1449,7 +1808,11 @@ export default function KnowledgeLibraryModule() {
                                   {lesson.lessonNumber}
                                 </span>
                                 <span className="lib-format-pill">
-                                  {lesson.gradeLabel}
+                                  {isCompleted
+                                    ? '✓ Đã hoàn thành'
+                                    : isSaved
+                                    ? '★ Đã lưu yêu thích'
+                                    : 'Học liệu chuẩn'}
                                 </span>
                               </div>
                               <div className="lib-doc-bottom-bar">

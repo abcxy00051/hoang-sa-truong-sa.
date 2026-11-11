@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB12" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB12" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB12)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB12)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 12</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">HỆ THỐNG HẢI ĐĂNG, ÂU TÀU &amp; CỤM NHÀ GIÀN DK1 THỀM LỤC ĐỊA PHÍA NAM</text>
+
+  <!-- Left Panel: Lighthouses & Safe Harbors in Truong Sa -->
+  <rect x="28" y="116" width="364" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="46" y="140" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">HỆ THỐNG HẢI ĐĂNG &amp; ÂU TÀU TRƯỜNG SA</text>
+
+  <rect x="44" y="152" width="332" height="102" rx="10" fill="#113747"/>
+  <text x="58" y="174" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">9 Ngọn Hải đăng Chủ quyền tại Trường Sa</text>
+  <text x="58" y="194" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Hải đăng Song Tử Tây (cao 38m, xây năm 1993)</text>
+  <text x="58" y="212" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Hải đăng Đá Lát, Đá Tây, An Bang, Tiên Nữ,</text>
+  <text x="58" y="228" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  Sinh Tồn, Sơn Ca, Nam Yết, Trường Sa</text>
+  <text x="58" y="244" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">• Dẫn đường hàng hải quốc tế 24/24 trên Biển Đông</text>
+
+  <rect x="44" y="264" width="332" height="102" rx="10" fill="#1A718D"/>
+  <text x="58" y="286" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">Hệ thống Âu tàu &amp; Làng chài Giữa Khơi Xa</text>
+  <text x="58" y="306" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Âu tàu Đá Tây, Song Tử Tây, Sinh Tồn, Trường Sa</text>
+  <text x="58" y="324" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Sức chứa hàng trăm tàu cá công suất lớn tránh bão</text>
+  <text x="58" y="342" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Cung ứng nước ngọt, nhiên liệu bằng giá đất liền</text>
+
+  <!-- Right Panel: DK1 Offshore Platforms on Southern Continental Shelf -->
+  <rect x="406" y="116" width="366" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="424" y="140" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">CỤM NHÀ GIÀN DK1 – THỀM LỤC ĐỊA PHÍA NAM</text>
+
+  <rect x="422" y="152" width="334" height="72" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="1.2"/>
+  <text x="436" y="172" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Dịch vụ Khoa học Kỹ thuật (DK1) – Thành lập 05/07/1989</text>
+  <text x="436" y="190" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Chốt giữ thềm lục địa phía Nam của Tổ quốc</text>
+  <text x="436" y="208" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Căn cứ pháp lý: Điều 60 &amp; Điều 80 UNCLOS 1982</text>
+
+  <!-- 7 Banks Grid -->
+  <rect x="422" y="234" width="162" height="62" rx="8" fill="#B6E0EB"/>
+  <text x="434" y="253" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">Các Bãi ngầm Tiền tiêu</text>
+  <text x="434" y="270" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">• Tư Chính • Phúc Nguyên</text>
+  <text x="434" y="285" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">• Phúc Tần • Quế Đường</text>
+
+  <rect x="594" y="234" width="162" height="62" rx="8" fill="#B6E0EB"/>
+  <text x="606" y="253" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">Vành đai Thềm lục địa</text>
+  <text x="606" y="270" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">• Huyền Trân • Ba Kè</text>
+  <text x="606" y="285" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">• Cụm Cà Mau</text>
+
+  <rect x="422" y="306" width="334" height="60" rx="10" fill="#29B4D1"/>
+  <text x="589" y="328" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">“Cột mốc chủ quyền sống trên thềm lục địa phía Nam”</text>
+  <text x="589" y="346" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">Nghiên cứu khí tượng thủy văn, bảo vệ mỏ dầu khí &amp; cứu hộ ngư dân</text>
+</svg>

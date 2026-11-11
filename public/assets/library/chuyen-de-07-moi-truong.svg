@@ -1,42 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="bg07" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#022C22" />
-      <stop offset="50%" stop-color="#064E3B" />
-      <stop offset="100%" stop-color="#0369A1" />
+    <linearGradient id="bgCd07" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
     </linearGradient>
+    <pattern id="gridCd07" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
   </defs>
-  <rect width="800" height="480" rx="20" fill="url(#bg07)" />
-  <!-- 3 Marine Ecosystems Hub (Coral Reef - Seagrass - Mangrove) -->
-  <g transform="translate(565, 210)">
-    <circle r="135" fill="#042F2E" stroke="#34D399" stroke-opacity="0.45" stroke-width="2" />
-    <circle r="98" fill="none" stroke="#38BDF8" stroke-opacity="0.35" stroke-dasharray="6 4" stroke-width="1.5" />
-    <!-- Coral & Marine Life Stylized Iconography -->
-    <path d="M-35,45 C-35,10 -55,-5 -45,-35 C-35,-15 -20,-25 -20,15" stroke="#FB7185" stroke-width="6" stroke-linecap="round" fill="none" />
-    <path d="M0,50 C0,5 0,-25 0,-55 M0,-15 L25,-38 M0,5 L-25,-18" stroke="#34D399" stroke-width="6" stroke-linecap="round" fill="none" />
-    <path d="M38,45 C38,15 58,-5 45,-32" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" fill="none" />
-    <path d="M-75,55 Q0,38 75,55" stroke="#38BDF8" stroke-width="3" fill="none" />
-    <text x="0" y="85" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="13" font-weight="800">ĐA DẠNG SINH HỌC BIỂN</text>
-    <text x="0" y="104" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="10">San hô • Thảm cỏ biển • Rừng ngập mặn</text>
-  </g>
-  <!-- Left Card: Marine Conservation Pillars -->
-  <g transform="translate(42, 48)">
-    <rect width="360" height="330" rx="14" fill="#021F1A" fill-opacity="0.9" stroke="#34D399" stroke-opacity="0.45" />
-    <text x="22" y="36" fill="#6EE7B7" font-family="sans-serif" font-size="14" font-weight="800">BẢO TỒN HỆ SINH THÁI &amp; MÔI TRƯỜNG BIỂN</text>
-    <line x1="22" y1="48" x2="338" y2="48" stroke="#34D399" stroke-opacity="0.35" />
-    <text x="22" y="78" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">1. Ba hệ sinh thái biển trọng yếu</text>
-    <text x="22" y="98" fill="#D1FAE5" font-family="sans-serif" font-size="11">• Rạn san hô (~1.100+ km²): Nơi cư trú sinh vật biển</text>
-    <text x="22" y="116" fill="#D1FAE5" font-family="sans-serif" font-size="11">• Rừng ngập mặn: "Bức tường xanh" chắn sóng, giữ đất</text>
-    <text x="22" y="134" fill="#D1FAE5" font-family="sans-serif" font-size="11">• Thảm cỏ biển: Bể hấp thụ कार्बन xanh (Blue Carbon)</text>
 
-    <text x="22" y="168" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">2. Giảm thiểu rác thải nhựa đại dương</text>
-    <text x="22" y="188" fill="#D1FAE5" font-family="sans-serif" font-size="11">• Ngăn chặn nhựa dùng một lần &amp; hạt vi nhựa</text>
-    <text x="22" y="206" fill="#D1FAE5" font-family="sans-serif" font-size="11">• Mô hình "Đảo xanh không rác thải nhựa"</text>
+  <rect width="800" height="450" rx="16" fill="url(#bgCd07)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridCd07)"/>
 
-    <text x="22" y="240" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">3. Ứng phó biến đổi khí hậu &amp; nước biển dâng</text>
-    <text x="22" y="260" fill="#D1FAE5" font-family="sans-serif" font-size="11">• Bảo vệ các khu bảo tồn biển (Vịnh Nha Trang, Cù Lao</text>
-    <text x="22" y="278" fill="#D1FAE5" font-family="sans-serif" font-size="11">Chàm, Côn Đảo, Phú Quốc, Bạch Long Vĩ...)</text>
-  </g>
-  <rect x="42" y="405" width="716" height="44" rx="10" fill="#021C17" fill-opacity="0.92" stroke="#34D399" stroke-opacity="0.4" />
-  <text x="400" y="432" text-anchor="middle" fill="#6EE7B7" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 07: BẢO VỆ TÀI NGUYÊN VÀ MÔI TRƯỜNG BIỂN ĐẢO</text>
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="46" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="69" width="118" height="28" rx="14" fill="#29B4D1"/>
+  <text x="99" y="87" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">CHUYÊN ĐỀ 07</text>
+  <text x="172" y="88" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="15" font-weight="800">3 HỆ SINH THÁI BIỂN TIÊU BIỂU, BLUE CARBON &amp; 16 KHU BẢO TỒN BIỂN</text>
+
+  <!-- 3 Marine Ecosystems Cards -->
+  <!-- 1. Mangrove -->
+  <rect x="28" y="118" width="236" height="196" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="42" y="132" width="208" height="28" rx="7" fill="#113747"/>
+  <text x="146" y="150" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">1. RỪNG NGẬP MẶN VEN BỜ</text>
+  <text x="44" y="178" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Cần Giờ, Mũi Cà Mau, Xuân Thủy</text>
+  <text x="44" y="198" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Giảm 50–70% năng lượng sóng bão</text>
+  <text x="44" y="216" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Chống xói lở bờ biển &amp; xâm nhập mặn</text>
+  <text x="44" y="234" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Hấp thụ Blue Carbon gấp 4–10 lần</text>
+  <text x="44" y="250" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  rừng nhiệt đới trên cạn</text>
+  <rect x="42" y="268" width="208" height="32" rx="7" fill="#1A718D"/>
+  <text x="146" y="288" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Lá chắn sinh học ven biển</text>
+
+  <!-- 2. Seagrass -->
+  <rect x="282" y="118" width="236" height="196" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="296" y="132" width="208" height="28" rx="7" fill="#1A718D"/>
+  <text x="400" y="150" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">2. THẢM CỎ BIỂN NƯỚC NÔNG</text>
+  <text x="298" y="178" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Phú Quốc, Côn Đảo, Khánh Hòa</text>
+  <text x="298" y="198" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Bãi đẻ và ươm giống hải sản non</text>
+  <text x="298" y="216" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Lọc trầm tích, tạo oxy hòa tan</text>
+  <text x="298" y="234" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Sinh cảnh của Bò biển (Dugong)</text>
+  <text x="298" y="250" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  và Rùa biển quý hiếm Sách Đỏ</text>
+  <rect x="296" y="268" width="208" height="32" rx="7" fill="#113747"/>
+  <text x="400" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Bể lưu trữ Carbon đáy biển</text>
+
+  <!-- 3. Coral Reefs -->
+  <rect x="536" y="118" width="236" height="196" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="550" y="132" width="208" height="28" rx="7" fill="#29B4D1"/>
+  <text x="654" y="150" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">3. RẠN SAN HÔ NHIỆT ĐỚI</text>
+  <text x="552" y="178" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">&gt; 1.200 km² (Hoàng Sa, Trường Sa...)</text>
+  <text x="552" y="198" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• ~400 loài san hô tạo rạn cứng</text>
+  <text x="552" y="216" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Nơi cư trú của 25% loài sinh vật</text>
+  <text x="552" y="234" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Xây dựng nền móng đảo san hô vòng</text>
+  <text x="552" y="250" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Đê chắn sóng tự nhiên ngoài khơi</text>
+  <rect x="550" y="268" width="208" height="32" rx="7" fill="#113747"/>
+  <text x="654" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">“Rừng mưa nhiệt đới đáy biển”</text>
+
+  <!-- Bottom Strip: 16 Marine Protected Areas & Action Plan -->
+  <rect x="28" y="326" width="744" height="56" rx="12" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="44" y="339" width="186" height="30" rx="8" fill="#29B4D1"/>
+  <text x="137" y="358" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">16 KHU BẢO TỒN BIỂN</text>
+  <text x="244" y="352" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">Bạch Long Vĩ, Cát Bà, Cô Tô, Cồn Cỏ, Cù Lao Chàm, Lý Sơn, vịnh Nha Trang, Núi Chúa, Phú Quý, Côn Đảo, Phú Quốc...</text>
+  <text x="244" y="370" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="700">Quyết định 1423/QĐ-TTg &amp; 1746/QĐ-TTg: Giảm thiểu rác thải nhựa đại dương, chống khai thác IUU</text>
 </svg>

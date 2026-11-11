@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB06" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB06" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB06)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB06)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 06</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">UNCLOS 1982, LUẬT BIỂN 2012 &amp; GIẢI QUYẾT HÒA BÌNH TRANH CHẤP</text>
+
+  <!-- Left: UNCLOS 1982 Core Framework -->
+  <rect x="28" y="116" width="358" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="46" y="140" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">“HIẾN PHÁP VỀ ĐẠI DƯƠNG” – UNCLOS 1982</text>
+
+  <rect x="44" y="152" width="326" height="64" rx="10" fill="#1A718D"/>
+  <text x="58" y="172" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Quy mô &amp; Hiệu lực Quốc tế</text>
+  <text x="58" y="190" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 320 Điều khoản &amp; 9 Phụ lục chuyên ngành</text>
+  <text x="58" y="206" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Hiệu lực 16/11/1994 • Việt Nam phê chuẩn 23/06/1994</text>
+
+  <rect x="44" y="226" width="326" height="66" rx="10" fill="#B6E0EB"/>
+  <text x="58" y="246" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">Quy chế pháp lý của Đảo (Điều 121)</text>
+  <text x="58" y="264" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Khoản 1-2: Đảo tự nhiên có đủ 5 vùng biển</text>
+  <text x="58" y="280" fill="#1A718D" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Khoản 3: Đá không thích hợp cho đời sống không có EEZ</text>
+
+  <rect x="44" y="302" width="326" height="64" rx="10" fill="#29B4D1"/>
+  <text x="58" y="322" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">Giải quyết hòa bình tranh chấp (Điều 279–287)</text>
+  <text x="58" y="340" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Không đe dọa hoặc sử dụng vũ lực (Hiến chương LHQ)</text>
+  <text x="58" y="356" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Đàm phán, trung gian, hòa giải, Tòa ITLOS / ICJ</text>
+
+  <!-- Right: Law of the Sea of Vietnam 2012 -->
+  <rect x="400" y="116" width="372" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="418" y="140" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">LUẬT BIỂN VIỆT NAM NĂM 2012 (LUẬT SỐ 18/2012/QH13)</text>
+
+  <rect x="416" y="152" width="340" height="64" rx="10" fill="#113747"/>
+  <text x="430" y="172" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">7 Chương – 55 Điều (Hiệu lực 01/01/2013)</text>
+  <text x="430" y="190" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Nội luật hóa chuẩn xác các quy định của UNCLOS 1982</text>
+  <text x="430" y="206" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Điều 1 &amp; Điều 19: Khẳng định chủ quyền Hoàng Sa, Trường Sa</text>
+
+  <rect x="416" y="226" width="340" height="66" rx="10" fill="#1A718D"/>
+  <text x="430" y="246" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Thực tiễn Phân định Biển Hòa bình của Việt Nam</text>
+  <text x="430" y="264" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1997: Hiệp định phân định biển Việt Nam – Thái Lan</text>
+  <text x="430" y="280" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 2000: Vịnh Bắc Bộ • 2003 &amp; 2022: Việt Nam – Indonesia</text>
+
+  <rect x="416" y="302" width="340" height="64" rx="10" fill="#113747"/>
+  <text x="430" y="322" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Lực lượng Tuần tra, Kiểm soát trên Biển (Chương V)</text>
+  <text x="430" y="340" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Hải quân nhân dân, Cảnh sát biển, Bộ đội Biên phòng,</text>
+  <text x="430" y="356" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  Kiểm ngư Việt Nam bảo vệ pháp luật và ngư dân</text>
+</svg>

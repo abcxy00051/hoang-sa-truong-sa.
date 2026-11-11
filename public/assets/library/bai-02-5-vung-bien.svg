@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB02" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB02" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB02)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB02)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 02</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">5 VÙNG BIỂN VIỆT NAM THEO UNCLOS 1982 &amp; LUẬT BIỂN 2012</text>
+
+  <!-- Cross-Section Diagram Box -->
+  <rect x="28" y="114" width="744" height="268" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+
+  <!-- Distance Ruler Bar -->
+  <line x1="176" y1="146" x2="736" y2="146" stroke="#29B4D1" stroke-width="2"/>
+  <circle cx="176" cy="146" r="5" fill="#B6E0EB"/>
+  <circle cx="300" cy="146" r="5" fill="#29B4D1"/>
+  <circle cx="424" cy="146" r="5" fill="#29B4D1"/>
+  <circle cx="590" cy="146" r="5" fill="#29B4D1"/>
+  <circle cx="736" cy="146" r="5" fill="#B6E0EB"/>
+
+  <text x="176" y="135" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Đường cơ sở (0 HL)</text>
+  <text x="300" y="135" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">12 Hải lý</text>
+  <text x="424" y="135" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">24 Hải lý</text>
+  <text x="590" y="135" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">200 Hải lý (EEZ)</text>
+  <text x="716" y="135" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Đến 350 HL</text>
+
+  <!-- 5 Zone Blocks -->
+  <rect x="46" y="162" width="124" height="142" rx="10" fill="#B6E0EB"/>
+  <text x="108" y="186" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="900">1. NỘI THỦY</text>
+  <text x="108" y="206" text-anchor="middle" fill="#1A718D" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Trong Đường cơ sở</text>
+  <text x="108" y="228" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">Chủ quyền hoàn toàn,</text>
+  <text x="108" y="244" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">tuyệt đối và đầy đủ</text>
+  <text x="108" y="260" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">như trên đất liền</text>
+  <rect x="58" y="274" width="100" height="20" rx="5" fill="#113747"/>
+  <text x="108" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="800">Điều 9-10 LB 2012</text>
+
+  <rect x="178" y="162" width="118" height="142" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="1.5"/>
+  <text x="237" y="186" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="900">2. LÃNH HẢI</text>
+  <text x="237" y="206" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Rộng 12 hải lý</text>
+  <text x="237" y="228" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Chủ quyền hoàn toàn,</text>
+  <text x="237" y="244" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">đầy đủ • Tàu nước</text>
+  <text x="237" y="260" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">ngoài đi qua không gây hại</text>
+  <rect x="188" y="274" width="98" height="20" rx="5" fill="#113747"/>
+  <text x="237" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="800">Biên giới quốc gia</text>
+
+  <rect x="304" y="162" width="118" height="142" rx="10" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.2"/>
+  <text x="363" y="186" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="900">3. TIẾP GIÁP</text>
+  <text x="363" y="206" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">12 → 24 hải lý</text>
+  <text x="363" y="228" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Thực thi quyền chủ</text>
+  <text x="363" y="244" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">quyền, tài phán: Hải quan,</text>
+  <text x="363" y="260" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">thuế, y tế, xuất nhập cảnh</text>
+  <rect x="314" y="274" width="98" height="20" rx="5" fill="#113747"/>
+  <text x="363" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="800">Điều 33 UNCLOS</text>
+
+  <rect x="430" y="162" width="160" height="142" rx="10" fill="#29B4D1"/>
+  <text x="510" y="186" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="900">4. ĐẶC QUYỀN KINH TẾ</text>
+  <text x="510" y="206" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Rộng 200 hải lý từ ĐCS</text>
+  <text x="510" y="228" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">Quyền chủ quyền thăm dò,</text>
+  <text x="510" y="244" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">khai thác tài nguyên &amp; Quyền</text>
+  <text x="510" y="260" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">tài phán đảo nhân tạo, NCKH</text>
+  <rect x="450" y="274" width="120" height="20" rx="5" fill="#113747"/>
+  <text x="510" y="288" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="800">Điều 56, 58 UNCLOS</text>
+
+  <rect x="598" y="162" width="156" height="142" rx="10" fill="#B6E0EB"/>
+  <text x="676" y="186" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="900">5. THỀM LỤC ĐỊA</text>
+  <text x="676" y="206" text-anchor="middle" fill="#1A718D" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">200 → tối đa 350 HL</text>
+  <text x="676" y="228" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">Đáy biển &amp; lòng đất dưới</text>
+  <text x="676" y="244" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">đáy biển • Quyền chủ quyền</text>
+  <text x="676" y="260" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">đương nhiên &amp; đặc quyền khoan</text>
+  <rect x="616" y="274" width="120" height="20" rx="5" fill="#113747"/>
+  <text x="676" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="800">Điều 76, 77 UNCLOS</text>
+
+  <!-- Bottom Baseline Note -->
+  <rect x="46" y="318" width="708" height="48" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="1.2"/>
+  <text x="400" y="339" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">HỆ THỐNG ĐƯỜNG CƠ SỞ VIỆT NAM (TUYÊN BỐ NGÀY 12/11/1982 &amp; NĂM 2025 TẠI VỊNH BẮC BỘ)</text>
+  <text x="400" y="356" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">11 điểm chuẩn A1 (Hòn Nhạn – Thổ Chu) đến A11 (Đảo Cồn Cỏ – Quảng Trị) + Đường cơ sở Vịnh Bắc Bộ</text>
+</svg>

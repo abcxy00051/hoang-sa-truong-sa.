@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB04" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB04" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB04)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB04)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 04</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">THỰC THI &amp; BẢO VỆ CHỦ QUYỀN HOÀNG SA, TRƯỜNG SA THẾ KỶ XX – NAY</text>
+
+  <!-- 3 Connected Era Panels -->
+  <rect x="28" y="116" width="236" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="42" y="130" width="208" height="30" rx="8" fill="#113747"/>
+  <text x="146" y="150" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">1. QUẢN LÝ HÀNH CHÍNH</text>
+  <text x="44" y="178" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Nghị định &amp; Thiết chế Nhà nước</text>
+  <text x="44" y="198" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1933: Sát nhập Trường Sa vào</text>
+  <text x="44" y="214" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  tỉnh Bà Rịa (Nghị định Krautheimer)</text>
+  <text x="44" y="232" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1938: Dụ số 10 &amp; Nghị định 156-SC</text>
+  <text x="44" y="248" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  lập đơn vị hành chính Hoàng Sa</text>
+  <text x="44" y="266" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Trạm Khí tượng WMO 48860</text>
+  <text x="44" y="282" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">  (Hoàng Sa) &amp; 48870 (Phú Lâm)</text>
+  <rect x="42" y="302" width="208" height="62" rx="8" fill="#1A718D"/>
+  <text x="146" y="324" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Dựng bia chủ quyền (1938)</text>
+  <text x="146" y="342" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Đồn trú, hải đăng &amp; khảo</text>
+  <text x="146" y="356" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">sát khoa học thường xuyên</text>
+
+  <!-- Panel 2 -->
+  <rect x="282" y="116" width="236" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="296" y="130" width="208" height="30" rx="8" fill="#29B4D1"/>
+  <text x="400" y="150" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">2. PHÁP LÝ QUỐC TẾ 1951–1975</text>
+  <text x="298" y="178" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Hội nghị San Francisco (07/09/1951)</text>
+  <text x="298" y="198" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Tuyên bố khẳng định chủ quyền</text>
+  <text x="298" y="214" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  đối với Hoàng Sa và Trường Sa</text>
+  <text x="298" y="232" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Không quốc gia nào trong 51</text>
+  <text x="298" y="248" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">  phái đoàn phản đối hoặc bảo lưu</text>
+  <text x="298" y="266" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1956–1974: Ban hành các Sắc lệnh</text>
+  <text x="298" y="282" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  hành chính Quảng Nam, Phước Tuy</text>
+  <rect x="296" y="302" width="208" height="62" rx="8" fill="#1A718D" stroke="#29B4D1" stroke-width="1"/>
+  <text x="400" y="324" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Tháng 04/1975</text>
+  <text x="400" y="342" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Hải quân nhân dân Việt Nam</text>
+  <text x="400" y="356" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">tiếp quản các đảo ở Trường Sa</text>
+
+  <!-- Panel 3 -->
+  <rect x="536" y="116" width="236" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="550" y="130" width="208" height="30" rx="8" fill="#113747"/>
+  <text x="654" y="150" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">3. NHÀ NƯỚC CHXHCN VIỆT NAM</text>
+  <text x="552" y="178" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Kiện toàn Hành chính &amp; Luật pháp</text>
+  <text x="552" y="198" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Huyện đảo Hoàng Sa (TP. Đà Nẵng)</text>
+  <text x="552" y="216" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Huyện đảo Trường Sa (Khánh Hòa):</text>
+  <text x="552" y="232" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">  TT. Trường Sa, xã Song Tử Tây,</text>
+  <text x="552" y="248" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">  xã Sinh Tồn (NĐ 65/2007/NĐ-CP)</text>
+  <text x="552" y="266" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 23/06/1994: Phê chuẩn UNCLOS</text>
+  <text x="552" y="282" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 21/06/2012: Luật Biển Việt Nam</text>
+  <rect x="550" y="302" width="208" height="62" rx="8" fill="#29B4D1"/>
+  <text x="654" y="324" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">Kế thừa Nhà nước hợp pháp</text>
+  <text x="654" y="342" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">Thực thi chủ quyền liên tục,</text>
+  <text x="654" y="356" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">hòa bình &amp; minh bạch quốc tế</text>
+</svg>

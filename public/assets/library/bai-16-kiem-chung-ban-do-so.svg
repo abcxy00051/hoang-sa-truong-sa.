@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB16" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB16" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB16)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB16)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 16</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">NHẬN DIỆN BẢN ĐỒ SAI LỆCH &amp; BẢO VỆ CHỦ QUYỀN TRÊN KHÔNG GIAN MẠNG</text>
+
+  <!-- Left Panel: Standard vs Violating Map Comparison -->
+  <rect x="28" y="116" width="364" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="46" y="140" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">ĐỐI SÁNH BẢN ĐỒ CHUẨN PHÁP LÝ &amp; VI PHẠM</text>
+
+  <!-- Valid Map Box -->
+  <rect x="44" y="152" width="332" height="102" rx="10" fill="#113747"/>
+  <rect x="56" y="162" width="174" height="20" rx="5" fill="#29B4D1"/>
+  <text x="143" y="176" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="900">✓ BẢN ĐỒ CHUẨN QUỐC GIA</text>
+  <text x="58" y="198" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Thể hiện đầy đủ quần đảo Hoàng Sa &amp; Trường Sa</text>
+  <text x="58" y="216" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Ghi đúng danh xưng “Biển Đông” (East Sea)</text>
+  <text x="58" y="234" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Đúng quy chuẩn Cục Đo đạc, Bản đồ &amp; TTĐL VN</text>
+
+  <!-- Violating Map Box -->
+  <rect x="44" y="264" width="332" height="102" rx="10" fill="#1A718D"/>
+  <rect x="56" y="274" width="212" height="20" rx="5" fill="#B6E0EB"/>
+  <text x="162" y="288" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="900">✕ DẤU HIỆU BẢN ĐỒ VI PHẠM</text>
+  <text x="58" y="310" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Không vẽ hoặc cắt bỏ Hoàng Sa, Trường Sa, Phú Quốc</text>
+  <text x="58" y="328" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Chèn “đường đứt đoạn” phi pháp trái UNCLOS 1982</text>
+  <text x="58" y="346" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Ghi sai lệch chủ quyền hoặc tên gọi đảo, đá Việt Nam</text>
+
+  <!-- Right Panel: Law on Surveying and Mapping 2018 -->
+  <rect x="406" y="116" width="366" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="424" y="140" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">CƠ SỞ PHÁP LÝ &amp; QUY TRÌNH XỬ LÝ CHUẨN</text>
+
+  <rect x="422" y="152" width="334" height="96" rx="10" fill="#1A718D" stroke="#29B4D1" stroke-width="1.2"/>
+  <text x="436" y="174" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Điều 6 Luật Đo đạc và Bản đồ năm 2018</text>
+  <text x="436" y="194" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">Nghiêm cấm xuất bản, lưu hành, sử dụng sản phẩm</text>
+  <text x="436" y="210" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">đo đạc và bản đồ thể hiện không đúng hoặc không</text>
+  <text x="436" y="226" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">thể hiện chủ quyền, biên giới quốc gia Việt Nam.</text>
+
+  <rect x="422" y="258" width="334" height="108" rx="10" fill="#29B4D1"/>
+  <text x="436" y="280" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">Quy trình Ứng xử Văn minh của Học sinh THPT</text>
+  <text x="436" y="300" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">1. Kiểm tra kỹ lưỡng mọi bản đồ trước khi đưa vào slide</text>
+  <text x="436" y="318" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">2. Chụp lưu bằng chứng URL/ứng dụng vi phạm chủ quyền</text>
+  <text x="436" y="336" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">3. Không chia sẻ lan truyền sản phẩm sai lệch</text>
+  <text x="436" y="354" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">4. Báo cáo nhà trường và cổng thông tin cơ quan chức năng</text>
+</svg>

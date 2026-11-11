@@ -1,46 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="bg04" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#032639" />
-      <stop offset="50%" stop-color="#064E6E" />
-      <stop offset="100%" stop-color="#065F46" />
+    <linearGradient id="bgCd04" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
     </linearGradient>
-    <linearGradient id="reefAtoll" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#6EE7B7" />
-      <stop offset="50%" stop-color="#2DD4BF" />
-      <stop offset="100%" stop-color="#0284C7" />
-    </linearGradient>
+    <pattern id="gridCd04" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
   </defs>
-  <rect width="800" height="480" rx="20" fill="url(#bg04)" />
-  <!-- Topographic & Bathymetric Contours -->
-  <g transform="translate(415, 215)">
-    <ellipse rx="235" ry="145" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="8 6" />
-    <ellipse rx="185" ry="112" fill="#0284C7" fill-opacity="0.25" stroke="#2DD4BF" stroke-opacity="0.45" stroke-width="2" />
-    <ellipse rx="132" ry="78" fill="url(#reefAtoll)" fill-opacity="0.35" stroke="#6EE7B7" stroke-width="2" />
-    <ellipse rx="78" ry="44" fill="#FDE68A" fill-opacity="0.88" stroke="#F59E0B" stroke-width="2" />
-    <ellipse rx="46" ry="24" fill="#10B981" />
-    <text x="0" y="4" text-anchor="middle" fill="#064E3B" font-family="sans-serif" font-size="11" font-weight="800">ĐẢO SAN HÔ</text>
-    <text x="0" y="-56" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="11" font-weight="700">Thềm rạn san hô vòng (Atoll)</text>
-    <text x="0" y="98" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="11" font-weight="700">Sườn dốc thềm lục địa &amp; biển sâu</text>
-  </g>
-  <!-- Left Panel: Hoang Sa vs Truong Sa Geography -->
-  <g transform="translate(36, 48)">
-    <rect width="235" height="330" rx="14" fill="#041E2E" fill-opacity="0.9" stroke="#2DD4BF" stroke-opacity="0.45" />
-    <text x="18" y="34" fill="#6EE7B7" font-family="sans-serif" font-size="13" font-weight="800">ĐỊA LÝ TỰ NHIÊN BIỂN ĐẢO</text>
-    <line x1="18" y1="46" x2="215" y2="46" stroke="#2DD4BF" stroke-opacity="0.35" />
-    <text x="18" y="76" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">1. Quần đảo Hoàng Sa</text>
-    <text x="18" y="95" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Nhóm An Vĩnh &amp; Nhóm Lưỡi Liềm</text>
-    <text x="18" y="113" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Đảo Phú Lâm (~1,5–2 km²)</text>
-    <text x="18" y="131" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Đảo Đá Bắc (cao ~15,9 m)</text>
-    <text x="18" y="164" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">2. Quần đảo Trường Sa</text>
-    <text x="18" y="183" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Chia thành 8 cụm đảo, đá, bãi</text>
-    <text x="18" y="201" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Đảo tự nhiên lớn nhất: Ba Bình</text>
-    <text x="18" y="219" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Đảo cao nhất: Song Tử Tây</text>
-    <text x="18" y="252" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">3. Khí hậu &amp; Hải văn</text>
-    <text x="18" y="271" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Nhiệt đới gió mùa hải dương</text>
-    <text x="18" y="289" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Dòng biển theo 2 mùa gió</text>
-    <text x="18" y="307" fill="#CCFBF1" font-family="sans-serif" font-size="11">• Độ muối trung bình 32–34‰</text>
-  </g>
-  <rect x="36" y="405" width="728" height="44" rx="10" fill="#031824" fill-opacity="0.92" stroke="#2DD4BF" stroke-opacity="0.4" />
-  <text x="400" y="432" text-anchor="middle" fill="#6EE7B7" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 04: ĐỊA LÝ VÀ ĐẶC ĐIỂM TỰ NHIÊN BIỂN ĐẢO VIỆT NAM</text>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgCd04)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridCd04)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="46" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="69" width="118" height="28" rx="14" fill="#29B4D1"/>
+  <text x="99" y="87" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">CHUYÊN ĐỀ 04</text>
+  <text x="172" y="88" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="15" font-weight="800">ĐỊA LÝ TỰ NHIÊN, ĐỊA CHẤT ĐẢO SAN HÔ ATOLL &amp; HẢI VĂN BIỂN ĐÔNG</text>
+
+  <!-- Left Panel: Coordinates & Sub-groups of Hoang Sa & Truong Sa -->
+  <rect x="28" y="118" width="320" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="44" y="142" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">TỌA ĐỘ ĐỊA LÝ 2 QUẦN ĐẢO TIỀN TIÊU</text>
+
+  <!-- Hoang Sa Box -->
+  <rect x="42" y="152" width="292" height="104" rx="10" fill="#113747"/>
+  <text x="56" y="173" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">QUẦN ĐẢO HOÀNG SA (TP. ĐÀ NẴNG)</text>
+  <text x="56" y="192" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="700">• Tọa độ: 15°45'B – 17°15'B | 111°00'Đ – 113°00'Đ</text>
+  <text x="56" y="210" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Nhóm An Vĩnh (Đông): Đảo Phú Lâm (~1,5 km²), Đảo Linh Côn</text>
+  <text x="56" y="227" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Nhóm Lưỡi Liềm (Tây): Hoàng Sa, Tri Tôn, Duy Mộng...</text>
+  <text x="56" y="244" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Cách đảo Lý Sơn (Quảng Ngãi) khoảng 120 hải lý</text>
+
+  <!-- Truong Sa Box -->
+  <rect x="42" y="266" width="292" height="104" rx="10" fill="#1A718D"/>
+  <text x="56" y="287" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">QUẦN ĐẢO TRƯỜNG SA (TỈNH KHÁNH HÒA)</text>
+  <text x="56" y="306" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="700">• Tọa độ: 06°30'B – 12°00'B | 111°30'Đ – 117°20'Đ</text>
+  <text x="56" y="324" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 8 cụm: Song Tử, Thị Tứ, Loại Ta, Nam Yết, Sinh Tồn,</text>
+  <text x="56" y="340" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  Trường Sa, Thám Hiểm, Bình Nguyên</text>
+  <text x="56" y="357" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Đảo tự nhiên lớn nhất: Ba Bình (~0,49 km²)</text>
+
+  <!-- Right Panel: Coral Atoll Cross-Section Diagram -->
+  <rect x="362" y="118" width="410" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="380" y="142" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">MẶT CẮT ĐỊA CHẤT ĐẢO SAN HÔ VÒNG (ATOLL)</text>
+
+  <!-- Sea Level Line -->
+  <line x1="380" y1="226" x2="754" y2="226" stroke="#29B4D1" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="750" y="218" text-anchor="end" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">Mực nước biển (0m)</text>
+
+  <!-- Volcanic Basement & Coral Reef Cap Cross-Section -->
+  <!-- Deep Seamount -->
+  <path d="M396 346 L446 254 L688 254 L738 346 Z" fill="#455C68" stroke="#B6E0EB" stroke-width="1.2"/>
+  <text x="567" y="325" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">NỀN NÚI LỬA NGẦM CỔ ĐẠI DƯƠNG (&gt;1.000m)</text>
+
+  <!-- Limestone Reef Platform -->
+  <path d="M446 254 L462 216 L516 216 L526 244 L608 244 L618 216 L672 216 L688 254 Z" fill="#1A718D" stroke="#29B4D1" stroke-width="1.5"/>
+
+  <!-- Lagoon (Vụng biển) -->
+  <path d="M518 226 L526 244 L608 244 L616 226 Z" fill="#29B4D1" fill-opacity="0.45"/>
+  <text x="567" y="240" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">Vụng biển (Lagoon 15–50m)</text>
+
+  <!-- Left Coral Cay (Đảo nổi + Thấu kính nước ngọt) -->
+  <path d="M468 216 Q490 198 512 216 Z" fill="#B6E0EB"/>
+  <ellipse cx="490" cy="222" rx="18" ry="6" fill="#29B4D1"/>
+  <text x="490" y="176" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Đảo nổi san hô (2–6m)</text>
+  <text x="490" y="191" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="700">Thấu kính nước ngọt</text>
+
+  <!-- Right Reef Crest (Vành đá san hô) -->
+  <text x="652" y="192" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Vành đá san hô</text>
+  <text x="652" y="207" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="9.5" font-weight="700">Chắn sóng đại dương</text>
+
+  <!-- Bottom Note inside Right Panel -->
+  <rect x="380" y="352" width="374" height="22" rx="6" fill="#29B4D1"/>
+  <text x="567" y="367" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Gió mùa Đông Bắc (T11–T4) &amp; Tây Nam (T5–T10) • Cửa ngõ Thái Bình Dương</text>
 </svg>

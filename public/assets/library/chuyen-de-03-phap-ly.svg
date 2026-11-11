@@ -1,63 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="bg03" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#081A33" />
-      <stop offset="55%" stop-color="#0F2D59" />
-      <stop offset="100%" stop-color="#1E3A8A" />
+    <linearGradient id="bgCd03" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
     </linearGradient>
-    <linearGradient id="gold03" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF08A" />
-      <stop offset="100%" stop-color="#F59E0B" />
-    </linearGradient>
+    <pattern id="gridCd03" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
   </defs>
-  <rect width="800" height="480" rx="20" fill="url(#bg03)" />
-  <!-- Scales of International Justice & UNCLOS 1982 -->
-  <g transform="translate(400, 195)">
-    <circle r="138" fill="#091930" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="2" />
-    <circle r="112" fill="none" stroke="#F59E0B" stroke-opacity="0.4" stroke-dasharray="6 4" stroke-width="1.5" />
-    <!-- Balance Pillar -->
-    <rect x="-6" y="-85" width="12" height="155" rx="4" fill="url(#gold03)" />
-    <rect x="-55" y="65" width="110" height="14" rx="6" fill="url(#gold03)" />
-    <!-- Crossbar -->
-    <line x1="-95" y1="-55" x2="95" y2="-55" stroke="url(#gold03)" stroke-width="6" stroke-linecap="round" />
-    <circle cx="0" cy="-85" r="12" fill="#FEF08A" />
-    <!-- Left Scale Pan -->
-    <line x1="-88" y1="-55" x2="-112" y2="5" stroke="#FDE68A" stroke-width="2" />
-    <line x1="-88" y1="-55" x2="-64" y2="5" stroke="#FDE68A" stroke-width="2" />
-    <path d="M-120,5 Q-88,28 -56,5 Z" fill="url(#gold03)" />
-    <!-- Right Scale Pan -->
-    <line x1="88" y1="-55" x2="64" y2="5" stroke="#FDE68A" stroke-width="2" />
-    <line x1="88" y1="-55" x2="112" y2="5" stroke="#FDE68A" stroke-width="2" />
-    <path d="M56,5 Q88,28 120,5 Z" fill="url(#gold03)" />
-  </g>
-  <!-- Left Card: International Law -->
-  <g transform="translate(38, 60)">
-    <rect width="205" height="270" rx="14" fill="#061529" fill-opacity="0.9" stroke="#38BDF8" stroke-opacity="0.45" />
-    <text x="18" y="34" fill="#38BDF8" font-family="sans-serif" font-size="13" font-weight="800">CÔNG PHÁP QUỐC TẾ</text>
-    <line x1="18" y1="45" x2="185" y2="45" stroke="#38BDF8" stroke-opacity="0.4" />
-    <text x="18" y="75" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">• Chiếm hữu thật sự</text>
-    <text x="18" y="95" fill="#BAE6FD" font-family="sans-serif" font-size="11">Nhà nước thực thi hòa bình,</text>
-    <text x="18" y="112" fill="#BAE6FD" font-family="sans-serif" font-size="11">liên tục, danh nghĩa rõ ràng</text>
-    <text x="18" y="145" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">• UNCLOS năm 1982</text>
-    <text x="18" y="165" fill="#BAE6FD" font-family="sans-serif" font-size="11">"Hiến pháp về biển và</text>
-    <text x="18" y="182" fill="#BAE6FD" font-family="sans-serif" font-size="11">đại dương" của Liên Hợp Quốc</text>
-    <text x="18" y="215" fill="#FDE68A" font-family="sans-serif" font-size="12" font-weight="700">• Giải quyết hòa bình</text>
-    <text x="18" y="235" fill="#BAE6FD" font-family="sans-serif" font-size="11">Điều 279 UNCLOS &amp; Hiến chương</text>
-  </g>
-  <!-- Right Card: Vietnam Legal Framework -->
-  <g transform="translate(557, 60)">
-    <rect width="205" height="270" rx="14" fill="#061529" fill-opacity="0.9" stroke="#F59E0B" stroke-opacity="0.45" />
-    <text x="18" y="34" fill="#FDE68A" font-family="sans-serif" font-size="13" font-weight="800">PHÁP LUẬT VIỆT NAM</text>
-    <line x1="18" y1="45" x2="185" y2="45" stroke="#F59E0B" stroke-opacity="0.4" />
-    <text x="18" y="75" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">• Nghị quyết Quốc hội 1994</text>
-    <text x="18" y="95" fill="#BAE6FD" font-family="sans-serif" font-size="11">Phê chuẩn UNCLOS 1982</text>
-    <text x="18" y="130" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">• Luật Biển Việt Nam 2012</text>
-    <text x="18" y="150" fill="#BAE6FD" font-family="sans-serif" font-size="11">7 Chương, 55 Điều quy định</text>
-    <text x="18" y="167" fill="#BAE6FD" font-family="sans-serif" font-size="11">đầy đủ 5 vùng biển &amp; 2 quần đảo</text>
-    <text x="18" y="202" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">• Phân biệt 3 khái niệm</text>
-    <text x="18" y="222" fill="#BAE6FD" font-family="sans-serif" font-size="11">Chủ quyền • Quyền chủ quyền</text>
-    <text x="18" y="239" fill="#BAE6FD" font-family="sans-serif" font-size="11">• Quyền tài phán quốc gia</text>
-  </g>
-  <rect x="38" y="405" width="724" height="44" rx="10" fill="#051124" fill-opacity="0.92" stroke="#38BDF8" stroke-opacity="0.4" />
-  <text x="400" y="432" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 03: CƠ SỞ LỊCH SỬ VÀ PHÁP LÝ BẢO VỆ CHỦ QUYỀN BIỂN ĐẢO</text>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgCd03)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridCd03)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="46" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="69" width="118" height="28" rx="14" fill="#29B4D1"/>
+  <text x="99" y="87" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">CHUYÊN ĐỀ 03</text>
+  <text x="172" y="88" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="15" font-weight="800">CƠ SỞ PHÁP LÝ QUỐC TẾ: UNCLOS 1982 &amp; LUẬT BIỂN VIỆT NAM 2012</text>
+
+  <!-- 3 Pillars of Legal Regime & Sovereignty -->
+  <!-- Pillar 1 -->
+  <rect x="28" y="118" width="236" height="196" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="42" y="132" width="208" height="30" rx="8" fill="#113747"/>
+  <text x="146" y="152" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">1. CHỦ QUYỀN QUỐC GIA</text>
+  <text x="44" y="182" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Nội thủy, Lãnh hải &amp; Hải đảo</text>
+  <text x="44" y="202" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Quyền tối cao, hoàn toàn, đầy đủ</text>
+  <text x="44" y="220" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Thụ đắc lãnh thổ theo nguyên tắc</text>
+  <text x="44" y="236" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">  Chiếm hữu thật sự (Effectivités)</text>
+  <text x="44" y="254" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Liên tục, hòa bình cấp Nhà nước</text>
+  <rect x="42" y="268" width="208" height="32" rx="7" fill="#1A718D"/>
+  <text x="146" y="288" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Điều 1, 9, 11, 19 Luật Biển 2012</text>
+
+  <!-- Pillar 2 -->
+  <rect x="282" y="118" width="236" height="196" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="296" y="132" width="208" height="30" rx="8" fill="#1A718D"/>
+  <text x="400" y="152" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">2. QUYỀN CHỦ QUYỀN</text>
+  <text x="298" y="182" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Vùng Đặc quyền kinh tế &amp; Thềm LĐ</text>
+  <text x="298" y="202" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Thăm dò, khai thác, bảo tồn và</text>
+  <text x="298" y="218" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  quản lý tài nguyên sinh vật/vi sinh</text>
+  <text x="298" y="236" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Đặc quyền khoan ở Thềm lục địa</text>
+  <text x="298" y="254" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Sản xuất năng lượng từ nước, gió</text>
+  <rect x="296" y="268" width="208" height="32" rx="7" fill="#113747"/>
+  <text x="400" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Điều 56, 77 UNCLOS 1982</text>
+
+  <!-- Pillar 3 -->
+  <rect x="536" y="118" width="236" height="196" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="550" y="132" width="208" height="30" rx="8" fill="#29B4D1"/>
+  <text x="654" y="152" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="900">3. QUYỀN TÀI PHÁN</text>
+  <text x="552" y="182" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Thực thi Quản lý Chuyên ngành</text>
+  <text x="552" y="202" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Lắp đặt đảo nhân tạo, công trình</text>
+  <text x="552" y="220" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Nghiên cứu khoa học biển</text>
+  <text x="552" y="238" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Bảo vệ và gìn giữ môi trường biển</text>
+  <text x="552" y="254" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Xử lý vi phạm theo pháp luật</text>
+  <rect x="550" y="268" width="208" height="32" rx="7" fill="#113747"/>
+  <text x="654" y="288" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Điều 16, 18 Luật Biển 2012</text>
+
+  <!-- Bottom Legal Resolution Strip -->
+  <rect x="28" y="326" width="744" height="56" rx="12" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="44" y="339" width="194" height="30" rx="8" fill="#29B4D1"/>
+  <text x="141" y="358" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">NGUYÊN TẮC TỐI THƯỢNG</text>
+  <text x="252" y="352" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="700">Giải quyết tranh chấp bằng biện pháp hòa bình (Điều 2.3 Hiến chương LHQ &amp; Điều 279 UNCLOS)</text>
+  <text x="252" y="370" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="700">Quy chế pháp lý của Đảo và Đá (Điều 121 UNCLOS 1982) • Tôn trọng quyền tự do hàng hải, hàng không</text>
 </svg>

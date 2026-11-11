@@ -1,49 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
   <defs>
-    <linearGradient id="bg02" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#271306" />
-      <stop offset="50%" stop-color="#451A03" />
-      <stop offset="100%" stop-color="#0C2A4A" />
+    <linearGradient id="bgCd02" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
     </linearGradient>
-    <linearGradient id="scroll02" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FEF3C7" />
-      <stop offset="100%" stop-color="#FDE68A" />
-    </linearGradient>
+    <pattern id="gridCd02" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
   </defs>
-  <rect width="800" height="480" rx="20" fill="url(#bg02)" />
-  <!-- Ancient Parchment Scroll -->
-  <g transform="translate(48, 45)">
-    <rect width="340" height="330" rx="14" fill="url(#scroll02)" stroke="#D97706" stroke-width="3" />
-    <rect x="14" y="14" width="312" height="302" rx="8" stroke="#92400E" stroke-opacity="0.4" stroke-width="1.5" />
-    <rect x="242" y="28" width="68" height="68" rx="6" fill="#DC2626" fill-opacity="0.15" stroke="#DC2626" stroke-width="2" />
-    <text x="276" y="58" text-anchor="middle" fill="#B91C1C" font-family="serif" font-size="12" font-weight="700">CHÂU BẢN</text>
-    <text x="276" y="76" text-anchor="middle" fill="#B91C1C" font-family="serif" font-size="11" font-weight="700">MINH MẠNG</text>
-    <text x="28" y="48" fill="#78350F" font-family="serif" font-size="16" font-weight="800">CHÍNH SỬ &amp; CHÂU BẢN</text>
-    <line x1="28" y1="60" x2="215" y2="60" stroke="#B45309" stroke-width="2" />
-    <text x="28" y="92" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• Thế kỷ XVII–XVIII: Đội Hoàng Sa</text>
-    <text x="40" y="110" fill="#78350F" font-family="sans-serif" font-size="11">Kiêm quản Đội Bắc Hải (70 suất/năm)</text>
-    <text x="28" y="140" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• Năm 1816: Vua Gia Long</text>
-    <text x="40" y="158" fill="#78350F" font-family="sans-serif" font-size="11">Thủy quân cùng đội Hoàng Sa khảo sát</text>
-    <text x="28" y="188" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• Năm 1836: Vua Minh Mạng</text>
-    <text x="40" y="206" fill="#78350F" font-family="sans-serif" font-size="11">Phạm Hữu Nhật cắm mốc, dựng bia</text>
-    <text x="28" y="236" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="700">• 1938 &amp; 1956–1975–Nay</text>
-    <text x="40" y="254" fill="#78350F" font-family="sans-serif" font-size="11">Thực thi &amp; bảo vệ chủ quyền liên tục</text>
-    <rect x="28" y="274" width="284" height="36" rx="8" fill="#78350F" />
-    <text x="170" y="297" text-anchor="middle" fill="#FEF3C7" font-family="sans-serif" font-size="11" font-weight="700">DI SẢN TƯ LIỆU THẾ GIỚI UNESCO (2014)</text>
-  </g>
-  <!-- Traditional Wooden Flotilla & Sovereignty Stele (Right) -->
-  <g transform="translate(435, 65)">
-    <circle cx="155" cy="145" r="125" fill="#0F172A" fill-opacity="0.65" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="2" />
-    <!-- Sailing Vessel of Hoang Sa Flotilla -->
-    <path d="M85,185 L225,185 L200,220 L110,220 Z" fill="#D97706" stroke="#FEF3C7" stroke-width="2" />
-    <line x1="155" y1="80" x2="155" y2="185" stroke="#FEF3C7" stroke-width="3" />
-    <path d="M155,85 L215,135 L155,168 Z" fill="#EF4444" fill-opacity="0.85" stroke="#FEF3C7" stroke-width="1.5" />
-    <path d="M150,95 L100,145 L150,168 Z" fill="#F59E0B" fill-opacity="0.85" stroke="#FEF3C7" stroke-width="1.5" />
-    <!-- Waves -->
-    <path d="M55,225 Q105,208 155,225 T255,225" stroke="#38BDF8" stroke-width="3" fill="none" />
-    <text x="155" y="295" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">ĐỘI HOÀNG SA &amp; BẮC HẢI</text>
-    <text x="155" y="315" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="11">Khởi hành tháng 2 • Trở về tháng 8 âm lịch</text>
-  </g>
-  <rect x="48" y="405" width="704" height="44" rx="10" fill="#1C1917" fill-opacity="0.9" stroke="#F59E0B" stroke-opacity="0.45" />
-  <text x="400" y="432" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="14" font-weight="700">CHUYÊN ĐỀ 02: LỊCH SỬ XÁC LẬP VÀ THỰC THI CHỦ QUYỀN HOÀNG SA – TRƯỜNG SA</text>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgCd02)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridCd02)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="46" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="69" width="118" height="28" rx="14" fill="#29B4D1"/>
+  <text x="99" y="87" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">CHUYÊN ĐỀ 02</text>
+  <text x="172" y="88" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="15" font-weight="800">LỊCH SỬ XÁC LẬP &amp; THỰC THI CHỦ QUYỀN HOÀNG SA – TRƯỜNG SA</text>
+
+  <!-- Horizontal Timeline Spine -->
+  <line x1="60" y1="152" x2="740" y2="152" stroke="#29B4D1" stroke-width="3"/>
+
+  <!-- Milestone 1: TK XVII - 1776 -->
+  <circle cx="115" cy="152" r="11" fill="#29B4D1" stroke="#113747" stroke-width="3"/>
+  <rect x="28" y="174" width="174" height="206" rx="12" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="186" width="150" height="24" rx="6" fill="#113747"/>
+  <text x="115" y="202" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">TK XVII – 1776</text>
+  <text x="42" y="228" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">Chúa Nguyễn &amp; Đội Hoàng Sa</text>
+  <text x="42" y="248" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Đội Hoàng Sa (70 suất/năm)</text>
+  <text x="42" y="266" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Đội Bắc Hải quản lý Trường Sa</text>
+  <text x="42" y="284" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Thiên Nam tứ chí lộ đồ (1686)</text>
+  <rect x="40" y="302" width="150" height="64" rx="8" fill="#1A718D"/>
+  <text x="115" y="322" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Phủ biên tạp lục (1776)</text>
+  <text x="115" y="340" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Lê Quý Đôn chép rõ lệ</text>
+  <text x="115" y="355" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">cấp bằng đi Hoàng Sa</text>
+
+  <!-- Milestone 2: 1816 - 1838 -->
+  <circle cx="305" cy="152" r="11" fill="#29B4D1" stroke="#113747" stroke-width="3"/>
+  <rect x="218" y="174" width="174" height="206" rx="12" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="230" y="186" width="150" height="24" rx="6" fill="#113747"/>
+  <text x="305" y="202" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">1816 – 1838</text>
+  <text x="232" y="228" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">Vương triều Nguyễn</text>
+  <text x="232" y="248" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1816: Vua Gia Long cắm cờ</text>
+  <text x="232" y="266" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1836: Minh Mạng sai cắm mốc</text>
+  <text x="232" y="284" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1838: Đại Nam nhất thống toàn đồ</text>
+  <rect x="230" y="302" width="150" height="64" rx="8" fill="#113747"/>
+  <text x="305" y="322" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Châu bản &amp; Mộc bản</text>
+  <text x="305" y="340" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Di sản tư liệu thế giới</text>
+  <text x="305" y="355" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">UNESCO công nhận</text>
+
+  <!-- Milestone 3: 1884 - 1951 -->
+  <circle cx="495" cy="152" r="11" fill="#29B4D1" stroke="#113747" stroke-width="3"/>
+  <rect x="408" y="174" width="174" height="206" rx="12" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="420" y="186" width="150" height="24" rx="6" fill="#113747"/>
+  <text x="495" y="202" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">1930s – 1951</text>
+  <text x="422" y="228" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">Quản lý Hành chính &amp; Quốc tế</text>
+  <text x="422" y="248" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1933: Sát nhập Trường Sa vào Bà Rịa</text>
+  <text x="422" y="266" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• 1938: Nghị định 156-SC Hoàng Sa</text>
+  <text x="422" y="284" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Dựng bia, hải đăng, trạm WMO</text>
+  <rect x="420" y="302" width="150" height="64" rx="8" fill="#1A718D"/>
+  <text x="495" y="322" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Hội nghị San Francisco</text>
+  <text x="495" y="340" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">07/09/1951: Tuyên bố chủ</text>
+  <text x="495" y="355" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">quyền trước 51 quốc gia</text>
+
+  <!-- Milestone 4: 1975 - Hiện nay -->
+  <circle cx="685" cy="152" r="11" fill="#29B4D1" stroke="#113747" stroke-width="3"/>
+  <rect x="598" y="174" width="174" height="206" rx="12" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="610" y="186" width="150" height="24" rx="6" fill="#29B4D1"/>
+  <text x="685" y="202" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">1975 – HIỆN NAY</text>
+  <text x="612" y="228" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">Nhà nước CHXHCN Việt Nam</text>
+  <text x="612" y="248" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Huyện đảo Hoàng Sa (Đà Nẵng)</text>
+  <text x="612" y="266" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Huyện đảo Trường Sa (Khánh Hòa)</text>
+  <text x="612" y="284" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Phê chuẩn UNCLOS 1982 (1994)</text>
+  <rect x="610" y="302" width="150" height="64" rx="8" fill="#113747"/>
+  <text x="685" y="322" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Luật Biển Việt Nam 2012</text>
+  <text x="685" y="340" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Thực thi chủ quyền liên tục,</text>
+  <text x="685" y="355" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">hòa bình &amp; đúng luật quốc tế</text>
 </svg>

@@ -97,7 +97,18 @@ function parseReadingMinutes(readingTimeStr) {
   return match ? parseInt(match[1], 10) : 14
 }
 
-// Danh sách 8 Chuyên đề Học liệu Số chính thống dành cho Học sinh THPT
+const SECONDARY_LESSON_BANNERS = {
+  1: '/assets/library/bai-02-5-vung-bien.svg',
+  2: '/assets/library/bai-04-thuc-thi-chu-quyen.svg',
+  3: '/assets/library/bai-06-unclos-luat-bien.svg',
+  4: '/assets/library/bai-08-khi-hau-hai-van.svg',
+  5: '/assets/library/bai-10-tai-nguyen-hang-hai.svg',
+  6: '/assets/library/bai-12-hai-dang-nha-gian-dk1.svg',
+  7: '/assets/library/bai-14-16-khu-bao-ton-bien.svg',
+  8: '/assets/library/bai-16-kiem-chung-ban-do-so.svg'
+}
+
+// Danh sách 8 Chuyên đề Học liệu Số chính thống
 export const LIBRARY_THEMATIC_MODULES = RAW_MODULES_CONFIG.map((cfg) => {
   const { raw, orderIndex, code, title, shortTitle, bannerImage, iconName, accent } = cfg
   const academicVisual = TOPIC_ACADEMIC_VISUALS[raw.id] || null
@@ -105,18 +116,22 @@ export const LIBRARY_THEMATIC_MODULES = RAW_MODULES_CONFIG.map((cfg) => {
   const enrichedLessons = raw.lessons.map((lesson, lIdx) => {
     const lessonNumber = `Bài ${orderIndex}.${lIdx + 1}`
     const minutes = parseReadingMinutes(lesson.readingTime)
+    const lessonImage =
+      lIdx === 1 && SECONDARY_LESSON_BANNERS[orderIndex]
+        ? SECONDARY_LESSON_BANNERS[orderIndex]
+        : bannerImage
     return {
       ...lesson,
       topicOrder: orderIndex,
       topicCode: code,
       topicTitle: `${orderIndex}. ${title}`,
       lessonNumber,
-      image: bannerImage,
+      image: lessonImage,
       readingMinutes: minutes,
       documentClassification: {
         primaryArchiveLabel: 'Tư liệu gốc trích dẫn chính thống',
-        illustrationLabel: 'Đồ họa minh họa giáo dục THPT',
-        commentaryLabel: 'Phân tích & Nhận định học thuật (Chuẩn GDPT 2018)'
+        illustrationLabel: 'Đồ họa học thuật chuẩn hóa',
+        commentaryLabel: 'Phân tích & Nhận định học thuật chuyên sâu'
       },
       academicVisual
     }

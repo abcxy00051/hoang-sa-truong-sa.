@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB10" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB10" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB10)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB10)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 10</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">TÀI NGUYÊN NĂNG LƯỢNG, BỂ TRẦM TÍCH, NGƯ TRƯỜNG &amp; CẢNG NƯỚC SÂU</text>
+
+  <!-- 3 Strategic Resource Pillars -->
+  <rect x="28" y="116" width="236" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="42" y="130" width="208" height="30" rx="8" fill="#113747"/>
+  <text x="146" y="150" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">1. BỂ TRẦM TÍCH &amp; NĂNG LƯỢNG</text>
+  <text x="44" y="178" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">8 Bể trầm tích Thềm lục địa</text>
+  <text x="44" y="198" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Sông Hồng, Phú Khánh, Cửu Long</text>
+  <text x="44" y="216" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Nam Côn Sơn, Mã Lai – Thổ Chu</text>
+  <text x="44" y="234" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Tư Chính – Vũng Mây, Hoàng Sa,</text>
+  <text x="44" y="250" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  Trường Sa (dầu thô &amp; khí tự nhiên)</text>
+  <text x="44" y="270" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Mỏ Bạch Hổ, Rồng, Lan Tây, Lan Đỏ</text>
+  <rect x="42" y="294" width="208" height="70" rx="8" fill="#1A718D"/>
+  <text x="146" y="316" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Điện gió ngoài khơi</text>
+  <text x="146" y="334" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">Tiềm năng &gt; 160.000 MW</text>
+  <text x="146" y="352" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Bình Thuận, Ninh Thuận, Bạc Liêu</text>
+
+  <!-- Pillar 2 -->
+  <rect x="282" y="116" width="236" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="296" y="130" width="208" height="30" rx="8" fill="#29B4D1"/>
+  <text x="400" y="150" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">2. 4 NGƯ TRƯỜNG TRỌNG ĐIỂM</text>
+  <text x="298" y="178" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Trữ lượng ~4,2 – 4,5 triệu tấn</text>
+  <text x="298" y="198" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Ngư trường Hải Phòng – Quảng Ninh</text>
+  <text x="298" y="216" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Ngư trường Hoàng Sa – Trường Sa</text>
+  <text x="298" y="234" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Ngư trường Ninh Thuận – Bình</text>
+  <text x="298" y="250" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  Thuận – Bà Rịa – Vũng Tàu</text>
+  <text x="298" y="270" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Ngư trường Cà Mau – Kiên Giang</text>
+  <rect x="296" y="294" width="208" height="70" rx="8" fill="#1A718D" stroke="#29B4D1" stroke-width="1"/>
+  <text x="400" y="316" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Khai thác bền vững &amp; Chống IUU</text>
+  <text x="400" y="334" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Giám sát hành trình VMS, truy xuất</text>
+  <text x="400" y="352" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">nguồn gốc thuỷ sản xuất khẩu</text>
+
+  <!-- Pillar 3 -->
+  <rect x="536" y="116" width="236" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="550" y="130" width="208" height="30" rx="8" fill="#113747"/>
+  <text x="654" y="150" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">3. CẢNG BIỂN NƯỚC SÂU</text>
+  <text x="552" y="178" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Hệ thống Cảng loại Đặc biệt</text>
+  <text x="552" y="198" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Cảng Lạch Huyện (Hải Phòng):</text>
+  <text x="552" y="214" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  Cửa ngõ hàng hải miền Bắc</text>
+  <text x="552" y="232" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="800">• Cảng Cái Mép – Thị Vải (BR-VT):</text>
+  <text x="552" y="248" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  Đón siêu tàu &gt;200.000 DWT đi</text>
+  <text x="552" y="264" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">  thẳng châu Âu, Bắc Mỹ</text>
+  <rect x="550" y="294" width="208" height="70" rx="8" fill="#29B4D1"/>
+  <text x="654" y="316" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">Tuyến Hàng hải Quốc tế</text>
+  <text x="654" y="334" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">Kết nối Thái Bình Dương – Ấn Độ</text>
+  <text x="654" y="352" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">Dương (34 cảng biển quốc gia)</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bgB14" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
+    </linearGradient>
+    <pattern id="gridB14" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#B6E0EB" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgB14)"/>
+  <rect width="800" height="450" rx="16" fill="url(#gridB14)"/>
+
+  <!-- Header in Safe Zone (y: 60..388) -->
+  <rect x="28" y="60" width="744" height="44" rx="10" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <rect x="40" y="68" width="96" height="28" rx="14" fill="#29B4D1"/>
+  <text x="88" y="86" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="900">BÀI HỌC 14</text>
+  <text x="150" y="87" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14.5" font-weight="800">MẠNG LƯỚI 16 KHU BẢO TỒN BIỂN &amp; GIẢM RÁC THẢI NHỰA ĐẠI DƯƠNG</text>
+
+  <!-- Left Panel: 16 Marine Protected Areas by Region -->
+  <rect x="28" y="116" width="420" height="264" rx="14" fill="#113747" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="46" y="140" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12.5" font-weight="800">MẠNG LƯỚI 16 KHU BẢO TỒN BIỂN VIỆT NAM</text>
+
+  <rect x="44" y="152" width="388" height="62" rx="8" fill="#1A718D"/>
+  <text x="56" y="172" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">Miền Bắc (04 Khu bảo tồn biển):</text>
+  <text x="56" y="190" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="600">• Đảo Trần – Cô Tô (Quảng Ninh) • Bạch Long Vĩ, Cát Bà (Hải Phòng)</text>
+  <text x="56" y="206" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">• Hòn Mê (Thanh Hóa): Bảo tồn rạn san hô và nguồn lợi Vịnh Bắc Bộ</text>
+
+  <rect x="44" y="222" width="388" height="72" rx="8" fill="#B6E0EB"/>
+  <text x="56" y="242" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">Miền Trung (10 Khu bảo tồn biển):</text>
+  <text x="56" y="260" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Cồn Cỏ • Hải Vân – Sơn Trà • Cù Lao Chàm • Lý Sơn • Nam Yết</text>
+  <text x="56" y="276" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Vịnh Nha Trang • Núi Chúa • Hòn Cau • Phú Quý</text>
+  <text x="56" y="290" fill="#1A718D" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">• Trọng điểm đa dạng sinh học rạn san hô và bãi đẻ rùa biển</text>
+
+  <rect x="44" y="302" width="388" height="64" rx="8" fill="#29B4D1"/>
+  <text x="56" y="322" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="900">Miền Nam (02 Khu bảo tồn biển):</text>
+  <text x="56" y="340" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10.5" font-weight="700">• Côn Đảo (Bà Rịa – Vũng Tàu) • Phú Quốc (Kiên Giang)</text>
+  <text x="56" y="356" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="800">• Khu Ramsar biển đầu tiên &amp; bảo tồn Bò biển (Dugong) quý hiếm</text>
+
+  <!-- Right Panel: Ocean Plastic Reduction Targets (Decision 1746/QĐ-TTg) -->
+  <rect x="462" y="116" width="310" height="264" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <text x="478" y="140" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">GIẢM RÁC THẢI NHỰA (QĐ 1746/QĐ-TTg)</text>
+
+  <rect x="476" y="152" width="282" height="64" rx="9" fill="#113747"/>
+  <text x="490" y="172" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="13" font-weight="900">Giảm 75% rác thải nhựa biển</text>
+  <text x="490" y="190" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Mục tiêu quốc gia đến năm 2030 trên toàn</text>
+  <text x="490" y="205" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">bộ vùng biển và hải đảo Việt Nam</text>
+
+  <rect x="476" y="224" width="282" height="64" rx="9" fill="#1A718D"/>
+  <text x="490" y="244" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="13" font-weight="900">100% Khu bảo tồn biển</text>
+  <text x="490" y="262" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">Không còn rác thải nhựa dùng một lần</text>
+  <text x="490" y="277" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="700">(Mô hình kiểu mẫu tại Cù Lao Chàm, Cô Tô)</text>
+
+  <rect x="476" y="296" width="282" height="70" rx="9" fill="#113747"/>
+  <text x="490" y="316" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">Giải pháp Đồng bộ 3 Trụ cột</text>
+  <text x="490" y="334" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">• Thu gom ngư cụ thất lạc (lưới ma)</text>
+  <text x="490" y="350" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="10" font-weight="600">• Phục hồi san hô &amp; Kinh tế tuần hoàn</text>
+</svg>

@@ -1,112 +1,138 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
   <defs>
-    <linearGradient id="heroBg" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#041527" />
-      <stop offset="50%" stop-color="#0A2B4C" />
-      <stop offset="100%" stop-color="#061E38" />
+    <linearGradient id="bgHeroLib" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#113747"/>
+      <stop offset="55%" stop-color="#1A718D"/>
+      <stop offset="100%" stop-color="#113747"/>
     </linearGradient>
-    <linearGradient id="goldGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FDE68A" />
-      <stop offset="50%" stop-color="#F59E0B" />
-      <stop offset="100%" stop-color="#B45309" />
+    <linearGradient id="cardDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#113747" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#1A718D" stop-opacity="0.92"/>
     </linearGradient>
-    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#67E8F9" />
-      <stop offset="100%" stop-color="#0284C7" />
-    </linearGradient>
-    <linearGradient id="parchment" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FEF3C7" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#FDE68A" stop-opacity="0.88" />
-    </linearGradient>
+    <pattern id="techGridLib" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#B6E0EB" stroke-width="0.6" stroke-opacity="0.12"/>
+    </pattern>
   </defs>
 
-  <rect width="960" height="540" rx="24" fill="url(#heroBg)" />
+  <!-- Background -->
+  <rect width="960" height="540" rx="22" fill="url(#bgHeroLib)"/>
+  <rect width="960" height="540" rx="22" fill="url(#techGridLib)"/>
 
-  <!-- Nautical Grid & Latitude/Longitude Lines -->
-  <g stroke="#38BDF8" stroke-opacity="0.14" stroke-width="1">
-    <line x1="0" y1="90" x2="960" y2="90" stroke-dasharray="6 6" />
-    <line x1="0" y1="180" x2="960" y2="180" />
-    <line x1="0" y1="270" x2="960" y2="270" stroke-dasharray="6 6" />
-    <line x1="0" y1="360" x2="960" y2="360" />
-    <line x1="0" y1="450" x2="960" y2="450" stroke-dasharray="6 6" />
-    <line x1="160" y1="0" x2="160" y2="540" />
-    <line x1="320" y1="0" x2="320" y2="540" stroke-dasharray="6 6" />
-    <line x1="480" y1="0" x2="480" y2="540" />
-    <line x1="640" y1="0" x2="640" y2="540" stroke-dasharray="6 6" />
-    <line x1="800" y1="0" x2="800" y2="540" />
+  <!-- Ambient Glows -->
+  <circle cx="480" cy="250" r="210" fill="#29B4D1" fill-opacity="0.12"/>
+  <circle cx="480" cy="250" r="155" stroke="#29B4D1" stroke-opacity="0.32" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="480" cy="250" r="205" stroke="#B6E0EB" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Top Header Banner -->
+  <rect x="28" y="22" width="904" height="50" rx="12" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <circle cx="54" cy="47" r="7" fill="#29B4D1"/>
+  <text x="72" y="52" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="800" letter-spacing="0.8">HỆ THỐNG HỌC LIỆU SỐ BIỂN ĐẢO VIỆT NAM • 8 CHUYÊN ĐỀ HỌC THUẬT TRỌNG TÂM</text>
+  <rect x="736" y="33" width="180" height="28" rx="14" fill="#29B4D1"/>
+  <text x="826" y="51" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">CHUẨN HÓA DỮ LIỆU</text>
+
+  <!-- Connector Lines from Central Hub to 8 Modules -->
+  <g stroke="#29B4D1" stroke-width="1.8" stroke-dasharray="5 4" opacity="0.75">
+    <line x1="380" y1="190" x2="250" y2="132"/>
+    <line x1="380" y1="225" x2="250" y2="212"/>
+    <line x1="380" y1="265" x2="250" y2="292"/>
+    <line x1="380" y1="300" x2="250" y2="372"/>
+    <line x1="580" y1="190" x2="710" y2="132"/>
+    <line x1="580" y1="225" x2="710" y2="212"/>
+    <line x1="580" y1="265" x2="710" y2="292"/>
+    <line x1="580" y1="300" x2="710" y2="372"/>
   </g>
 
-  <!-- Compass Rose Background -->
-  <g transform="translate(730, 195)">
-    <circle r="135" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="4 6" />
-    <circle r="100" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="1.5" />
-    <circle r="65" stroke="#38BDF8" stroke-opacity="0.25" stroke-width="1" />
-    <polygon points="0,-125 14,-20 0,-35 -14,-20" fill="url(#goldGlow)" opacity="0.85" />
-    <polygon points="0,125 14,20 0,35 -14,20" fill="#38BDF8" opacity="0.45" />
-    <polygon points="-125,0 -20,-14 -35,0 -20,14" fill="#38BDF8" opacity="0.45" />
-    <polygon points="125,0 20,-14 35,0 20,14" fill="#38BDF8" opacity="0.45" />
-    <circle r="8" fill="#FDE68A" />
+  <!-- Central Scholarly Hub -->
+  <rect x="366" y="130" width="228" height="240" rx="22" fill="url(#cardDark)" stroke="#29B4D1" stroke-width="2.5"/>
+  <rect x="386" y="146" width="188" height="26" rx="13" fill="#29B4D1"/>
+  <text x="480" y="163" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">TRUNG TÂM TRI THỨC SỐ</text>
+
+  <!-- Stylized Open Book + Sovereign Compass Icon -->
+  <g transform="translate(480, 222)">
+    <circle cx="0" cy="0" r="36" fill="#1A718D" stroke="#B6E0EB" stroke-width="1.5"/>
+    <path d="M-22 -8 C-10 -14, -2 -10, 0 -4 C2 -10, 10 -14, 22 -8 L22 14 C10 8, 2 12, 0 18 C-2 12, -10 8, -22 14 Z" fill="#B6E0EB" stroke="#113747" stroke-width="1.5"/>
+    <line x1="0" y1="-4" x2="0" y2="18" stroke="#113747" stroke-width="1.8"/>
+    <polygon points="0,-28 4,-16 0,-19 -4,-16" fill="#29B4D1"/>
   </g>
 
-  <!-- Stylized Vietnam S-Coastline & Archipelagos Map Layer -->
-  <path d="M450,65 C485,82 475,112 452,135 C430,158 468,195 505,235 C538,270 535,325 500,362 C472,390 442,408 430,432"
-        stroke="url(#goldGlow)" stroke-width="5" stroke-linecap="round" fill="none" />
-  <path d="M465,65 C555,110 640,195 645,295 C650,375 585,445 480,475"
-        stroke="#38BDF8" stroke-width="2" stroke-dasharray="8 6" fill="none" opacity="0.7" />
+  <text x="480" y="284" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="16" font-weight="800">BIỂN ĐẢO VIỆT NAM</text>
+  <text x="480" y="305" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="700">16 BÀI HỌC • 8 ĐỒ HỌA</text>
+  <rect x="390" y="318" width="180" height="34" rx="10" fill="#B6E0EB"/>
+  <text x="480" y="339" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="800">UNCLOS 1982 &amp; LUẬT BIỂN 2012</text>
 
-  <!-- Hoang Sa Marker -->
-  <g transform="translate(575, 195)">
-    <circle r="22" fill="#EF4444" fill-opacity="0.22" />
-    <circle r="11" fill="#EF4444" stroke="#FEF08A" stroke-width="2" />
-    <text x="18" y="-6" fill="#FEF08A" font-family="sans-serif" font-size="13" font-weight="700">QUẦN ĐẢO HOÀNG SA</text>
-    <text x="18" y="11" fill="#BAE6FD" font-family="monospace" font-size="10">16°32'N - 111°37'E</text>
+  <!-- LEFT COLUMN: CHUYÊN ĐỀ 01 - 04 -->
+  <!-- CĐ 01 -->
+  <rect x="28" y="96" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="40" y="108" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="62" y="135" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">01</text>
+  <text x="96" y="125" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Tổng quan Biển đảo</text>
+  <text x="96" y="145" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">&gt;1 triệu km² • 3.260 km bờ biển</text>
+
+  <!-- CĐ 02 -->
+  <rect x="28" y="176" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="40" y="188" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="62" y="215" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">02</text>
+  <text x="96" y="205" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Lịch sử Hoàng Sa - Trường Sa</text>
+  <text x="96" y="225" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">Đội Hoàng Sa TK XVII • Châu bản</text>
+
+  <!-- CĐ 03 -->
+  <rect x="28" y="256" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="40" y="268" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="62" y="295" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">03</text>
+  <text x="96" y="285" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Cơ sở Lịch sử &amp; Pháp lý</text>
+  <text x="96" y="305" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">UNCLOS 1982 • Luật Biển 2012</text>
+
+  <!-- CĐ 04 -->
+  <rect x="28" y="336" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="40" y="348" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="62" y="375" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">04</text>
+  <text x="96" y="365" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Địa lý &amp; Tự nhiên biển đảo</text>
+  <text x="96" y="385" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">Cấu trúc Atoll • Hải văn Biển Đông</text>
+
+  <!-- RIGHT COLUMN: CHUYÊN ĐỀ 05 - 08 -->
+  <!-- CĐ 05 -->
+  <rect x="704" y="96" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="716" y="108" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="738" y="135" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">05</text>
+  <text x="772" y="125" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Kinh tế &amp; Tài nguyên biển</text>
+  <text x="772" y="145" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">6 ngành mũi nhọn • 4 ngư trường</text>
+
+  <!-- CĐ 06 -->
+  <rect x="704" y="176" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="716" y="188" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="738" y="215" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">06</text>
+  <text x="772" y="205" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Đời sống nơi Biển đảo</text>
+  <text x="772" y="225" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">12 huyện đảo • Hải đăng &amp; DK1</text>
+
+  <!-- CĐ 07 -->
+  <rect x="704" y="256" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="716" y="268" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="738" y="295" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">07</text>
+  <text x="772" y="285" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Bảo vệ Môi trường biển</text>
+  <text x="772" y="305" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">3 hệ sinh thái • 16 Khu bảo tồn</text>
+
+  <!-- CĐ 08 -->
+  <rect x="704" y="336" width="228" height="68" rx="14" fill="#B6E0EB" stroke="#29B4D1" stroke-width="1.8"/>
+  <rect x="716" y="348" width="44" height="44" rx="10" fill="#113747"/>
+  <text x="738" y="375" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="14" font-weight="900">08</text>
+  <text x="772" y="365" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="13.5" font-weight="800">Tuổi trẻ &amp; Chủ quyền số</text>
+  <text x="772" y="385" fill="#455C68" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" font-weight="700">Kiểm chứng GIS • Luật Bản đồ 2018</text>
+
+  <!-- Bottom Summary Bar -->
+  <rect x="28" y="428" width="904" height="86" rx="16" fill="#113747" stroke="#29B4D1" stroke-width="1.5"/>
+  <g transform="translate(52, 448)">
+    <rect x="0" y="0" width="268" height="46" rx="10" fill="#1A718D"/>
+    <text x="134" y="20" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">TƯ LIỆU LỊCH SỬ &amp; PHÁP LÝ GỐC</text>
+    <text x="134" y="37" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="700">Châu bản Nguyễn • UNCLOS 1982</text>
   </g>
-
-  <!-- Truong Sa Marker -->
-  <g transform="translate(615, 345)">
-    <circle r="24" fill="#EF4444" fill-opacity="0.22" />
-    <circle r="11" fill="#EF4444" stroke="#FEF08A" stroke-width="2" />
-    <text x="18" y="-6" fill="#FEF08A" font-family="sans-serif" font-size="13" font-weight="700">QUẦN ĐẢO TRƯỜNG SA</text>
-    <text x="18" y="11" fill="#BAE6FD" font-family="monospace" font-size="10">08°38'N - 111°55'E</text>
+  <g transform="translate(346, 448)">
+    <rect x="0" y="0" width="268" height="46" rx="10" fill="#1A718D"/>
+    <text x="134" y="20" text-anchor="middle" fill="#29B4D1" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">TRỰC QUAN HÓA HỌC THUẬT (MỤC III)</text>
+    <text x="134" y="37" text-anchor="middle" fill="#B6E0EB" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="700">Mặt cắt vùng biển • Sơ đồ tư duy</text>
   </g>
-
-  <!-- Historical Scroll / Chau Ban Document Panel (Left) -->
-  <g transform="translate(65, 85)">
-    <rect x="0" y="0" width="290" height="340" rx="14" fill="url(#parchment)" stroke="#D97706" stroke-width="3" />
-    <rect x="14" y="14" width="262" height="312" rx="8" fill="none" stroke="#92400E" stroke-opacity="0.35" stroke-width="1.5" />
-    <!-- Imperial Seal Stamp -->
-    <rect x="200" y="34" width="54" height="54" rx="6" fill="#DC2626" fill-opacity="0.16" stroke="#DC2626" stroke-width="2" />
-    <text x="227" y="58" text-anchor="middle" fill="#B91C1C" font-family="serif" font-size="11" font-weight="700">CHÂU BẢN</text>
-    <text x="227" y="74" text-anchor="middle" fill="#B91C1C" font-family="serif" font-size="10" font-weight="700">TRIỀU NGUYỄN</text>
-
-    <text x="30" y="52" fill="#78350F" font-family="serif" font-size="15" font-weight="700">TƯ LIỆU LỊCH SỬ &amp; PHÁP LÝ</text>
-    <line x1="30" y1="65" x2="180" y2="65" stroke="#B45309" stroke-width="2" />
-    <text x="30" y="95" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="600">• Thiên Nam tứ chí lộ đồ thư (1686)</text>
-    <text x="30" y="122" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="600">• Phủ biên tạp lục – Lê Quý Đôn (1776)</text>
-    <text x="30" y="149" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="600">• Đại Nam thực lục &amp; Châu bản</text>
-    <text x="30" y="176" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="600">• Đại Nam nhất thống toàn đồ (1838)</text>
-    <text x="30" y="203" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="600">• Công ước Luật Biển UNCLOS 1982</text>
-    <text x="30" y="230" fill="#451A03" font-family="sans-serif" font-size="12" font-weight="600">• Luật Biển Việt Nam năm 2012</text>
-
-    <!-- Open Book Emblem inside Scroll -->
-    <g transform="translate(30, 252)">
-      <rect width="230" height="54" rx="10" fill="#0F172A" fill-opacity="0.9" />
-      <text x="115" y="24" text-anchor="middle" fill="#FDE68A" font-family="sans-serif" font-size="11" font-weight="700">8 CHUYÊN ĐỀ • 24 BÀI HỌC CHUYÊN SÂU</text>
-      <text x="115" y="42" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="10">Chuẩn Chương trình GDPT 2018 (Cấp THPT)</text>
-    </g>
+  <g transform="translate(640, 448)">
+    <rect x="0" y="0" width="268" height="46" rx="10" fill="#29B4D1"/>
+    <text x="134" y="20" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="11" font-weight="800">THEO DÕI TIẾN ĐỘ HỌC TẬP</text>
+    <text x="134" y="37" text-anchor="middle" fill="#113747" font-family="Be Vietnam Pro, sans-serif" font-size="12" font-weight="800">Lưu yêu thích &amp; Đánh dấu hoàn thành</text>
   </g>
-
-  <!-- Sovereignty Lighthouse & Ocean Waves (Bottom Right) -->
-  <g transform="translate(765, 295)">
-    <polygon points="35,150 55,150 49,40 41,40" fill="#F8FAFC" stroke="#0284C7" stroke-width="2" />
-    <rect x="37" y="65" width="16" height="18" fill="#EF4444" />
-    <rect x="36" y="105" width="18" height="18" fill="#EF4444" />
-    <rect x="38" y="24" width="14" height="16" rx="3" fill="#FDE047" />
-    <polygon points="45,32 -90,-10 -90,55" fill="#FDE047" fill-opacity="0.2" />
-    <path d="M5,165 C25,148 65,148 85,165 Z" fill="#1E293B" stroke="#38BDF8" stroke-width="2" />
-  </g>
-
-  <!-- Ocean Waves Bottom -->
-  <path d="M0,475 Q160,445 320,475 T640,475 T960,475 L960,540 L0,540 Z" fill="#0284C7" fill-opacity="0.28" />
-  <path d="M0,498 Q240,468 480,498 T960,498 L960,540 L0,540 Z" fill="#0369A1" fill-opacity="0.45" />
 </svg>
