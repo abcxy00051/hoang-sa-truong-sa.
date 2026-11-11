@@ -1597,9 +1597,9 @@ export default function InteractiveClassroomModule({ activeRole = 'student' }) {
               >
                 <defs>
                   <radialGradient id="gameSeaGrad" cx="55%" cy="48%" r="65%">
-                    <stop offset="0%" stopColor="#0c3b66" />
-                    <stop offset="65%" stopColor="#072545" />
-                    <stop offset="100%" stopColor="#04152d" />
+                    <stop offset="0%" stopColor="#588F96" />
+                    <stop offset="65%" stopColor="#477E83" />
+                    <stop offset="100%" stopColor="#356267" />
                   </radialGradient>
                 </defs>
 

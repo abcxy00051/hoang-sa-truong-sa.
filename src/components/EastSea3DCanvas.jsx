@@ -160,9 +160,9 @@ export default function EastSea3DCanvas({
       height * 0.5,
       Math.max(width, height) * 0.72
     )
-    bgGrad.addColorStop(0, '#072247')
-    bgGrad.addColorStop(0.55, '#041229')
-    bgGrad.addColorStop(1, '#020813')
+    bgGrad.addColorStop(0, '#477E83')
+    bgGrad.addColorStop(0.55, '#3B6C71')
+    bgGrad.addColorStop(1, '#2D5559')
     ctx.fillStyle = bgGrad
     ctx.fillRect(0, 0, width, height)
 
@@ -185,9 +185,9 @@ export default function EastSea3DCanvas({
         cy,
         baseRadius * 1.16
       )
-      atmoGrad.addColorStop(0, 'rgba(56, 189, 248, 0.32)')
-      atmoGrad.addColorStop(0.6, 'rgba(14, 165, 233, 0.08)')
-      atmoGrad.addColorStop(1, 'rgba(4, 13, 29, 0)')
+      atmoGrad.addColorStop(0, 'rgba(169, 216, 210, 0.35)')
+      atmoGrad.addColorStop(0.6, 'rgba(141, 191, 201, 0.14)')
+      atmoGrad.addColorStop(1, 'rgba(71, 126, 131, 0)')
       ctx.fillStyle = atmoGrad
       ctx.beginPath()
       ctx.arc(cx, cy, baseRadius * 1.16, 0, Math.PI * 2)
@@ -202,9 +202,9 @@ export default function EastSea3DCanvas({
         cy,
         baseRadius
       )
-      sphereGrad.addColorStop(0, '#0C3B75')
-      sphereGrad.addColorStop(0.55, '#07234B')
-      sphereGrad.addColorStop(1, '#030E21')
+      sphereGrad.addColorStop(0, '#68A1AA')
+      sphereGrad.addColorStop(0.55, '#477E83')
+      sphereGrad.addColorStop(1, '#325D61')
 
       ctx.save()
       ctx.beginPath()

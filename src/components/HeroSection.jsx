@@ -184,7 +184,7 @@ export default function HeroSection({ onStartExplore, onSelectFeature }) {
         <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path
             d="M0 48L60 42.7C120 37 240 27 360 32C480 37 600 59 720 64C840 69 960 59 1080 48C1200 37 1320 27 1380 21.3L1440 16V90H1380C1320 90 1200 90 1080 90C960 90 840 90 720 90C600 90 480 90 360 90C240 90 120 90 60 90H0V48Z"
-            fill="#F8FAFC"
+            fill="#F1F8F7"
           />
         </svg>
       </div>

@@ -1030,19 +1030,19 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                     y2="880"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop offset="0%" stopColor="#061A38" />
-                    <stop offset="45%" stopColor="#0A2B58" />
-                    <stop offset="100%" stopColor="#04152D" />
+                    <stop offset="0%" stopColor="#477E83" />
+                    <stop offset="45%" stopColor="#3E7176" />
+                    <stop offset="100%" stopColor="#315B60" />
                   </linearGradient>
                   <radialGradient id="shelfGlow" cx="35%" cy="48%" r="55%">
-                    <stop offset="0%" stopColor="#0284C7" stopOpacity="0.38" />
-                    <stop offset="65%" stopColor="#0369A1" stopOpacity="0.16" />
-                    <stop offset="100%" stopColor="#061A38" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#A9D8D2" stopOpacity="0.38" />
+                    <stop offset="65%" stopColor="#8DBFC9" stopOpacity="0.18" />
+                    <stop offset="100%" stopColor="#477E83" stopOpacity="0" />
                   </radialGradient>
                   <radialGradient id="archipelagoHalo" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.35" />
-                    <stop offset="70%" stopColor="#38BDF8" stopOpacity="0.12" />
-                    <stop offset="100%" stopColor="#071936" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#DCEFEB" stopOpacity="0.38" />
+                    <stop offset="70%" stopColor="#A9D8D2" stopOpacity="0.16" />
+                    <stop offset="100%" stopColor="#477E83" stopOpacity="0" />
                   </radialGradient>
                   <linearGradient
                     id="vietnamLandGrad"
@@ -1052,9 +1052,9 @@ export default function InteractiveEastSeaMap({ activeRole = 'student' }) {
                     y2="760"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop offset="0%" stopColor="#1E3A5F" />
-                    <stop offset="50%" stopColor="#1E4068" />
-                    <stop offset="100%" stopColor="#163554" />
+                    <stop offset="0%" stopColor="#5C9297" />
+                    <stop offset="50%" stopColor="#4E8388" />
+                    <stop offset="100%" stopColor="#417277" />
                   </linearGradient>
                 </defs>
 
