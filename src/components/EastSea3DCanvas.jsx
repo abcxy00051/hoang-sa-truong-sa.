@@ -653,9 +653,9 @@ export default function EastSea3DCanvas({
           else ctx.lineTo(pt.x, pt.y)
         }
         ctx.closePath()
-        ctx.fillStyle = 'rgba(245, 158, 11, 0.22)'
+        ctx.fillStyle = 'rgba(41, 180, 209, 0.2)'
         ctx.fill()
-        ctx.strokeStyle = 'rgba(251, 191, 36, 0.65)'
+        ctx.strokeStyle = '#29B4D1'
         ctx.setLineDash([5, 4])
         ctx.lineWidth = 1.5
         ctx.stroke()
@@ -672,7 +672,13 @@ export default function EastSea3DCanvas({
             cy
           )
           ctx.font = '800 10px sans-serif'
-          ctx.fillStyle = '#1A718D'
+          const lblWidth = ctx.measureText(label).width
+          ctx.fillStyle = 'rgba(17, 55, 71, 0.9)'
+          ctx.fillRect(centerPt.x - lblWidth / 2 - 6, centerPt.y - 11, lblWidth + 12, 16)
+          ctx.strokeStyle = 'rgba(41, 180, 209, 0.6)'
+          ctx.lineWidth = 1
+          ctx.strokeRect(centerPt.x - lblWidth / 2 - 6, centerPt.y - 11, lblWidth + 12, 16)
+          ctx.fillStyle = '#29B4D1'
           ctx.textAlign = 'center'
           ctx.fillText(label, centerPt.x, centerPt.y)
         }
@@ -713,7 +719,7 @@ export default function EastSea3DCanvas({
           ctx.beginPath()
           ctx.moveTo(basePt.x, basePt.y)
           ctx.lineTo(topPt.x, topPt.y)
-          ctx.strokeStyle = isMajor ? '#29B4D1' : '#29B4D1'
+          ctx.strokeStyle = isSelected ? '#B6E0EB' : '#29B4D1'
           ctx.lineWidth = isSelected ? 3 : 1.8
           ctx.stroke()
 
@@ -722,22 +728,40 @@ export default function EastSea3DCanvas({
           ctx.beginPath()
           ctx.arc(topPt.x, topPt.y, r, 0, Math.PI * 2)
           ctx.fillStyle = isSelected
-            ? '#1A718D'
+            ? '#29B4D1'
             : isMajor
             ? '#29B4D1'
             : m.markerType === 'dk1-amber'
-            ? '#113747'
+            ? '#1A718D'
             : '#29B4D1'
           ctx.fill()
           ctx.strokeStyle = '#B6E0EB'
-          ctx.lineWidth = 1.6
+          ctx.lineWidth = isSelected ? 2.2 : 1.6
           ctx.stroke()
 
           if (layers.placeNames && (isMajor || isSelected || zoom3D >= 1.2)) {
             ctx.font = `${isMajor || isSelected ? '800 10.5px' : '700 9.5px'} sans-serif`
-            ctx.fillStyle = isSelected ? '#1A718D' : '#B6E0EB'
+            const textWidth = ctx.measureText(m.name).width
+            const boxX = topPt.x - textWidth / 2 - 6
+            const boxY = topPt.y - r - 20
+            const boxW = textWidth + 12
+            const boxH = 17
+
+            ctx.fillStyle = isSelected
+              ? '#29B4D1'
+              : 'rgba(17, 55, 71, 0.92)'
+            ctx.fillRect(boxX, boxY, boxW, boxH)
+            ctx.strokeStyle = isSelected ? '#B6E0EB' : '#29B4D1'
+            ctx.lineWidth = 1
+            ctx.strokeRect(boxX, boxY, boxW, boxH)
+
+            ctx.fillStyle = isSelected
+              ? '#113747'
+              : isMajor
+              ? '#29B4D1'
+              : '#B6E0EB'
             ctx.textAlign = 'center'
-            ctx.fillText(m.name, topPt.x, topPt.y - r - 6)
+            ctx.fillText(m.name, topPt.x, topPt.y - r - 8)
           }
 
           nextHitTargets.push({

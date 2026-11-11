@@ -11172,12 +11172,13 @@ ul {
 
 /* 3D Globe & Terrain Canvas Styles */
 .east-sea-3d-wrapper {
-  background: var(--navy-950);
+  background: #113747;
   border-radius: var(--radius-lg);
-  border: 2px solid rgba(41, 180, 209, 0.4);
+  border: 2px solid #29B4D1;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 14px 34px rgba(17, 55, 71, 0.24);
 }
 
 .map3d-top-hud {
@@ -11187,9 +11188,9 @@ ul {
   justify-content: space-between;
   gap: 12px;
   padding: 12px 16px;
-  background: rgba(182, 224, 235, 0.96);
-  border-bottom: 1px solid rgba(41, 180, 209, 0.25);
-  color: var(--white);
+  background: #113747;
+  border-bottom: 1.5px solid rgba(41, 180, 209, 0.45);
+  color: #B6E0EB;
 }
 
 .map3d-submode-pills {
@@ -11201,19 +11202,20 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 7px 13px;
+  padding: 7px 14px;
   border-radius: 999px;
-  background: rgba(182, 224, 235, 0.08);
-  border: 1px solid rgba(182, 224, 235, 0.16);
-  color: var(--slate-200);
+  background: #1A718D;
+  border: 1px solid rgba(182, 224, 235, 0.4);
+  color: #B6E0EB;
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .submode3d-btn.active {
-  background: var(--ocean-600);
-  color: var(--white);
-  border-color: var(--gold-400);
+  background: #29B4D1;
+  color: #113747;
+  border-color: #B6E0EB;
+  font-weight: 900;
 }
 
 .map3d-telemetry-text {
@@ -11221,12 +11223,18 @@ ul {
   align-items: center;
   gap: 6px;
   font-size: 0.8rem;
-  color: var(--ocean-100);
+  color: #B6E0EB;
+  font-weight: 700;
   font-family: monospace;
+  background: rgba(26, 113, 141, 0.45);
+  border: 1px solid rgba(41, 180, 209, 0.4);
+  padding: 6px 12px;
+  border-radius: 8px;
 }
 
 .map3d-telemetry-text strong {
-  color: var(--gold-400);
+  color: #29B4D1;
+  font-weight: 800;
 }
 
 .map3d-action-btns {
@@ -11239,18 +11247,21 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 6px 10px;
+  padding: 6px 11px;
   border-radius: 8px;
-  background: rgba(182, 224, 235, 0.1);
-  color: var(--white);
+  background: #1A718D;
+  border: 1px solid rgba(182, 224, 235, 0.45);
+  color: #B6E0EB;
   font-size: 0.76rem;
-  font-weight: 700;
+  font-weight: 800;
+  transition: all 0.2s ease;
 }
 
 .map3d-ctrl-btn.active,
 .map3d-ctrl-btn:hover {
-  background: var(--gold-400);
-  color: var(--navy-950);
+  background: #29B4D1;
+  color: #113747;
+  border-color: #B6E0EB;
 }
 
 .map3d-canvas-stage {
@@ -11271,15 +11282,16 @@ ul {
   left: 16px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(182, 224, 235, 0.96);
-  border: 1px solid var(--gold-400);
-  color: var(--white);
+  background: rgba(17, 55, 71, 0.95);
+  border: 1.5px solid #29B4D1;
+  color: #B6E0EB;
   font-size: 0.8rem;
+  font-weight: 700;
   pointer-events: none;
 }
 
 .map3d-hover-tooltip strong {
-  color: var(--gold-400);
+  color: #29B4D1;
 }
 
 .map3d-honesty-banner {
@@ -11292,10 +11304,11 @@ ul {
   gap: 8px;
   padding: 8px 14px;
   border-radius: 10px;
-  background: rgba(17, 55, 71, 0.88);
-  border: 1px solid rgba(41, 180, 209, 0.35);
-  color: var(--ocean-100);
+  background: rgba(17, 55, 71, 0.94);
+  border: 1px solid rgba(41, 180, 209, 0.45);
+  color: #B6E0EB;
   font-size: 0.76rem;
+  font-weight: 600;
 }
 
 .legal-status-subnote {
