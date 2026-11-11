@@ -15312,10 +15312,21 @@ ul {
   animation: pageFadeIn 0.28s ease-out;
 }
 
+.home-portal-section {
+  padding: 68px 0 72px;
+  border-bottom: none;
+}
+
 .portal-directory-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 22px;
+}
+
+@media (max-width: 768px) {
+  .home-portal-section {
+    padding: 48px 0 52px;
+  }
 }
 
 .portal-directory-card {
