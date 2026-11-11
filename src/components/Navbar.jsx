@@ -60,9 +60,12 @@ export default function Navbar({
           className="brand-logo"
           aria-label="Biển Đảo Việt Nam - Trang chủ"
         >
-          <div className="brand-emblem">
-            <Compass className="brand-icon" size={26} />
-            <span className="brand-star">★</span>
+          <div className="brand-emblem navbar-logo-circle">
+            <img
+              src="/assets/logo-bien-dao.png"
+              alt="Logo Biển Đảo Việt Nam"
+              className="navbar-logo-img"
+            />
           </div>
           <div className="brand-text">
             <span className="brand-title">BIỂN ĐẢO VIỆT NAM</span>
