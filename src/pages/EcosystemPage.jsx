@@ -37,13 +37,13 @@ const ECOSYSTEM_MISSION_POINTS = [
     icon: Globe,
     tag: 'CÔNG NGHỆ & KHÔNG GIAN SỐ',
     title: 'Trực quan hóa Không gian Biển Đảo bằng Công nghệ Hiện đại',
-    desc: 'Ứng dụng Bản đồ số GIS 2D/3D, Trạm quan sát toàn cảnh 360° và Trợ lý AI Coze giúp chuyển hóa các tọa độ địa lý, hải lý và văn bản pháp lý thành trải nghiệm trực quan, sinh động.'
+    desc: 'Ứng dụng Bản đồ số GIS 2D, Sa bàn địa hình biển 3D và Trợ lý AI Coze giúp chuyển hóa các tọa độ địa lý, hải lý và văn bản pháp lý thành trải nghiệm trực quan, sinh động.'
   },
   {
     icon: BookOpen,
     tag: 'GIÁO DỤC & HỌC THUẬT CHUẨN XÁC',
     title: 'Chuẩn hóa Học liệu Lịch sử – Địa lý – Pháp lý Cấp THPT',
-    desc: 'Tích hợp đồng bộ 7 chuyên đề thư viện, 25 cột mốc biên niên sử, 8 hồ sơ bản đồ cổ và 80 câu hỏi tương tác bám sát chương trình Giáo dục phổ thông 2018.'
+    desc: 'Tích hợp đồng bộ 8 chuyên đề thư viện, 25 cột mốc biên niên sử, 8 hồ sơ bản đồ cổ và 80 câu hỏi tương tác bám sát chương trình Giáo dục phổ thông 2018.'
   },
   {
     icon: Award,
@@ -145,7 +145,7 @@ export default function EcosystemPage({
                 </span>
                 <span className="hero-badge-coordinates">
                   <ShieldCheck size={14} />
-                  <span>8 Phân hệ Chuyên sâu • Chuẩn GDPT 2018</span>
+                  <span>6 Phân hệ Chuyên sâu • Chuẩn GDPT 2018</span>
                 </span>
               </div>
 
@@ -161,7 +161,7 @@ export default function EcosystemPage({
 
               <p className="eco-hero-intro-text">
                 Trung tâm học tập và khám phá trực tuyến kết hợp giữa{' '}
-                <strong>công nghệ số hiện đại (GIS, AI, 360°)</strong> với{' '}
+                <strong>công nghệ số hiện đại (Bản đồ GIS, Sa bàn 3D, Trợ lý AI)</strong> với{' '}
                 <strong>kho tàng sử liệu, bản đồ cổ và văn bản pháp lý chính thống</strong>.
                 Hệ sinh thái được kiến tạo nhằm giúp học sinh và giáo viên THPT tiếp cận
                 toàn diện kiến thức về vùng biển đảo Tổ quốc, đặc biệt là hai quần đảo{' '}
@@ -176,7 +176,7 @@ export default function EcosystemPage({
                   onClick={scrollToModules}
                 >
                   <Compass size={19} />
-                  <span>Khám phá 8 Phân hệ Chức năng</span>
+                  <span>Khám phá 6 Phân hệ Chức năng</span>
                   <ArrowRight size={18} />
                 </button>
                 <button
@@ -198,7 +198,7 @@ export default function EcosystemPage({
                     <Anchor size={16} />
                     <span>CẤU TRÚC HỆ SINH THÁI SỐ</span>
                   </div>
-                  <span className="eco-panel-tag">08 PHÂN HỆ</span>
+                  <span className="eco-panel-tag">06 PHÂN HỆ</span>
                 </div>
 
                 <p className="eco-panel-lead">
@@ -297,7 +297,7 @@ export default function EcosystemPage({
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tìm phân hệ: Bản đồ số, Trợ lý AI, 360 độ, Hồ sơ bản đồ..."
+                placeholder="Tìm phân hệ: Bản đồ số, Thư viện, Trợ lý AI, Hồ sơ bản đồ..."
                 aria-label="Tìm nhanh phân hệ chức năng"
               />
             </div>
@@ -305,12 +305,12 @@ export default function EcosystemPage({
         </div>
       </section>
 
-      {/* 3. 8 PREMIUM FUNCTIONAL SUBSYSTEMS SHOWCASE */}
+      {/* 3. 6 PREMIUM FUNCTIONAL SUBSYSTEMS SHOWCASE */}
       <section id="danh-sach-phan-he" className="ecosystem-cards-section">
         <div className="container">
           <div className="eco-section-heading">
             <span className="section-eyebrow">
-              8 PHÂN HỆ CHỨC NĂNG CHUYÊN SÂU
+              6 PHÂN HỆ CHỨC NĂNG CHUYÊN SÂU
             </span>
             <h2 className="section-title">
               Khám phá Toàn diện <span className="text-ocean">Không gian Tri thức Biển Đảo</span>
@@ -442,7 +442,7 @@ export default function EcosystemPage({
                   setSearchQuery('')
                 }}
               >
-                <span>Hiển thị tất cả 8 phân hệ chức năng</span>
+                <span>Hiển thị tất cả 6 phân hệ chức năng</span>
               </button>
             </div>
           )}

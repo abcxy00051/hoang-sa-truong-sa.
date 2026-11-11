@@ -26,7 +26,7 @@ const PORTAL_SECTIONS = [
     title: 'Trung tâm Hệ sinh thái Số',
     path: '/he-sinh-thai-so',
     icon: Layers,
-    desc: 'Không gian tích hợp toàn bộ các phân hệ công nghệ: Bản đồ GIS 2D/3D, Thư viện tri thức, Trợ lý AI, Phòng học tương tác, 360° và Triển lãm số.',
+    desc: 'Không gian tích hợp 6 phân hệ công nghệ: Bản đồ số GIS, Thư viện tri thức, Trợ lý AI, Phòng học tương tác, Dòng thời gian lịch sử và Hồ sơ bản đồ.',
     cta: 'Vào Hệ sinh thái số'
   },
   {

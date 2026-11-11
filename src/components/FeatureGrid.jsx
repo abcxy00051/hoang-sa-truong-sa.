@@ -43,7 +43,7 @@ export default function FeatureGrid({
       <div className="container">
         {/* Section Heading */}
         <div className="section-header">
-          <span className="section-eyebrow">8 PHÂN HỆ CHỨC NĂNG TRỌNG TÂM</span>
+          <span className="section-eyebrow">6 PHÂN HỆ CHỨC NĂNG TRỌNG TÂM</span>
           <h2 className="section-title">
             Hệ sinh thái Học tập &amp; Khám phá <span className="text-ocean">Biển Đảo Số</span>
           </h2>
@@ -51,8 +51,7 @@ export default function FeatureGrid({
             Mỗi phân hệ mở ra một phương thức tiếp cận tri thức chuyên sâu — từ{' '}
             <strong>Bản đồ số</strong>, <strong>Thư viện tri thức</strong>,{' '}
             <strong>Trợ lý AI</strong>, <strong>Phòng học tương tác</strong> đến{' '}
-            <strong>Dòng thời gian lịch sử</strong>, <strong>Trải nghiệm 360 độ</strong>,{' '}
-            <strong>Không gian triển lãm</strong> và <strong>Hồ sơ bản đồ</strong>.
+            <strong>Dòng thời gian lịch sử</strong> và <strong>Hồ sơ bản đồ</strong>.
           </p>
 
           {onOpenEcosystemPage && (
@@ -63,7 +62,7 @@ export default function FeatureGrid({
                 onClick={onOpenEcosystemPage}
               >
                 <Layers size={18} />
-                <span>Mở Trung tâm Hệ sinh thái số (8 Phân hệ)</span>
+                <span>Mở Trung tâm Hệ sinh thái số (6 Phân hệ)</span>
                 <ArrowRight size={17} />
               </button>
             </div>

@@ -9,8 +9,6 @@ const ECOSYSTEM_CHILD_PATHS = new Set([
   '/thu-vien-tri-thuc',
   '/tro-ly-ai',
   '/phong-hoc-tuong-tac',
-  '/trai-nghiem-360',
-  '/trien-lam-so',
   '/ho-so-ban-do'
 ])
 

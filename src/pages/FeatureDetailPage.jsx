@@ -21,9 +21,7 @@ import InteractiveEastSeaMap from '../components/InteractiveEastSeaMap'
 import KnowledgeLibraryModule from '../components/KnowledgeLibraryModule'
 import CozeAiAssistant from '../components/CozeAiAssistant'
 import InteractiveClassroomModule from '../components/InteractiveClassroomModule'
-import DigitalExhibitionModule from '../components/DigitalExhibitionModule'
 import SovereigntyTimelineModule from '../components/SovereigntyTimelineModule'
-import Panorama360Module from '../components/Panorama360Module'
 import CartographicDossierModule from '../components/CartographicDossierModule'
 
 const ICON_MAP = {
@@ -43,10 +41,7 @@ export default function FeatureDetailPage({
   onBackEcosystem,
   onBackHome
 }) {
-  const normalizedId =
-    featureId === 'khong-gian-kham-pha' ? 'trien-lam-so' : featureId
-
-  const currentIndex = FEATURES_DATA.findIndex((f) => f.id === normalizedId)
+  const currentIndex = FEATURES_DATA.findIndex((f) => f.id === featureId)
   const feature =
     currentIndex !== -1 ? FEATURES_DATA[currentIndex] : FEATURES_DATA[0]
   const IconComponent = ICON_MAP[feature.iconName] || Compass
@@ -239,24 +234,7 @@ export default function FeatureDetailPage({
               </div>
             )}
 
-            {/* 6. TRẢI NGHIỆM 360 ĐỘ (5 TRẠM QUAN SÁT TOÀN CẢNH BIỂN ĐẢO) */}
-            {feature.id === 'trai-nghiem-360' && (
-              <div className="workspace-interactive-area">
-                <Panorama360Module
-                  activeRole={activeRole}
-                  onNavigateFeature={onNavigateFeature}
-                />
-              </div>
-            )}
-
-            {/* 7. KHÔNG GIAN TRIỂN LÃM (BẢO TÀNG SỐ 5 KHÔNG GIAN TRƯNG BÀY) */}
-            {feature.id === 'trien-lam-so' && (
-              <div className="workspace-interactive-area">
-                <DigitalExhibitionModule activeRole={activeRole} />
-              </div>
-            )}
-
-            {/* 8. HỒ SƠ BẢN ĐỒ (KHO BẢN ĐỒ CỔ VIỆT NAM, PHƯƠNG TÂY & PHÁP LÝ HIỆN ĐẠI) */}
+            {/* 6. HỒ SƠ BẢN ĐỒ (KHO BẢN ĐỒ CỔ VIỆT NAM, PHƯƠNG TÂY & PHÁP LÝ HIỆN ĐẠI) */}
             {feature.id === 'ho-so-ban-do' && (
               <div className="workspace-interactive-area">
                 <CartographicDossierModule

@@ -204,34 +204,6 @@ export default function App() {
           />
 
           <Route
-            path="/trai-nghiem-360"
-            element={
-              <FeatureDetailPage
-                featureId="trai-nghiem-360"
-                activeRole={activeRole}
-                onRoleChange={setActiveRole}
-                onNavigateFeature={navigateToFeaturePage}
-                onBackEcosystem={openEcosystemPage}
-                onBackHome={navigateToHome}
-              />
-            }
-          />
-
-          <Route
-            path="/trien-lam-so"
-            element={
-              <FeatureDetailPage
-                featureId="trien-lam-so"
-                activeRole={activeRole}
-                onRoleChange={setActiveRole}
-                onNavigateFeature={navigateToFeaturePage}
-                onBackEcosystem={openEcosystemPage}
-                onBackHome={navigateToHome}
-              />
-            }
-          />
-
-          <Route
             path="/dong-thoi-gian-lich-su"
             element={
               <FeatureDetailPage

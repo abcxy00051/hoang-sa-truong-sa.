@@ -62,8 +62,8 @@ const TEACHING_SCENARIOS = [
     title: 'Tiết học Liên môn 45 phút trên Lớp (Lịch sử – Địa lý)',
     duration: '45 phút • Trình chiếu trực tiếp',
     steps: [
-      'Khởi động (7 phút): Quan sát không gian 360° cột mốc chủ quyền tại trang /trai-nghiem-360.',
-      'Hình thành kiến thức (20 phút): Phân tích bản đồ GIS 2D/3D tại /ban-do-so và Châu bản tại /cot-moc-chu-quyen.',
+      'Khởi động (7 phút): Quan sát tọa độ địa lý và sa bàn địa hình biển 3D tại trang /ban-do-so.',
+      'Hình thành kiến thức (20 phút): Phân tích bản đồ cổ tại /ho-so-ban-do và Châu bản tại /cot-moc-chu-quyen.',
       'Luyện tập & Đánh giá (18 phút): Tổ chức thi đua trắc nghiệm & xử lý tình huống tại /phong-hoc-tuong-tac.'
     ]
   },
@@ -72,9 +72,9 @@ const TEACHING_SCENARIOS = [
     title: 'Hoạt động Ngoại khóa & Sinh hoạt Chuyên đề Dưới cờ',
     duration: '60 – 90 phút • Toàn khối / Câu lạc bộ',
     steps: [
-      'Tham quan Bảo tàng trực tuyến 5 không gian trưng bày tại trang /trien-lam-so.',
+      'Khám phá trục biên niên sử 6 thời kỳ và 25 cột mốc chủ quyền tại trang /cot-moc-chu-quyen.',
       'Giao lưu hỏi đáp nhanh cùng Trợ lý AI Biển Đảo tại trang /tro-ly-ai.',
-      'Viết thông điệp gửi cán bộ, chiến sĩ và nhân dân nơi đảo xa ngay trên Sổ lưu niệm số.'
+      'Tổ chức thi đua ghép mốc sự kiện và nhận diện bản đồ tại trang /phong-hoc-tuong-tac.'
     ]
   },
   {

@@ -119,11 +119,11 @@ export default function SovereigntyPage({
                       <span>Xem vị trí địa lý Hoàng Sa &amp; Trường Sa</span>
                     </div>
                   </Link>
-                  <Link to="/trien-lam-so" className="eco-quick-dir-item">
-                    <span className="dir-item-code">3D/2D</span>
+                  <Link to="/ho-so-ban-do" className="eco-quick-dir-item">
+                    <span className="dir-item-code">ATLAS</span>
                     <div className="dir-item-text">
-                      <strong>Triển lãm số (/trien-lam-so)</strong>
-                      <span>Xem hiện vật, bản đồ cổ &amp; Châu bản</span>
+                      <strong>Hồ sơ bản đồ (/ho-so-ban-do)</strong>
+                      <span>Xem bản đồ cổ Việt Nam, phương Tây &amp; pháp lý</span>
                     </div>
                   </Link>
                 </div>

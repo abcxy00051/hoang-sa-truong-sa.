@@ -22,23 +22,20 @@ export const ECOSYSTEM_SUBPAGE_ROUTES = [
   { id: 'thu-vien-tri-thuc', path: '/thu-vien-tri-thuc', label: 'Thư viện tri thức' },
   { id: 'tro-ly-ai', path: '/tro-ly-ai', label: 'Trợ lý AI' },
   { id: 'phong-hoc-tuong-tac', path: '/phong-hoc-tuong-tac', label: 'Phòng học tương tác' },
-  { id: 'trai-nghiem-360', path: '/trai-nghiem-360', label: 'Trải nghiệm 360°' },
-  { id: 'trien-lam-so', path: '/trien-lam-so', label: 'Triển lãm số' },
   { id: 'dong-thoi-gian-lich-su', path: '/cot-moc-chu-quyen', label: 'Dòng thời gian lịch sử' },
   { id: 'ho-so-ban-do', path: '/ho-so-ban-do', label: 'Hồ sơ bản đồ' }
 ]
 
 export function getFeatureRoutePath(featureId) {
-  const normalized = featureId === 'khong-gian-kham-pha' ? 'trien-lam-so' : featureId
-  const found = ECOSYSTEM_SUBPAGE_ROUTES.find((r) => r.id === normalized)
-  return found ? found.path : `/${normalized}`
+  const found = ECOSYSTEM_SUBPAGE_ROUTES.find((r) => r.id === featureId)
+  return found ? found.path : `/${featureId}`
 }
 
 export const ECOSYSTEM_CATEGORIES = [
-  { id: 'all', label: 'Tất cả 8 phân hệ' },
+  { id: 'all', label: 'Tất cả 6 phân hệ' },
   { id: 'map-library', label: 'Bản đồ số & Hồ sơ bản đồ' },
   { id: 'ai-classroom', label: 'Thư viện, Trợ lý AI & Phòng học' },
-  { id: 'history-exhibition', label: 'Dòng thời gian, 360° & Triển lãm' }
+  { id: 'history-exhibition', label: 'Dòng thời gian lịch sử' }
 ]
 
 export const HERO_STATS = [
@@ -58,8 +55,8 @@ export const HERO_STATS = [
     badge: 'UNCLOS 1982'
   },
   {
-    value: '8 Phân hệ Số',
-    label: 'Tích hợp Bản đồ GIS, AI, 360° & Học liệu chuẩn THPT',
+    value: '6 Phân hệ Số',
+    label: 'Tích hợp Bản đồ GIS, Thư viện, AI & Học liệu chuẩn THPT',
     badge: 'Hệ sinh thái Số 4.0'
   }
 ]
@@ -76,7 +73,7 @@ export const PROJECT_PILLARS = [
     id: 'technology',
     title: 'Ứng dụng Công nghệ AI & Bản đồ số',
     description:
-      'Kết hợp bản đồ tương tác tọa độ hải lý, không gian 360 độ, hồ sơ bản đồ cổ và Trợ lý AI thông minh giúp học sinh tra cứu tư liệu lịch sử, pháp lý quốc tế sinh động.',
+      'Kết hợp bản đồ tương tác tọa độ hải lý, hồ sơ bản đồ cổ, thư viện học thuật và Trợ lý AI thông minh giúp học sinh tra cứu tư liệu lịch sử, pháp lý quốc tế sinh động.',
     highlight: 'Trải nghiệm Học tập Tương tác'
   },
   {
@@ -330,104 +327,8 @@ export const FEATURES_DATA = [
     ]
   },
   {
-    id: 'trai-nghiem-360',
-    code: '06',
-    title: 'Trải nghiệm 360 độ',
-    subtitle: 'Không gian Quan sát Toàn cảnh Đảo Tiền tiêu & Hải đăng',
-    badge: 'Toàn cảnh 360°',
-    category: 'history-exhibition',
-    accentColor: 'cyan',
-    iconName: 'Compass',
-    image: '/assets/ecosystem/trai-nghiem-360.svg',
-    imageCaption: 'Mô phỏng góc nhìn toàn cảnh 360° theo phương vị la bàn tại các đảo tiền tiêu và Nhà giàn DK1',
-    routeHash: '#he-sinh-thai/trai-nghiem-360',
-    audience: 'Học sinh & Giáo viên',
-    shortDesc:
-      'Trạm quan sát toàn cảnh 360° giúp học sinh xoay góc nhìn theo phương vị la bàn (0°–360°) khám phá Đảo Trường Sa Lớn, Đảo Hoàng Sa (Pattle), Nhà giàn DK1, Hải đăng Tiên Nữ và Đảo Lý Sơn.',
-    highlights: [
-      '5 trạm quan sát 360° gắn với tọa độ địa lý thực tế tại Hoàng Sa, Trường Sa, Nhà giàn DK1 và đảo Lý Sơn',
-      'Điều khiển góc quay la bàn 360° (Bắc – Đông – Nam – Tây), phóng to/thu nhỏ và tự động xoay toàn cảnh',
-      'Tích hợp các điểm chạm (Hotspots) thuyết minh chi tiết về Cột mốc chủ quyền, Hải đăng, Âu tàu và Trạm khí tượng'
-    ],
-    studentTip:
-      'Nhấn vào các điểm chạm phát sáng trên khung cảnh 360° hoặc xoay thước la bàn để khám phá từng công trình trên đảo.',
-    teacherTip:
-      'Bật chế độ toàn màn hình và chức năng Tự động xoay 360° để dẫn dắt học sinh tham quan đảo tiền tiêu trong giờ học trải nghiệm.',
-    samplePreview: {
-      coordinate: '5 Trạm Quan sát 360° • Phương vị La bàn 0°–360° • Điểm chạm Thuyết minh Tương tác',
-      actionText: 'Khám phá Không gian 360°'
-    },
-    verificationNote:
-      'Lưu ý chuẩn mực: Không gian 360° sử dụng mô hình đồ họa trực quan dựa trên tọa độ địa lý kiểm chứng, không dùng ảnh AI giả làm ảnh tư liệu lịch sử.',
-    workspaceModules: [
-      {
-        title: 'Trạm 360° Đảo Trường Sa Lớn & Hải đăng Tiên Nữ',
-        desc: 'Quan sát Cột mốc chủ quyền, trạm hải đăng, âu tàu và nơi đón ánh bình minh đầu tiên trên Biển Đông.',
-        status: 'Quần đảo Trường Sa'
-      },
-      {
-        title: 'Trạm 360° Đảo Hoàng Sa (Pattle) & Đảo Lý Sơn',
-        desc: 'Tìm hiểu vị trí Bia chủ quyền 1938, Trạm khí tượng WMO 48860 và quê hương Đội Hoàng Sa tại Đình làng An Vĩnh.',
-        status: 'Quần đảo Hoàng Sa & Lý Sơn'
-      },
-      {
-        title: 'Trạm 360° Cụm Nhà giàn DK1 Thềm lục địa phía Nam',
-        desc: 'Khám phá kiến trúc nhà giàn trên nền san hô ngập nước và đời sống kiên cường của cán bộ chiến sĩ Hải quân.',
-        status: 'Thềm lục địa phía Nam'
-      }
-    ]
-  },
-  {
-    id: 'trien-lam-so',
-    code: '07',
-    title: 'Không gian triển lãm',
-    subtitle: 'Bảo tàng Số 5 Chuyên đề Tư liệu & Văn hóa Biển Đảo',
-    badge: 'Bảo tàng Số',
-    category: 'history-exhibition',
-    accentColor: 'ocean',
-    iconName: 'Compass',
-    image: '/assets/ecosystem/trien-lam-so.svg',
-    imageCaption: 'Bảo tàng số 5 không gian trưng bày Châu bản, hình ảnh đảo xa, người giữ biển và sinh thái đại dương',
-    routeHash: '#he-sinh-thai/trien-lam-so',
-    audience: 'Học sinh & Giáo viên',
-    shortDesc:
-      'Bảo tàng trực tuyến gồm 5 không gian trưng bày chuyên đề: Dấu ấn lịch sử biển đảo, Hoàng Sa – Trường Sa qua hình ảnh, Người giữ biển, Biển đảo và thiên nhiên, Tuổi trẻ hướng về biển đảo.',
-    highlights: [
-      '5 không gian trưng bày chuyên đề với 20+ hồ sơ tư liệu, bản đồ cổ, Châu bản triều Nguyễn và hình ảnh sinh thái biển',
-      'Hộp đèn (Lightbox) phóng to hình ảnh 100%–250% kèm thông tin tác giả, thời gian, nguồn lưu trữ và phân loại tư liệu rõ ràng',
-      'Tích hợp Bộ sưu tập nổi bật, chức năng lưu hiện vật yêu thích và Sổ vàng cảm tưởng dành cho học sinh THPT'
-    ],
-    studentTip:
-      'Sử dụng bộ lọc "Tư liệu lịch sử gốc" và "Đồ họa minh họa giáo dục" để nắm rõ nguồn gốc và giá trị của từng hiện vật.',
-    teacherTip:
-      'Tổ chức hoạt động tham quan Bảo tàng số theo 4 Bộ sưu tập chuyên đề và khuyến khích học sinh viết cảm nghĩ vào Sổ vàng.',
-    samplePreview: {
-      coordinate: '5 Không gian Trưng bày • 20 Hồ sơ Tư liệu • Phóng to Chi tiết & Sổ vàng THPT',
-      actionText: 'Khám phá Triển lãm'
-    },
-    verificationNote:
-      'Lưu ý chuẩn mực: Mỗi hiện vật trưng bày đều ghi rõ nguồn lưu trữ và phân biệt minh bạch giữa tư liệu lịch sử gốc với đồ họa minh họa giáo dục.',
-    workspaceModules: [
-      {
-        title: 'Không gian I & II: Dấu ấn Lịch sử & Hình ảnh Hoàng Sa – Trường Sa',
-        desc: 'Trưng bày Châu bản triều Nguyễn (Di sản tư liệu thế giới UNESCO), tư liệu đội Hoàng Sa và địa lý hai quần đảo.',
-        status: 'Hồ sơ Tư liệu Chuẩn'
-      },
-      {
-        title: 'Không gian III & IV: Người giữ biển & Thiên nhiên Đại dương',
-        desc: 'Tôn vinh cán bộ chiến sĩ Hải quân, ngư dân bám biển và hệ sinh thái rạn san hô, rừng ngập mặn Việt Nam.',
-        status: 'Giáo dục Trực quan'
-      },
-      {
-        title: 'Không gian V: Tuổi trẻ THPT Hướng về Biển đảo',
-        desc: 'Giới thiệu các sáng kiến học sinh, hoạt động bảo vệ môi trường biển và Sổ vàng lưu bút gửi ra đảo xa.',
-        status: 'Tương tác Học sinh'
-      }
-    ]
-  },
-  {
     id: 'ho-so-ban-do',
-    code: '08',
+    code: '06',
     title: 'Hồ sơ bản đồ',
     subtitle: 'Kho Lưu trữ Bản đồ Cổ Việt Nam, Phương Tây & Pháp lý Biển',
     badge: 'Atlas Chủ quyền',
@@ -551,20 +452,20 @@ export const ECOSYSTEM_LEARNING_FLOW = [
     title: 'Tra cứu Sử liệu & Pháp lý',
     moduleTitle: 'Thư viện tri thức & Dòng thời gian',
     moduleId: 'thu-vien-tri-thuc',
-    desc: 'Nghiên cứu 7 chuyên đề học liệu chuẩn GDPT 2018 và theo dõi 25 cột mốc chủ quyền qua 6 thời kỳ lịch sử.'
+    desc: 'Nghiên cứu 8 chuyên đề học liệu chuẩn GDPT 2018 và theo dõi 25 cột mốc chủ quyền qua 6 thời kỳ lịch sử.'
   },
   {
     step: 'Bước 03',
-    title: 'Đối thoại AI & Tham quan 360°',
-    moduleTitle: 'Trợ lý AI & Trải nghiệm 360 độ',
+    title: 'Đối thoại Chuyên sâu cùng AI',
+    moduleTitle: 'Trợ lý AI Coze Giáo dục',
     moduleId: 'tro-ly-ai',
-    desc: 'Hỏi đáp chuyên sâu cùng Trợ lý AI Coze và xoay góc nhìn toàn cảnh 360° tại các trạm đảo tiền tiêu, Nhà giàn DK1.'
+    desc: 'Hỏi đáp tức thì cùng Trợ lý AI về các khái niệm pháp lý UNCLOS 1982, Luật Biển Việt Nam 2012 và địa lý biển đảo.'
   },
   {
     step: 'Bước 04',
-    title: 'Thực hành & Triển lãm Số',
-    moduleTitle: 'Phòng học tương tác & Không gian triển lãm',
+    title: 'Thực hành & Đánh giá Năng lực',
+    moduleTitle: 'Phòng học tương tác',
     moduleId: 'phong-hoc-tuong-tac',
-    desc: 'Chinh phục 80 câu hỏi trắc nghiệm, trò chơi học tập và khám phá 5 không gian trưng bày tại Bảo tàng số.'
+    desc: 'Chinh phục 80 câu hỏi trắc nghiệm khách quan, trò chơi ghép mốc lịch sử và nhận diện địa danh bản đồ.'
   }
 ]

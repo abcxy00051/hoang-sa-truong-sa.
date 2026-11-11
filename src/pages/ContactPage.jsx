@@ -17,7 +17,7 @@ import {
 const FAQ_ITEMS = [
   {
     q: 'Làm thế nào để giáo viên THPT sử dụng website trong tiết dạy Lịch sử và Địa lý?',
-    a: 'Giáo viên có thể chuyển chế độ "Giáo viên" trên thanh điều hướng, sau đó truy cập trực tiếp các trang /ban-do-so, /cot-moc-chu-quyen, /trai-nghiem-360 hoặc /phong-hoc-tuong-tac để trình chiếu trực quan trên màn hình lớn của lớp học.'
+    a: 'Giáo viên có thể chuyển chế độ "Giáo viên" trên thanh điều hướng, sau đó truy cập trực tiếp các trang /ban-do-so, /thu-vien-tri-thuc, /cot-moc-chu-quyen, /ho-so-ban-do hoặc /phong-hoc-tuong-tac để trình chiếu trực quan trên màn hình lớn của lớp học.'
   },
   {
     q: 'Các tư liệu bản đồ và mốc lịch sử trên website được trích dẫn từ nguồn nào?',
@@ -25,7 +25,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Học sinh và nhà trường có thể đóng góp thêm hình ảnh thực địa hoặc tư liệu biển đảo không?',
-    a: 'Hoàn toàn có thể. Bạn có thể gửi thông tin qua biểu mẫu Liên hệ & Đóng góp học liệu ngay trên trang /lien-he này hoặc tải lên trực tiếp tại khung thử nghiệm dữ liệu trên trang /trai-nghiem-360.'
+    a: 'Hoàn toàn có thể. Bạn có thể gửi thông tin qua biểu mẫu Liên hệ & Đóng góp học liệu ngay trên trang /lien-he này để ban biên tập thẩm định và bổ sung vào Thư viện tri thức.'
   }
 ]
 
