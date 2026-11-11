@@ -130,7 +130,7 @@ export const EVENT_TO_LEGAL_VALUE_FLOW = [
 export const HISTORICAL_SOURCES_CLASSIFICATION = [
   {
     typeBadge: 'LOẠI 1: TÀI LIỆU GỐC (PRIMARY SOURCES)',
-    color: '#004554',
+    color: '#113747',
     definition:
       'Là các văn bản hành chính nhà nước, sắc chỉ, châu bản, mộc bản chính sử, bản đồ cổ, công báo, nghị định và bia chủ quyền được tạo lập ngay trong thời kỳ diễn ra sự kiện.',
     examples: [
@@ -141,7 +141,7 @@ export const HISTORICAL_SOURCES_CLASSIFICATION = [
   },
   {
     typeBadge: 'LOẠI 2: TÀI LIỆU NGHIÊN CỨU & GIÁO DỤC (SECONDARY SOURCES)',
-    color: '#44A6B5',
+    color: '#29B4D1',
     definition:
       'Là các công trình sử học, sách chuyên khảo, sách giáo khoa và bài phân tích pháp lý tổng hợp, đối chiếu và giải thích các tài liệu gốc.',
     examples: [

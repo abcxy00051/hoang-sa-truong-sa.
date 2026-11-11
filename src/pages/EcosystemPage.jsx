@@ -262,7 +262,7 @@ export default function EcosystemPage({
           >
             <path
               d="M0 38L80 34C160 30 320 22 480 26C640 30 800 46 960 50C1120 54 1280 44 1360 39L1440 34V74H0V38Z"
-              fill="#E9F1F6"
+              fill="#B6E0EB"
             />
           </svg>
         </div>

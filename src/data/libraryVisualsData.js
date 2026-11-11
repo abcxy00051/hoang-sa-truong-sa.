@@ -15,7 +15,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Phía trong đường cơ sở giáp bờ biển',
         regime: 'Chủ quyền hoàn toàn, tuyệt đối và đầy đủ như trên lãnh thổ đất liền (Điều 9, 10 Luật Biển VN 2012).',
         depthLabel: '0 HL (Trong đường cơ sở)',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         code: 'VÙNG 2',
@@ -23,7 +23,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Rộng 12 hải lý tính từ đường cơ sở',
         regime: 'Chủ quyền hoàn toàn và đầy đủ (vùng nước, đáy biển, lòng đất dưới đáy biển và vùng trời). Tàu thuyền nước ngoài hưởng quyền đi qua không gây hại (Điều 11, 12).',
         depthLabel: '0 → 12 Hải lý',
-        color: '#004554'
+        color: '#113747'
       },
       {
         code: 'VÙNG 3',
@@ -31,7 +31,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Rộng 12 hải lý tiếp liền biên giới ngoài lãnh hải (12–24 HL)',
         regime: 'Thực hiện quyền chủ quyền, quyền tài phán và kiểm soát về hải quan, thuế khóa, y tế, xuất nhập cảnh (Điều 13, 14).',
         depthLabel: '12 → 24 Hải lý',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         code: 'VÙNG 4',
@@ -39,7 +39,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Rộng 200 hải lý tính từ đường cơ sở',
         regime: 'Quyền chủ quyền về thăm dò, khai thác, quản lý, bảo tồn tài nguyên và Quyền tài phán về đảo nhân tạo, nghiên cứu khoa học biển, bảo vệ môi trường biển (Điều 15, 16).',
         depthLabel: '12 → 200 Hải lý',
-        color: '#004554'
+        color: '#113747'
       },
       {
         code: 'VÙNG 5',
@@ -47,7 +47,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Kéo dài tự nhiên của lãnh thổ đất liền (tối thiểu 200 HL đến rìa ngoài rìa lục địa)',
         regime: 'Quyền chủ quyền hoàn toàn, riêng biệt đối với thăm dò và khai thác tài nguyên không sinh vật (dầu khí, khoáng sản) và sinh vật thuộc loài định cư ở đáy biển (Điều 17, 18).',
         depthLabel: 'Đáy biển & lòng đất dưới đáy biển ≥ 200 HL',
-        color: '#004554'
+        color: '#113747'
       }
     ],
     dataTable: {
@@ -200,7 +200,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
     branches: [
       {
         title: '1. Nguyên tắc Thụ đắc lãnh thổ (Công pháp quốc tế)',
-        color: '#004554',
+        color: '#113747',
         items: [
           'Nguyên tắc Chiếm hữu thật sự (Effective Occupation) đối với lãnh thổ vô chủ (Terra nullius).',
           'Thực thi với tư cách Nhà nước (À titre de souverain), không phải hành vi tư nhân.',
@@ -210,7 +210,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
       },
       {
         title: '2. Công ước LHQ về Luật Biển (UNCLOS 1982)',
-        color: '#44A6B5',
+        color: '#29B4D1',
         items: [
           '"Hiến pháp về biển và đại dương" (17 phần, 320 điều, 9 phụ lục; có hiệu lực 16/11/1994).',
           'Nguyên tắc "Đất thống trị biển" (La terre domine la mer): Quyền vùng biển phát sinh từ chủ quyền đất liền.',
@@ -220,7 +220,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
       },
       {
         title: '3. Hệ thống Pháp luật Quốc gia Việt Nam',
-        color: '#44A6B5',
+        color: '#29B4D1',
         items: [
           'Tuyên bố của Chính phủ ngày 12/5/1977 về các vùng biển và ngày 12/11/1982 về đường cơ sở.',
           'Nghị quyết của Quốc hội ngày 23/6/1994 phê chuẩn UNCLOS 1982.',
@@ -230,7 +230,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
       },
       {
         title: '4. Cơ chế Giải quyết tranh chấp hòa bình',
-        color: '#B2D5E2',
+        color: '#1A718D',
         items: [
           'Điều 2 Khoản 3 & Điều 33 Hiến chương Liên Hợp Quốc; Điều 279 UNCLOS 1982.',
           'Không sử dụng vũ lực hoặc đe dọa sử dụng vũ lực trong quan hệ quốc tế.',
@@ -287,7 +287,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Độ cao 3 – 6 m trên mực nước biển (cao nhất Đá Bắc 15,9m; Song Tử Tây ~6m)',
         regime: 'Cấu tạo từ cát san hô, vụn vỏ sinh vật biển và lớp đất giàu lân (phosphorit phân chim). Ở các đảo lớn có túi "thấu kính nước ngọt/nước lợ" nằm nổi trên tầng nước mặn.',
         depthLabel: '+2m đến +15,9m (Luôn nổi khi triều cường)',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         code: 'TẦNG 2',
@@ -295,7 +295,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Độ sâu từ 0 m đến -30 m',
         regime: 'Vành đai đá san hô bao quanh đảo hoặc khép kín thành hình vành khăn (Atoll) ôm lấy đầm phá nước êm (Lagoon) ở giữa – nơi trú đậu tàu thuyền tránh bão.',
         depthLabel: '0m đến -30m (Đới sáng rạn san hô)',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         code: 'TẦNG 3',
@@ -303,7 +303,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Độ sâu từ -30 m đến -1.500 m',
         regime: 'Sườn núi ngầm dốc đứng từ mép rạn san hô xuống vùng biển sâu; nơi diễn ra trao đổi dòng nước trồi giàu dinh dưỡng cho hệ sinh thái cá rạn và cá đại dương.',
         depthLabel: '-30m đến -1.500m',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         code: 'TẦNG 4',
@@ -311,7 +311,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         range: 'Độ sâu từ -1.500 m đến trên -4.000 m',
         regime: 'Chân đế địa chất cổ nâng đỡ toàn bộ quần đảo Hoàng Sa ở phía Bắc và quần đảo Trường Sa ở phía Nam Biển Đông; riêng cụm Tư Chính – Phúc Nguyên nằm trên thềm lục địa Nam Bộ.',
         depthLabel: '> -1.500m (Đáy Biển Đông)',
-        color: '#004554'
+        color: '#113747'
       }
     ],
     dataTable: {
@@ -369,7 +369,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         indicator: 'Chuỗi trung tâm du lịch biển đảo quốc tế (Hạ Long – Cát Bà, Đà Nẵng – Hội An, Nha Trang, Phú Quốc)',
         progress: 96,
         tag: 'Động lực tăng trưởng xanh',
-        color: '#004554'
+        color: '#113747'
       },
       {
         rank: 'Ưu tiên số 2',
@@ -377,7 +377,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         indicator: '34 cảng biển quốc gia; cụm cảng cửa ngõ quốc tế Lạch Huyện (Hải Phòng), Liên Chiểu (Đà Nẵng), Cái Mép – Thị Vải',
         progress: 92,
         tag: 'Huyết mạch thương mại toàn cầu',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         rank: 'Ưu tiên số 3',
@@ -385,7 +385,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         indicator: 'Các bể trầm tích Cửu Long, Nam Côn Sơn, Mã Lai – Thổ Chu, Sông Hồng; nâng cao năng lực chế biến sâu',
         progress: 86,
         tag: 'An ninh năng lượng quốc gia',
-        color: '#B2D5E2'
+        color: '#1A718D'
       },
       {
         rank: 'Ưu tiên số 4',
@@ -393,7 +393,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         indicator: '4 ngư trường trọng điểm; chuyển mạnh sang nuôi biển công nghệ cao và khai thác xa bờ gắn với chống khai thác IUU',
         progress: 89,
         tag: 'Sinh kế hàng triệu ngư dân',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         rank: 'Ưu tiên số 5',
@@ -401,7 +401,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         indicator: '19 khu kinh tế ven biển (Vân Đồn, Đình Vũ – Cát Hải, Nghi Sơn, Vũng Áng, Chu Lai, Dung Quất, Vân Phong...)',
         progress: 82,
         tag: 'Công nghiệp công nghệ cao, sinh thái',
-        color: '#B2D5E2'
+        color: '#1A718D'
       },
       {
         rank: 'Ưu tiên số 6',
@@ -409,7 +409,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         indicator: 'Điện gió ngoài khơi, điện mặt trời ven biển, dược liệu biển, công nghệ sinh học biển',
         progress: 88,
         tag: 'Chuyển đổi năng lượng Net Zero 2050',
-        color: '#44A6B5'
+        color: '#29B4D1'
       }
     ],
     dataTable: {
@@ -528,7 +528,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         ecologicalRole:
           '"Bức tường xanh" giảm tới 50–80% năng lượng sóng bão, chống xói lở bờ biển, lọc chất ô nhiễm từ lục địa và hấp thụ Carbon gấp 3–5 lần rừng trên cạn.',
         threat: 'Chặt phá rừng làm đầm nuôi quảng canh, sạt lở bờ biển và nước biển dâng.',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         name: '2. Hệ sinh thái Thảm cỏ biển (Seagrass Beds)',
@@ -537,7 +537,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         ecologicalRole:
           'Ổn định nền đáy cát bùn, làm trong nước biển nhờ giữ trầm tích lơ lửng, cung cấp oxy hòa tan và làm cầu nối dinh dưỡng giữa rừng ngập mặn và rạn san hô.',
         threat: 'Giã cào đáy hủy diệt, ô nhiễm bùn cát bồi lấp và suy giảm chất lượng nước ven bờ.',
-        color: '#44A6B5'
+        color: '#29B4D1'
       },
       {
         name: '3. Hệ sinh thái Rạn san hô (Coral Reefs)',
@@ -546,7 +546,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
         ecologicalRole:
           '"Rừng mưa nhiệt đới dưới đáy đại dương", tạo đê chắn sóng tự nhiên bảo vệ nền móng các đảo san hô Hoàng Sa, Trường Sa khỏi sạt lở.',
         threat: 'Hiện tượng tẩy trắng san hô (Coral Bleaching) do nhiệt độ nước biển tăng, rác thải nhựa, lưới ma và khai thác tận diệt.',
-        color: '#44A6B5'
+        color: '#29B4D1'
       }
     ],
     dataTable: {
@@ -603,7 +603,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
     branches: [
       {
         title: '1. Trang bị Tri thức Chuẩn mực',
-        color: '#44A6B5',
+        color: '#29B4D1',
         items: [
           'Nắm vững sử liệu gốc: Đội Hoàng Sa – Bắc Hải, Châu bản triều Nguyễn, Đại Nam nhất thống toàn đồ.',
           'Hiểu rõ cơ sở pháp lý: Công ước Luật Biển UNCLOS 1982 và Luật Biển Việt Nam năm 2012.',
@@ -613,7 +613,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
       },
       {
         title: '2. Bảo vệ Chủ quyền trên Không gian mạng',
-        color: '#004554',
+        color: '#113747',
         items: [
           'Kiên quyết kiểm tra bản đồ Việt Nam trước khi đưa vào bài thuyết trình, video, poster, ấn phẩm học tập.',
           'Bản đồ Việt Nam bắt buộc phải thể hiện đầy đủ hai quần đảo Hoàng Sa và Trường Sa.',
@@ -623,7 +623,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
       },
       {
         title: '3. Ứng dụng AI & Công nghệ số có trách nhiệm',
-        color: '#004554',
+        color: '#113747',
         items: [
           'Luôn kiểm chứng (Fact-check) các câu trả lời hoặc hình ảnh bản đồ do AI tạo sinh bằng nguồn chính thống.',
           'Sử dụng tên gọi tiếng Việt chuẩn xác: Biển Đông (East Sea), Quần đảo Hoàng Sa, Quần đảo Trường Sa.',
@@ -632,7 +632,7 @@ export const TOPIC_ACADEMIC_VISUALS = {
       },
       {
         title: '4. Phong trào Hành động & Định hướng Nghề nghiệp',
-        color: '#44A6B5',
+        color: '#29B4D1',
         items: [
           'Tham gia cuộc thi "Em yêu biển, đảo quê hương", viết thư và gửi quà tặng chiến sĩ Trường Sa, Nhà giàn DK1.',
           'Thực hành lối sống xanh, giảm rác thải nhựa bảo vệ môi trường biển.',
