@@ -15,9 +15,12 @@ export default function Footer() {
           {/* Column 1: Brand & Mission */}
           <div className="footer-brand-col">
             <Link to="/" className="brand-logo footer-logo">
-              <div className="brand-emblem">
-                <Compass className="brand-icon" size={26} />
-                <span className="brand-star">★</span>
+              <div className="brand-emblem navbar-logo-circle">
+                <img
+                  src="/assets/logo-bien-dao.png"
+                  alt="Logo Biển Đảo Việt Nam"
+                  className="navbar-logo-img"
+                />
               </div>
               <div className="brand-text">
                 <span className="brand-title">BIỂN ĐẢO VIỆT NAM</span>
