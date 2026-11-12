@@ -10,6 +10,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import InteractivePreviewModal from './components/InteractivePreviewModal'
 import CozeFloatingChatbot from './components/CozeFloatingChatbot'
+import AuthAndClassroomModal from './components/AuthAndClassroomModal'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import EcosystemPage from './pages/EcosystemPage'
@@ -19,6 +20,7 @@ import ContactPage from './pages/ContactPage'
 import FeatureDetailPage from './pages/FeatureDetailPage'
 import NotFoundPage from './pages/NotFoundPage'
 import { FEATURES_DATA, getFeatureRoutePath } from './data/homeData'
+import { getCurrentUser } from './utils/authClassroomService'
 
 function DynamicFeatureRoute({
   activeRole,
@@ -47,10 +49,30 @@ function DynamicFeatureRoute({
 }
 
 export default function App() {
-  const [activeRole, setActiveRole] = useState('student')
+  const [activeRole, setActiveRole] = useState(() => {
+    const usr = getCurrentUser()
+    return usr?.role === 'teacher' ? 'teacher' : 'student'
+  })
   const [selectedFeatureId, setSelectedFeatureId] = useState(null)
+  const [authModalOpen, setAuthModalOpen] = useState(false)
+  const [authModalTab, setAuthModalTab] = useState('login')
   const navigate = useNavigate()
   const location = useLocation()
+
+  const handleOpenAuthModal = (tab = 'login') => {
+    setAuthModalTab(tab)
+    setAuthModalOpen(true)
+  }
+
+  useEffect(() => {
+    const handleGlobalOpenAuth = (e) => {
+      const tab = e?.detail?.tab || 'login'
+      handleOpenAuthModal(tab)
+    }
+    window.addEventListener('biendao-open-auth-modal', handleGlobalOpenAuth)
+    return () =>
+      window.removeEventListener('biendao-open-auth-modal', handleGlobalOpenAuth)
+  }, [])
 
   // Cuộn mượt lên đầu trang khi chuyển đường dẫn (Multi-page navigation)
   useEffect(() => {
@@ -93,6 +115,7 @@ export default function App() {
       <Navbar
         activeRole={activeRole}
         onRoleChange={setActiveRole}
+        onOpenAuthModal={handleOpenAuthModal}
       />
 
       <main key={location.pathname} className="multi-page-main">
@@ -130,6 +153,7 @@ export default function App() {
               <StudentTeacherPage
                 activeRole={activeRole}
                 onRoleChange={setActiveRole}
+                onOpenAuthModal={handleOpenAuthModal}
               />
             }
           />
@@ -259,6 +283,13 @@ export default function App() {
           setSelectedFeatureId(null)
           navigateToFeaturePage(id)
         }}
+      />
+
+      <AuthAndClassroomModal
+        isOpen={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+        onRoleChange={setActiveRole}
+        initialTab={authModalTab}
       />
 
       {/* Nút Chatbot nổi "Trợ lý AI Biển Đảo Việt Nam" ở góc dưới bên phải toàn trang */}

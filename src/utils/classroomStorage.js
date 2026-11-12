@@ -5,6 +5,12 @@
  *   lưu vào Database (Supabase / PostgreSQL / Firebase) cho từng tài khoản học sinh.
  */
 
+import {
+  getCurrentUser,
+  getUserProgressBundle,
+  saveUserClassroomRecords
+} from './authClassroomService'
+
 const STORAGE_KEY = 'bien_dao_classroom_learning_records_v1'
 
 const DEFAULT_PROFILE_STATE = {
@@ -34,6 +40,30 @@ const DEFAULT_PROFILE_STATE = {
 export function loadClassroomRecords() {
   if (typeof window === 'undefined') return DEFAULT_PROFILE_STATE
   try {
+    const activeUser = getCurrentUser()
+    if (activeUser) {
+      const bundle = getUserProgressBundle(activeUser.id)
+      if (bundle?.classroomRecords) {
+        const usrRec = bundle.classroomRecords
+        return {
+          ...DEFAULT_PROFILE_STATE,
+          ...usrRec,
+          accountBinding: {
+            ...DEFAULT_PROFILE_STATE.accountBinding,
+            ...(usrRec.accountBinding || {}),
+            userId: activeUser.id,
+            studentName:
+              usrRec.accountBinding?.studentName || activeUser.fullName,
+            schoolName:
+              usrRec.accountBinding?.schoolName || activeUser.schoolName,
+            grade: usrRec.accountBinding?.grade || activeUser.grade,
+            studentCode:
+              usrRec.accountBinding?.studentCode || activeUser.studentCode
+          }
+        }
+      }
+    }
+
     const raw = window.localStorage.getItem(STORAGE_KEY)
     if (!raw) return DEFAULT_PROFILE_STATE
     const parsed = JSON.parse(raw)
@@ -63,6 +93,7 @@ export function saveClassroomRecords(nextState) {
   if (typeof window === 'undefined') return
   try {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(nextState))
+    saveUserClassroomRecords(nextState)
   } catch {
     // Bỏ qua nếu bộ nhớ trình duyệt bị giới hạn
   }

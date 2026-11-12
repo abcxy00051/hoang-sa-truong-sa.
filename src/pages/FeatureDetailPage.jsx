@@ -223,7 +223,10 @@ export default function FeatureDetailPage({
             {/* 4. PHÒNG HỌC TƯƠNG TÁC VÀ TRÒ CHƠI HỌC TẬP */}
             {feature.id === 'phong-hoc-tuong-tac' && (
               <div className="workspace-interactive-area">
-                <InteractiveClassroomModule activeRole={activeRole} />
+                <InteractiveClassroomModule
+                  activeRole={activeRole}
+                  onRoleChange={onRoleChange}
+                />
               </div>
             )}
 

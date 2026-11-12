@@ -43,7 +43,9 @@ import {
   updateStudentProfileBinding,
   clearAllClassroomRecords
 } from '../utils/classroomStorage'
+import { AUTH_EVENT_NAME } from '../utils/authClassroomService'
 import ClassroomAnalyticsAndBadges from './ClassroomAnalyticsAndBadges'
+import TeacherClassroomDashboard from './TeacherClassroomDashboard'
 
 const DIFFICULTY_LABELS = {
   easy: { text: 'Cấp độ Dễ', cls: 'diff-easy' },
@@ -68,10 +70,21 @@ function formatDuration(seconds) {
   return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`
 }
 
-export default function InteractiveClassroomModule({ activeRole = 'student' }) {
+export default function InteractiveClassroomModule({
+  activeRole = 'student',
+  onRoleChange
+}) {
   // Hồ sơ kết quả học tập lưu trữ thực tế (chuẩn bị sẵn cấu trúc đồng bộ tài khoản Backend)
   const [records, setRecords] = useState(() => loadClassroomRecords())
   const [showAnalyticsDrawer, setShowAnalyticsDrawer] = useState(true)
+
+  useEffect(() => {
+    const syncRecordsOnAuth = () => {
+      setRecords(loadClassroomRecords())
+    }
+    window.addEventListener(AUTH_EVENT_NAME, syncRecordsOnAuth)
+    return () => window.removeEventListener(AUTH_EVENT_NAME, syncRecordsOnAuth)
+  }, [])
 
   // Tab hoạt động tương tác hiện tại (6 hoạt động)
   const [activeActivity, setActiveActivity] = useState('topic-quiz')
@@ -708,6 +721,20 @@ export default function InteractiveClassroomModule({ activeRole = 'student' }) {
           </div>
         </div>
       </section>
+
+      {/* ==========================================================================
+          1B. HỆ THỐNG HỌC TẬP KÉP (HỌC TỰ DO + MÃ LỚP) & BẢNG THEO DÕI HỌC SINH
+          ========================================================================== */}
+      <TeacherClassroomDashboard
+        activeRole={activeRole}
+        onRoleChange={onRoleChange}
+        onOpenAuthModal={(tab) => {
+          window.dispatchEvent(
+            new CustomEvent('biendao-open-auth-modal', { detail: { tab } })
+          )
+        }}
+        onSelectTopicQuiz={handleJumpToTopicQuiz}
+      />
 
       {/* ==========================================================================
           2. BIỂU ĐỒ ĐIỂM SỐ, HUY HIỆU THÀNH TÍCH & HỒ SƠ ĐỒNG BỘ TÀI KHOẢN

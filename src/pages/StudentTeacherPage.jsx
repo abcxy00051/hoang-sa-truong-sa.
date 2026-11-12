@@ -16,6 +16,7 @@ import {
   Users
 } from 'lucide-react'
 import { AUDIENCE_MODES } from '../data/homeData'
+import TeacherClassroomDashboard from '../components/TeacherClassroomDashboard'
 
 const GRADE_CURRICULUM_PATHWAYS = [
   {
@@ -89,7 +90,11 @@ const TEACHING_SCENARIOS = [
   }
 ]
 
-export default function StudentTeacherPage({ activeRole = 'student', onRoleChange }) {
+export default function StudentTeacherPage({
+  activeRole = 'student',
+  onRoleChange,
+  onOpenAuthModal
+}) {
   const [selectedGradeIdx, setSelectedGradeIdx] = useState(0)
   const currentAudience = AUDIENCE_MODES[activeRole] || AUDIENCE_MODES.student
 
@@ -135,14 +140,15 @@ export default function StudentTeacherPage({ activeRole = 'student', onRoleChang
               </h1>
 
               <p className="eco-hero-slogan">
-                Không gian định hướng lộ trình tự học cho học sinh và kịch bản tổ chức bài giảng số
-                cho giáo viên THPT.
+                Không gian kết hợp <strong>Học tự do cá nhân</strong> và{' '}
+                <strong>Học theo Mã Lớp của Giáo viên</strong>, kèm Bảng theo dõi
+                tiến trình từng học sinh.
               </p>
 
               <p className="eco-hero-intro-text">
-                Chuyên trang cung cấp lộ trình học tập phân hóa theo từng khối lớp 10, 11, 12; hướng
-                dẫn khai thác học liệu số trong tiết học chính khóa, hoạt động trải nghiệm hướng
-                nghiệp và câu lạc bộ biển đảo tại nhà trường.
+                Học sinh chỉ cần 1 tài khoản duy nhất để vừa tự học tự do toàn bộ
+                học liệu trên web, vừa nhập Mã lớp của giáo viên để đồng bộ điểm
+                số, số bài đã đọc và huy hiệu về lớp học.
               </p>
 
               <div className="hero-cta-group">
@@ -167,9 +173,9 @@ export default function StudentTeacherPage({ activeRole = 'student', onRoleChang
                   </span>
                 </div>
                 <p className="eco-panel-lead">
-                  Chuyển đổi linh hoạt giữa góc nhìn <strong>Học sinh THPT</strong> (tự học, ôn
-                  luyện, hỏi đáp AI) và <strong>Giáo viên THPT</strong> (trình chiếu bản đồ, tổ chức
-                  trò chơi, trích dẫn tư liệu gốc).
+                  Chuyển đổi linh hoạt giữa góc nhìn <strong>Học sinh THPT</strong> (vừa học tự do,
+                  vừa tham gia lớp bằng Mã lớp) và <strong>Giáo viên THPT</strong> (tạo mã lớp, giao
+                  chuyên đề, theo dõi tiến trình từng học sinh).
                 </p>
                 <div className="eco-quick-directory">
                   <Link to="/ban-do-so" className="eco-quick-dir-item">
@@ -207,10 +213,16 @@ export default function StudentTeacherPage({ activeRole = 'student', onRoleChang
         </div>
       </section>
 
-      {/* 2. BỘ CHUYỂN ĐỔI ĐỐI TƯỢNG HỌC SINH & GIÁO VIÊN */}
+      {/* 2. HỆ THỐNG HỌC TẬP KÉP (TỰ HỌC + MÃ LỚP) & BẢNG THEO DÕI TIẾN TRÌNH HỌC SINH */}
       <section className="about-section">
         <div className="container">
-          <div className="audience-showcase-box">
+          <TeacherClassroomDashboard
+            activeRole={activeRole}
+            onRoleChange={onRoleChange}
+            onOpenAuthModal={onOpenAuthModal}
+          />
+
+          <div className="audience-showcase-box" style={{ marginTop: '36px' }}>
             <div className="audience-header-bar">
               <div className="audience-header-text">
                 <span className="audience-label-tag">CHẾ ĐỘ TRẢI NGHIỆM CÁ NHÂN HÓA</span>

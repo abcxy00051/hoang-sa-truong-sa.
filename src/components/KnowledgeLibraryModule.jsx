@@ -33,6 +33,12 @@ import {
   ALL_LIBRARY_LESSONS,
   LIBRARY_GRADES
 } from '../data/libraryData.js'
+import {
+  getCurrentUser,
+  getUserProgressBundle,
+  saveUserLibraryProgress,
+  AUTH_EVENT_NAME
+} from '../utils/authClassroomService'
 
 const MODULE_ICONS = {
   Compass,
@@ -54,6 +60,11 @@ export default function KnowledgeLibraryModule() {
   const [activeLessonId, setActiveLessonId] = useState(null)
   const [savedLessonIds, setSavedLessonIds] = useState(() => {
     try {
+      const user = getCurrentUser()
+      if (user) {
+        const bundle = getUserProgressBundle(user.id)
+        if (Array.isArray(bundle?.savedLessonIds)) return bundle.savedLessonIds
+      }
       const raw = localStorage.getItem('biendao_saved_lessons_v2')
       return raw ? JSON.parse(raw) : ['cd01-bai-01', 'cd02-bai-01', 'cd03-bai-02']
     } catch {
@@ -62,6 +73,12 @@ export default function KnowledgeLibraryModule() {
   })
   const [completedLessonIds, setCompletedLessonIds] = useState(() => {
     try {
+      const user = getCurrentUser()
+      if (user) {
+        const bundle = getUserProgressBundle(user.id)
+        if (Array.isArray(bundle?.completedLessonIds))
+          return bundle.completedLessonIds
+      }
       const raw = localStorage.getItem('biendao_completed_lessons_v2')
       return raw ? JSON.parse(raw) : ['cd01-bai-01']
     } catch {
@@ -79,8 +96,26 @@ export default function KnowledgeLibraryModule() {
   const directorySectionRef = useRef(null)
 
   useEffect(() => {
+    const handleAuthSync = () => {
+      const user = getCurrentUser()
+      if (user) {
+        const bundle = getUserProgressBundle(user.id)
+        if (Array.isArray(bundle?.savedLessonIds)) {
+          setSavedLessonIds(bundle.savedLessonIds)
+        }
+        if (Array.isArray(bundle?.completedLessonIds)) {
+          setCompletedLessonIds(bundle.completedLessonIds)
+        }
+      }
+    }
+    window.addEventListener(AUTH_EVENT_NAME, handleAuthSync)
+    return () => window.removeEventListener(AUTH_EVENT_NAME, handleAuthSync)
+  }, [])
+
+  useEffect(() => {
     try {
       localStorage.setItem('biendao_saved_lessons_v2', JSON.stringify(savedLessonIds))
+      saveUserLibraryProgress({ savedLessonIds, completedLessonIds })
     } catch {
       // ignore storage errors
     }
@@ -92,6 +127,7 @@ export default function KnowledgeLibraryModule() {
         'biendao_completed_lessons_v2',
         JSON.stringify(completedLessonIds)
       )
+      saveUserLibraryProgress({ savedLessonIds, completedLessonIds })
     } catch {
       // ignore storage errors
     }

@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Compass, Menu, X, Sparkles, GraduationCap, ShieldCheck } from 'lucide-react'
+import {
+  Compass,
+  Menu,
+  X,
+  Sparkles,
+  GraduationCap,
+  ShieldCheck,
+  UserCheck
+} from 'lucide-react'
 import { NAV_LINKS } from '../data/homeData'
+import { getCurrentUser, AUTH_EVENT_NAME } from '../utils/authClassroomService'
 
 const ECOSYSTEM_CHILD_PATHS = new Set([
   '/he-sinh-thai-so',
@@ -14,11 +23,21 @@ const ECOSYSTEM_CHILD_PATHS = new Set([
 
 export default function Navbar({
   activeRole,
-  onRoleChange
+  onRoleChange,
+  onOpenAuthModal
 }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [currentUser, setCurrentUser] = useState(() => getCurrentUser())
   const location = useLocation()
+
+  useEffect(() => {
+    const syncAuth = () => {
+      setCurrentUser(getCurrentUser())
+    }
+    window.addEventListener(AUTH_EVENT_NAME, syncAuth)
+    return () => window.removeEventListener(AUTH_EVENT_NAME, syncAuth)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -111,6 +130,27 @@ export default function Navbar({
             </button>
           </div>
 
+          <button
+            type="button"
+            className={`nav-account-btn ${currentUser ? 'logged-in' : ''}`}
+            onClick={() =>
+              onOpenAuthModal && onOpenAuthModal(currentUser ? 'profile' : 'login')
+            }
+          >
+            <UserCheck size={15} />
+            <span>
+              {currentUser
+                ? `${currentUser.fullName.split(' ').slice(-2).join(' ')} (${
+                    currentUser.role === 'teacher'
+                      ? 'GV'
+                      : currentUser.joinedClassCodes?.length > 0
+                        ? currentUser.joinedClassCodes[0]
+                        : 'Tự học'
+                  })`
+                : 'Tài khoản / Mã lớp'}
+            </span>
+          </button>
+
           <Link to="/he-sinh-thai-so" className="btn-gold-nav">
             <ShieldCheck size={16} />
             <span>Hệ sinh thái số</span>
@@ -174,6 +214,25 @@ export default function Navbar({
                 </li>
               ))}
             </ul>
+
+            <button
+              type="button"
+              className="btn-secondary-glass mobile-cta-btn"
+              style={{ marginBottom: '10px', width: '100%', justifyContent: 'center' }}
+              onClick={() => {
+                setMobileMenuOpen(false)
+                if (onOpenAuthModal) {
+                  onOpenAuthModal(currentUser ? 'profile' : 'login')
+                }
+              }}
+            >
+              <UserCheck size={17} />
+              <span>
+                {currentUser
+                  ? `Hồ sơ: ${currentUser.fullName}`
+                  : 'Đăng nhập / Nhập Mã Lớp'}
+              </span>
+            </button>
 
             <Link
               to="/he-sinh-thai-so"
