@@ -119,16 +119,16 @@ export const TOPIC_5_KINH_TE = {
       ],
       references: [
         {
-          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018)',
+          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Chiến lược phát triển bền vững kinh tế biển Việt Nam đến năm 2030, tầm nhìn đến năm 2045',
-          author: 'Cổng Thông tin điện tử Chính phủ',
+          title: 'Nghị quyết số 36-NQ/TW ngày 22/10/2018 về Chiến lược phát triển bền vững kinh tế biển Việt Nam đến năm 2030, tầm nhìn đến năm 2045',
+          author: 'Ban Chấp hành Trung ương Đảng khóa XII (Tư liệu Văn kiện Đảng)',
           year: '2018',
-          url: 'https://chinhphu.vn'
+          url: 'https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-36-nqtw-ngay-22102018-hoi-nghi-lan-thu-tam-ban-chap-hanh-trung-uong-dang-khoa-xii-ve-chien-luoc-phat-trien-4875'
         }
       ]
     },
@@ -231,16 +231,16 @@ export const TOPIC_5_KINH_TE = {
       ],
       references: [
         {
-          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018)',
+          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Luật Thủy sản số 18/2017/QH14',
+          title: 'Luật Thủy sản số 18/2017/QH14 ngày 21/11/2017 (Toàn văn trên CSDL Quốc gia về Pháp luật)',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2017',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=127914'
         }
       ]
     }

@@ -145,16 +145,16 @@ export const TOPIC_1_TONG_QUAN = {
       ],
       references: [
         {
-          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018)',
+          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – Nhà xuất bản Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
           title: 'Cổng Thông tin điện tử Chính phủ – Chuyên trang Địa lý tự nhiên nước CHXHCN Việt Nam',
           author: 'Cổng Thông tin điện tử Chính phủ',
           year: '2023',
-          url: 'https://chinhphu.vn'
+          url: 'https://chinhphu.vn/dia-ly-68387'
         }
       ]
     },
@@ -269,10 +269,10 @@ export const TOPIC_1_TONG_QUAN = {
       ],
       references: [
         {
-          title: 'Luật Biển Việt Nam số 18/2012/QH13 ngày 21/6/2012',
+          title: 'Luật Biển Việt Nam số 18/2012/QH13 ngày 21/6/2012 (Toàn văn trên CSDL Quốc gia về Pháp luật)',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2012',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=27694'
         },
         {
           title: 'Công ước của Liên Hợp Quốc về Luật Biển năm 1982 (United Nations Convention on the Law of the Sea)',
@@ -382,16 +382,16 @@ export const TOPIC_1_TONG_QUAN = {
       ],
       references: [
         {
-          title: 'Luật Biển Việt Nam số 18/2012/QH13 (Điều 19 và Điều 20)',
+          title: 'Luật Biển Việt Nam số 18/2012/QH13 (Điều 19 và Điều 20 – Hệ thống văn bản Chính phủ)',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2012',
-          url: 'https://vbpl.vn'
+          url: 'https://vanban.chinhphu.vn/?pageid=27160&docid=165839'
         },
         {
           title: 'Sách giáo khoa Địa lý 12 (Chuyên đề Phát triển kinh tế và đảm bảo quốc phòng an ninh ở Biển Đông và các đảo, quần đảo)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         }
       ]
     }

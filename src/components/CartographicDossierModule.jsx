@@ -37,7 +37,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Khẳng định truyền thống quản lý cương vực lãnh thổ và vùng biển đảo của Nhà nước phong kiến Việt Nam từ thế kỷ XV.',
     sourceCitation:
-      'Hồng Đức bản đồ (Tư liệu Hán Nôm lưu trữ tại Viện Nghiên cứu Hán Nôm & Thư viện Quốc gia Việt Nam).'
+      'Hồng Đức bản đồ (Tư liệu Hán Nôm lưu trữ tại Viện Nghiên cứu Hán Nôm & Thư viện Quốc gia Việt Nam).',
+    sourceUrl: 'https://hannom.org.vn/'
   },
   {
     id: 'map-doc-02',
@@ -53,7 +54,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Tư liệu bản đồ kèm chú giải chữ Hán thế kỷ XVII xác nhận vị trí địa lý, quy mô 18 chiếc thuyền và hoạt động thường niên của đội Hoàng Sa dưới sự quản lý nhà nước của chúa Nguyễn.',
     sourceCitation:
-      'Đỗ Bá Công Đạo (1686), Toản tập Thiên Nam tứ chí lộ đồ thư — Ủy ban Biên giới Quốc gia (Bộ Ngoại giao).'
+      'Đỗ Bá Công Đạo (1686), Toản tập Thiên Nam tứ chí lộ đồ thư — Ủy ban Biên giới Quốc gia (Bộ Ngoại giao).',
+    sourceUrl: 'https://biengioilanhtho.gov.vn/vi/chu-quyen-bien-dao.html'
   },
   {
     id: 'map-doc-03',
@@ -69,7 +71,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Minh chứng bản đồ chính thức của Nhà nước quân chủ Việt Nam thể hiện Hoàng Sa và Trường Sa là bộ phận không thể tách rời của lãnh thổ Đại Nam.',
     sourceCitation:
-      'Đại Nam nhất thống toàn đồ (khoảng năm 1838) — Bảo tàng Lịch sử Quốc gia Việt Nam.'
+      'Đại Nam nhất thống toàn đồ (khoảng năm 1838) — Bảo tàng Lịch sử Quốc gia Việt Nam & Trung tâm Lưu trữ Quốc gia I.',
+    sourceUrl: 'https://archives.org.vn/index.php/vi/chau-ban-trieu-nguyen/'
   },
   {
     id: 'map-doc-04',
@@ -85,7 +88,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Sự tương ứng địa danh "Pracel" giữa quần đảo ngoài khơi và bờ biển miền Trung Việt Nam trên bản đồ phương Tây độc lập chứng tỏ các nhà hàng hải quốc tế từ thế kỷ XVI đã thừa nhận mối liên hệ địa lý – lịch sử hữu cơ giữa quần đảo này với Việt Nam.',
     sourceCitation:
-      'Bộ sưu tập bản đồ cổ phương Tây về chủ quyền Hoàng Sa – Trường Sa, Bộ Thông tin và Truyền thông.'
+      'Bộ sưu tập bản đồ cổ phương Tây về chủ quyền Hoàng Sa – Trường Sa, Nhà Trưng bày Hoàng Sa (TP. Đà Nẵng).',
+    sourceUrl: 'https://hoangsa.danang.gov.vn/'
   },
   {
     id: 'map-doc-05',
@@ -101,7 +105,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Bằng chứng bản đồ phương Tây thế kỷ XIX xác nhận trực tiếp địa danh phương Tây "Paracel" chính là "Cát Vàng" (Hoàng Sa) thuộc chủ quyền của Việt Nam.',
     sourceCitation:
-      'Jean-Louis Taberd (1838), Tabula Geographica Imperii Anamitici & Tập san Hội Châu Á Hoàng gia tại Bengal (1837).'
+      'Jean-Louis Taberd (1838), Tabula Geographica Imperii Anamitici & Tập san Hội Châu Á Hoàng gia tại Bengal (1837).',
+    sourceUrl: 'https://baochinhphu.vn/bien-dao-viet-nam.html'
   },
   {
     id: 'map-doc-06',
@@ -117,7 +122,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Tư liệu bản đồ đối chứng khách quan chứng minh cho đến đầu thế kỷ XX, chính các bản đồ chính thống của Trung Quốc cũng xác nhận cương vực cực Nam của họ chỉ dừng ở đảo Hải Nam.',
     sourceCitation:
-      'Hoàng triều trực tỉnh địa dư toàn đồ (1904) — Trưng bày tại Triển lãm Bản đồ và Tư liệu "Hoàng Sa, Trường Sa của Việt Nam — Những bằng chứng lịch sử và pháp lý".'
+      'Hoàng triều trực tỉnh địa dư toàn đồ (1904) — Trưng bày tại Triển lãm Bản đồ và Tư liệu "Hoàng Sa, Trường Sa của Việt Nam — Những bằng chứng lịch sử và pháp lý".',
+    sourceUrl: 'https://hoangsa.danang.gov.vn/'
   },
   {
     id: 'map-doc-07',
@@ -133,7 +139,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Là ranh giới phía trong của lãnh hải và ranh giới phía ngoài của nội thủy, làm căn cứ pháp lý quốc tế để xác định Lãnh hải 12 hải lý, Vùng tiếp giáp lãnh hải 24 hải lý, Vùng đặc quyền kinh tế 200 hải lý và Thềm lục địa Việt Nam theo UNCLOS 1982.',
     sourceCitation:
-      'Tuyên bố của Chính phủ nước CHXHCN Việt Nam ngày 12/11/1982 & Luật Biển Việt Nam số 18/2012/QH13.'
+      'Tuyên bố của Chính phủ nước CHXHCN Việt Nam ngày 12/11/1982 & Luật Biển Việt Nam số 18/2012/QH13.',
+    sourceUrl: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=27694'
   },
   {
     id: 'map-doc-08',
@@ -149,7 +156,8 @@ const CARTOGRAPHIC_DOSSIERS = [
     legalSignificance:
       'Chuẩn mực bắt buộc trong xuất bản bản đồ hành chính, sách giáo khoa và học liệu giáo dục tại Việt Nam: mọi bản đồ Việt Nam phải thể hiện đầy đủ hai quần đảo Hoàng Sa và Trường Sa.',
     sourceCitation:
-      'Luật Đo đạc và Bản đồ năm 2018 & Nghị định số 65/2007/NĐ-CP của Chính phủ.'
+      'Luật Đo đạc và Bản đồ năm 2018 (Điều 6) & Nghị định số 65/2007/NĐ-CP của Chính phủ.',
+    sourceUrl: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=15066'
   }
 ]
 
@@ -323,6 +331,27 @@ export default function CartographicDossierModule({ activeRole = 'student', onNa
               <div>
                 <strong>Nguồn lưu trữ &amp; Tham khảo kiểm chứng:</strong>
                 <p>{activeDossier.sourceCitation}</p>
+                {activeDossier.sourceUrl && (
+                  <a
+                    href={activeDossier.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="atlas-source-link"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      marginTop: '6px',
+                      fontSize: '0.84rem',
+                      fontWeight: 600,
+                      color: '#38bdf8',
+                      textDecoration: 'underline'
+                    }}
+                  >
+                    <ExternalLink size={14} />
+                    <span>Tra cứu nguồn chính thống: {activeDossier.sourceUrl}</span>
+                  </a>
+                )}
               </div>
             </div>
 

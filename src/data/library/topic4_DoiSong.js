@@ -120,16 +120,16 @@ export const TOPIC_4_DOI_SONG = {
       ],
       references: [
         {
-          title: 'Cổng Thông tin điện tử Chính phủ – Chuyên mục Biển đảo Việt Nam',
+          title: 'Báo Điện tử Chính phủ – Chuyên trang Biển đảo Việt Nam & Chủ quyền Hoàng Sa, Trường Sa',
           author: 'Cổng Thông tin điện tử Chính phủ',
           year: '2024',
-          url: 'https://chinhphu.vn'
+          url: 'https://baochinhphu.vn/bien-dao-viet-nam.html'
         },
         {
-          title: 'Cổng Thông tin điện tử tỉnh Khánh Hòa – Huyện đảo Trường Sa',
-          author: 'Ủy ban Nhân dân tỉnh Khánh Hòa',
-          year: '2023',
-          url: 'https://khanhhoa.gov.vn'
+          title: 'Nghị định số 65/2007/NĐ-CP của Chính phủ về các xã, thị trấn thuộc huyện đảo Trường Sa, tỉnh Khánh Hòa',
+          author: 'Chính phủ / UBND tỉnh Khánh Hòa',
+          year: '2007',
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=18535'
         }
       ]
     },
@@ -232,16 +232,16 @@ export const TOPIC_4_DOI_SONG = {
       ],
       references: [
         {
-          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018)',
+          title: 'Sách giáo khoa Địa lý 12 (Chương trình Giáo dục phổ thông 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Cổng Thông tin điện tử Bộ Quốc phòng – Chuyên mục Bảo vệ chủ quyền biển, đảo',
-          author: 'Bộ Quốc phòng nước CHXHCN Việt Nam',
+          title: 'Báo Hải quân Việt Nam – Chương trình "Hải quân Việt Nam làm điểm tựa cho ngư dân vươn khơi, bám biển"',
+          author: 'Quân chủng Hải quân – Bộ Quốc phòng',
           year: '2023',
-          url: 'https://mod.gov.vn'
+          url: 'https://baohaiquanvietnam.vn/tin-tuc/hai-quan-viet-nam-lam-diem-tua-cho-ngu-dan-vuon-khoi-bam-bien'
         }
       ]
     }

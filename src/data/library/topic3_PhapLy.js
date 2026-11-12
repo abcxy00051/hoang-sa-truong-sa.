@@ -115,16 +115,16 @@ export const TOPIC_3_PHAP_LY = {
       ],
       references: [
         {
-          title: 'Hiến chương Liên Hợp Quốc năm 1945 (Charter of the United Nations – Article 2)',
+          title: 'Hiến chương Liên Hợp Quốc năm 1945 (Charter of the United Nations – Full Text)',
           author: 'Liên Hợp Quốc (United Nations)',
           year: '1945',
-          url: 'https://www.un.org/en/about-us/un-charter'
+          url: 'https://www.un.org/en/about-us/un-charter/full-text'
         },
         {
-          title: 'Bộ Thông tin và Truyền thông – Hồ sơ tư liệu "Hoàng Sa, Trường Sa của Việt Nam – Những bằng chứng lịch sử và pháp lý"',
-          author: 'Bộ Thông tin và Truyền thông',
-          year: '2020',
-          url: 'https://mic.gov.vn'
+          title: 'Tuyên bố ngày 12/11/1982 của Chính phủ nước CHXHCN Việt Nam về Đường cơ sở dùng để tính chiều rộng lãnh hải Việt Nam',
+          author: 'Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam',
+          year: '1982',
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=2658'
         }
       ]
     },
@@ -230,13 +230,13 @@ export const TOPIC_3_PHAP_LY = {
           title: 'Luật Biển Việt Nam số 18/2012/QH13 – Cơ sở dữ liệu Quốc gia về Văn bản pháp luật',
           author: 'Bộ Tư pháp / Quốc hội nước CHXHCN Việt Nam',
           year: '2012',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=27694'
         },
         {
           title: 'Công ước của Liên Hợp Quốc về Luật Biển năm 1982 (Phần V: Vùng đặc quyền kinh tế & Phần VI: Thềm lục địa)',
-          author: 'Liên Hợp Quốc (United Nations)',
+          author: 'Liên Hợp Quốc (United Nations – DOALOS)',
           year: '1982',
-          url: 'https://www.un.org/depts/los'
+          url: 'https://www.un.org/depts/los/convention_agreements/convention_overview_convention.htm'
         }
       ]
     }

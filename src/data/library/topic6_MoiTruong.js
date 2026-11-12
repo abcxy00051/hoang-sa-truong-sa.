@@ -119,16 +119,16 @@ export const TOPIC_6_MOI_TRUONG = {
       ],
       references: [
         {
-          title: 'Luật Tài nguyên, môi trường biển và hải đảo số 82/2015/QH13',
+          title: 'Luật Tài nguyên, môi trường biển và hải đảo số 82/2015/QH13 ngày 25/6/2015',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2015',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=37350'
         },
         {
-          title: 'Sách giáo khoa Sinh học 12 & Địa lý 12 (Chương trình GDPT 2018)',
+          title: 'Sách giáo khoa Sinh học 12 & Địa lý 12 (Chương trình GDPT 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         }
       ]
     },
@@ -230,16 +230,16 @@ export const TOPIC_6_MOI_TRUONG = {
       ],
       references: [
         {
-          title: 'Luật Bảo vệ môi trường số 72/2020/QH14',
+          title: 'Luật Bảo vệ môi trường số 72/2020/QH14 ngày 17/11/2020 (Toàn văn trên CSDL Quốc gia về Pháp luật)',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2020',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=146609'
         },
         {
-          title: 'Cổng Thông tin điện tử Bộ Tài nguyên và Môi trường – Chuyên mục Biển và Hải đảo Việt Nam',
+          title: 'Trung tâm Thông tin, Dữ liệu Biển và Hải đảo Quốc gia (VODIC – Cục Biển và Hải đảo Việt Nam)',
           author: 'Bộ Tài nguyên và Môi trường',
           year: '2023',
-          url: 'https://monre.gov.vn'
+          url: 'https://vodic.vn/'
         }
       ]
     }

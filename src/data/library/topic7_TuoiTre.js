@@ -120,16 +120,16 @@ export const TOPIC_7_TUOI_TRE = {
       ],
       references: [
         {
-          title: 'Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2013',
+          title: 'Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2013 (Toàn văn trên CSDL Quốc gia về Pháp luật)',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2013',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=32801'
         },
         {
-          title: 'Luật Đo đạc và bản đồ số 27/2018/QH14 (Điều 6)',
+          title: 'Luật Đo đạc và bản đồ số 27/2018/QH14 ngày 14/6/2018 (Điều 6 về các hành vi bị nghiêm cấm)',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2018',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=15066'
         }
       ]
     },
@@ -232,16 +232,16 @@ export const TOPIC_7_TUOI_TRE = {
       ],
       references: [
         {
-          title: 'Luật Tài nguyên, môi trường biển và hải đảo số 82/2015/QH13 (Điều 75)',
+          title: 'Luật Tài nguyên, môi trường biển và hải đảo số 82/2015/QH13 (Điều 75 về Tuần lễ Biển và Hải đảo Việt Nam)',
           author: 'Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2015',
-          url: 'https://vbpl.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=37350'
         },
         {
-          title: 'Sách giáo khoa Giáo dục Quốc phòng và An ninh THPT (Chương trình GDPT 2018)',
+          title: 'Sách giáo khoa Giáo dục Quốc phòng và An ninh THPT (Chương trình GDPT 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2023',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         }
       ]
     }

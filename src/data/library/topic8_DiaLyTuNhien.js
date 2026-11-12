@@ -137,13 +137,13 @@ export const TOPIC_4_DIA_LY_TU_NHIEN = {
       ],
       references: [
         {
-          title: 'Sách giáo khoa Địa lý 12 & Atlat Địa lý Việt Nam (Chương trình GDPT 2018)',
+          title: 'Sách giáo khoa Địa lý 12 & Atlat Địa lý Việt Nam (Chương trình GDPT 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn/'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Kỷ yếu Hoàng Sa và Địa lý tự nhiên huyện đảo Hoàng Sa',
+          title: 'Kỷ yếu Hoàng Sa và Địa lý tự nhiên huyện đảo Hoàng Sa (UBND huyện Hoàng Sa – TP. Đà Nẵng)',
           author: 'Ủy ban Nhân dân huyện Hoàng Sa – Thành phố Đà Nẵng',
           year: '2020',
           url: 'https://hoangsa.danang.gov.vn/'
@@ -266,16 +266,16 @@ export const TOPIC_4_DIA_LY_TU_NHIEN = {
       ],
       references: [
         {
-          title: 'Sách giáo khoa Địa lý 12 (Chương trình GDPT 2018)',
+          title: 'Sách giáo khoa Địa lý 12 (Chương trình GDPT 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo',
           year: '2024',
-          url: 'https://moet.gov.vn/'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Huyện đảo Trường Sa – Tỉnh Khánh Hòa: Vị trí địa lý, điều kiện tự nhiên và hành chính',
-          author: 'Cổng thông tin điện tử tỉnh Khánh Hòa',
+          title: 'Nghị định số 65/2007/NĐ-CP và Hồ sơ hành chính Huyện đảo Trường Sa – Tỉnh Khánh Hòa',
+          author: 'Chính phủ / Cổng thông tin điện tử tỉnh Khánh Hòa',
           year: '2023',
-          url: 'https://khanhhoa.gov.vn/'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=18535'
         }
       ]
     },
@@ -395,12 +395,12 @@ export const TOPIC_4_DIA_LY_TU_NHIEN = {
       references: [
         {
           title: 'Sách giáo khoa Địa lý 12 (Chương trình GDPT 2018) – Thiên nhiên nhiệt đới ẩm gió mùa và Biển Đông',
-          author: 'Bộ Giáo dục và Đào tạo',
+          author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2024',
-          url: 'https://moet.gov.vn/'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Báo cáo Hiện trạng Môi trường Biển và Hải đảo Quốc gia',
+          title: 'Báo cáo Hiện trạng Môi trường Biển và Hải đảo Quốc gia (Trung tâm Thông tin, Dữ liệu Biển và Hải đảo Quốc gia)',
           author: 'Bộ Tài nguyên và Môi trường (Cục Biển và Hải đảo Việt Nam)',
           year: '2021',
           url: 'https://vodic.vn/'

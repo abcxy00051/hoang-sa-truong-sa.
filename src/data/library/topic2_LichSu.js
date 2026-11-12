@@ -120,16 +120,16 @@ export const TOPIC_2_LICH_SU = {
       ],
       references: [
         {
-          title: 'Sách giáo khoa Lịch sử 11 (Chương trình Giáo dục phổ thông 2018)',
+          title: 'Sách giáo khoa Lịch sử 11 (Chương trình Giáo dục phổ thông 2018 – NXB Giáo dục Việt Nam)',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2023',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Chuyên trang Tư liệu Lịch sử Hoàng Sa – Trường Sa',
+          title: 'Chuyên trang Tư liệu Lịch sử & Pháp lý Chủ quyền Hoàng Sa – Trường Sa',
           author: 'Ủy ban Biên giới Quốc gia – Bộ Ngoại giao Việt Nam',
           year: '2022',
-          url: 'https://biengioilanhtho.gov.vn'
+          url: 'https://biengioilanhtho.gov.vn/vi/chu-quyen-bien-dao.html'
         }
       ]
     },
@@ -232,16 +232,16 @@ export const TOPIC_2_LICH_SU = {
       ],
       references: [
         {
-          title: 'Châu bản triều Nguyễn về thực thi chủ quyền tại Hoàng Sa – Trường Sa',
-          author: 'Cục Văn thư và Lưu trữ Nhà nước – Bộ Nội vụ',
+          title: 'Châu bản triều Nguyễn về thực thi chủ quyền tại Hoàng Sa – Trường Sa (Di sản Tư liệu Thế giới UNESCO)',
+          author: 'Trung tâm Lưu trữ Quốc gia I – Cục Văn thư và Lưu trữ Nhà nước',
           year: '2014',
-          url: 'https://luutru.gov.vn'
+          url: 'https://archives.org.vn/index.php/vi/chau-ban-trieu-nguyen/'
         },
         {
           title: 'Đại Nam thực lục (Quốc sử quán triều Nguyễn) – Bản dịch Viện Sử học',
           author: 'Nhà xuất bản Giáo dục Việt Nam',
           year: '2007',
-          url: 'https://nxbgd.vn'
+          url: 'https://nxbgd.vn/dai-nam-thuc-luc'
         }
       ]
     },
@@ -348,13 +348,13 @@ export const TOPIC_2_LICH_SU = {
           title: 'Sách giáo khoa Lịch sử 11 – Chủ đề: Lịch sử bảo vệ chủ quyền, các quyền và lợi ích hợp pháp của Việt Nam ở Biển Đông',
           author: 'Bộ Giáo dục và Đào tạo – NXB Giáo dục Việt Nam',
           year: '2023',
-          url: 'https://moet.gov.vn'
+          url: 'https://nxbgd.vn/sach-giao-khoa-theo-ct-gdpt-2018'
         },
         {
-          title: 'Nghị định số 65/2007/NĐ-CP của Chính phủ về việc điều chỉnh địa giới hành chính huyện Trường Sa, tỉnh Khánh Hòa',
+          title: 'Nghị định số 65/2007/NĐ-CP ngày 11/4/2007 của Chính phủ về việc thành lập thị trấn Trường Sa, xã Song Tử Tây và xã Sinh Tồn thuộc huyện Trường Sa, tỉnh Khánh Hòa',
           author: 'Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam',
           year: '2007',
-          url: 'https://chinhphu.vn'
+          url: 'https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=18535'
         }
       ]
     }
